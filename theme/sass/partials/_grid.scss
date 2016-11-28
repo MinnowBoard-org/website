@@ -1,0 +1,105 @@
+@for $i from 1 through 24 {
+  .grid .col-#{$i} {
+    padding: 25px;
+  }
+}
+
+.carousel > div {
+  padding: 0 25px;
+}
+
+@include breakpoint($tablet){
+  @for $i from 1 through 23 {
+    .col-#{$i} {
+      @include span($i);
+      box-sizing: border-box;
+      &::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    }
+
+    .grid .col-#{$i} {
+      padding: 15px 25px 0 25px;
+    }
+  }
+
+  .col-24 {
+    width: span(24); 
+    box-sizing: border-box;
+    margin: 0 gutter(); 
+  }
+
+  .cell {
+    display: table-cell;
+    float: none;
+    vertical-align: middle;
+  }
+
+  .grid.default-page .col-6 {
+    padding-left: 0;
+    margin-left: 0;
+    width: 23.95834%;
+  }
+
+  .carousel > div {
+    padding: 0;
+  }
+
+  .grid {
+    padding: 0 !important;
+  }
+
+  .grid.default-page {
+    padding: 2% !important;
+  }
+}
+
+@include breakpoint($desktop){
+  @for $i from 1 through 23 {
+    .col-lg-#{$i} {
+      width: span($i) !important; 
+      float: left;
+      box-sizing: border-box;
+      margin: 0 gutter(); 
+      &::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    }
+  }
+
+  .col-lg-24 {
+    width: span(24) !important; 
+    box-sizing: border-box;
+    margin: 0 gutter(); 
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1248px;
+}
+
+.hidden-sm {
+  display: none;
+  @include breakpoint($tablet) {
+    display: inherit;
+  }
+}
+
+.hidden-md {
+  display: inherit;
+
+  @include breakpoint($tablet) {
+    display: none;
+  }
+}
+
+@include breakpoint($tablet){
+  #gridElements.grid .grid-item {
+    width: 47%;
+  }
+}

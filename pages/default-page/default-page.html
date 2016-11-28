@@ -1,0 +1,459 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+
+<link rel="import" href="../../elements/markdown-it/markdown-it.html">
+<link rel="import" href="../../elements/dp-teaser/dp-teaser.html">
+<link rel="import" href="../../elements/dp-ribbon/dp-ribbon.html">
+<link rel="import" href="../../elements/dp-widget/dp-widget.html">
+
+<link rel='stylesheet' href='../../theme/vendor/css-carousel/gallery.prefixed.min.css'>
+
+<dom-module id="default-page">
+  <template>
+    <style is="custom-style" include="iron-flex iron-flex-alignment">
+      :host {
+        overflow-y: auto;
+      }
+
+      .bottom-line {
+        position: relative;
+      }
+
+      .bottom-line::after {
+        background-color: var(--lightgray);
+        content: '';
+        display: block;
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      .carousel {
+        text-align: center;
+        background-color: var(--primary-color-1);
+        width: 100%;
+        display: inline-block;
+        padding: 3rem 0;
+        color: #fff;
+      }
+
+      .carousel a.markdown-it {
+        color: #fff;
+      }
+
+      .carousel p.markdown-it {
+        margin-bottom: 15px;
+      }
+
+      .carousel h1,
+      .carousel h2,
+      .carousel h3,
+      .carousel h4,
+      .carousel h5,
+      .carousel h6 {
+        color: #fff;
+      }
+
+      .carousel .btn {
+        border-color: #fff;
+        color: #fff;
+      }
+
+      .carousel .btn:hover {
+        background-color: #fff;
+        color: var(--base-font-color);
+      }
+
+      .carousel-item-title {
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 45px;
+        margin-bottom: 0.5rem;
+      }
+
+      .carousel-item-subtitle {
+        margin: 0 auto 1rem auto;
+        font-size: 24px;
+        line-height: 32px;
+      }
+
+      .slider-actions {
+        margin-top: 2rem;
+      }
+
+      .slider-actions .btn {
+        margin: 0.5rem 1rem;
+      }
+
+      .tile-grid ::content h3 {
+        color: var(--primary-color-2);
+      }
+
+      .dark-background {
+        background-color: var(--darkgray);
+        color: #fff;
+      }
+
+      .dark-background-l {
+        background-color: var(--darkgray-l);
+        color: #fff;
+      }
+
+      .dark-background.background-opacity {
+        background-color: rgba(59,64,76, 0.95);
+      }
+
+      .dark-background ::content p,
+      .dark-background ::content h1,
+      .dark-background ::content h2,
+      .dark-background ::content h3,
+      .dark-background ::content h4,
+      .dark-background ::content h5,
+      .dark-background ::content h6,
+      .dark-background-l ::content p,
+      .dark-background-l ::content h1,
+      .dark-background-l ::content h2,
+      .dark-background-l ::content h3,
+      .dark-background-l ::content h4,
+      .dark-background-l ::content h5,
+      .dark-background-l ::content h6 {
+        color: #fff;
+      }
+
+      .tech-specs ::content table {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        color: #000;
+      }
+
+      .tech-specs ::content table th {
+        border: none;
+      }
+
+      .tech-specs ::content table td {
+        padding: 12px;
+        border: none;
+        border-bottom: 4px solid #fff;
+        background-color: var(--lightgray-l) !important;
+      }
+
+      .carousel .container {
+        max-width: var(--homepage-max-width);
+      }
+
+      .grid.default-page {
+        padding: 0 16px;
+        box-sizing: border-box;
+      }
+
+      .home-section.no-padding {
+        padding: 0;
+      }
+
+      .tile-grid {
+        background-color: var(--darkgray);
+      }
+
+      .tile-grid.background-opacity {
+        background-color: rgba(95,100,106, 0.95);
+      }
+
+      .tile-grid .item,
+      .tile-grid ::content h1,
+      .tile-grid ::content h2 {
+        color: #fff;
+      }
+
+      footer {
+        margin-top: 0 !important;
+        font-size: var(--small-font-size);
+      }
+
+      .gallery .item,
+      .gallery .item h1,
+      .gallery .item h2,
+      .gallery .item h3,
+      .gallery .item h4,
+      .gallery .item h5,
+      .gallery .item h6,
+      .gallery .item p {
+        color: #fff;
+      }
+
+      .background-img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding: 1% 10%;
+        box-sizing: border-box;
+      }
+
+      .background-img img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: -1;
+      }
+
+      .gallery .item {
+        padding: 5% 0;
+        height: auto;
+        box-sizing: border-box;
+      }
+
+      .home-section {
+        min-height: 300px;
+        box-sizing: border-box;
+        padding: 2% 0;
+        position: relative;
+      }
+
+      .background-img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding: 1% 10%;
+        box-sizing: border-box;
+      }
+
+      .background-img img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: -1;
+      }
+
+      .home-mini-section {
+        box-sizing: border-box;
+        padding: 25px 15px;
+      }
+
+      .gallery.home-section {
+        padding: 0;
+      }
+
+      .gallery .item .container {
+        max-width: var(--homepage-max-width);
+      }
+
+      .gallery .item .btn {
+        border-color: #fff;
+        color: #fff;
+      }
+
+      .gallery .item .btn:hover {
+        border-color: var(--darkgray);
+      }
+
+      .gallery .item:nth-of-type(1) {
+        background: rgba(35,205,252,1);
+        background: -moz-linear-gradient(-45deg, rgba(35,205,252,1) 0%, rgba(152,202,60,1) 100%);
+        background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(35,205,252,1)), color-stop(100%, rgba(152,202,60,1)));
+        background: -webkit-linear-gradient(-45deg, rgba(35,205,252,1) 0%, rgba(152,202,60,1) 100%);
+        background: -o-linear-gradient(-45deg, rgba(35,205,252,1) 0%, rgba(152,202,60,1) 100%);
+        background: -ms-linear-gradient(-45deg, rgba(35,205,252,1) 0%, rgba(152,202,60,1) 100%);
+        background: linear-gradient(135deg, rgba(35,205,252,1) 0%, rgba(152,202,60,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23cdfc', endColorstr='#98ca3c', GradientType=1 );
+      }
+
+      .gallery .item:nth-of-type(2) {
+        background: rgba(152,202,60,1);
+        background: -moz-linear-gradient(-45deg, rgba(152,202,60,1) 0%, rgba(243,104,29,1) 100%);
+        background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(152,202,60,1)), color-stop(100%, rgba(243,104,29,1)));
+        background: -webkit-linear-gradient(-45deg, rgba(152,202,60,1) 0%, rgba(243,104,29,1) 100%);
+        background: -o-linear-gradient(-45deg, rgba(152,202,60,1) 0%, rgba(243,104,29,1) 100%);
+        background: -ms-linear-gradient(-45deg, rgba(152,202,60,1) 0%, rgba(243,104,29,1) 100%);
+        background: linear-gradient(135deg, rgba(152,202,60,1) 0%, rgba(243,104,29,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#98ca3c', endColorstr='#f3681d', GradientType=1 );
+      }
+
+      .gallery .item:nth-of-type(3) {
+        background: rgba(243,104,29,1);
+        background: -moz-linear-gradient(-45deg, rgba(243,104,29,1) 0%, rgba(188,15,122,1) 100%);
+        background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(243,104,29,1)), color-stop(100%, rgba(188,15,122,1)));
+        background: -webkit-linear-gradient(-45deg, rgba(243,104,29,1) 0%, rgba(188,15,122,1) 100%);
+        background: -o-linear-gradient(-45deg, rgba(243,104,29,1) 0%, rgba(188,15,122,1) 100%);
+        background: -ms-linear-gradient(-45deg, rgba(243,104,29,1) 0%, rgba(188,15,122,1) 100%);
+        background: linear-gradient(135deg, rgba(243,104,29,1) 0%, rgba(188,15,122,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3681d', endColorstr='#bc0f7a', GradientType=1 );
+      }
+
+      .gallery .item:nth-of-type(4) {
+        background: rgba(188,15,122,1);
+        background: -moz-linear-gradient(-45deg, rgba(188,15,122,1) 0%, rgba(136,34,145,1) 100%);
+        background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(188,15,122,1)), color-stop(100%, rgba(136,34,145,1)));
+        background: -webkit-linear-gradient(-45deg, rgba(188,15,122,1) 0%, rgba(136,34,145,1) 100%);
+        background: -o-linear-gradient(-45deg, rgba(188,15,122,1) 0%, rgba(136,34,145,1) 100%);
+        background: -ms-linear-gradient(-45deg, rgba(188,15,122,1) 0%, rgba(136,34,145,1) 100%);
+        background: linear-gradient(135deg, rgba(188,15,122,1) 0%, rgba(136,34,145,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bc0f7a', endColorstr='#882291', GradientType=1 );
+      }
+
+      .gallery .item:nth-of-type(5) {
+        background: rgba(43,84,167,1);
+        background: -moz-linear-gradient(-45deg, rgba(43,84,167,1) 0%, rgba(35,205,252,1) 100%);
+        background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(43,84,167,1)), color-stop(100%, rgba(35,205,252,1)));
+        background: -webkit-linear-gradient(-45deg, rgba(43,84,167,1) 0%, rgba(35,205,252,1) 100%);
+        background: -o-linear-gradient(-45deg, rgba(43,84,167,1) 0%, rgba(35,205,252,1) 100%);
+        background: -ms-linear-gradient(-45deg, rgba(43,84,167,1) 0%, rgba(35,205,252,1) 100%);
+        background: linear-gradient(135deg, rgba(43,84,167,1) 0%, rgba(35,205,252,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b54a7', endColorstr='#23cdfc', GradientType=1 );
+      }
+
+    </style>
+
+    <!--
+     * Fix #142 If the current page id matches the route prefix, this page
+     * is active and the app-route should be re-stamped in the DOM -->
+    <template is="dom-if" if="[[isPageActive(route.path)]]" restamp>
+      <app-route
+        route="{{route}}"
+        data="{{routeData}}"
+        tail="{{subRoute}}"
+        active="{{active}}">
+      </app-route>
+    </template>
+
+    <!-- For the MVP, let's just hardcode the content until we have
+           extended markdown-it with the necessary custom styles to
+           match the UX.
+      -->
+
+    <div class="gallery autoplay items-1 home-section">
+      <figure class="item">
+        <div class="container">
+          <div class="carousel-item-subtitle">
+            <p class="large">If you had a high-performance, open source hardware platform to
+            launch your Internet of Things project, what would you create?</p>
+          </div>
+          <div class="carousel-item-title">
+            <h1>Discover the <span style='color:#3b404c'>MinnowBoard
+              Turbot</span></h1>
+          </div>
+          <div class="slider-actions">
+            <paper-button class="btn" on-tap="followRoute" route="board-viewer">
+              Explore a MinnowBoard Turbot
+            </paper-button>
+            <paper-button class="btn" on-tap="followRoute" route="tutorials">
+              Set up a MinnowBoard Turbot
+            </paper-button>
+          </div>
+        </div>
+      </figure>
+
+      <!--div class="controls">
+        <a href="#item-1" class="control-button">•</a>
+        <a href="#item-2" class="control-button">•</a>
+        <a href="#item-3" class="control-button">•</a>
+      </div-->
+    </div>
+    <!-- Disable the other carousel pages until we have need/content
+     <!--responsive-carousel>
+      <div class="container">
+        <markdown-it src="carousel-item-1.md"></markdown-it>
+      </div>
+      <div class="container">
+        <markdown-it src="carousel-item-2.md"></markdown-it>
+      </div>
+      <div class="container">
+        <markdown-it src="carousel-item-3.md"></markdown-it>
+      </div>
+    </responsive-carousel-->
+    <!--/responsive-carousel-->
+    <!-- /carousel -->
+    <dp-teaser edit={{edit}} src="default.md" size="hero" class="home home-section tech-specs" title="Meet the MinnowBoard Turbot"></dp-teaser>
+
+    <div class="home-section no-padding">
+      <!-- welcome -->
+      <dp-teaser edit={{edit}} src="default2.md" class="home home-section dark-background-l" title="Everything you Need"></dp-teaser>
+
+      <div class="grid clearfix tile-grid">
+        <div class="container">
+          <div class="col-6 item">
+            <markdown-it edit={{edit}} src="grid-item-1.md"></markdown-it>
+          </div>
+          <div class="col-6 item">
+            <markdown-it edit={{edit}} src="grid-item-2.md"></markdown-it>
+          </div>
+          <div class="col-6 item">
+            <markdown-it edit={{edit}} src="grid-item-3.md"></markdown-it>
+          </div>
+          <div class="col-6 item">
+            <markdown-it edit={{edit}} src="grid-item-4.md"></markdown-it>
+          </div>
+        </div>
+      </div>
+      <!-- grid -->
+    </div>
+
+    <!-- ribbon -->
+    <dp-ribbon src="default-ribbon.md" edit={{edit}} class="home-mini-section"></dp-ribbon>
+    <!-- /ribbon -->
+
+    <dp-teaser edit={{edit}} src="default-lower.md" size="hero" cols="24" class="bg-md txt-center home home-section"></dp-teaser>
+
+    <!-- widget -->
+    <dp-widget src="default-widget.md" edit={{edit}} class="home-mini-section"></dp-widget>
+    <!-- /widget -->
+
+    <!--footer-->
+    <footer class="iron-selected">
+      <div class="container">
+        <div class="col-lg-12 footer-copyright">
+          <span class="bottom-line">Copyright (C) 2011-2016 MinnowBoard.org Foundation</span>
+          <div class="menu-inline">
+            <ul>
+              <li><a href="../../terms-of-service" title="Terms of service">Terms of service</a></li>
+              <li><a href="../../privacy-policy" title="Privacy">Privacy</a></li>
+              <li><a href="../../cookies-notice" title="Cookies">Cookies</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-12 menu-inline right">
+          <ul>
+            <li><a href="../../about" title="About">About</a></li>
+            <li><a href="http://wiki.minnowboard.org" on-click="wikiHandler" title="MinnowBoard Wiki" target="_blank">MinnowBoard Wiki</a></li>
+            <li><a href="../../help/ask-a-question" title="Feedback">Feedback</a></li>
+            <li><a href="../../about/contacts" title="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+  </template>
+
+  <script>
+    "use strict";
+    Polymer({
+      is: "default-page",
+      properties: {
+        /* Fix #142 - Pass the route back to the parent if it changes */
+        route: {
+          type: Object,
+          notify: true
+        }
+      },
+
+      /* Fix #142 If the pageRoute's path is just the root (/),
+       * default-page is active */
+      isPageActive: function(path) {
+        return(path == '/')
+      },
+
+      followRoute: function(event) {
+        this.set('route.path', event.currentTarget.getAttribute('route'));
+      },
+
+      wikiHandler: function() {
+        ga('send', 'event', 'Community', 'Click', 'Wiki', 1);
+      }
+    });
+  </script>
+</dom-module>

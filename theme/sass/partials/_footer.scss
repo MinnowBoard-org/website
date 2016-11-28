@@ -1,0 +1,102 @@
+footer {
+  background-color: $darkgray;
+  padding: 25px 0;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  margin-top: 2rem;
+  width: 100%;
+
+  .menu-inline {
+    text-align: center;
+  }
+
+  @include breakpoint($desktop) {
+    text-align: left;
+
+    .menu-inline {
+      text-align: left;
+    }
+
+    .menu-inline.right ul {
+      float: right;
+    }
+
+    .menu-inline li:first-child {
+      margin-left: 0;
+      padding-left: 0;
+    }
+  }
+
+  li {
+    line-height: 32px;
+
+    a {
+      color: #fff;
+
+      &:visited {
+        color: #fff;
+      }
+
+      &:hover,
+      &:focus,
+      &:active,
+      &.active {
+        color: $primary-color-1;
+      }
+    }
+
+    span {
+      color: #fff;
+      margin-left: 5px;
+
+      &:hover {
+        color: $primary-color-1 !important;
+      }
+    }
+  }
+
+  .list-title {
+    display: block;
+    margin-bottom: 25px;
+    font-weight: $font-bold;
+  }
+
+  @include breakpoint($desktop) {
+    .menu-social {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      right: 0;
+      text-align: right;
+    }
+
+    .menu-inline ul {
+      margin-bottom: 0;
+    }
+  }
+
+  @include breakpoint($desktop) {
+    .menu-social {
+      position: relative;
+      width: span(4);
+      text-align: center;
+    }
+  }
+}
+
+.footer-copyright span {
+  color: #fff;
+  display: inline-block;
+  line-height: 32px;
+}
+
+.footer-logo {
+  position: absolute;
+  bottom: 25px;
+  left: 10px;
+
+  @include breakpoint($tablet) {
+    position: static;
+  }
+}

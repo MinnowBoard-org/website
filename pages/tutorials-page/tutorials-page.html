@@ -1,0 +1,890 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<link rel="import" href="../../bower_components/app-route/app-route.html">
+<link rel="import" href="../../bower_components/paper-drawer-panel/paper-drawer-panel.html">
+<link rel="import" href="../../bower_components/iron-image/iron-image.html">
+<link rel="import" href="../../bower_components/iron-pages/iron-pages.html">
+
+<link rel="import" href="../../elements/markdown-it/markdown-it.html">
+<link rel="import" href="../../elements/tuto-reader/tuto-reader.html">
+<!--link rel="import" href="../../elements/grid-custom/grid-custom.html"-->
+
+<dom-module id="tutorials-page">
+  <template>
+    <style include="iron-flex iron-flex-alignment iron-positioning" is="custom-style">
+      :host {
+        box-sizing: borer-box;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+      }
+
+      /* Allow vertical scrolling in the paper-drawer-panel drawer and main */
+      paper-drawer-panel [drawer] {
+        display: block;
+        position: relative;
+        overflow-y: auto;
+        margin-left: auto;
+      }
+
+      .drawer-container {
+        padding: 2rem;
+        background-color: var(--bg-l);
+      }
+
+     paper-drawer-panel [main] {
+        overflow-y: auto;
+        box-sizing: border-box;
+        color: var(--darkgray);
+      }
+
+      /* Padding to match the original page */
+      paper-drawer-panel div[main] div[mode="picker"] {
+        padding: 1em 4em 1em 2em;
+      }
+
+      paper-drawer-panel div[main] div[mode="tutorial"] {
+        padding: 0;
+      }
+
+      paper-drawer-panel {
+        --paper-drawer-panel-left-drawer-container: {
+          background-color: #fff;
+        };
+
+        --paper-drawer-panel-right-drawer-container: {
+          background-color: var(--bg-l);
+        };
+
+        --paper-drawer-panel-drawer-container: {
+          z-index: 0 !important;
+        };
+      }
+
+      paper-drawer-panel[narrow] {
+        --paper-drawer-panel-drawer-container: {
+          z-index: 2 !important;
+        };
+      }
+
+      #intro {
+        display: block;
+      }
+
+      #intro ::content h3:first-child {
+        margin-top: 0;
+      }
+
+      .tuto-author {
+        display: block;
+      }
+
+      .tuto-author span.name {
+        color: #000;
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+
+      .tuto-author span.location {
+        color: #9da0a6;
+      }
+
+      .tuto-author p.title {
+        display: none;
+      }
+
+      .tuto-author .image img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50px;
+      }
+
+      .tuto-author .details {
+        display: table;
+      }
+
+      .tuto-author .image {
+        display: table-cell;
+        padding-bottom: 15px;
+        padding-right: 15px;
+      }
+
+      .tuto-author .description {
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      .tuto-info {
+        display: block;
+      }
+
+      .tuto-keywords {
+        display: block;
+      }
+
+      .sidebar-section {
+        padding: 15px 0;
+        border-bottom: 1px solid #9da0a6;
+        border-right: none;
+      }
+
+      /* All the classes implemented when doing some quick changes to
+       * use Polymer classes to get the page up and running on IE 11
+       *
+       * Since the image isn't an item intended for reading, use
+       * density independent virtual pixels for sizing */
+      .picker-thumbnail {
+         width: 21vmin;
+         height: 16vmin;
+         min-width: 21vmin;
+         min-height: 16vmin;
+         cursor: pointer;
+         box-sizing: border-box;
+         border: 1px solid transparent;
+      }
+
+      paper-drawer-panel[force-narrow] .picker-thumbnail {
+        width: 8vmin;
+        height: 7vmin;
+        min-width: 8vmin;
+        min-height: 7vmin;
+      }
+
+      .picker-thumbnail:hover {
+        border-color: rgba(0, 0, 0, 0.2);
+      }
+
+      .picker {
+        margin: 0.75em 0;
+      }
+
+      .picker-list-title {
+        font-size: 1.1em;
+        font-weight: bold;
+        padding: 1em 0;
+      }
+
+      .picker-info-box {
+        margin-left: 1em;
+      }
+
+      .picker-info-box div:first-child {
+        font-size: 0.9em;
+        font-weight: bold;
+        cursor: pointer;
+        margin-bottom: 0.5em;
+      }
+
+      .picker-info-box div:second-child {
+        font-size: 0.8em;
+      }
+
+      .picker-info-box div:first-child:hover {
+        color: var(--primary-color-1);
+      }
+
+      #scroller {
+        overflow: auto;
+      }
+
+      #content {
+        padding: 1em;
+      }
+
+      .anchor {
+        color: var(--primary-color-1);
+        cursor: pointer;
+      }
+
+      #links .anchor {
+        color: var(--darkgray);
+        text-decoration: underline;
+      }
+
+      #links .anchor:hover {
+        font-weight: bold;
+      }
+
+      .tutorial-link {
+        margin-bottom: 1em;
+        font-size: 0.85em;
+        font-weight: 500;
+      }
+
+      .anchor:hover {
+        text-decoration: underline;
+      }
+
+      .anchor.active {
+        font-weight: bold;
+      }
+
+      .slug.anchor {
+        font-size: 0.85em;
+        margin-bottom: 0.75em;
+      }
+
+      .go-back {
+        font-size: 1em;
+        padding: 0 1em 1em 1em;
+        color: var(--primary-color-1);
+        cursor: pointer;
+        border-bottom: 1px solid #9da0a6;
+      }
+
+      #filler {
+        display: block;
+        min-height: 0px;
+      }
+    </style>
+
+    <!--
+     * Fix #142 If the current page id matches the route prefix, this page
+     * is active and the app-route should be re-stamped in the DOM -->
+    <template is="dom-if" if="[[isPageActive(route.prefix)]]" restamp>
+      <app-route
+        route="{{route}}"
+        pattern="/:tutorial"
+        data="{{routeData}}"
+        tail="{{subRoute}}"
+        active="{{active}}">
+      </app-route>
+
+      <app-route
+        route="{{subRoute}}"
+        pattern="/:slug"
+        data="{{slugData}}"
+        active="{{slugActive}}">
+      </app-route>
+    </template>
+
+    <paper-drawer-panel
+      id="layout"
+      class="fit"
+      drawer-width="400px"
+      drawer-z-index="1"
+      edge-swipe-sensitivity=0
+      force-narrow$="[[isNarrow(layout)]]">
+
+      <div drawer id='drawer'>
+        <iron-pages selected="[[mode]]" attr-for-selected="mode">
+          <div class="drawer-container layout vertical start-justified" mode="picker">
+            <markdown-it edit="[[edit]]" src="tutorials-page-intro.md"></markdown-it>
+            <template is="dom-repeat" items="[[items]]">
+              <div class="tutorial-link anchor" on-tap="showTutorial">[[item.title]]</div>
+            </template>
+          </div>
+          <div class="drawer-container" mode="tutorial">
+            <div class="go-back" on-tap="backTapped">&lt; Go back to: Tutorials</div>
+            <div hidden$="[[!meta]]" class="tuto-sidebar" id="tuto-reader-meta">
+              <div hidden$="[[!meta.abstract]]" class="sidebar-section tuto-abstract">
+                <p class="title small"><span>{{meta.abstract.label}}</span></p>
+                <div class="details">
+                  <div class="description">
+                    <p class="small">{{meta.abstract.value}}</p>
+                  </div>
+                </div>
+              </div>
+              <div hidden$="[[!meta.author]]" class="sidebar-section tuto-author">
+                <p class="title small"><span>Author</span></p>
+                <div class="details">
+                  <div class="image"><img src={{meta.author.img}} class="img-thumbnail"/></div>
+                  <div class="description">
+                    <p class="small"><span class="name">{{meta.author.name}}</span></p>
+                    <p class="small"><span class="location">{{meta.author.location}}</span></p>
+                  </div>
+                </div>
+              </div>
+              <div hidden$="[[!meta.info]]" class="sidebar-section tuto-info">
+                <p class="title small"><span>Tutorial Info</span></p>
+                <div class="details">
+                  <div class="description">
+                    <template is="dom-repeat" items="{{meta.info}}">
+                      <p class="small"><span class="info">{{item.label}} : {{item.value}}</span></p>
+                    </template>
+                  </div>
+                </div>
+              </div>
+              <div hidden$="[[!meta.keywords]]" class="tuto-keywords">
+                <template is="dom-repeat" items="[[meta.keywords]]">
+                  <div class="sidebar-section">
+                    <p class="title small"><span>{{item.label}}</span></p>
+                    <div class="details">
+                      <div class="description">
+                        <p class="small">
+                          <template is="dom-repeat" items="[[item.value]]">
+                            <span class="info">{{item}}</span>
+                          </template>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </template>
+              </div>
+
+              <div class="sidebar-section" id="links">
+                <p class="title small">Contents</p>
+                <template is="dom-repeat" items="[[headings]]">
+                  <div class="anchor slug" slug="{{item.slug}}" on-tap="menuItemTapped">[[item.text]]</div>
+                </template>
+              </div>
+
+              <div hidden$="[[!meta.links]]" class="tuto-links">
+                <div class="sidebar-section">
+                  <p class="title small"><span>{{meta.links.label}}</span></p>
+                  <div class="details">
+                    <div class="description">
+                      <template is="dom-repeat" items="[[meta.links.value]]">
+                        <ul class="tuto-links-list">
+                          <li>
+                            <span class="info small">
+                              <div
+                                class="small anchor"
+                                on-click="showTutorial">[[item.title]]</div>
+                            </span>
+                          </li>
+                        </ul>
+                      </template>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </iron-pages>
+      </div>
+
+      <div main>
+        <iron-pages selected="[[mode]]" attr-for-selected="mode">
+          <div mode="picker">
+            <div class="picker-list-title">Tutorials</div>
+            <div id="tutorialList" class="layout vertical">
+              <template is="dom-repeat" items="[[items]]">
+                <div class="picker layout horizontal start-justified">
+                  <iron-image class="picker-thumbnail" sizing="cover" on-tap="showTutorial" src="[[item.img]]"></iron-image>
+                  <div class="picker-info-box flex layout vertical start-justified">
+                    <div on-tap="showTutorial">[[item.title]]</div>
+                    <div>[[item.summary]]</div>
+                    <markdown-it
+                      id$="mkd[[index]]"
+                      mode="none"
+                      on-loaded-changed="contentLoaded"
+                      src="[[item.content]]"></markdown-it>
+                  </div>
+                </div>
+              </template>
+            </div>
+          </div>
+
+          <div mode="tutorial" id="scroller" class="fit layout vertical">
+            <markdown-it headings="{{headings}}" edit="[[edit]]" id="content"></markdown-it>
+            <div id="filler"></div>
+          </div>
+        </iron-pages>
+      </div>
+    </paper-drawer-panel>
+  </template>
+
+  <script>
+    "use strict";
+    Polymer({
+      is: "tutorials-page",
+      behaviors: [Polymer.IronResizableBehavior],
+      properties: {
+        mode: {
+          type: String,
+          value: "picker"
+        },
+        regExpTitle: {
+          type: RegExp,
+          readOnly: true,
+          value: function() {
+            return new RegExp(/#+(.*?)\n/);
+          }
+        },
+        regExpSummary: {
+          type: RegExp,
+          readOnly: true,
+          value: function() {
+            return new RegExp(/#+.*\n+((.|\s)*?(?=#))/);
+          }
+        },
+        trimLength: {
+          type: Number,
+          readOnly: true,
+          value: 200
+        },
+        items: {
+          type: Array,
+          value: [
+            {location: "tutorials/powering-on-minnowboardturbot", updated: "20160608"},
+            {location: "tutorials/installing-windows-iot-on-minnowboard-turbot", updated: "20161107"},
+            {location: "tutorials/installing-ubuntu-16.04-on-minnowboardmax", updated: "20160708"},
+            {location: "tutorials/installing-windriver-pulsar-linux-on-minnowboard-turbot", updated: "20161109"},
+            {location: "tutorials/Turbot-blink", updated: "20160718"},
+            {location: "tutorials/updating_your_firmware", updated: "20160508"},
+            {location: "tutorials/ftdi-serial-connection", updated: "20161102"}
+          ]
+        },
+        route: {
+          type: Object,
+          reflectToAttribute: true,
+          notify: true
+        },
+        routeData: {
+          type: Object,
+          reflectToAttribute: true,
+          notify: true
+        },
+        active: {
+          type: Boolean
+        },
+        pageHasMenu: {
+          type: Boolean,
+          value: true,
+          reflectToAttribute: true,
+          notify: true
+        },
+        layout: {
+          type: String
+        },
+        meta: {
+          type: Object
+        },
+        activeSlug: {
+          type: String,
+          notify: true,
+          observer: 'onActiveSlugChanged'
+        }
+      },
+
+      listeners: {
+        'iron-resize': '_onIronResize',
+      },
+
+      observers: [
+        'onRouteChanged(route.path)',
+        'onTutorialChanged(active, routeData.tutorial)',
+        'onModeChanged(mode)',
+        'onLinkChanged(headings, slugData.slug, headings.splices)',
+        'updatePageHeight(headings, headings.splices)'
+      ],
+
+      /* Fix #142 If the current page id matches the route prefix, this page
+       * is active and the app-route should be re-stamped in the DOM */
+      isPageActive: function(prefix) {
+        var regex = new RegExp('\/' + this.id + '$');
+        return regex.exec(prefix);
+      },
+
+      _onIronResize: function() {
+        this.updatePageHeight(this.headings);
+      },
+
+      onActiveSlugChanged: function(active) {
+        Array.prototype.forEach.call(
+          Polymer.dom(this.$.links).querySelectorAll('.anchor.slug'), function(el) {
+            if (el.slug == active) {
+              el.classList.add('active');
+            } else {
+              el.classList.remove('active');
+            }
+          })
+      },
+
+      backTapped: function(event) {
+        this.set('route.path', '/');
+      },
+
+      onLinkChanged: function(headings, link) {
+        var path = link.replace(/^\//, '');
+
+
+        /* Find an active sub-route and scroll to it... */
+        if (path == '') {
+          return;
+        }
+
+        if (!this.slugActive) {
+          return;
+        }
+
+        console.log('onLinkChanged: ' + path, headings);
+
+        for (var i = 0; i < headings.length; i++) {
+          if (headings[i].slug != path) {
+            continue;
+          }
+
+          this.debounce("slug-scroll", function(path) {
+            var el = this.$.content.querySelector('h3[slug="' + path + '"]'),
+              margin = parseFloat(window.getComputedStyle(el).getPropertyValue('margin-top'));
+            this.scroll(el.offsetTop - margin, true);
+          }.bind(this, path), 250);
+
+          break;
+        }
+      },
+
+      menuItemTapped: function(event) {
+        if (this.active) {
+          if (this.slugActive) {
+            this.set('slugData.slug', event.model.item.slug);
+          } else {
+            this.set('subRoute.path', event.model.item.slug)
+          }
+        }
+      },
+
+      onRouteChanged: function(path) {
+        console.log('Tutorial route path changed: ' + path);
+        if (!path) {
+          this.set("mode", "picker");
+        }
+      },
+
+      onModeChanged: function(mode) {
+        console.log('Tutorial mode changing: ' + mode);
+        switch (mode) {
+        case "tutorial":
+          console.log("Scroll " + mode + " to top");
+          this.$.scroller.scrollTop = 0;
+          break;
+        case "picker":
+          console.log("Scroll " + mode + " to top");
+          this.$.scroller.scrollTop = 0;
+          this.set("meta", null);
+          break;
+        }
+      },
+
+      isNarrow: function(layout) {
+        return layout != 'desktop-layout';
+      },
+
+      onTutorialChanged: function(active, tutorial) {
+        if (!active) {
+          return;
+        }
+
+        console.log('Tutorials route changed: ' + tutorial);
+
+        /* If the tutorial fails to load, show the picker */
+        if (tutorial == undefined) {
+          this.$.scroller.scrollTop = 0;
+          this.set("mode", "picker");
+          return;
+        }
+
+        /* If changing tutorials, scroll to the top of the page */
+        if (this.activeTutorial != tutorial) {
+          this.$.scroller.scrollTop = 0;
+        }
+
+        if (!this.loadTutorial(tutorial)) {
+          this.set("mode", "picker");
+          this.set("meta", null);
+          console.log("Unable to load requested tutorial.");
+          return;
+        }
+      },
+
+      ready: function() {
+        var app = document.querySelector('minnowboard-app');
+        this.listen(app, 'click', 'onClick');
+      },
+
+      onClick: function(e) {
+        var app = document.querySelector('minnowboard-app');
+        if (!this.active) {
+          return;
+        }
+        // Close dialog if is opened.
+        if (app.$.img_dialog.opened == true) {
+          app.$.img_dialog.toggle();
+        }
+
+        if (e.target.tagName != 'IMG') {
+          return;
+        }
+
+        if (e.target.attributes.class.nodeValue.includes('dp-teaser') ||
+            e.target.attributes.class.nodeValue.includes('markdown-it') ||
+            e.target.attributes.class.nodeValue.includes('tuto-reader')) {
+          app.$.img_dialog_content.innerHTML = '';
+          var img = document.createElement('img');
+          img.classList.add("img_dialog_image");
+          img.src = e.target.attributes.src.nodeValue;
+          img.alt = e.target.attributes.alt ? e.target.attributes.alt.nodeValue : '';
+          app.$.img_dialog_content.appendChild(img);
+          app.$.img_dialog_title.innerHTML = img.alt;
+          app.$.img_dialog.toggle();
+        }
+      },
+
+      attached: function() {
+        for (var i = 0; i < this.items.length; i++) {
+          this.loadInfo("elements/tuto-reader/" + this.items[i].location + "/info.json", i);
+        }
+        this.$.scroller.addEventListener('scroll', this._onScroll.bind(this));
+      },
+
+      _onScroll: function() {
+        this.debounce('onScroll', function() {
+          var active = '';
+          if (this.headings.length != 0) {
+            var top = this.$.scroller.scrollTop;
+            active = this.headings[0].slug;
+            for (var i = 0; i < this.headings.length; i++) {
+              var el = this.$.content.querySelector('[slug="'+this.headings[i].slug+'"]'),
+                margin = parseFloat(window.getComputedStyle(el).getPropertyValue('margin-top'));
+              if (top >= el.offsetTop - margin) {
+                active = this.headings[i].slug;
+              }
+            }
+          }
+          this.activeSlug = active;
+        }, 100);
+      },
+
+      /* The following scroll code was derived from
+       * https://github.com/PolymerElements/paper-scroll-header-panel/blob/master/paper-scroll-header-panel.html
+       * Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+       * This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+       */
+
+       /**
+       * Scroll to a specific y coordinate.
+       *
+       * @method scroll
+       * @param {number} top The coordinate to scroll to, along the y-axis.
+       * @param {boolean} smooth true if the scroll position should be smoothly adjusted.
+       */
+      scroll: function(top, smooth) {
+        // the scroll event will trigger _updateScrollState directly,
+        // However, _updateScrollState relies on the previous `scrollTop` to update the states.
+        // Calling _updateScrollState will ensure that the states are synced correctly.
+        if (smooth) {
+          // TODO(blasten): use CSS scroll-behavior once it ships in Chrome.
+          var easingFn = function easeOutQuad(t, b, c, d) {
+            t /= d;
+            return -c * t*(t-2) + b;
+          };
+          var animationId = Math.random();
+          var duration = 200;
+          var startTime = Date.now();
+          var currentScrollTop = this.$.scroller.scrollTop;
+          var deltaScrollTop = top - currentScrollTop;
+          this._currentAnimationId = animationId;
+          (function updateFrame() {
+            var now = Date.now();
+            var elapsedTime = now - startTime;
+            if (elapsedTime > duration) {
+              this.$.scroller.scrollTop = top;
+              this._updateScrollState(top);
+            } else if (this._currentAnimationId === animationId) {
+              this.$.scroller.scrollTop = easingFn(elapsedTime, currentScrollTop, deltaScrollTop, duration);
+              requestAnimationFrame(updateFrame.bind(this));
+            }
+          }).call(this);
+        } else {
+          this.$.scroller.scrollTop = top;
+          this._updateScrollState(top);
+        }
+      },
+      /**
+       * Scroll to the top of the content.
+       *
+       * @method scrollToTop
+       * @param {boolean} smooth true if the scroll position should be smoothly adjusted.
+       */
+      scrollToTop: function(smooth) {
+        this.scroll(0, smooth);
+      },
+      /** @param {Event=} event */
+      _scroll: function(event) {
+        if (this.header) {
+          this._updateScrollState(this.$.scroller.scrollTop);
+          this.fire('content-scroll', {
+            target: this.$.scroller
+          },
+          {
+            cancelable: false
+          });
+        }
+      },
+      _updateScrollState: function(scrollTop) {
+        var deltaScrollTop = scrollTop - this._prevScrollTop;
+        var y = Math.max(0, scrollTop);
+        this._prevScrollTop = Math.max(scrollTop, 0);
+        this._y = y;
+      },
+
+      /* callback(content || Error, meta) */
+      loadTutorial: function(tutorial) {
+        var i;
+        for (i = 0; i < this.items.length; i++) {
+          if (this.items[i].location == 'tutorials/' + tutorial) {
+            break;
+          }
+        }
+
+        if (i == this.items.length) {
+          console.log("Invalid tutorial requested. Ignoring request.");
+          return false;
+        }
+
+        if (this.items[i].content != undefined) {
+          this.$.content.src = this.items[i].content;
+          this.set("meta", this.items[i].meta);
+          this.set("mode", "tutorial");
+          this.activeTutorial = tutorial;
+          return true;
+        }
+
+        /* TODO: This should put up a "loading..." animation while content
+         * is being fetched to indicate to the user that something is
+         * happening. */
+        fetch("elements/tuto-reader/" + this.items[i].location + "/info.json",
+          function(itemIndex, headers, response) {
+          var data;
+          try {
+            if (response instanceof Error) {
+              throw response;
+            }
+            data = JSON.parse(response);
+          } catch (error) {
+            console.log('Unable to load tutorial meta data: ' + error.message);
+            return;
+          }
+
+          this.$.content.src = data.content;
+          this.set("mode", "tutorial");
+          this.set("meta", data.meta);
+        }.bind(this, i));
+
+        return true;
+      },
+
+      contentLoaded: function(event, details) {
+        var loaded = details.value;
+        if (!event.model.item) {
+          /* contentLoaded is being called with empty item. Ignore it. */
+          return;
+        }
+
+        if (loaded) {
+          this.updateContent(event.currentTarget.markdown, event.model.index);
+        }
+      },
+
+      loadInfo: function(file, index) {
+        fetch(file, function(index, headers, response){
+          var data;
+          try {
+            if (response instanceof Error) {
+              throw response;
+            }
+            data = JSON.parse(response);
+          } catch (error) {
+            console.log(error.message);
+            return;
+          }
+          this.set('items.' + index + '.index', index);
+          this.set('items.' + index + '.content', data.content);
+          this.set('items.' + index + '.img', data.img);
+          this.set('items.' + index + '.meta', data.meta);
+        }.bind(this, index));
+      },
+
+      updateContent: function(markdown, index) {
+        var title = markdown.match(this.regExpTitle);
+        var summary = markdown.match(this.regExpSummary);
+        title = title[1] || '', summary = summary[1] || '';
+        if (summary.length >= this.trimLength) {
+          summary = summary.substr(0, this.trimLength) + "...";
+        }
+        this.set('items.' + index + '.summary', summary);
+        this.set('items.' + index + '.title', title);
+        this.set('items.' + index + '.timestamp', this.items[index].updated);
+
+        if (typeof this.items[index].meta.abstract == 'string') {
+          this.set('items.' + index + '.meta.abstract', {label: title, value: this.items[index].meta.abstract});
+        }
+        else {
+          this.set('items.' + index + '.meta.abstract', this.items[index].meta.abstract);
+        }
+
+        if (this.active) {
+          var i;
+          for (i = 0; i < this.items.length; i++) {
+            if (this.items[i].location == this.route.path) {
+              break;
+            }
+          }
+
+          if (index == i){
+            this.set("meta.abstract", this.items[index].meta.abstract);
+          }
+        }
+      },
+
+      showTutorial: function(event) {
+        var item = event.model.item;
+        if (item.target) {
+          window.open(item.location, item.target);
+          return;
+        }
+
+        /* If this is a tutorial being loaded, switch to it via the route */
+        if (/^tutorials\//.exec(item.location)) {
+          this.set("route.path", '/' + item.location.replace(/^tutorials\//, ''));
+          return;
+        }
+
+        /* Otherwise kick it to the window location */
+        window.open(item.location, '_self');
+      },
+
+      menuTapped: function() {
+        this.$.layout.togglePanel();
+      },
+
+      updatePageHeight: function(headings) {
+        /* Make sure all DOM writes are complete. */
+        Polymer.dom.flush();
+
+        /* If no headings available yet, the rest of the fixups can't occur */
+        if (headings.length == 0) {
+          return;
+        }
+
+        /* If no active link is set, set it to the first heading. */
+        this.activeSlug = this.activeSlug || headings[0].slug;
+
+        /* Find the distance between the last header and the end of the
+         * page and make sure there is enough client space to allow element
+         * to top-align with the page when it is scrolled to */
+        var slug = headings[headings.length - 1].slug,
+          target = this.$.content.querySelector('h3[slug="' + slug + '"]'),
+          filler, top;
+        if (!target) {
+          console.log('Unable to find slug in content: ' + slug)
+          return;
+        }
+        top = target.offsetTop;
+        top -= parseFloat(window.getComputedStyle(target).getPropertyValue('margin-top'));
+        filler = this.$.scroller.clientHeight -
+          (this.$.content.getBoundingClientRect().height - top);
+        if (filler > 0) {
+          this.$.filler.style.minHeight = filler + 'px';
+        } else {
+          this.$.filler.style.minHeight = '0px';
+        }
+      }
+    });
+  </script>
+
+</dom-module>

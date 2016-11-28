@@ -1,0 +1,26 @@
+
+
+// Global susy grid settings
+$susy: (
+  columns: 24,
+  gutters: 1,
+  math: fluid,
+  output: float,
+  gutter-position: split,
+  global-box-sizing: border-box,
+  use-custom: (
+    box-sizing: true,
+    clearfix: true
+  )
+);
+
+// Responsive
+$sm-mobile: 320px;
+$mobile: 479px;
+$tablet: 767px;
+$desktop: 1025px;
+$md-desktop: 1201px;
+$lg-desktop: 1501px;
+
+
+

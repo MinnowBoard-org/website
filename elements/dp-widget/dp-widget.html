@@ -1,0 +1,38 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel='import' href='../markdown-it/markdown-it.html'/>
+
+<dom-module id='dp-widget'>
+  <style>
+    :host{
+      width: 100%;
+      display: inline-block;
+      background-color: var(--darkgray-l);
+      box-sizing: border-box;
+      color: #fff;
+      padding: 25px;
+    }
+
+    :host.home .container {
+      max-width: var(--homepage-max-width);
+    }
+  </style>
+
+  <template>
+     <div class="container">
+      <div class="inner-wrapper txt-center">
+        <markdown-it src="{{src}}" edit={{edit}}></markdown-it>
+      </div>
+    </div>
+  </template>
+
+  <script>
+    Polymer({
+      is: "dp-widget",
+      properties: {
+        src: {
+          type: String
+        }
+      }
+    });
+  </script>
+</dom-module>

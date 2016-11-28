@@ -1,0 +1,300 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<script src="jquery.min.js"></script>
+<script src="jquery.mixitup.min.js"></script>
+
+<dom-module id='grid-custom'>
+  <style>
+    h2 {
+      margin: 0;
+    }
+
+    .grid-toolbar {
+      position: relative;
+      margin-bottom: 30px;
+    }
+    .grid-toolbar-icons {
+      position: absolute;
+      top: -7px;
+      right: 3%;
+    }
+    .divider-vertical {
+      background-color: var(--darkgray);
+      display: inline-block;
+      width: 1px;
+      height: 25px;
+      position: relative;
+      top: 5px;
+      margin: 0 5px;
+    }
+    #gridElements {
+      margin-bottom: 100px;
+    }
+
+    #gridElements ::content .grid-item {
+      display: inline-block;
+      vertical-align: top;
+      /*width: 47%;*/
+      margin: 0 1% 2rem 1%;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    #gridElements ::content .grid-item.hidden {
+      display: none;
+    }
+
+    #gridElements ::content .grid-item .image {
+      position: relative;
+      width: 100%;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      max-height: 250px;
+      overflow: hidden;
+    }
+
+    #gridElements ::content .grid-item .image img {
+      width: 100%;
+      -moz-transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      max-height: 250px;
+      height: 100%;
+    }
+
+    .tiny-layout #gridElements ::content .grid-item .image img {
+      max-height: auto;
+    }
+
+    #gridElements ::content .grid-item:hover .title-wrapper .title {
+      cursor: pointer;
+      color: var(--primary-color-1);
+    }
+
+    #gridElements ::content .grid-item:hover {
+      cursor: pointer;
+    }
+
+    #gridElements ::content .grid-item .title-wrapper .title {
+      color: #fff;
+      margin-bottom: 12px;
+    }
+
+    #gridElements ::content .grid-item .details {
+      text-align: justify;
+      padding: 10px;
+    }
+
+    #gridElements ::content .grid-item .title-wrapper {
+      position: absolute;
+      padding: 0 15px;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding-top: 15px;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,1+100 */
+      background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+    }
+
+    #gridElements ::content .grid-item .details .title {
+      display: none;
+    }
+
+    #gridElements ::content .grid-item[data-bound] {
+      display: none;
+    }
+
+    #gridElements.list ::content .grid-item {
+      width: 100%;
+      margin: 0 0 25px 0;
+    }
+
+    #gridElements.list ::content .grid-item .image {
+      max-height: 100%;
+    }
+
+    #gridElements.list ::content .grid-item .details .title {
+      display: block;
+      color: #3b404c;
+      margin: 0; 
+    }
+
+    #gridElements.list ::content .grid-item .details {
+      display: inline-block;
+      vertical-align: top;
+      width: 65%;
+      padding-top: 0;
+    }
+
+    #gridElements.list ::content .grid-item .title-wrapper {
+      display: none;
+    }
+
+    #gridElements.list ::content .grid-item .image {
+      display: inline-block;
+      vertical-align: top;
+      width: 25%;
+    }
+
+    /*#gridElements.list ::content .grid-item .title-wrapper {
+      top: 0;
+      left: 50%;
+      background: transparent;
+      color: #3b404c;
+    }
+
+    #gridElements.list ::content .grid-item .title-wrapper h3 {
+      color: #3b404c;
+    }*/
+
+    #gridElements.list ::content .grid-item .image img {
+      max-height: 100%;
+      height: auto;
+    }
+
+    #gridElements ::content .grid-item.favorite::before {
+      content: '\f005';
+      display: block;
+      font-family: 'FontAwesome';
+      color: #fff;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 1;
+      font-size: 1.25rem;
+      text-shadow: 2px 0px 2px rgba(150, 150, 150, 1);
+    }
+  </style>
+
+  <template>
+    <div class="grid-toolbar">
+      <h2>{{title}}</h2>
+
+      <template is="dom-if" if="{{filters}}">
+        <div class="grid-toolbar-icons right">
+          <template is="dom-if" if="{{favorite}}">
+            <span class="fa fa-star-o filter" data-filter=".favorite" on-click="toggleFilter"></span>
+          </template>
+          
+          <template is="dom-if" if="{{calendar}}">
+            <span class="fa fa-calendar sort" data-sort="updated:desc" data-default="order:asc" on-click="toggleSort"></span>
+          </template>
+
+          <template is="dom-if" if="{{layout}}">
+            <div class="divider-vertical"></div>
+            <span id="gridList" class="fa fa-list" list on-click="changeLayout"></span>
+            <span id="gridDefault" class="fa fa-th-large selected" grid on-click="changeLayout"></span>
+          </template>
+        </div>
+      </template>
+    </div>
+
+    <div id="gridElements" class="clearfix">
+      <content select="div"></content>
+    </div>
+  </template>
+
+  <script>
+    Polymer({
+      is: "grid-custom",
+      properties: {
+        title: {
+          type: String,
+          value: ''
+        },
+        favorite: {
+          type: Boolean,
+          value: false
+        },
+        calendar: {
+          type: Boolean,
+          value: false
+        },
+        layout: {
+          type: String,
+          value: 'grid'
+        },
+        items: {
+          type: Array
+        },
+        gridclass: {
+          type: String,
+          value: 'grid-item'
+        },
+        filters: {
+          type: Boolean,
+          value: false
+        }
+      },
+      ready: function() {
+        this.grid = $(this.$.gridElements);
+
+        this.grid.mixItUp({
+          selectors: {
+            target: '.' + this.gridclass
+          },
+          animation: {
+            animateChangeLayout: true, // Animate the positions of targets as the layout changes
+            animateResizeTargets: true, // Animate the width/height of targets as the layout changes
+            effects: 'fade rotateX(-40deg) translateZ(-100px)'
+          },
+          layout: {
+            containerClass: this.layout // Add the class 'list' to the container on load
+          },
+          controls: {
+            enable: false
+          },
+          load: {
+            filter: 'all',
+            sort: 'order:asc'
+          }
+        });
+      },
+      changeLayout: function(sender) {
+        if (sender.target.hasAttribute('grid')) {
+          this.layout = 'grid';
+          this.display = 'inline-block';
+          $(sender.target).addClass('selected');
+          $(this.querySelector('#gridList')).removeClass('selected');
+        } else {
+          this.layout = 'list';
+          this.display = 'block';
+          $(sender.target).addClass('selected');
+          $(this.querySelector('#gridDefault')).removeClass('selected');
+        }
+        $(this.querySelector('.grid-item')).removeClass('hidden');
+        this.grid.mixItUp('changeLayout', {
+          display: this.display,
+          containerClass: this.layout
+        });
+      },
+      toggleFilter: function(sender) {
+        if ($(sender.target).hasClass('selected')) {
+          $(sender.target).removeClass('selected');
+          this.grid.mixItUp('filter', 'all');
+        } else {
+          $(sender.target).addClass('selected');
+          this.grid.mixItUp('multiMix', {filter: $(sender.target).attr('data-filter')});
+        }
+      },
+      toggleSort: function(sender) {
+        if ($(sender.target).hasClass('selected')) {
+          $(sender.target).removeClass('selected');
+          this.grid.mixItUp('sort', $(sender.target).attr('data-default'));
+        } else {
+          $(sender.target).addClass('selected');
+          this.grid.mixItUp('sort', $(sender.target).attr('data-sort'));
+        }
+      }
+    });
+  </script>
+</dom-module>

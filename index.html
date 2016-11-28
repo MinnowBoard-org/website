@@ -1,0 +1,822 @@
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>MinnowBoard.org</title>
+
+  <!-- The href here is replaced with the docroot on the server
+    -- It is only replaced once, so don't put the {{}} string anywhere else.
+    -- It is not being parsed by handlebars; just a simple regexp replace -->
+  <base href="{{base}}">
+
+  <script src='bower_components/webcomponentsjs/webcomponents-lite.min.js'></script>
+  <script src='fetch.js'></script>
+
+
+  <link rel='import' href='bower_components/app-route/app-location.html'>
+  <link rel='import' href='bower_components/app-route/app-route.html'>
+  <link rel='import' href='bower_components/iron-icons/iron-icons.html'>
+  <link rel="import" href="bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+  <link rel='import' href='bower_components/iron-pages/iron-pages.html'>
+  <link rel='import' href='bower_components/iron-media-query/iron-media-query.html'>
+  <link rel='import' href='bower_components/paper-button/paper-button.html'>
+  <link rel='import' href='bower_components/paper-drawer-panel/paper-drawer-panel.html'>
+  <link rel='import' href='bower_components/paper-header-panel/paper-header-panel.html'>
+  <link rel='import' href='bower_components/paper-icon-button/paper-icon-button.html'>
+  <link rel='import' href='bower_components/paper-tabs/paper-tabs.html'>
+  <link rel='import' href='bower_components/paper-menu/paper-menu.html'>
+  <link rel='import' href='bower_components/paper-menu/paper-submenu.html'>
+  <link rel='import' href='bower_components/paper-icon-button/paper-icon-button.html'>
+  <link rel='import' href='bower_components/paper-menu-button/paper-menu-button.html'>
+  <link rel='import' href='bower_components/paper-item/paper-item.html'>
+  <link rel='import' href='bower_components/paper-toast/paper-toast.html'>
+  <link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
+  <link rel="import" href="bower_components/paper-dialog/paper-dialog.html">
+  <link rel="import" href="bower_components/iron-accordions/iron-accordions.html">
+  <link rel="import" href="bower_components/neon-animation/animations/scale-up-animation.html">
+  <link rel="import" href="bower_components/neon-animation/animations/fade-out-animation.html">
+
+  <link rel="import" href="bower_components/iron-fit-behavior/demo/simple-fit.html">
+
+  <link rel="import" href="pages/default-page/default-page.html">
+  <link rel="import" href="pages/board-viewer-page/board-viewer-page.html">
+  <link rel="import" href="pages/help-page/help-page.html">
+  <link rel="import" href="pages/generic-page/generic-page.html">
+  <link rel="import" href="pages/editor-page/editor-page.html">
+  <link rel="import" href="pages/tutorials-page/tutorials-page.html">
+
+  <link href="theme/images/favicon.ico" rel="icon" type="image/x-icon">
+
+  <link rel='stylesheet' href='theme/vendor/font-awesome/css/font-awesome.min.css'>
+  <link rel='stylesheet' href='theme/css/styles.css'>
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700,500' rel='stylesheet' type='text/css'>
+
+  <style is="custom-style" include="iron-flex iron-flex-alignment">
+    :root {
+      --primary-color-1: #23ccfc; /* Blue. */
+      --primary-color-2: #98ca3c; /* Green. */
+      --darkgray: #3b404c;
+      --darkgray-l: #5f646a; /* grey 80% */
+      --darkgray-ll: #959796; /* grey 60% */
+      --lightgray: #caccc3; /* grey 40% */
+      --lightgray-l: #f0f0e2; /* grey 20% */
+      --lightgray-ll: #f8f8f1; /* grey 10% */
+      --bg-md: #f0f0e2;
+      --bg-l: #f8f8f1;
+      --tablet: 767px;
+
+      --accent-color-1: #f3691d; /* orange */
+      --accent-color-2: #d82022; /* red */
+      --accent-color-3: #bc0f79; /* purple */
+      --accent-color-4: #872291; /* plum */
+      --accent-color-5: #2b55a7; /* blue */
+
+      /* Used for background of paper-toolbar */
+      --primary-color: var(--light-primary-color);
+
+      --base-font-family: "Roboto, Helvetica, Arial, sans-serif";
+      --base-font-size: 16px;
+      --base-line-height: 20px;
+      --base-font-color: var(--darkgray);
+      --small-font-size: 14px;
+      --large-font-size: 18px;
+
+      --light-primary-color: var(--lightgray-ll);
+      --dark-primary-color: var(--darkgray);
+
+      --paper-slider-active-color: var(--lightgray-ll);
+      --paper-slider-knob-color: #cdd0d6;
+      --paper-slider-pin-color: var(--lightgray-ll);
+
+      --primary-background-color: var(--grey);
+
+      --homepage-max-width: 920px;
+    }
+
+    :root img[alt=OSHW-logo] {
+        float: left;
+        padding-right: 1rem;
+
+    }
+  </style>
+
+  <style>
+    paper-dialog #img_dialog_content img {
+      max-width: 100% !important;
+      height: auto;
+      width: auto;
+      max-height: 80vh;
+    }
+
+    paper-dialog .dialog-header h2 {
+      color: #fff;
+    }
+
+    paper-dialog .dialog-header paper-button {
+      position: absolute;
+      right: -5px;
+      top: 0;
+    }
+  </style>
+</head>
+
+<dom-module id="minnowboard-app">
+  <template>
+    <style>
+      .right {
+        float: right;
+      }
+
+      paper-header-panel {
+        --paper-header-panel-shadow: {
+          z-index: 2;
+          position: fixed !important;
+          left: 0;
+          top: 63px !important;
+        };
+      }
+
+      .paper-dialog-0 {
+        background-color: var(--base-font-color);
+        color: #fff;
+      }
+
+      /* Styling for Error, Message, and Version toasts */
+      #error_toast {
+        --paper-toast-background-color: red;
+        --paper-toast-color: white;
+      }
+
+      paper-toast paper-button.custom:hover {
+        background-color: var(--paper-indigo-100);
+      }
+
+      paper-toast paper-button.green {
+        background-color: var(--paper-green-500);
+        color: white;
+      }
+      paper-toast paper-button.green[active] {
+        background-color: var(--paper-red-500);
+      }
+
+      paper-toast paper-button.yellow {
+        background-color: var(--paper-yellow-500);
+        color: white;
+      }
+
+      paper-toast paper-button.yellow[active] {
+        background-color: var(--paper-purple-500);
+      }
+
+      paper-toolbar paper-icon-button[icon=menu] {
+        margin-right: 0;
+      }
+
+      paper-toolbar {
+        --paper-toolbar-background: var(--grey);
+        --paper-toolbar-color: var(--darkgray);
+        --paper-toolbar-sm-height: 64px;
+        padding: 0;
+        -webkit-transition: 0.15s all ease;
+        transition: 0.15s all ease;
+      }
+
+      paper-item#default {
+        width: calc(250px - 16px);
+        min-width: calc(250px - 16px);
+        max-width: calc(250px - 16px);
+        box-sizing: border-box;
+        min-height: 46px;
+        height: 46px;
+      }
+
+      paper-item#default:focus,
+      paper-item#default:hover,
+      paper-item#default.iron-selected {
+        color: var(--primary-color-1);
+        font-weight: 400;
+        cursor: pointer;
+      }
+
+      paper-item#default:focus::before,
+      paper-item#default:focus::after {
+        display: none;
+      }
+
+      .tablet-layout paper-item#default,
+      .tiny-layout paper-item#default {
+        width: auto;
+        min-width: 1px;
+        max-width: 100%;
+      }
+
+      paper-item#default div {
+        display: inline-block;
+        width: 195px;
+        height: 40px;
+        background-image: url('theme/images/logo.svg');
+        background-size: auto 100%;
+        background-position: 0px center;
+        background-repeat: no-repeat;
+      }
+
+      .tiny-layout paper-item#default div {
+        height: 35px;
+        width: 170px;
+      }
+
+      paper-item#default span {
+        font-size: 18pt;
+        line-height: 46px;
+        position: relative;
+      }
+
+      paper-item#default span:first-of-type {
+        font-weight: 500;
+        color: var(--primary-color-2);
+      }
+
+      paper-item#default span:last-of-type {
+        color: var(--primary-color-1);
+      }
+
+      .top-navigation.tablet-layout,
+      .top-navigation.tiny-layout {
+        width: calc(100% - 120px);
+        max-width: calc(100% - 120px);
+        text-align: center;
+      }
+
+      .top-navigation.tablet-layout {
+        padding-left: 1rem;
+      }
+
+      .top-navigation {
+        max-width: 1248px;
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+        padding-left: 2rem;
+        box-sizing: border-box;
+      }
+
+      #main-container {
+        margin: 0 auto;
+        max-width: 1248px;
+      }
+
+      [data-section="default"] #main-container {
+        margin: 0 auto;
+        max-width: 100%;
+      }
+
+      .top-navigation paper-item {
+        display: inline-block;
+        vertical-align: top;
+        line-height: 45px;
+        min-height: 48px;
+        font-size: var(--base-font-size);
+      }
+
+      .top-navigation paper-item {
+        padding: 0 16px;
+      }
+
+      .top-navigation paper-item#default {
+        padding: 0;
+      }
+
+      .top-navigation {
+        white-space: nowrap;
+      }
+
+      .top-navigation paper-menu {
+        width: auto;
+        margin: 0 auto;
+        display: inline-block;
+      }
+
+      .top-navigation .right-nav {
+        position: absolute;
+        right: 0;
+      }
+
+      paper-menu.site-nav {
+        margin: 0 auto;
+      }
+
+      /* Set site-nav decorations for left-pane and top-navigation
+       * menu items */
+      paper-menu.site-nav paper-item:focus,
+      paper-menu.site-nav paper-item:hover,
+      paper-menu.site-nav paper-item.iron-selected,
+      paper-menu.site-nav paper-item.iron-selected {
+        color: var(--primary-color-1);
+        background-color: transparent;
+        font-weight: 400;
+      }
+
+      paper-menu.site-nav paper-item {
+        cursor: pointer;
+      }
+
+       paper-menu.site-nav paper-item#default.drawer-menu-item {
+        padding-left: 16px;
+        margin-top: -10px;
+        margin-right: 0 !important;
+        box-sizing: content-box;
+      }
+
+      paper-menu.site-nav paper-item.drawer-menu-item {
+        border-bottom: 1px solid var(--lightgray-ll);
+      }
+
+      paper-menu.site-nav paper-item.drawer-menu-item:hover,
+      paper-menu.site-nav paper-item.drawer-menu-item.iron-selected {
+        border-left: 5px solid var(--primary-color-1);
+        padding-left: 11px !important;
+      }
+
+      paper-menu.site-nav paper-item.drawer-menu-item.iron-selected {
+        color: #000 !important;
+        font-weight: 500 !important;
+      }
+
+      paper-menu.site-nav paper-item.drawer-menu-item.iron-selected:hover {
+        color: var(--primary-color-1) !important;
+      }
+
+      /* Disable the "focus" background highlight */
+      paper-menu.site-nav paper-item:focus::before,
+      paper-menu.site-nav paper-item:focus::after {
+        display: none;
+      }
+
+      .tiny-layout ::content .no-media,
+      .tablet-layout ::content .no-media {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      /* Ensure that the global-nav drawer is always on top of
+       * content */
+      #global-nav[narrow] {
+        --paper-drawer-panel-drawer-container: {
+          z-index: 2;
+        };
+      }
+
+      #drawer ::content *,
+      #drawer ::content p,
+      #drawer ::content a,
+      #drawer * {
+        font-size: var(--small-font-size);
+      }
+
+      #main-panel {
+        width: 100%;
+        --paper-header-panel-body: {
+          max-width: 1248px;
+          width: 100%;
+          margin: 0 auto;
+        };
+      }
+
+      [data-section="default"] #main-panel {
+        --paper-header-panel-body: {
+          max-width: none;
+        };
+      }
+    </style>
+
+    <app-location id="location" route="{{route}}"></app-location>
+
+    <app-route
+      route="{{route}}"
+      pattern="/:tab"
+      data="{{routeData}}"
+      tail="{{subRoute}}">
+    </app-route>
+
+    <iron-media-query query="max-width: 480px" query-matches="{{tinyLayout}}">
+    </iron-media-query>
+
+    <iron-media-query query="max-width: 960px" query-matches="{{tabletLayout}}">
+    </iron-media-query>
+
+    <iron-media-query query="min-width: 961px" query-matches="{{desktopLayout}}">
+    </iron-media-query>
+
+    <paper-drawer-panel
+      id="global-nav"
+      right-drawer
+      force-narrow
+      edge-swipe-sensitivity=0
+      data-section$="[[tab]]">
+      <paper-menu
+        class='site-nav'
+        drawer
+        attr-for-selected='id'
+        selected="{{tab}}">
+        <!-- the list stored in "tabs" needs to be kept in sync with the
+             list in the iron-pages below -->
+        <paper-item id="default" class="drawer-menu-item" on-tap="navMenuTapped">Home</paper-item>
+        <template is="dom-repeat" items="{{tabs}}">
+          <paper-item id="{{item.id}}" class="drawer-menu-item" on-tap="navMenuTapped">{{item.text}}</paper-item>
+        </template>
+      </paper-menu>
+
+      <paper-header-panel id="main-panel" main class$="[[layoutClass]]">
+        <paper-toolbar>
+          <template is="dom-if" if="[[!desktopLayout]]">
+            <!-- hamburger main mobile icon
+            Each iron-page we instantiate will be monitored for changes to
+            'page-has-menu' attribute. That, combined with the actively
+            selected tab will be used to turn on/off the hamburger menu.
+
+            When on-tap is handled, it will fire 'menu-tap' onto the
+            selected iron-page.
+            -->
+            <template is="dom-if" if="[[isPageMenuNeeded(tab, currentPageMenu)]]">
+              <paper-icon-button icon="icons:more-vert" on-tap="pageMenuTapped"></paper-icon-button>
+            </template>
+
+            <!-- !desktopLayout header logo -->
+            <paper-menu class='site-nav' attr-for-selected="id" selected="{{tab}}">
+              <paper-item id="default"><div></div></paper-item>
+            </paper-menu>
+            <!-- /!desktopLayout header logo -->
+
+            <!-- hamburger main mobile icon -->
+            <paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
+          </template>
+
+          <!-- the left-nav drawer menu is owned by the sub-pages to display
+               based on their own iron-query determination. Replicating the code
+               into N different views is not ideal, however it feels better than
+               trying to put top-level logic at this higher level; easier to
+               debug problems within isolated views than at a global context -->
+
+          <template is="dom-if" if="[[desktopLayout]]">
+            <div class="top-navigation">
+              <paper-menu class='site-nav' attr-for-selected='id' selected="{{tab}}">
+                <paper-item id="default"><div></div></paper-item>
+              </paper-menu>
+
+              <paper-menu class='site-nav right-nav' attr-for-selected='id' selected="{{tab}}">
+                <!-- the list stored in "tabs" needs to be kept in sync with the list in the iron-pages below -->
+                <template is="dom-repeat" items="{{tabs}}">
+                  <paper-item id="{{item.id}}">{{item.text}}</paper-item>
+                </template>
+              </paper-menu>
+            </div>
+          </template>
+        </paper-toolbar>
+
+        <iron-pages id="pages" selected="[[tab]]" attr-for-selected='id'>
+          <default-page id="default" edit="{{edit}}" route="{{route}}"></default-page>
+          <!-- The list here needs to be kept in sync with the "tabs" property
+               (mainly the id used needs to match the appropriate item)
+
+               Each item is wrapped in a dom-if to keep the site from having to recursively
+               load the entire web-site when the main landing page loads.
+
+               We had explored using:
+
+              <template is="dom-repeat" items="{{tabs}}">
+                <div is="{{items.tag}}" route={{route}} id="{{items.id}}"></div>
+              </template>
+
+               However in Polymer 1.2 there is no dynamic type injection for
+               DOM stamping... oh well.
+              -->
+          <template is="dom-if" if="[[showPage('learn-more', tab)]]">
+            <generic-page id='learn-more' edit="{{edit}}"
+              on-page-has-menu-changed='onPageHasMenuChanged'
+              layout="[[layoutClass]]"
+              route="{{subRoute}}"></generic-page>
+          </template>
+          <template is="dom-if" if="[[showPage('faq', tab)]]">
+            <generic-page id='faq' edit="{{edit}}"
+              on-page-has-menu-changed='onPageHasMenuChanged'
+              layout="[[layoutClass]]"
+              route="{{subRoute}}"></generic-page>
+          </template>
+          <template is="dom-if" if="[[showPage('get-a-board', tab)]]">
+            <generic-page id='get-a-board' edit="{{edit}}"
+              on-page-has-menu-changed='onPageHasMenuChanged'
+              layout="[[layoutClass]]"
+              route="{{subRoute}}"></generic-page>
+          </template>
+          <template is="dom-if" if="[[showPage('tutorials', tab)]]">
+            <tutorials-page id='tutorials' edit="{{edit}}"
+              on-page-has-menu-changed='onPageHasMenuChanged'
+              layout="[[layoutClass]]"
+              route="{{subRoute}}"></tutorials-page>
+          </template>
+          <template is="dom-if" if="[[showPage('board-viewer', tab)]]">
+            <board-viewer-page id='board-viewer' edit="{{edit}}"
+              on-page-has-menu-changed='onPageHasMenuChanged'
+              layout="[[layoutClass]]"
+              route="{{subRoute}}"></board-viewer-page>
+          </template>
+          <template is="dom-if" if="[[showPage('about', tab)]]">
+            <generic-page id='about' edit="{{edit}}"
+              on-page-has-menu-changed='onPageHasMenuChanged'
+              layout="[[layoutClass]]"
+              route="{{subRoute}}"></generic-page>
+          </template>
+          <template is="dom-if" if="[[showPage('community', tab)]]">
+            <generic-page id='community' edit="{{edit}}"
+              on-page-has-menu-changed='onPageHasMenuChanged'
+              layout="[[layoutClass]]"
+              route="{{subRoute}}"></generic-page>
+          </template>
+          <template is="dom-if" if="[[showPage('help', tab)]]">
+            <help-page id='help' edit="{{edit}}"
+              on-page-has-menu-changed='onPageHasMenuChanged'
+              layout="[[layoutClass]]"
+              route="{{subRoute}}"></help-page>
+          </template>
+          <template is="dom-if" if="[[showPage('max-hse', tab)]]">
+            <generic-page id='max-hse' edit="{{edit}}"
+              on-page-has-menu-changed='onPageHasMenuChanged'
+              layout="[[layoutClass]]"
+              route="{{subRoute}}"></generic-page>
+          </template>
+          <template is="dom-if" if="[[showPage('markdown-style-guide', tab)]]">
+            <generic-page id='markdown-style-guide' edit="{{edit}}"
+              on-page-has-menu-changed='onPageHasMenuChanged'
+              layout="[[layoutClass]]"
+              route="{{subRoute}}"></generic-page>
+          </template>
+          <template is="dom-if" if="[[showPage('cookies-notice', tab)]]">
+            <generic-page id='cookies-notice' edit="{{edit}}"
+              on-page-has-menu-changed='onPageHasMenuChanged'
+              layout="[[layoutClass]]"
+              route="{{subRoute}}"></generic-page>
+          </template>
+           <template is="dom-if" if="[[showPage('privacy-policy', tab)]]">
+            <generic-page id='privacy-policy' edit="{{edit}}"
+              on-page-has-menu-changed='onPageHasMenuChanged'
+              layout="[[layoutClass]]"
+              route="{{subRoute}}"></generic-page>
+          </template>
+          <template is="dom-if" if="[[showPage('terms-of-service', tab)]]">
+            <generic-page id='terms-of-service' edit="{{edit}}"
+              on-page-has-menu-changed='onPageHasMenuChanged'
+              layout="[[layoutClass]]"
+              route="{{subRoute}}"></generic-page>
+          </template>
+          <template is="dom-if" if="[[showPage('attributions', tab)]]">
+            <generic-page id='attributions' edit="{{edit}}"
+              on-page-has-menu-changed='onPageHasMenuChanged'
+              layout="[[layoutClass]]"
+              route="{{subRoute}}"></generic-page>
+          </template>
+          <editor-page id='editor'
+            on-page-has-menu-changed='onPageHasMenuChanged'
+            layout="[[layoutClass]]"
+            route="{{subRoute}}"></editor-page>
+        </iron-pages>
+      </paper-header-panel>
+    </paper-drawer-panel>
+
+    <paper-dialog with-backdrop entry-animation="scale-up-animation" exit-animation="fade-out-animation" id="img_dialog">
+      <div class="dialog-header">
+        <h2 id="img_dialog_title"></h2>
+        <paper-button dialog-dismiss><span class="fa fa-close"></span></paper-button>
+      </div>
+      <div id="img_dialog_content"></div>
+      <div id="img_dialog_desc"></div>
+    </paper-dialog>
+
+    <!-- error_toast is used if there is a problem encountered with fetching
+         content. It can be invoked via minnowboard-app::errorToast() -->
+    <paper-toast id="error_toast" duration=0>
+      <paper-button on-click="closeErrorToast" class="custom yellow">Dismiss</paper-button>
+    </paper-toast>
+    <paper-toast id="version_toast" duration=5000>
+      <paper-button class="custom green" raised>Goto project</paper-button>
+    </paper-toast>
+
+    <!-- message_toast is used for informative messages; while in development,
+         this includes indicating which version of the website is being loaded.
+         While in production, message_toast could be used if feedback is
+         submitted via the webform. The dialog can be invoked via
+         minnowboard-app::messageToast() -->
+    <paper-toast id="message_toast" duration=5000></paper-toast>
+
+  </template>
+
+  <script>
+  var object = {
+      is: "minnowboard-app",
+      properties: {
+        route: {
+          type: Object
+        },
+
+        route: {
+          type: Object
+        },
+
+        routeData: {
+          type: Object,
+          notify: true, /* allow pages to listen for on-route-data-changed */
+          observer: "onRouteDataChanged"
+        },
+
+        subRoute: {
+          type: Object,
+          notify: true,
+          observer: "onSubRouteChanged"
+        },
+
+        tab: {
+          type: String,
+          value: "default"
+        },
+
+        tabs: {
+          type: Array,
+          value: [
+            { id: "board-viewer", text: "Explore the board" },
+            { id: "get-a-board", text: "Get a board" },
+            { id: "community", text: "Community" },
+            { id: "tutorials", text: "Tutorials" },
+            { id: "help", text: "Get help" }
+          ]
+        },
+
+        layoutClass: {
+          type: String,
+          computed: "getLayoutClass(tinyLayout, tabletLayout)"
+        },
+
+        /* If the page-navigation menu button is visible, currentPageMenu
+         * is the ID of the page. */
+        currentPageMenu: {
+          type: String,
+          value: null
+        }
+      },
+
+      observers: [
+        'onTabChanged(tab)',//', pageRoute, subRoute, routeData)'
+        'onRouteTabChanged(routeData.tab)',
+        'onRouteChanged(route.path)'
+      ],
+
+      onSubRouteChanged: function(subRoute) {
+        console.log('subRoute changed: ' + JSON.stringify(subRoute, null, "  "));
+      },
+
+      isPageMenuNeeded: function(tab, currentPageMenu) {
+        var page = Polymer.dom(this.$.pages).querySelector('#' + tab);
+        /* On 'tab' changes, the dom-if that wraps the iron-page might not have
+         * stamped the DOM yet. The onPageHasMenuChanged will be used to
+         * set the currentPageMenu, which will re-trigger this
+         * callback.
+         *
+         * If the paage does exist, use the page-has-menu attribute value */
+        if (!page) {
+          return currentPageMenu == tab;
+        }
+        return page.pageHasMenu;
+      },
+
+      onPageHasMenuChanged: function(event) {
+        /* If the current tab is changing it's 'page-has-menu' attribute
+         * then set the currentPageMenu to this page's ID or null,
+         * based on whether the menu is needed. */
+        if (event.srcElement.getAttribute('id') == this.tab) {
+          this.currentPageMenu = event.detail.value ? this.tab : null;
+        }
+      },
+
+      navMenuTapped: function() {
+        var menu = document.querySelector('#global-nav');
+        menu.togglePanel();
+      },
+
+      pageMenuTapped: function() {
+        var page = Polymer.dom(this.$.pages).querySelector('#' + this.$.pages.selected);
+        if (page && page.menuTapped) {
+          page.menuTapped();
+        }
+      },
+
+      getLayoutClass: function(tinyLayout, tabletLayout) {
+        return tinyLayout ? "tiny-layout" :
+          tabletLayout ? "tablet-layout" : "desktop-layout";
+      },
+
+      showPage: function(page, tab) {
+        return page == tab;
+      },
+
+      /* Only invoked via this.tab changes -- which occurs during initial page
+       * load and when the user clicks a tab */
+      onTabChanged: function(tab) {
+        /* Force Polymer to recalculate dynamic styles
+        * ([data-section="default"]) -- do this in a setTimeout()
+        * so it happens after all other currently scheduled tasks
+        * complete. */
+        window.setTimeout(Polymer.updateStyles.bind(Polymer), 0);
+
+        if (!this.route) {
+          return;
+        }
+
+        if (this.routeData) {
+          if (tab != 'default') {
+            this.set('routeData.tab', tab);
+          } else {
+            this.set('routeData.tab', '');
+          }
+        }
+
+        console.log('GA: ' + this.route.path);
+        ga('send', 'pageview', this.route.path);
+        console.log('Tab changed to: ' + tab);
+      },
+
+      onRouteDataChanged: function(routeData) {
+        console.log("route data: " + JSON.stringify(routeData, null, '  '));
+      },
+
+      onRouteTabChanged: function(tab) {
+        tab = tab ? tab : 'default';
+        console.log('Route changing tab from ' + this.tab + ' to ' + tab);
+        this.set('tab', tab);
+      },
+
+      onRouteChanged: function(path) {
+        console.log('GA: ' + path);
+        ga('send', 'pageview', path);
+        console.log('Route changed to: ' + JSON.stringify(path, null, '  '));
+      },
+
+      ready: function() {
+        var self = this;
+        self.edit = ('edit' in self.$.location.queryParams) ? self.edit : undefined;
+
+        /* Only show version string on non-production domains */
+        if (window.location.hostname == 'minnowboard.org') {
+          return;
+        }
+
+        fetch('version.json', function(headers, response) {
+          if (response instanceof Error) {
+            return;
+          }
+
+          try {
+            var version = JSON.parse(response),
+              text = 'Viewing "' + version.project + '" version ' +
+              version.commit.substr(0, 8) + ' committed by ' + version.user;
+            self.$.version_toast.onclick = function() {
+              window.open(version.url, version.project);
+              self.$.version_toast.close();
+            };
+            self.$.version_toast.text = text;
+            self.$.version_toast.open();
+          } catch (error) {
+            console.log('Unable to parse version.json');
+          }
+        });
+      }
+    }
+
+  document.addEventListener('WebComponentsReady', function() {
+    Polymer(object);
+  });
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-81969504-1', 'auto');
+
+  </script>
+
+  <!-- Google Analytics Content Experiment code
+  <script>function utmx_section(){}function utmx(){}(function(){var
+  k='127064405-1',d=document,l=d.location,c=d.cookie;
+  if(l.search.indexOf('utm_expid='+k)>0)return;
+  function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
+  indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
+  length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
+  '<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
+  '://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
+  '&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
+  valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
+  '" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
+  </script><script>utmx('url','A/B');</script>
+  <!-- End of Google Analytics Content Experiment code -->
+</dom-module>
+
+<body class="fullbleed layout vertical" style="margin:0">
+  <minnowboard-app edit="https://sxc.jf.intel.com/gitlab/minnowboard/website/edit/master/" class="flex"></minnowboard-app>
+</body>
+
+</html>

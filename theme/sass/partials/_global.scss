@@ -1,0 +1,479 @@
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: $font-normal;
+}
+
+em {
+  font-style: italic;
+}
+
+u {
+  text-decoration: underline;
+}
+
+strong,
+b {
+  font-weight: bold;
+}
+
+p {
+  word-wrap: break-word;
+  margin-bottom: $base-font-size;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  color: $header-font-color;
+  margin: 0;
+  line-height: 1.4;
+  padding-top: 0;
+  margin-bottom: 5px;
+}
+
+h1, .h1 {
+  font-weight: $font-medium;
+  font-size: $h1-font-size;
+}
+
+h2, .h2 {
+  font-weight: $font-bold;
+  font-size: $h2-font-size;
+}
+
+h3, .h3 {
+  font-weight: $font-medium;
+  font-size: $h3-font-size;
+}
+
+h4, .h4 {
+  font-size: $h4-font-size;
+  font-weight: $font-bold;
+}
+
+h5, .h5 {
+  font-size: $h5-font-size;
+  font-weight: $font-bold;
+}
+
+h6, .h6 {
+  font-size: $h6-font-size;
+  font-weight: $font-bold;
+  margin-bottom: $base-font-size;
+}
+
+.small {
+  font-size: 14px;
+}
+
+.large {
+  font-size: 18px;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+ul, ol {
+  margin-bottom: $base-font-size;
+}
+
+.title,
+#title {
+  font-weight: $font-bold;
+  font-size: $h4-font-size;
+}
+
+.subtitle {
+  font-weight: $font-bold;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.clearfix {
+  &:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.fa {
+  @include transition-custom(background-color);
+  @include circle(32px);
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+
+  &.selected,
+  &:hover {
+    background-color: $darkgray;
+    color: #fff;
+  }
+
+  &::before {
+    position: relative;
+    top: 8px;
+  }
+}
+
+paper-button .fa {
+  &:hover {
+    background-color: transparent;
+    color: inherit;
+  }
+}
+
+span.fa,
+i {
+  @include inline;
+}
+
+a {
+  @include transition-custom(color);
+  color: $primary-color-1;
+  text-decoration: none;
+  font-weight: 500;
+
+  &:visited {
+    color: $primary-color-1;
+  }
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    text-decoration: underline;
+  }
+}
+
+iron-accordions[attr-for-selected="slug"] {
+  padding: 15px 0;
+}
+
+#drawer iron-accordion {
+  h4 {
+    position: relative;
+    padding-right: 25px;
+  }
+
+  h4 .fa {
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    font-size: 12px;
+
+    &:hover {
+      background-color: transparent;
+      color: inherit;
+    }
+  }
+
+  &[opened] .fa::before {
+    content: '\f077';
+  }
+}
+
+#drawer .slug {
+  border-bottom: none;
+
+  h4 {
+    background-color: transparent;
+    color: $base-font-color;
+    font-weight: normal;
+    padding: 5px 0 !important;
+    text-decoration: underline;
+
+    &.active {
+      background-color: transparent !important;
+      font-weight: 700;
+    }
+  }
+}
+
+#drawer .slug:hover {
+  h4 {
+    color: $base-font-color;
+    font-weight: 700;
+  }
+}
+
+code, pre {
+  font-family: monospace;
+  font-weight: 400;
+}
+
+.menu-inline {
+  li {
+    @include inline;
+    padding: 0 10px;
+    margin: 0 5px;
+
+    &.social-link {
+      padding: 0;
+    }
+  }
+}
+
+#edit {
+  padding: 5px 15px;
+  background-color: #fff;
+  border: 1px dotted $primary-color-1;
+}
+
+#edit::after {
+  content: '\f040';
+  color: $primary-color-1;
+  font-family: 'FontAwesome';
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+/* logo cursor to pointer indicating you can click... */
+.clickable {
+    cursor: pointer;
+}
+
+#drawer iron-accordion {
+  border-bottom: 1px solid $lightgray;
+  h1, h2, h3,
+  h4, h5, h6 {
+    font-weight: bold;
+    text-transform: none;
+    color: $darkgray;
+    &:hover {
+      color: $primary-color-1;
+    }
+    &:after {
+      content: '\f105';
+      font-family: 'FontAwesome';
+      float: right;
+      padding: 0 5px;
+      position: absolute;
+      top: 10px;
+      right: 0;
+    }
+  }
+}
+
+#drawer iron-accordion[opened] {
+  h1, h2, h3,
+  h4, h5, h6 {
+    &:after {
+      content: '';
+    }
+  }
+}
+
+.wordmark {
+    margin: 1rem;
+    width: 400px;
+    height: 64px;
+    background-image: url('../images/logo.png');
+    background-size: 46px auto;
+    background-position: 0px center;
+    background-repeat: no-repeat;
+    padding-left: 46px;
+    font-size: 40px;
+    line-height: 64px;
+}
+
+.wordmark span:first-child {
+    color: #9af530;
+}
+
+.wordmark span:last-child {
+    color: #6ae2fd;
+}
+
+.owl-item > div {
+  padding: 25px 0;
+  text-align: center;
+}
+
+.owl-dots {
+  margin-top: 15px;
+  text-align: center;
+
+  .owl-dot {
+    @include circle(10px);
+    @include inline;
+    background-color: transparent;
+    border: 1px solid #fff;
+    margin: 0 5px;
+
+    &.active {
+      background-color: #fff;
+    }
+  }
+}
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.img-responsive img,
+img.img-responsive,
+img.markdown-it {
+  max-width: 100% !important;
+  height: auto;
+}
+
+.tuto-reader-container {
+  .tuto-content {
+    display: block;
+    padding: 25px;
+  }
+  .tuto-sidebar {
+    width: 100%;
+    display: table;
+    background-color: $bg-l;
+    line-height: 2em;
+    color: $darkgray;
+  }
+  p.title {
+    color: #000;
+    font-size: 1em;
+    padding-bottom: 10px;
+    text-alignment: left;
+  }
+  .tuto-author {
+    span.name {
+      color: #000;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    span.location {
+      color: $lightgray;
+    }
+    p.title {
+      display: none;
+     }
+    .details {
+
+    }
+
+    .image {
+      display: inline-block;
+      img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50px;
+      }
+    }
+    .description {
+      display: inline-block;
+      padding-left: 15px;
+    }
+  }
+  .tuto-info {
+
+  }
+  .tuto-keywords {
+    display: table-cell;
+  }
+  .sidebar-section {
+    padding: 25px;
+    border-bottom: none;
+  }
+}
+
+.home-section {
+  min-height: auto;
+  box-sizing: border-box;
+  padding: 45px 0;
+  position: relative;
+}
+
+.gallery .item {
+  padding: 5% 0 70px 0;
+}
+
+.gallery .item .container {
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+.background-img {
+  display: none;
+}
+
+@include breakpoint($tablet) {
+  .background-img {
+    display: inherit;
+  }
+
+  .gallery .item {
+    padding: 5% 0 0 0;
+  }
+
+  .home-section {
+    min-height: 300px;
+    padding: 5% 0;
+  }
+
+  .gallery .item .container {
+    padding: 0;
+  }
+
+  .tuto-reader-container {
+    display: table;
+    min-height: 100%;
+    .tuto-sidebar {
+      display: table-cell;
+      vertical-align: top;
+      padding: 15px;
+      width: 350px;
+
+      .tuto-author {
+        display: block;
+        .title {
+          display: inherit;
+        }
+        .details {
+          display: table;
+        }
+        .image {
+          display: table-cell;
+          padding-bottom: 15px;
+          padding-right: 15px;
+        }
+        .description {
+          display: table-cell;
+          vertical-align: middle;
+        }
+      }
+      .tuto-info {
+        display: block;
+      }
+      .tuto-keywords {
+        display: block;
+      }
+      .sidebar-section {
+        padding: 15px 15px 30px 15px;
+        border-bottom: 1px solid $lightgray;
+        border-right: none;
+      }
+    }
+    .tuto-content {
+      display: table-cell;
+      vertical-align: top;
+    }
+  }
+}

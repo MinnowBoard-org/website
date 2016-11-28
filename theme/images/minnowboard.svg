@@ -1,0 +1,5612 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   viewBox="0 0 316.34 235.18"
+   data-name="Layer 1"
+   id="Layer_1">
+  <metadata
+     id="metadata922" />
+  <defs
+     id="defs920" />
+  <g
+     id="breadbaordbreadboard">
+    <metadata
+       id="metadata1367">
+      <rdf:RDF>
+        <cc:Work
+           rdf:about="">
+          <dc:format>image/svg+xml</dc:format>
+          <dc:type
+             rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+          <dc:title></dc:title>
+        </cc:Work>
+      </rdf:RDF>
+    </metadata>
+    <defs
+       id="defs3">
+      <style
+         id="style5">.cls-1{fill:#0f7391;}.cls-2,.cls-31,.cls-35,.cls-55,.cls-56{fill:none;}.cls-2,.cls-55{stroke:#fff;}.cls-2{stroke-miterlimit:10;stroke-width:0.25px;}.cls-3{fill:#666;}.cls-4{fill:#f1d585;}.cls-5{fill:#b5a064;}.cls-6{fill:#e6e6e6;}.cls-7{fill:#ccc;}.cls-8{fill:#b3b3b3;}.cls-9{fill:#1d5549;}.cls-10{fill:#2c3930;}.cls-11,.cls-41,.cls-42{fill:#333;}.cls-12,.cls-15,.cls-16,.cls-17,.cls-18,.cls-32,.cls-37{fill:#fff;}.cls-13{fill:#164037;}.cls-14{fill:#ebebeb;}.cls-15,.cls-17,.cls-18,.cls-37,.cls-38{isolation:isolate;}.cls-15,.cls-32,.cls-41{font-size:3.34px;}.cls-15,.cls-16,.cls-17,.cls-18,.cls-32,.cls-41,.cls-42{font-family:OCRA;}.cls-16,.cls-17{font-size:1.5px;}.cls-18{font-size:3px;}.cls-19{fill:#999;}.cls-20{fill:#f2f2f2;}.cls-21{fill:#22b573;fill-opacity:0.7;}.cls-22{fill:#d1c690;}.cls-23{fill:#9d956c;}.cls-24{fill:#404040;}.cls-25{fill:#8d8c8c;}.cls-26{fill:#8c8663;}.cls-27{fill:#b8af82;}.cls-28{fill:#80795b;}.cls-29{fill:#5e5b43;}.cls-30{fill:#9a916c;}.cls-31{stroke:#9a916c;stroke-width:0.86px;}.cls-33{fill:#474747;}.cls-34{fill:#704533;}.cls-36{fill:#e2d6a1;}.cls-37{opacity:0.2;}.cls-38{opacity:0.1;}.cls-39{fill:#373737;}.cls-40{fill:#1a1a1a;}.cls-42{font-size:2px;}.cls-43{fill:#232323;}.cls-44{fill:#494949;}.cls-45{fill:#3d3d3d;fill-opacity:0.3;}.cls-46{fill:#0f0f0f;fill-opacity:0.4;}.cls-47{fill:#6d6d6d;}.cls-48{fill:#fdbe10;}.cls-49{fill:#3f3f3f;}.cls-50{fill:#2d2d2d;}.cls-51{fill:#7a7a7a;}.cls-52{fill:#b0b0b0;}.cls-53{fill:#8f8f8f;}.cls-54{fill:#939393;}.cls-55,.cls-56{stroke-linecap:round;}.cls-55{stroke-opacity:0.24;stroke-width:0.81px;}.cls-56{stroke:#000;stroke-opacity:0.15;stroke-width:0.4px;}.cls-57{fill:#4d4d4d;}</style>
+    </defs>
+    <title
+       id="title7">minnowboard-fritzing_20160411</title>
+    <path
+       style=""
+       id="path9"
+       d="M17.86,13.1V221.9h280.8V13.1H17.86Zm10.8,203.53a5.53,5.53,0,1,1,5.53-5.53A5.53,5.53,0,0,1,28.66,216.63Zm-4-78.25a1.44,1.44,0,1,1,1.44,1.44A1.44,1.44,0,0,1,24.7,138.38Zm4-109a5.53,5.53,0,1,1,5.53-5.53A5.53,5.53,0,0,1,28.66,29.43Zm11.88,119A1.44,1.44,0,1,1,42,147,1.44,1.44,0,0,1,40.54,148.46Zm14.4-8.64a1.44,1.44,0,1,1,1.44-1.44A1.44,1.44,0,0,1,54.94,139.82ZM98.86,66.74a1.44,1.44,0,1,1,1.44-1.44A1.44,1.44,0,0,1,98.86,66.74Zm0-7.2a1.44,1.44,0,1,1,1.44-1.44A1.44,1.44,0,0,1,98.86,59.54Zm9,7.2a1.44,1.44,0,1,1,1.44-1.44A1.44,1.44,0,0,1,107.86,66.74Zm0-7.2a1.44,1.44,0,1,1,1.44-1.44A1.44,1.44,0,0,1,107.86,59.54Zm19.26,112.56a4.25,4.25,0,1,1,4.25-4.25A4.25,4.25,0,0,1,127.11,172.11Zm112-120.47a4.25,4.25,0,1,1,4.25,4.25A4.25,4.25,0,0,1,239.08,51.63Zm7.37,27.71a1.44,1.44,0,1,1,1.44-1.44A1.44,1.44,0,0,1,246.46,79.34Zm0-7.2a1.44,1.44,0,1,1,1.44-1.44A1.44,1.44,0,0,1,246.46,72.14Zm12.6-46.8a1.44,1.44,0,1,1,1.44-1.44A1.44,1.44,0,0,1,259.06,25.34Zm7.2,0a1.44,1.44,0,1,1,1.44-1.44A1.44,1.44,0,0,1,266.26,25.34Zm21.6,191.29a5.53,5.53,0,1,1,5.53-5.53A5.53,5.53,0,0,1,287.86,216.63Zm0-187.2a5.53,5.53,0,1,1,5.53-5.53A5.53,5.53,0,0,1,287.86,29.43Z"
+       class="cls-1" />
+    <rect
+       id="rect11"
+       height="107.72"
+       width="107.72"
+       y="55.89"
+       x="131.39"
+       class="cls-2" />
+    <path
+       style=""
+       id="path13"
+       d="M145.42,163.6l-11.27,11.27a9.92,9.92,0,0,1-14-14l11.27-11.27"
+       class="cls-2" />
+    <path
+       style=""
+       id="path15"
+       d="M225.07,55.89l11.27-11.27a9.92,9.92,0,0,1,14,14L239.1,69.92"
+       class="cls-2" />
+    <path
+       style=""
+       id="path17"
+       d="M297.92,76.8a0.76,0.76,0,0,0,.71-0.71V73.85a0.76,0.76,0,0,0-.71-0.71h-3.43a0.76,0.76,0,0,1-.71-0.71V45.83a0.77,0.77,0,0,1,.71-0.71h3.43a0.76,0.76,0,0,0,.71-0.71V39a0.76,0.76,0,0,0-.71-0.71H257a0.76,0.76,0,0,0-.71.71V76.09a0.76,0.76,0,0,0,.71.71h41Z"
+       class="cls-3" />
+    <path
+       style=""
+       id="path19"
+       d="M265.83,42.87l0.35,0.83a56.46,56.46,0,0,1-5.55,2.48c-0.71.12-.71,0-0.83-0.24a1,1,0,0,1,.36-1.18h0a1.78,1.78,0,0,0,0,.95h0.24A42,42,0,0,0,265.83,42.87Z"
+       class="cls-4" />
+    <path
+       style=""
+       id="path21"
+       d="M265.83,43.11a34.76,34.76,0,0,1-5.56,2.84H260a1.26,1.26,0,0,1,0-1.18,1.7,1.7,0,0,0,0,.95h0.23a34.71,34.71,0,0,0,5.56-2.84v0.24Z"
+       class="cls-5" />
+    <rect
+       id="rect25"
+       height="0.24"
+       width="5.79"
+       y="46.42"
+       x="292.84"
+       class="cls-7" />
+    <rect
+       id="rect29"
+       height="0.12"
+       width="4.85"
+       y="47.01"
+       x="292.84"
+       class="cls-8" />
+    <rect
+       id="rect31"
+       height="2.48"
+       width="5.79"
+       y="49.97"
+       x="292.84"
+       class="cls-6" />
+    <rect
+       id="rect33"
+       height="0.24"
+       width="5.79"
+       y="49.97"
+       x="292.84"
+       class="cls-7" />
+    <rect
+       id="rect39"
+       height="2.48"
+       width="5.79"
+       y="53.51"
+       x="292.84"
+       class="cls-6" />
+    <rect
+       id="rect41"
+       height="0.24"
+       width="5.79"
+       y="53.51"
+       x="292.84"
+       class="cls-7" />
+    <rect
+       id="rect47"
+       height="2.49"
+       width="5.79"
+       y="57.18"
+       x="292.84"
+       class="cls-6" />
+    <rect
+       id="rect49"
+       height="0.24"
+       width="5.79"
+       y="57.18"
+       x="292.84"
+       class="cls-7" />
+    <rect
+       id="rect55"
+       height="2.48"
+       width="5.79"
+       y="60.72"
+       x="292.84"
+       class="cls-6" />
+    <rect
+       id="rect57"
+       height="0.24"
+       width="5.79"
+       y="60.72"
+       x="292.84"
+       class="cls-7" />
+    <rect
+       id="rect63"
+       height="2.48"
+       width="5.79"
+       y="64.27"
+       x="292.84"
+       class="cls-6" />
+    <rect
+       id="rect65"
+       height="0.24"
+       width="5.79"
+       y="64.27"
+       x="292.84"
+       class="cls-7" />
+    <rect
+       id="rect71"
+       height="2.48"
+       width="5.79"
+       y="67.94"
+       x="292.84"
+       class="cls-6" />
+    <rect
+       id="rect73"
+       height="0.23"
+       width="5.79"
+       y="67.94"
+       x="292.84"
+       class="cls-7" />
+    <rect
+       id="rect79"
+       height="2.48"
+       width="5.79"
+       y="71.48"
+       x="292.84"
+       class="cls-6" />
+    <rect
+       id="rect81"
+       height="0.23"
+       width="5.79"
+       y="71.48"
+       x="292.84"
+       class="cls-7" />
+    <polygon
+       id="polygon87"
+       points="266.07 41.22 266.42 41.93 259.92 43.7 259.92 43.46 266.07 41.22"
+       class="cls-4" />
+    <polygon
+       id="polygon89"
+       points="266.42 41.93 266.07 41.34 260.04 43.58 259.92 43.7 259.92 43.46 266.07 41.22 266.42 41.93"
+       class="cls-5" />
+    <polygon
+       id="polygon91"
+       points="275.88 40.62 276 40.86 269.38 40.86 269.38 40.62 275.88 40.62"
+       class="cls-4" />
+    <polygon
+       id="polygon93"
+       points="276 40.86 275.88 40.74 269.5 40.74 269.38 40.86 269.38 40.62 275.88 40.62 276 40.86"
+       class="cls-5" />
+    <path
+       style=""
+       id="path95"
+       d="M269.26,72.07a0.26,0.26,0,0,0-.24-0.24h-1.18a0.25,0.25,0,0,0-.24.24v1.18a0.26,0.26,0,0,0,.24.24H269a0.25,0.25,0,0,0,.24-0.24V72.07Z"
+       class="cls-4" />
+    <path
+       style=""
+       id="path97"
+       d="M269.26,68.41a0.26,0.26,0,0,0-.24-0.24h-1.18a0.25,0.25,0,0,0-.24.24v1.18a0.26,0.26,0,0,0,.24.24H269a0.25,0.25,0,0,0,.24-0.24V68.41Z"
+       class="cls-4" />
+    <path
+       style=""
+       id="path99"
+       d="M270,64.63a0.25,0.25,0,0,0-.24-0.24H268a0.25,0.25,0,0,0-.23.24v1.18A0.25,0.25,0,0,0,268,66h1.77a0.25,0.25,0,0,0,.24-0.24V64.63Z"
+       class="cls-4" />
+    <path
+       style=""
+       id="path101"
+       d="M269.26,60.72a0.26,0.26,0,0,0-.24-0.24h-1.18a0.25,0.25,0,0,0-.24.24v1.18a0.26,0.26,0,0,0,.24.24H269a0.25,0.25,0,0,0,.24-0.24V60.72Z"
+       class="cls-4" />
+    <path
+       style=""
+       id="path103"
+       d="M269.26,53.63a0.26,0.26,0,0,0-.24-0.24h-1.18a0.25,0.25,0,0,0-.24.24v1.18a0.26,0.26,0,0,0,.24.24H269a0.26,0.26,0,0,0,.24-0.24V53.63Z"
+       class="cls-4" />
+    <path
+       style=""
+       id="path105"
+       d="M269.26,46.42a0.26,0.26,0,0,0-.24-0.24h-1.18a0.25,0.25,0,0,0-.24.24V47.6a0.26,0.26,0,0,0,.24.24H269a0.26,0.26,0,0,0,.24-0.24V46.42Z"
+       class="cls-4" />
+    <path
+       style=""
+       id="path107"
+       d="M268.43,50.08a0.26,0.26,0,0,0-.24-0.24H267a0.26,0.26,0,0,0-.24.24v1.18a0.26,0.26,0,0,0,.24.24h1.18a0.25,0.25,0,0,0,.24-0.24V50.08Z"
+       class="cls-4" />
+    <path
+       style=""
+       id="path109"
+       d="M270,56.94a0.25,0.25,0,0,0-.24-0.23H268a0.25,0.25,0,0,0-.23.23v1.18a0.25,0.25,0,0,0,.23.24h1.77a0.25,0.25,0,0,0,.24-0.24V56.94Z"
+       class="cls-4" />
+    <path
+       style=""
+       id="path111"
+       d="M298.63,76a0.76,0.76,0,0,1-.71.71H257a0.76,0.76,0,0,1-.71-0.71v0.12a0.76,0.76,0,0,0,.71.71h41a0.79,0.79,0,0,0,.71-0.83h0Z"
+       class="cls-7" />
+    <path
+       style=""
+       id="path113"
+       d="M298.63,44.29a0.76,0.76,0,0,1-.71.71h-3.43a0.76,0.76,0,0,0-.71.71v0.12a0.76,0.76,0,0,1,.71-0.71h3.43a0.79,0.79,0,0,0,.71-0.83h0Z"
+       class="cls-7" />
+    <rect
+       id="rect117"
+       height="0.09"
+       width="2.25"
+       y="68.72"
+       x="254.01"
+       class="cls-6" />
+    <rect
+       id="rect121"
+       height="0.09"
+       width="2.25"
+       y="50.78"
+       x="254.01"
+       class="cls-6" />
+    <rect
+       id="rect125"
+       height="2.25"
+       width="0.09"
+       y="36.01"
+       x="264.25"
+       class="cls-6" />
+    <rect
+       id="rect129"
+       height="2.25"
+       width="0.09"
+       y="36.01"
+       x="292.02"
+       class="cls-6" />
+    <rect
+       id="rect133"
+       height="2.25"
+       width="0.09"
+       y="76.81"
+       x="264.25"
+       class="cls-6" />
+    <rect
+       id="rect137"
+       height="2.25"
+       width="0.09"
+       y="76.81"
+       x="292.02"
+       class="cls-6" />
+    <g
+       id="sdio" class="component">
+      <rect
+         class="cls-6"
+         x="292.84"
+         y="46.42"
+         width="5.79"
+         height="2.48"
+         id="rect23" />
+      <rect
+         class="cls-7"
+         x="292.84"
+         y="47.01"
+         width="4.85"
+         height="1.18"
+         id="rect27" />
+      <rect
+         class="cls-7"
+         x="292.84"
+         y="50.56"
+         width="4.85"
+         height="1.18"
+         id="rect35" />
+      <rect
+         class="cls-8"
+         x="292.84"
+         y="50.56"
+         width="4.85"
+         height="0.24"
+         id="rect37" />
+      <rect
+         class="cls-7"
+         x="292.84"
+         y="54.22"
+         width="4.85"
+         height="1.18"
+         id="rect43" />
+      <rect
+         class="cls-8"
+         x="292.84"
+         y="54.22"
+         width="4.85"
+         height="0.24"
+         id="rect45" />
+      <rect
+         class="cls-7"
+         x="292.84"
+         y="57.77"
+         width="4.85"
+         height="1.18"
+         id="rect51" />
+      <rect
+         class="cls-8"
+         x="292.84"
+         y="57.77"
+         width="4.85"
+         height="0.24"
+         id="rect53" />
+      <rect
+         class="cls-7"
+         x="292.84"
+         y="61.32"
+         width="4.85"
+         height="1.18"
+         id="rect59" />
+      <rect
+         class="cls-8"
+         x="292.84"
+         y="61.32"
+         width="4.85"
+         height="0.12"
+         id="rect61" />
+      <rect
+         class="cls-7"
+         x="292.84"
+         y="64.98"
+         width="4.85"
+         height="1.18"
+         id="rect67" />
+      <rect
+         class="cls-8"
+         x="292.84"
+         y="64.98"
+         width="4.85"
+         height="0.12"
+         id="rect69" />
+      <rect
+         class="cls-7"
+         x="292.84"
+         y="68.53"
+         width="4.85"
+         height="1.18"
+         id="rect75" />
+      <rect
+         class="cls-8"
+         x="292.84"
+         y="68.53"
+         width="4.85"
+         height="0.23"
+         id="rect77" />
+      <rect
+         class="cls-7"
+         x="292.84"
+         y="72.07"
+         width="4.85"
+         height="1.18"
+         id="rect83" />
+      <rect
+         class="cls-8"
+         x="292.84"
+         y="72.07"
+         width="4.85"
+         height="0.23"
+         id="rect85" />
+      <rect
+         class="cls-7"
+         x="254.01"
+         y="64.19"
+         width="2.25"
+         height="4.61"
+         id="rect115" />
+      <rect
+         class="cls-7"
+         x="254.01"
+         y="46.26"
+         width="2.25"
+         height="4.61"
+         id="rect119" />
+      <rect
+         class="cls-7"
+         x="264.26"
+         y="36.01"
+         width="4.61"
+         height="2.25"
+         id="rect123" />
+      <rect
+         class="cls-7"
+         x="292.02"
+         y="36.01"
+         width="4.61"
+         height="2.25"
+         id="rect127" />
+      <rect
+         class="cls-7"
+         x="264.26"
+         y="76.81"
+         width="4.61"
+         height="2.25"
+         id="rect131" />
+      <rect
+         class="cls-7"
+         x="292.02"
+         y="76.81"
+         width="4.61"
+         height="2.25"
+         id="rect135" />
+      <path
+         class="cls-8"
+         d="M257,76.8h41a0.76,0.76,0,0,0,.71-0.71V73.85a0.76,0.76,0,0,0-.71-0.71h-3.43a0.76,0.76,0,0,1-.71-0.71V45.83a0.77,0.77,0,0,1,.71-0.71h3.43a0.76,0.76,0,0,0,.71-0.71V39a0.76,0.76,0,0,0-.71-0.71H257a0.76,0.76,0,0,0-.71.71V76.09A0.76,0.76,0,0,0,257,76.8Zm12.65-3.55a0.76,0.76,0,0,1-.71.71h-1.18a0.76,0.76,0,0,1-.71-0.71V72.07a0.76,0.76,0,0,1,.71-0.71h1.18a0.76,0.76,0,0,1,.71.71v1.18Zm0-3.66a0.77,0.77,0,0,1-.71.71h-1.18a0.77,0.77,0,0,1-.71-0.71V68.41a0.76,0.76,0,0,1,.71-0.71h1.18a0.76,0.76,0,0,1,.71.71v1.18Zm0.83-3.78a0.76,0.76,0,0,1-.71.71h-2a0.76,0.76,0,0,1-.71-0.71V64.63a0.76,0.76,0,0,1,.71-0.71h2a0.76,0.76,0,0,1,.71.71v1.18h0Zm-3.31-3.9V60.72a0.76,0.76,0,0,1,.71-0.71H269a0.76,0.76,0,0,1,.71.71v1.18a0.77,0.77,0,0,1-.71.71h-1.18A0.63,0.63,0,0,1,267.13,61.91ZM286.58,40a0.76,0.76,0,0,1,.71-0.71h1.77a0.76,0.76,0,0,1,.71.71v0.59a0.76,0.76,0,0,1-.71.71h-1.77a0.76,0.76,0,0,1-.71-0.71V40ZM270.44,41a0.76,0.76,0,0,1,.71-0.71h2.13A0.77,0.77,0,0,1,274,41v0.59a0.76,0.76,0,0,1-.71.71h-2.13a0.76,0.76,0,0,1-.71-0.71V41Zm0,16v1.18a0.77,0.77,0,0,1-.71.71h-2a0.76,0.76,0,0,1-.71-0.71V56.94a0.76,0.76,0,0,1,.71-0.71h2A0.88,0.88,0,0,1,270.44,56.94Zm-3.31-2.13V53.63a0.76,0.76,0,0,1,.71-0.71H269a0.76,0.76,0,0,1,.71.71v1.18a0.77,0.77,0,0,1-.71.71h-1.18A0.63,0.63,0,0,1,267.13,54.81Zm0-8.39a0.77,0.77,0,0,1,.71-0.71H269a0.77,0.77,0,0,1,.71.71V47.6a0.76,0.76,0,0,1-.71.71h-1.18a0.76,0.76,0,0,1-.71-0.71V46.42Zm-0.83,3.66a0.76,0.76,0,0,1,.71-0.71h1.18a0.77,0.77,0,0,1,.71.71v1.18a0.77,0.77,0,0,1-.71.71H267a0.76,0.76,0,0,1-.71-0.71V50.08ZM258.38,41a0.76,0.76,0,0,1,.71-0.71h5.79a0.76,0.76,0,0,1,.71.71v5a0.76,0.76,0,0,1-.71.71h-5.79a0.76,0.76,0,0,1-.71-0.71V41Z"
+         id="path139"
+         style="" />
+    </g>
+    <image
+       id="image141"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPIAAAA3CAYAAAA2TRejAAAACXBIWXMAAC4jAAAuIwF4pT92AAAPH0lEQVR4Xu2dL6wXxxbHEQgEAlFRUbECUVGBQCCeWIGoQFRUIEjeLymiySOBpC8pCU3uJggEAoGoQPxEBQJRUYFArKhAVFQgKhArEBUViIoKxHn76c55e+78ZubMpfB63/3NJN/c386cOTs7M+fPnJnde0pETjU0NPx/wyVoaGg4/nAJGhoajj9cgoBLM57NmGb8NOPbGf+oqNfQ0PA/gEsQMM44H353M27M+H3GkxkfVdQ/PeOTGX0AiuFcRb2GhoYKuASyCN2jRP7ZGQ9mvJ5xPVF+ecZDWSx4LqEMxhkHMz4Qvy0NDQ0JuAQzfpSyG43AIsxbWYQRoZ5m/DHjabi+ENU5M+PjGZ/NeBzqk7DwWP6zoWwjiyLx2tjQsNfwCPoZdz0msrjXCC7pF1kE8ExEw/WnM67N+HzGh1E5CuHnwOOFLMrjXPj7IKJtaGgw8Aj6GYNDgxXGak+yWNEUDUJ7IKv7zJr5lqRd8iszXsqS7ofr72RXMTQ0NAR4BFjPq4VyrOVvsljM0wW6++HvN7K4z5pP9Pu87NKfCWWk5zO+ll0L3tDQEOAR/FAow01GiK84PIhWD7K4zqRXM24HsE4uue644L+H+3htbWjYW3gEjzP5CC8CWROI6mURZCy7TVhmLO/XTn0Npn3r0DU07C08goNEHhZ2mnHRYx6AS/y9LIErDWYhmL0swn25ggcKA8v8ZQVtQ8PewSN4mMhjX/hTj3GEO6EOFriXJcrNFpOunWvAev2N1CuQhoa9Qamwk92INSe6SltBBLxyJ7auhrrwRIAR7rMFXingjpfW7Q0NewmPwAotVhRrXBI+tp+8M9hHFV4L3HqpoGto2Ct4BLfMbyxoaSsKYLG9KPZfAUriVQVdQ8NewSPQM9asbXFrS3vFYJDlVJfH923Bmv1JobyhYS/hEdyURXjZz/3KYybLnvAXFXRvA9rBfvJRA20NDSceHgFHKnGpWSt3URnXvSzr4hvhN8J+M0H7LsB+87MKuoaGvUOpECHuZYkwc5Za3Vr2hBHs26Fcg1cI9PlA7wW84M1auuZdZrabWKu/qqRvaNg76A8ObeA+35Pl1cPH4S8CixBxaKNzmCHQvSzC5rm/HPBAOfByxBjuNxhwX16UeBTAAZLcCxkNDXsP/cGJK4RYrapbMQIWllNXH1fQKhDWSRbrjWD3BlhhAmwoGNr2eQW/hoa9hf7AOr6t24oAv62g8RojLjPWH1cdS97LEvnmbDWHPz6p4NPw/rCR/YlNYFxSr9Yee+gPGn/UbR2EjuBWTgHgahOg2gQ61s646VjbeBvrUqBDcDlT/VR89/x9oJelDQcVtPuCQZbk0Z0EjOK/f38sYS8Q5JotJlxvrGVJ0KA5kN1TXAh9L4uAw2MbwL0fBJ5/13vHtBkloulORZ19wCBL8uhOAkY5AYIMsIS594MRMCLXCGHpax2slw+8Gx9D9HI4Pa2osw8YZEke3UnAKCdEkAEuMGsiDXohwKxfn0hdIIygmXcC7DiCNvM1EhKWua3NFwyyJI/uJGCUEyTIgHUs+8V8BI+oce8xCvhM3t82EW9V9QFdyDtr8uIvdebqepF1+FiP42KoZ/fGz8tuW2LoK5v2nqcNv17Kno0F9XmNc5BFqdLH8bLFPmOpL2qgfC5JWpBPR39rcVT6d1U3xyvmOcrRBPlt++EoqOLtEsjyYDppvMj2QQW/HJisJYvfy5oeBryRw4kIuH2xgwn9THYT+9cphQN9L4cV12Tqkf9cdhPKLo4ZdKacfXICfXYNrol98tw3vemPHxJ1SHy19N+yDjRjpP3xV14s6WVNLC+G8JsynjF+fu5V+uADCoZ4g37yWBOGos/UYRdkK7v9xe7K5YiWZ/5G1rZvDf0oh7/oWmr/WakXZPj8GPHh+DAnHEvKAcW4lXWcMJS0z8rXQzmc3oQ6XaAh7fSb12DAQ+onfWDAEUzcb1xuq/mZjN5ne3Lg4Zk02wIN99YUC3CcDmT9RFAuwSOegKMp17zJ5P0h+UTZRtZ6nSnz2suAxkE++la/JlpKW1knghX6eMIDxmgMyH066ZHhwYQdwu9t+ItipN9QmNcMPeMXewkoZ159ZRwehjoIKQpIBepfUR0En08qb2XZTeE5GHv6lnv/IYeVNYk26scav5f1YBHLweeBpwoIPFCqtIP2b03+C/EF+b6h/1LWzzvTD4yz3k/pR1nbQ7LtQ8G/CPTIGP2EYiFOhaG5En6/CmWfBh69RO0qNVhBpWvm+p+yNJyOs4IMnfeaYwpoIe2U0hYY/OPEA7ImH2RXQ1ptbuleRDTW1R5NmeZNspsYLHjdjcrhp0qv26325yRkQg3hr1UMz2W9JwNr28kgYtUYSDv5NGmEXQea9J3s9uHdqF6XoPk1lPEsKNjB0N+StKvHfXmW+BtvPMMk6XgDVnIb+MZKJ/fOOvdGWf0qaztI9A/3Tx0Npi9vBbo7km4/9X4LNEOiXHEz0Nwu8KEddh6Pssw/Umqnh2ftZHmGWAnYZ+C51SD0MU2uwRZ0eLwVk1qDbVI3yIAH2soy0DReB5IOzwWZ4G0TnRUP+EZ2Uyr4plqVZCffaPI1bzJ5dKRVagDeDwyN8uvkcOJZ46UJNJOhUUV4w+Rh0VKuN31mLT1uOG3RCZn68qhOKE2PovLPTdk25A3h2n5kIgWtq0sWVRpeTAIlPsnuGDF56QfGT5VfJ0sfkrSvNKWE+JSsQnI7Ux63fyjwob+9z1NdCXx0nozRdQrMmUnK/w/trKxzpY/LSw2yYFC8RfeQukEEJh8TmobTcfEEpX6uwynT9CpRV2EtGUKQajd5arEZZF1Djaau0k4mL7d0oL4KEBqZtnWm3hvJB8U+M3SqBFTgqFcSBKuQdJlg11jWQ7JCOoW/sbA/NjSqUAdZ2uGNP6Dvt4EW99gTfnAh3E8FkboIr3orWF+7rlVXXQWKVNoqvBV45OaLhXpaqTKWA/RXSdgUWE9t0yhLf+domTv07/UKvqrg+7jMq6jQtU2JBo2Tch0UrIUY6NK2Tif5juxlTbElsbCTW4MgKWwNnbrDo8lTusnklYJx9r60tTPX3p60JnWvNf3o1OsNre7/f2LyrLfxNOShJC4ZGp1ATHQVnl9MvSHkldqhoA08w8ehTmqdngJK9Vb4rWtuhDkWGiL+uoQaQh6pZG1pk9f/ilHy8+9uKPd4KK0YnqX52gdaz3MBZwNtH5d5FRVoDU+7MjnuZcq4MQPgaXUm01DgoSlHAzaGblOgGwxdH/JGk6d0UyKvhl9nrrdO3SnQTeFa0+jU6w2tDV5pkAzBxBVVq0e6EdGo8rieoLHPVWqHpcViqjLpK+oAjfheDPXs/VPAwg7ht0h5PtAvpdiLxVjgNYg/HpZWKngCjWt4PBWkPs73Klkw0CWrrIGIlLDSkV3FPRjIGtd6KPDYGLpNgW4wdH3IG02e0k2JvBp+nbneOnWnQDeFa01YxpLyu2poB5P/lcln3Ky73SVosAZPzLVdy8P3jRy+bw7cZ5SjuYs8HwqHJQZW+XVFnUnqBRnr+FMFTzAWeMHn5woeAO/s1wqeoJMl9RV8swrSqxiD0HlprXEgu1s6DGqta0NUMHfWupc1DQUeG0O3KdANhq4PeaPJU7opkVfDrzPXW6fuFOimcG23kXLWCTfLRurtsuZDk4/F1TX394aGcdRg2Q/R79RzpQKcFrjBCKQuZ7jX6NQBXwb+nSzzp0boJqkXZA0+9Q7PcxHfHJ8rDh/6lf7WNfxY4KmYpOx+K3SLrY/LvIox0NQM0JlMue4B2kHvxI/0AT3LnSvvZU1DgW5j6DYFusHQ9SFvNHlKNyXyavh15nrr1J0C3STrs9qINMJs+1y37DTZNa3CWlhNGlFWbBM08RaiPhf3KAV6WI9jTbtwfTnU07V7ClgYJv1W1ucmacwiBdqAKz6Ea5HyfMDio8xQEDkjAb5L8MJDtM+MRX4pfj/Ybc1RfEHW7bGSkuhlTX1cXmKeA5of7ZHb60OIX8pqIXhoT5BpGEJcsvbQaBoKdBtDtynQDYauD3mjyVO6KZFXw68z11un7hToJpNnt7S0bJTFCtv9Z4QnNfFtlJrE5I8VsAqbJvjG46rPxeQkWBlPNoTxqewe1AD3Ql2EOR5b2jfJoiC0DKEbZRHu61GdTpYJPwWeQ8i3v3O4GOohzHFAlgCmeiSvDa9rgbd1py/I2ua4H+DzJPDZmPxR/Pbx3KoAeEY7BvQBfUHbVHn3MY8S8xIYBCxzlymn43jYrazH0lJ0TALcBRqfs/KKXtY0FOg2hm5ToBsMXR/yRpOndFMir4ZfZ663Tt0p0E0mT7dhrGWOE/Ta9hj0p26xkeKzAAq7t2wDZvFzMYnVlWdyj7L21yT5M/a67n1t6migjckbW0kUv1pH6nBP3X5CWWzlaK61wka8UUijHG7/VTksdKoIX0Z8Lph6Nf1AWU37GC8UHs/4m+E7Bd4Yz3Phdx/X95iXwL4fwpoLaHBT9t5oGAt/JqV1uXEPn0jdvhzAVdkG5CaNtkvpcocETgUeSqdu0NcmT+nuhWtvDRPz+8Bcf+HUvR/oUp7LxVBmrfAkdf8z+rqsbchtndl2p9bBnRyeOFg0JtwQwITPeWcK2nkr1LsX6pXcZ4CSv2Hus5E1CEfdLvzuJW9QUoDeth++2v4LES/uk/MSe8PjbuCToo15emDuIDf3Al/6TccO5U7q43oeUw8IIS4xGo5Jk7Kq5DHYuIpMRnVtGBSr0QAaeqeRDQ0Nf0L3/7u4zKtYCxhrsAP3BWvRy6JdOgPWUkOGB9qMdcck7d+nNjSkgIVObgV6FY8KrC/CyBpnlPUAvibWOp3D41yg6x26hoaTBO9kF3KBodymyj3m7xK5YEsKRFOfVdA1NJwE4MGy7MzFmzpZlqEEwZJrdu8G7xI0squgUxAIu1ZB19BwEjDIkn4OvwlCMv+JQSHk7C5krbbH/F2CiJu3n2xBo3HN2Rb4KFHe0HDSwJxnCxBhJrEeHmWRm+L2rMf4XaMXfytGoYKPJiqdDmpoOIlgText6/0XLsF7ABYWwcxZWfYP2Tsj4IV7XdoLbmhokL9HkAEb3FhbjsbhSrD5jdDqmdg7Uvfp3YaGBvn7BNmik8XlxhJ77ys3NDQk4BI0NDQcf7gEDQ0Nxx8uQUNDw/HHfwCa20nZe0eCGgAAAABJRU5ErkJggg=="
+       transform="translate(156.9 150.06) scale(0.24)"
+       height="49"
+       width="237" />
+    <rect
+       id="rect143"
+       height="76.54"
+       width="70.87"
+       y="71.48"
+       x="149.81"
+       class="cls-9" />
+    <rect
+       id="rect145"
+       height="72.79"
+       width="67.4"
+       y="73.35"
+       x="151.55"
+       class="cls-10" />
+    <rect
+       id="rect147"
+       ry="0.13"
+       rx="0.13"
+       height="28.03"
+       width="30.86"
+       y="95.73"
+       x="169.81"
+       class="cls-11" />
+    <path
+       style=""
+       id="path149"
+       d="M200.55,95.85v27.78H169.94V95.85h30.61m0-.25H169.94a0.25,0.25,0,0,0-.25.25v27.78a0.25,0.25,0,0,0,.25.25h30.61a0.25,0.25,0,0,0,.25-0.25V95.85a0.25,0.25,0,0,0-.25-0.25h0Z"
+       class="cls-12" />
+    <circle
+       id="circle151"
+       r="0.5"
+       cy="74.13"
+       cx="152.33"
+       class="cls-4" />
+    <circle
+       id="circle153"
+       r="0.5"
+       cy="145.36"
+       cx="152.33"
+       class="cls-4" />
+    <circle
+       id="circle155"
+       r="0.69"
+       cy="115.66"
+       cx="218.26"
+       class="cls-4" />
+    <circle
+       id="circle157"
+       r="0.69"
+       cy="85.95"
+       cx="218.26"
+       class="cls-4" />
+    <circle
+       id="circle159"
+       r="0.69"
+       cy="87.93"
+       cx="218.26"
+       class="cls-4" />
+    <circle
+       id="circle161"
+       r="0.69"
+       cy="88.65"
+       cx="152.3"
+       class="cls-4" />
+    <circle
+       id="circle163"
+       r="0.69"
+       cy="90.63"
+       cx="152.3"
+       class="cls-4" />
+    <circle
+       id="circle165"
+       r="0.69"
+       cy="89.91"
+       cx="218.26"
+       class="cls-4" />
+    <circle
+       id="circle167"
+       r="0.69"
+       cy="91.89"
+       cx="218.26"
+       class="cls-4" />
+    <circle
+       id="circle169"
+       r="0.69"
+       cy="93.88"
+       cx="218.26"
+       class="cls-4" />
+    <circle
+       id="circle171"
+       r="0.69"
+       cy="95.86"
+       cx="218.26"
+       class="cls-4" />
+    <circle
+       id="circle173"
+       r="0.69"
+       cy="97.84"
+       cx="218.26"
+       class="cls-4" />
+    <circle
+       id="circle175"
+       r="0.69"
+       cy="99.82"
+       cx="218.26"
+       class="cls-4" />
+    <circle
+       id="circle177"
+       r="0.69"
+       cy="101.8"
+       cx="218.26"
+       class="cls-4" />
+    <circle
+       id="circle179"
+       r="0.69"
+       cy="103.78"
+       cx="218.26"
+       class="cls-4" />
+    <circle
+       id="circle181"
+       r="0.69"
+       cy="105.76"
+       cx="218.26"
+       class="cls-4" />
+    <circle
+       id="circle183"
+       r="0.69"
+       cy="107.74"
+       cx="218.26"
+       class="cls-4" />
+    <circle
+       id="circle185"
+       r="0.69"
+       cy="109.72"
+       cx="218.26"
+       class="cls-4" />
+    <circle
+       id="circle187"
+       r="0.69"
+       cy="111.7"
+       cx="218.26"
+       class="cls-4" />
+    <circle
+       id="circle189"
+       r="0.69"
+       cy="113.68"
+       cx="218.26"
+       class="cls-4" />
+    <circle
+       id="circle191"
+       r="0.69"
+       cy="114.67"
+       cx="216.57"
+       class="cls-4" />
+    <circle
+       id="circle193"
+       r="0.69"
+       cy="86.94"
+       cx="216.57"
+       class="cls-4" />
+    <circle
+       id="circle195"
+       r="0.69"
+       cy="88.92"
+       cx="216.57"
+       class="cls-4" />
+    <circle
+       id="circle197"
+       r="0.69"
+       cy="90.9"
+       cx="216.57"
+       class="cls-4" />
+    <circle
+       id="circle199"
+       r="0.69"
+       cy="92.88"
+       cx="216.57"
+       class="cls-4" />
+    <circle
+       id="circle201"
+       r="0.69"
+       cy="94.87"
+       cx="216.57"
+       class="cls-4" />
+    <circle
+       id="circle203"
+       r="0.69"
+       cy="96.85"
+       cx="216.57"
+       class="cls-4" />
+    <circle
+       id="circle205"
+       r="0.69"
+       cy="98.83"
+       cx="216.57"
+       class="cls-4" />
+    <circle
+       id="circle207"
+       r="0.69"
+       cy="100.81"
+       cx="216.57"
+       class="cls-4" />
+    <circle
+       id="circle209"
+       r="0.69"
+       cy="102.79"
+       cx="216.57"
+       class="cls-4" />
+    <circle
+       id="circle211"
+       r="0.69"
+       cy="104.77"
+       cx="216.57"
+       class="cls-4" />
+    <circle
+       id="circle213"
+       r="0.69"
+       cy="106.75"
+       cx="216.57"
+       class="cls-4" />
+    <circle
+       id="circle215"
+       r="0.69"
+       cy="108.73"
+       cx="216.57"
+       class="cls-4" />
+    <circle
+       id="circle217"
+       r="0.69"
+       cy="110.71"
+       cx="216.57"
+       class="cls-4" />
+    <circle
+       id="circle219"
+       r="0.69"
+       cy="112.69"
+       cx="216.57"
+       class="cls-4" />
+    <circle
+       id="circle221"
+       r="0.85"
+       cy="145"
+       cx="217.81"
+       class="cls-4" />
+    <polygon
+       id="polygon223"
+       points="218.94 74.96 217.34 73.35 218.94 73.35 218.94 74.96"
+       class="cls-4" />
+    <rect
+       id="rect225"
+       height="28.35"
+       width="2.83"
+       y="91.32"
+       x="151.55"
+       class="cls-13" />
+    <rect
+       id="rect227"
+       height="1.37"
+       width="3.39"
+       y="133.39"
+       x="172.74"
+       class="cls-14" />
+    <rect
+       id="rect229"
+       height="1.37"
+       width="0.73"
+       y="133.39"
+       x="172.74"
+       class="cls-4" />
+    <rect
+       id="rect231"
+       height="1.37"
+       width="0.73"
+       y="133.39"
+       x="175.41"
+       class="cls-4" />
+    <rect
+       id="rect233"
+       height="1.37"
+       width="3.39"
+       y="136.34"
+       x="173.71"
+       class="cls-14" />
+    <rect
+       id="rect235"
+       height="1.37"
+       width="0.73"
+       y="136.34"
+       x="173.71"
+       class="cls-4" />
+    <rect
+       id="rect237"
+       height="1.37"
+       width="0.73"
+       y="136.34"
+       x="176.37"
+       class="cls-4" />
+    <rect
+       id="rect239"
+       height="1.37"
+       width="3.39"
+       y="136.34"
+       x="192.46"
+       class="cls-14" />
+    <rect
+       id="rect241"
+       height="1.37"
+       width="0.73"
+       y="136.34"
+       x="192.46"
+       class="cls-4" />
+    <rect
+       id="rect243"
+       height="1.37"
+       width="0.73"
+       y="136.34"
+       x="195.13"
+       class="cls-4" />
+    <rect
+       id="rect245"
+       height="1.37"
+       width="3.39"
+       y="133.39"
+       x="193.43"
+       class="cls-14" />
+    <rect
+       id="rect247"
+       height="1.37"
+       width="0.73"
+       y="133.39"
+       x="193.43"
+       class="cls-4" />
+    <rect
+       id="rect249"
+       height="1.37"
+       width="0.73"
+       y="133.39"
+       x="196.1"
+       class="cls-4" />
+    <rect
+       id="rect251"
+       height="1.37"
+       width="3.39"
+       y="103.78"
+       x="206.93"
+       class="cls-14" />
+    <rect
+       id="rect253"
+       height="1.37"
+       width="0.73"
+       y="103.78"
+       x="206.93"
+       class="cls-4" />
+    <rect
+       id="rect255"
+       height="1.37"
+       width="0.73"
+       y="103.78"
+       x="209.6"
+       class="cls-4" />
+    <rect
+       id="rect257"
+       height="1.37"
+       width="3.39"
+       y="99.38"
+       x="160.81"
+       class="cls-14" />
+    <rect
+       id="rect259"
+       height="1.37"
+       width="0.73"
+       y="99.38"
+       x="160.81"
+       class="cls-4" />
+    <rect
+       id="rect261"
+       height="1.37"
+       width="0.73"
+       y="99.38"
+       x="163.48"
+       class="cls-4" />
+    <rect
+       id="rect263"
+       height="1.37"
+       width="3.39"
+       y="80.59"
+       x="166.4"
+       class="cls-14" />
+    <rect
+       id="rect265"
+       height="1.37"
+       width="0.73"
+       y="80.59"
+       x="166.4"
+       class="cls-4" />
+    <rect
+       id="rect267"
+       height="1.37"
+       width="0.73"
+       y="80.59"
+       x="169.07"
+       class="cls-4" />
+    <rect
+       id="rect269"
+       height="1.37"
+       width="3.39"
+       y="79.63"
+       x="174.18"
+       class="cls-14" />
+    <rect
+       id="rect271"
+       height="1.37"
+       width="0.73"
+       y="79.63"
+       x="174.18"
+       class="cls-4" />
+    <rect
+       id="rect273"
+       height="1.37"
+       width="0.73"
+       y="79.63"
+       x="176.85"
+       class="cls-4" />
+    <rect
+       id="rect275"
+       height="1.37"
+       width="3.39"
+       y="82.5"
+       x="174.18"
+       class="cls-14" />
+    <rect
+       id="rect277"
+       height="1.37"
+       width="0.73"
+       y="82.5"
+       x="174.18"
+       class="cls-4" />
+    <rect
+       id="rect279"
+       height="1.37"
+       width="0.73"
+       y="82.5"
+       x="176.85"
+       class="cls-4" />
+    <rect
+       id="rect281"
+       height="3.39"
+       width="1.37"
+       y="81.26"
+       x="179.59"
+       class="cls-14" />
+    <rect
+       id="rect283"
+       height="0.73"
+       width="1.37"
+       y="81.26"
+       x="179.59"
+       class="cls-4" />
+    <rect
+       id="rect285"
+       height="0.73"
+       width="1.37"
+       y="83.93"
+       x="179.59"
+       class="cls-4" />
+    <rect
+       id="rect287"
+       height="3.39"
+       width="1.37"
+       y="80.59"
+       x="185.25"
+       class="cls-14" />
+    <rect
+       id="rect289"
+       height="0.73"
+       width="1.37"
+       y="80.59"
+       x="185.25"
+       class="cls-4" />
+    <rect
+       id="rect291"
+       height="0.73"
+       width="1.37"
+       y="83.26"
+       x="185.25"
+       class="cls-4" />
+    <rect
+       id="rect293"
+       height="3.39"
+       width="1.37"
+       y="81.25"
+       x="189.47"
+       class="cls-14" />
+    <rect
+       id="rect295"
+       height="0.73"
+       width="1.37"
+       y="81.25"
+       x="189.47"
+       class="cls-4" />
+    <rect
+       id="rect297"
+       height="0.73"
+       width="1.37"
+       y="83.92"
+       x="189.47"
+       class="cls-4" />
+    <rect
+       id="rect299"
+       height="3.39"
+       width="1.37"
+       y="81.25"
+       x="192.46"
+       class="cls-14" />
+    <rect
+       id="rect301"
+       height="0.73"
+       width="1.37"
+       y="81.25"
+       x="192.46"
+       class="cls-4" />
+    <rect
+       id="rect303"
+       height="0.73"
+       width="1.37"
+       y="83.92"
+       x="192.46"
+       class="cls-4" />
+    <rect
+       id="rect305"
+       height="3.39"
+       width="1.37"
+       y="81.25"
+       x="197.12"
+       class="cls-14" />
+    <rect
+       id="rect307"
+       height="0.73"
+       width="1.37"
+       y="81.25"
+       x="197.12"
+       class="cls-4" />
+    <rect
+       id="rect309"
+       height="0.73"
+       width="1.37"
+       y="83.92"
+       x="197.12"
+       class="cls-4" />
+    <rect
+       id="rect311"
+       height="1.37"
+       width="3.39"
+       y="102.41"
+       x="161.17"
+       class="cls-14" />
+    <rect
+       id="rect313"
+       height="1.37"
+       width="0.73"
+       y="102.41"
+       x="161.17"
+       class="cls-4" />
+    <rect
+       id="rect315"
+       height="1.37"
+       width="0.73"
+       y="102.41"
+       x="163.84"
+       class="cls-4" />
+    <rect
+       id="rect317"
+       height="1.37"
+       width="3.39"
+       y="113.69"
+       x="161.17"
+       class="cls-14" />
+    <rect
+       id="rect319"
+       height="1.37"
+       width="0.73"
+       y="113.69"
+       x="161.17"
+       class="cls-4" />
+    <rect
+       id="rect321"
+       height="1.37"
+       width="0.73"
+       y="113.69"
+       x="163.84"
+       class="cls-4" />
+    <rect
+       id="rect323"
+       height="1.37"
+       width="3.39"
+       y="118.3"
+       x="155.61"
+       class="cls-14" />
+    <rect
+       id="rect325"
+       height="1.37"
+       width="0.73"
+       y="118.3"
+       x="155.61"
+       class="cls-4" />
+    <rect
+       id="rect327"
+       height="1.37"
+       width="0.73"
+       y="118.3"
+       x="158.28"
+       class="cls-4" />
+    <rect
+       id="rect329"
+       height="1.37"
+       width="3.39"
+       y="107.36"
+       x="209.97"
+       class="cls-14" />
+    <rect
+       id="rect331"
+       height="1.37"
+       width="0.73"
+       y="107.36"
+       x="209.97"
+       class="cls-4" />
+    <rect
+       id="rect333"
+       height="1.37"
+       width="0.73"
+       y="107.36"
+       x="212.64"
+       class="cls-4" />
+    <rect
+       id="rect335"
+       height="1.37"
+       width="3.39"
+       y="110.33"
+       x="210.7"
+       class="cls-14" />
+    <rect
+       id="rect337"
+       height="1.37"
+       width="0.73"
+       y="110.33"
+       x="210.7"
+       class="cls-4" />
+    <rect
+       id="rect339"
+       height="1.37"
+       width="0.73"
+       y="110.33"
+       x="213.37"
+       class="cls-4" />
+    <rect
+       id="rect341"
+       height="1.37"
+       width="3.39"
+       y="110.33"
+       x="205.96"
+       class="cls-14" />
+    <rect
+       id="rect343"
+       height="1.37"
+       width="0.73"
+       y="110.33"
+       x="205.96"
+       class="cls-4" />
+    <rect
+       id="rect345"
+       height="1.37"
+       width="0.73"
+       y="110.33"
+       x="208.63"
+       class="cls-4" />
+    <rect
+       id="rect347"
+       height="1.37"
+       width="3.39"
+       y="116.08"
+       x="206.18"
+       class="cls-14" />
+    <rect
+       id="rect349"
+       height="1.37"
+       width="0.73"
+       y="116.08"
+       x="206.18"
+       class="cls-4" />
+    <rect
+       id="rect351"
+       height="1.37"
+       width="0.73"
+       y="116.08"
+       x="208.85"
+       class="cls-4" />
+    <rect
+       id="rect353"
+       height="1.37"
+       width="3.39"
+       y="113.38"
+       x="210.33"
+       class="cls-14" />
+    <rect
+       id="rect355"
+       height="1.37"
+       width="0.73"
+       y="113.38"
+       x="210.33"
+       class="cls-4" />
+    <rect
+       id="rect357"
+       height="1.37"
+       width="0.73"
+       y="113.38"
+       x="213"
+       class="cls-4" />
+    <rect
+       id="rect359"
+       height="1.37"
+       width="3.39"
+       y="116.35"
+       x="211.07"
+       class="cls-14" />
+    <rect
+       id="rect361"
+       height="1.37"
+       width="0.73"
+       y="116.35"
+       x="211.07"
+       class="cls-4" />
+    <rect
+       id="rect363"
+       height="1.37"
+       width="0.73"
+       y="116.35"
+       x="213.73"
+       class="cls-4" />
+    <rect
+       id="rect365"
+       height="1.37"
+       width="3.39"
+       y="119.19"
+       x="211.3"
+       class="cls-14" />
+    <rect
+       id="rect367"
+       height="1.37"
+       width="0.73"
+       y="119.19"
+       x="211.3"
+       class="cls-4" />
+    <rect
+       id="rect369"
+       height="1.37"
+       width="0.73"
+       y="119.19"
+       x="213.97"
+       class="cls-4" />
+    <rect
+       id="rect371"
+       ry="0.38"
+       rx="0.38"
+       height="1.35"
+       width="1.15"
+       y="96.08"
+       x="159.01"
+       class="cls-4" />
+    <rect
+       id="rect373"
+       ry="0.38"
+       rx="0.38"
+       height="1.35"
+       width="1.15"
+       y="96.08"
+       x="161.33"
+       class="cls-4" />
+    <rect
+       id="rect375"
+       height="38.27"
+       width="25.51"
+       y="170.65"
+       x="156.49"
+       class="cls-11" />
+    <text
+       id="text377"
+       transform="translate(164.47 169.65)"
+       class="cls-15">MEM1</text>
+    <rect
+       id="rect379"
+       height="38.27"
+       width="25.51"
+       y="170.65"
+       x="219.42"
+       class="cls-11" />
+    <text
+       id="text381"
+       transform="translate(227.4 169.65)"
+       class="cls-15">MEM2</text>
+    <g
+       data-name="0.1.0.2.21.0.0.0"
+       id="_0.1.0.2.21.0.0.0">
+      <text
+         id="text384"
+         transform="translate(297.26 187.16) rotate(-90)"
+         class="cls-16">C129</text>
+    </g>
+    <rect
+       id="rect386"
+       height="25.23"
+       width="8.5"
+       y="172.4"
+       x="283.84"
+       class="cls-8" />
+    <rect
+       id="rect388"
+       height="20.55"
+       width="12.33"
+       y="174.73"
+       x="281.92"
+       class="cls-11" />
+    <g
+       data-name="0.1.0.2.21.0.0.0"
+       id="_0.1.0.2.21.0.0.0-2">
+      <text
+         id="text391"
+         transform="translate(104.17 144.87) rotate(-90)"
+         class="cls-16">C87</text>
+    </g>
+    <g
+       data-name="0.1.0.2.21.0.0.0"
+       id="_0.1.0.2.21.0.0.0-3">
+      <text
+         id="text394"
+         transform="translate(104.17 131.91) rotate(-90)"
+         class="cls-16">C77</text>
+    </g>
+    <g
+       data-name="0.1.0.2.21.0.0.0"
+       id="_0.1.0.2.21.0.0.0-4">
+      <text
+         id="text397"
+         transform="translate(104.17 118.94) rotate(-90)"
+         class="cls-16">C76</text>
+    </g>
+    <rect
+       id="rect399"
+       height="8.5"
+       width="25.23"
+       y="139.01"
+       x="105.59"
+       class="cls-8" />
+    <rect
+       id="rect401"
+       height="12.33"
+       width="20.55"
+       y="137.1"
+       x="107.93"
+       class="cls-11" />
+    <rect
+       id="rect403"
+       height="8.5"
+       width="25.23"
+       y="113.08"
+       x="105.59"
+       class="cls-8" />
+    <rect
+       id="rect405"
+       height="12.33"
+       width="20.55"
+       y="111.16"
+       x="107.93"
+       class="cls-11" />
+    <rect
+       id="rect407"
+       height="8.5"
+       width="25.23"
+       y="126.04"
+       x="105.59"
+       class="cls-8" />
+    <rect
+       id="rect409"
+       height="12.33"
+       width="20.55"
+       y="124.13"
+       x="107.93"
+       class="cls-11" />
+    <text
+       id="text411"
+       transform="translate(135.78 163.13) rotate(-90)"
+       class="cls-17">C102</text>
+    <text
+       id="text413"
+       transform="translate(135.78 157.62) rotate(-90)"
+       class="cls-17">C101</text>
+    <text
+       id="text415"
+       transform="translate(135.78 151.57) rotate(-90)"
+       class="cls-17">C90</text>
+    <text
+       id="text417"
+       transform="translate(135.78 146.06) rotate(-90)"
+       class="cls-17">C89</text>
+    <text
+       id="text419"
+       transform="translate(135.78 140.54) rotate(-90)"
+       class="cls-17">C88</text>
+    <text
+       id="text421"
+       transform="translate(135.78 135.03) rotate(-90)"
+       class="cls-17">C81</text>
+    <text
+       id="text423"
+       transform="translate(135.78 129.52) rotate(-90)"
+       class="cls-17">C80</text>
+    <text
+       id="text425"
+       transform="translate(135.78 124) rotate(-90)"
+       class="cls-17">C79</text>
+    <text
+       id="text427"
+       transform="translate(135.78 118.49) rotate(-90)"
+       class="cls-17">C78</text>
+    <text
+       id="text429"
+       transform="translate(135.78 112.97) rotate(-90)"
+       class="cls-17">C68</text>
+    <text
+       id="text431"
+       transform="translate(135.78 107.46) rotate(-90)"
+       class="cls-17">C67</text>
+    <text
+       id="text433"
+       transform="translate(135.78 101.95) rotate(-90)"
+       class="cls-17">C66</text>
+    <rect
+       id="rect435"
+       height="2.4"
+       width="5.94"
+       y="159.79"
+       x="137.06"
+       class="cls-14" />
+    <rect
+       id="rect437"
+       height="2.4"
+       width="1.28"
+       y="159.79"
+       x="137.06"
+       class="cls-4" />
+    <rect
+       id="rect439"
+       height="2.4"
+       width="1.28"
+       y="159.79"
+       x="141.73"
+       class="cls-4" />
+    <rect
+       id="rect441"
+       height="2.4"
+       width="5.94"
+       y="154.28"
+       x="137.06"
+       class="cls-14" />
+    <rect
+       id="rect443"
+       height="2.4"
+       width="1.28"
+       y="154.28"
+       x="137.06"
+       class="cls-4" />
+    <rect
+       id="rect445"
+       height="2.4"
+       width="1.28"
+       y="154.28"
+       x="141.73"
+       class="cls-4" />
+    <rect
+       id="rect447"
+       height="2.4"
+       width="5.94"
+       y="148.76"
+       x="137.06"
+       class="cls-14" />
+    <rect
+       id="rect449"
+       height="2.4"
+       width="1.28"
+       y="148.76"
+       x="137.06"
+       class="cls-4" />
+    <rect
+       id="rect451"
+       height="2.4"
+       width="1.28"
+       y="148.76"
+       x="141.73"
+       class="cls-4" />
+    <rect
+       id="rect453"
+       height="2.4"
+       width="5.94"
+       y="143.25"
+       x="137.06"
+       class="cls-14" />
+    <rect
+       id="rect455"
+       height="2.4"
+       width="1.28"
+       y="143.25"
+       x="137.06"
+       class="cls-4" />
+    <rect
+       id="rect457"
+       height="2.4"
+       width="1.28"
+       y="143.25"
+       x="141.73"
+       class="cls-4" />
+    <rect
+       id="rect459"
+       height="2.4"
+       width="5.94"
+       y="137.74"
+       x="137.06"
+       class="cls-14" />
+    <rect
+       id="rect461"
+       height="2.4"
+       width="1.28"
+       y="137.74"
+       x="137.06"
+       class="cls-4" />
+    <rect
+       id="rect463"
+       height="2.4"
+       width="1.28"
+       y="137.74"
+       x="141.73"
+       class="cls-4" />
+    <rect
+       id="rect465"
+       height="2.4"
+       width="5.94"
+       y="132.22"
+       x="137.06"
+       class="cls-14" />
+    <rect
+       id="rect467"
+       height="2.4"
+       width="1.28"
+       y="132.22"
+       x="137.06"
+       class="cls-4" />
+    <rect
+       id="rect469"
+       height="2.4"
+       width="1.28"
+       y="132.22"
+       x="141.73"
+       class="cls-4" />
+    <rect
+       id="rect471"
+       height="2.4"
+       width="5.94"
+       y="126.71"
+       x="137.06"
+       class="cls-14" />
+    <rect
+       id="rect473"
+       height="2.4"
+       width="1.28"
+       y="126.71"
+       x="137.06"
+       class="cls-4" />
+    <rect
+       id="rect475"
+       height="2.4"
+       width="1.28"
+       y="126.71"
+       x="141.73"
+       class="cls-4" />
+    <rect
+       id="rect477"
+       height="2.4"
+       width="5.94"
+       y="121.2"
+       x="137.06"
+       class="cls-14" />
+    <rect
+       id="rect479"
+       height="2.4"
+       width="1.28"
+       y="121.2"
+       x="137.06"
+       class="cls-4" />
+    <rect
+       id="rect481"
+       height="2.4"
+       width="1.28"
+       y="121.2"
+       x="141.73"
+       class="cls-4" />
+    <rect
+       id="rect483"
+       height="2.4"
+       width="5.94"
+       y="115.68"
+       x="137.06"
+       class="cls-14" />
+    <rect
+       id="rect485"
+       height="2.4"
+       width="1.28"
+       y="115.68"
+       x="137.06"
+       class="cls-4" />
+    <rect
+       id="rect487"
+       height="2.4"
+       width="1.28"
+       y="115.68"
+       x="141.73"
+       class="cls-4" />
+    <rect
+       id="rect489"
+       height="2.4"
+       width="5.94"
+       y="110.17"
+       x="137.06"
+       class="cls-14" />
+    <rect
+       id="rect491"
+       height="2.4"
+       width="1.28"
+       y="110.17"
+       x="137.06"
+       class="cls-4" />
+    <rect
+       id="rect493"
+       height="2.4"
+       width="1.28"
+       y="110.17"
+       x="141.73"
+       class="cls-4" />
+    <rect
+       id="rect495"
+       height="2.4"
+       width="5.94"
+       y="104.66"
+       x="137.06"
+       class="cls-14" />
+    <rect
+       id="rect497"
+       height="2.4"
+       width="1.28"
+       y="104.66"
+       x="137.06"
+       class="cls-4" />
+    <rect
+       id="rect499"
+       height="2.4"
+       width="1.28"
+       y="104.66"
+       x="141.73"
+       class="cls-4" />
+    <rect
+       id="rect501"
+       height="2.4"
+       width="5.94"
+       y="99.14"
+       x="137.06"
+       class="cls-14" />
+    <rect
+       id="rect503"
+       height="2.4"
+       width="1.28"
+       y="99.14"
+       x="137.06"
+       class="cls-4" />
+    <rect
+       id="rect505"
+       height="2.4"
+       width="1.28"
+       y="99.14"
+       x="141.73"
+       class="cls-4" />
+    <rect
+       id="rect507"
+       height="8.5"
+       width="25.23"
+       y="165.21"
+       x="55.44"
+       class="cls-8" />
+    <rect
+       id="rect509"
+       height="20.98"
+       width="20.98"
+       y="158.97"
+       x="57.56"
+       class="cls-11" />
+    <text
+       id="text511"
+       transform="translate(65.18 176.97) rotate(-90)"
+       class="cls-18">HCP0805<tspan
+   id="tspan513"
+   y="3.6"
+   x="4.29">2R2</tspan>
+<tspan
+   id="tspan515"
+   y="7.2"
+   x="-1.07">37PH14 B</tspan>
+</text>
+    <rect
+       id="rect517"
+       height="17.86"
+       width="1.7"
+       y="152.07"
+       x="23.04"
+       class="cls-8" />
+    <rect
+       id="rect519"
+       height="17.86"
+       width="1.7"
+       y="152.07"
+       x="34.94"
+       class="cls-8" />
+    <rect
+       id="rect521"
+       height="17.86"
+       width="1.7"
+       y="152.07"
+       x="30.97"
+       class="cls-8" />
+    <rect
+       id="rect523"
+       height="17.86"
+       width="1.7"
+       y="152.07"
+       x="27.01"
+       class="cls-8" />
+    <rect
+       id="rect525"
+       height="16.16"
+       width="13.61"
+       y="152.92"
+       x="23.04"
+       class="cls-11" />
+    <g
+       data-name="0.1.0.2.21.0.0.0"
+       id="_0.1.0.2.21.0.0.0-5">
+      <text
+         id="text528"
+         transform="translate(33.43 171.94)"
+         class="cls-16">V11</text>
+    </g>
+    <rect
+       id="rect530"
+       height="17.86"
+       width="1.7"
+       y="152.07"
+       x="39.76"
+       class="cls-8" />
+    <rect
+       id="rect532"
+       height="17.86"
+       width="1.7"
+       y="152.07"
+       x="51.67"
+       class="cls-8" />
+    <rect
+       id="rect534"
+       height="17.86"
+       width="1.7"
+       y="152.07"
+       x="47.7"
+       class="cls-8" />
+    <rect
+       id="rect536"
+       height="17.86"
+       width="1.7"
+       y="152.07"
+       x="43.73"
+       class="cls-8" />
+    <rect
+       id="rect538"
+       height="16.16"
+       width="13.61"
+       y="152.92"
+       x="39.76"
+       class="cls-11" />
+    <g
+       data-name="0.1.0.2.21.0.0.0"
+       id="_0.1.0.2.21.0.0.0-6">
+      <text
+         id="text541"
+         transform="translate(50.15 171.94)"
+         class="cls-16">V12</text>
+    </g>
+    <rect
+       id="rect543"
+       height="1.06"
+       width="10.77"
+       y="155.08"
+       x="62.67"
+       class="cls-8" />
+    <rect
+       id="rect545"
+       height="1.06"
+       width="10.77"
+       y="147.67"
+       x="62.67"
+       class="cls-8" />
+    <rect
+       id="rect547"
+       height="1.06"
+       width="10.77"
+       y="149.52"
+       x="62.67"
+       class="cls-8" />
+    <rect
+       id="rect549"
+       height="1.06"
+       width="10.77"
+       y="153.23"
+       x="62.67"
+       class="cls-8" />
+    <rect
+       id="rect551"
+       height="10.77"
+       width="1.06"
+       y="146.52"
+       x="69.37"
+       class="cls-8" />
+    <rect
+       id="rect553"
+       height="10.77"
+       width="1.06"
+       y="146.52"
+       x="65.67"
+       class="cls-8" />
+    <rect
+       id="rect555"
+       height="1.06"
+       width="10.77"
+       y="151.37"
+       x="62.67"
+       class="cls-8" />
+    <rect
+       id="rect557"
+       height="8.5"
+       width="8.5"
+       y="147.67"
+       x="63.8"
+       class="cls-11" />
+    <rect
+       id="rect559"
+       height="1.06"
+       width="1.56"
+       y="194.82"
+       x="61.45"
+       class="cls-8" />
+    <rect
+       id="rect561"
+       height="1.06"
+       width="1.56"
+       y="199.6"
+       x="61.45"
+       class="cls-8" />
+    <rect
+       id="rect563"
+       height="1.06"
+       width="1.56"
+       y="197.21"
+       x="56.2"
+       class="cls-8" />
+    <rect
+       id="rect565"
+       height="8.5"
+       width="3.69"
+       y="193.49"
+       x="57.76"
+       class="cls-11" />
+    <rect
+       id="rect567"
+       height="1.06"
+       width="1.56"
+       y="199.6"
+       x="75.98"
+       class="cls-8" />
+    <rect
+       id="rect569"
+       height="1.06"
+       width="1.56"
+       y="194.82"
+       x="75.98"
+       class="cls-8" />
+    <rect
+       id="rect571"
+       height="1.06"
+       width="1.56"
+       y="197.21"
+       x="81.22"
+       class="cls-8" />
+    <rect
+       id="rect573"
+       height="8.5"
+       width="3.69"
+       y="193.49"
+       x="77.54"
+       class="cls-11" />
+    <rect
+       id="rect575"
+       height="1.06"
+       width="1.56"
+       y="187.77"
+       x="75.98"
+       class="cls-8" />
+    <rect
+       id="rect577"
+       height="1.06"
+       width="1.56"
+       y="182.99"
+       x="75.98"
+       class="cls-8" />
+    <rect
+       id="rect579"
+       height="1.06"
+       width="1.56"
+       y="185.38"
+       x="81.22"
+       class="cls-8" />
+    <rect
+       id="rect581"
+       height="8.5"
+       width="3.69"
+       y="181.65"
+       x="77.54"
+       class="cls-11" />
+    <rect
+       id="rect583"
+       height="1.06"
+       width="1.56"
+       y="127.02"
+       x="35.81"
+       class="cls-8" />
+    <rect
+       id="rect585"
+       height="1.06"
+       width="1.56"
+       y="131.8"
+       x="35.81"
+       class="cls-8" />
+    <rect
+       id="rect587"
+       height="1.06"
+       width="1.56"
+       y="129.41"
+       x="30.57"
+       class="cls-8" />
+    <rect
+       id="rect589"
+       height="8.5"
+       width="3.69"
+       y="125.69"
+       x="32.13"
+       class="cls-11" />
+    <rect
+       id="rect591"
+       height="1.06"
+       width="1.56"
+       y="127.02"
+       x="50.85"
+       class="cls-8" />
+    <rect
+       id="rect593"
+       height="1.06"
+       width="1.56"
+       y="131.8"
+       x="50.85"
+       class="cls-8" />
+    <rect
+       id="rect595"
+       height="1.06"
+       width="1.56"
+       y="129.41"
+       x="45.61"
+       class="cls-8" />
+    <rect
+       id="rect597"
+       height="8.5"
+       width="3.69"
+       y="125.69"
+       x="47.16"
+       class="cls-11" />
+    <rect
+       id="rect599"
+       height="1.56"
+       width="1.06"
+       y="88.79"
+       x="114.42"
+       class="cls-8" />
+    <rect
+       id="rect601"
+       height="1.56"
+       width="1.06"
+       y="88.79"
+       x="119.2"
+       class="cls-8" />
+    <rect
+       id="rect603"
+       height="1.56"
+       width="1.06"
+       y="94.03"
+       x="116.81"
+       class="cls-8" />
+    <rect
+       id="rect605"
+       height="3.69"
+       width="8.5"
+       y="90.35"
+       x="113.08"
+       class="cls-11" />
+    <rect
+       id="rect607"
+       height="1.06"
+       width="1.56"
+       y="187.77"
+       x="88.46"
+       class="cls-8" />
+    <rect
+       id="rect609"
+       height="1.06"
+       width="1.56"
+       y="182.99"
+       x="88.46"
+       class="cls-8" />
+    <rect
+       id="rect611"
+       height="1.06"
+       width="1.56"
+       y="185.38"
+       x="93.7"
+       class="cls-8" />
+    <rect
+       id="rect613"
+       height="8.5"
+       width="3.69"
+       y="181.65"
+       x="90.02"
+       class="cls-11" />
+    <rect
+       id="rect615"
+       height="1.06"
+       width="1.56"
+       y="182.99"
+       x="121.62"
+       class="cls-8" />
+    <rect
+       id="rect617"
+       height="1.06"
+       width="1.56"
+       y="187.77"
+       x="121.62"
+       class="cls-8" />
+    <rect
+       id="rect619"
+       height="1.06"
+       width="1.56"
+       y="185.38"
+       x="116.37"
+       class="cls-8" />
+    <rect
+       id="rect621"
+       height="8.5"
+       width="3.69"
+       y="181.65"
+       x="117.93"
+       class="cls-11" />
+    <rect
+       id="rect623"
+       height="1.28"
+       width="21.83"
+       y="37.13"
+       x="43.36"
+       class="cls-8" />
+    <rect
+       id="rect625"
+       height="1.28"
+       width="21.83"
+       y="39"
+       x="43.36"
+       class="cls-8" />
+    <rect
+       id="rect627"
+       height="1.28"
+       width="21.83"
+       y="40.87"
+       x="43.36"
+       class="cls-8" />
+    <rect
+       id="rect629"
+       height="1.28"
+       width="21.83"
+       y="42.74"
+       x="43.36"
+       class="cls-8" />
+    <rect
+       id="rect631"
+       height="1.28"
+       width="21.83"
+       y="44.61"
+       x="43.36"
+       class="cls-8" />
+    <rect
+       id="rect633"
+       height="1.28"
+       width="21.83"
+       y="46.47"
+       x="43.36"
+       class="cls-8" />
+    <rect
+       id="rect635"
+       height="1.28"
+       width="21.83"
+       y="48.34"
+       x="43.36"
+       class="cls-8" />
+    <rect
+       id="rect637"
+       height="1.28"
+       width="21.83"
+       y="50.21"
+       x="43.36"
+       class="cls-8" />
+    <rect
+       id="rect639"
+       height="1.28"
+       width="21.83"
+       y="52.08"
+       x="43.36"
+       class="cls-8" />
+    <rect
+       id="rect641"
+       height="1.28"
+       width="21.83"
+       y="53.95"
+       x="43.36"
+       class="cls-8" />
+    <rect
+       id="rect643"
+       height="1.28"
+       width="21.83"
+       y="55.82"
+       x="43.36"
+       class="cls-8" />
+    <rect
+       id="rect645"
+       height="1.28"
+       width="21.83"
+       y="57.68"
+       x="43.36"
+       class="cls-8" />
+    <rect
+       id="rect647"
+       height="21.83"
+       width="12.19"
+       y="37.13"
+       x="48.18"
+       class="cls-11" />
+    <g
+       data-name="0.1.0.2.21.0.0.0"
+       id="_0.1.0.2.21.0.0.0-7">
+      <text
+         id="text650"
+         transform="translate(52.28 45.32) rotate(-90)"
+         class="cls-16">PN016<tspan
+   id="tspan652"
+   y="2.5"
+   x="0.89">46K</tspan>
+</text>
+      <text
+         id="text654"
+         transform="translate(54.28 41.21) rotate(-90) scale(0.58)"
+         class="cls-16">G4</text>
+      <text
+         id="text656"
+         transform="translate(57.28 44.25) rotate(-90)"
+         class="cls-16">AKTT</text>
+    </g>
+    <rect
+       id="rect658"
+       height="1.28"
+       width="22.68"
+       y="33.77"
+       x="96.97"
+       class="cls-8" />
+    <rect
+       id="rect660"
+       height="1.28"
+       width="22.68"
+       y="38.49"
+       x="96.97"
+       class="cls-8" />
+    <rect
+       id="rect662"
+       height="1.28"
+       width="22.68"
+       y="43.22"
+       x="96.97"
+       class="cls-8" />
+    <rect
+       id="rect664"
+       height="1.28"
+       width="22.68"
+       y="47.94"
+       x="96.97"
+       class="cls-8" />
+    <rect
+       id="rect666"
+       height="15.45"
+       width="15.45"
+       y="33.77"
+       x="100.58"
+       class="cls-11" />
+    <g
+       data-name="0.1.0.2.21.0.0.0"
+       id="_0.1.0.2.21.0.0.0-8">
+      <text
+         id="text669"
+         transform="translate(105.07 44.1) rotate(-90)"
+         class="cls-16">25Q064A<tspan
+   id="tspan671"
+   y="2.5"
+   x="2.15">11E40</tspan>
+<tspan
+   id="tspan673"
+   y="5"
+   x="1.07">99 CHN</tspan>
+<tspan
+   id="tspan675"
+   y="7.5"
+   x="1.07">431115</tspan>
+</text>
+    </g>
+    <rect
+       id="rect677"
+       height="8.5"
+       width="8.5"
+       y="55.23"
+       x="117.66"
+       class="cls-11" />
+    <rect
+       id="rect679"
+       height="4.08"
+       width="5.33"
+       y="195.7"
+       x="141"
+       class="cls-19" />
+    <rect
+       id="rect681"
+       height="4.08"
+       width="5.33"
+       y="195.7"
+       x="130.22"
+       class="cls-19" />
+    <rect
+       id="rect683"
+       height="4.08"
+       width="5.33"
+       y="195.7"
+       x="119.43"
+       class="cls-19" />
+    <rect
+       id="rect685"
+       height="4.08"
+       width="5.33"
+       y="195.7"
+       x="108.65"
+       class="cls-19" />
+    <rect
+       id="rect687"
+       height="4.08"
+       width="5.33"
+       y="195.7"
+       x="97.87"
+       class="cls-19" />
+    <rect
+       id="rect689"
+       height="4.08"
+       width="5.33"
+       y="195.7"
+       x="87.09"
+       class="cls-19" />
+    <path
+       style=""
+       d="M73.85,23.3a3.46,3.46,0,0,1,.8-0.3,1.17,1.17,0,0,1,.6,0v0.3h-1.4Z"
+       class="cls-21"
+       data-name="0.1.10.0.0.0.0.0.2"
+       id="_0.1.10.0.0.0.0.0.2" />
+    <path
+       style=""
+       d="M74.46,22.89h0c-0.2,0-.4-0.1-0.6-0.1a1.22,1.22,0,0,0-.8-0.4H73a2,2,0,0,1,.8.4,1.54,1.54,0,0,1,.71.1h0Z"
+       class="cls-22"
+       data-name="0.1.10.0.0.0.0.0.4.1.0"
+       id="_0.1.10.0.0.0.0.0.4.1.0" />
+    <polygon
+       points="71.25 21.3 70.35 21.2 70.35 21.7 71.25 21.59 71.25 21.3"
+       class="cls-22"
+       data-name="0.1.10.0.0.0.0.0.4.2"
+       id="_0.1.10.0.0.0.0.0.4.2" />
+    <path
+       style=""
+       d="M72.75,22.2h0a2.77,2.77,0,0,0-1.8-.7h0a2,2,0,0,1,1.8.7h0Z"
+       class="cls-22"
+       data-name="0.1.10.0.0.0.0.0.4.3.0"
+       id="_0.1.10.0.0.0.0.0.4.3.0" />
+    <path
+       style=""
+       d="M73.15,22.4a3,3,0,0,1,.8.4,4.34,4.34,0,0,0,.5.1h0a4.34,4.34,0,0,1-.5-0.1,6.18,6.18,0,0,0-.8-0.4h0Z"
+       class="cls-23"
+       data-name="0.1.10.0.0.0.0.0.4.6"
+       id="_0.1.10.0.0.0.0.0.4.6" />
+    <g
+       id="d1" class="component">
+      <rect
+         id="_0.1.10.0.0.0.0.0.1.0"
+         data-name="0.1.10.0.0.0.0.0.1.0"
+         class="cls-20"
+         x="69.56"
+         y="20.89"
+         width="6.7"
+         height="2.4" />
+      <rect
+         id="_0.1.10.0.0.0.0.0.3.0.0"
+         data-name="0.1.10.0.0.0.0.0.3.0.0"
+         class="cls-12"
+         x="72.46"
+         y="21.8"
+         width="0.8"
+         height="0.6" />
+      <polygon
+         id="_0.1.10.0.0.0.0.0.4.0"
+         data-name="0.1.10.0.0.0.0.0.4.0"
+         class="cls-22"
+         points="74.35 23.09 75.25 23.09 75.25 22.7 74.35 22.7 74.35 23.09" />
+      <path
+         id="_0.1.10.0.0.0.0.0.4.4"
+         data-name="0.1.10.0.0.0.0.0.4.4"
+         class="cls-22"
+         d="M73.15,22.2s-0.3,0-.3.2h0.3V22.2Z"
+         style="" />
+      <path
+         id="_0.1.10.0.0.0.0.0.4.5"
+         data-name="0.1.10.0.0.0.0.0.4.5"
+         class="cls-22"
+         d="M72.75,22s0.1,0.2,0,.2h-0.2Z"
+         style="" />
+      <polygon
+         id="_0.1.10.0.0.0.0.0.4.7"
+         data-name="0.1.10.0.0.0.0.0.4.7"
+         class="cls-23"
+         points="71.25 21.59 70.35 21.7 70.35 21.7 71.25 21.59" />
+    
+    <path
+       style=""
+       d="M72.75,22.2a2.25,2.25,0,0,0-1.7-.7h0a2.25,2.25,0,0,1,1.7.7h0Z"
+       class="cls-23"
+       data-name="0.1.10.0.0.0.0.0.4.8"
+       id="_0.1.10.0.0.0.0.0.4.8" />
+    <path
+       style=""
+       d="M72.65,22.3c0.1,0.1.1,0,.2,0h-0.2Z"
+       class="cls-23"
+       data-name="0.1.10.0.0.0.0.0.4.10"
+       id="_0.1.10.0.0.0.0.0.4.10" />
+     <path
+         id="_0.1.10.0.0.0.0.0.9"
+         data-name="0.1.10.0.0.0.0.0.9"
+         class="cls-22"
+         d="M69.56,23.3h0.7V23a0.36,0.36,0,0,1,.2-0.2V20.9h-0.9v2.4h0"
+         style="" />
+      <path
+         id="_0.1.10.0.0.0.0.0.11"
+         data-name="0.1.10.0.0.0.0.0.11"
+         class="cls-22"
+         d="M76.25,23.3h0V20.9h-1V23a0.21,0.21,0,0,1,.2.2v0.1h0.8"
+         style="" />
+    </g>
+    <g
+       data-name="0.1.0.2.21.0.0.0"
+       id="_0.1.0.2.21.0.0.0-9">
+      <text
+         id="text707"
+         transform="translate(71.83 25.81)"
+         class="cls-16">D1</text>
+    </g>
+    <path
+       style=""
+       d="M119,23.3a3.46,3.46,0,0,1,.8-0.3,1.17,1.17,0,0,1,.6,0v0.3H119Z"
+       class="cls-21"
+       data-name="0.1.10.0.0.0.0.0.2"
+       id="_0.1.10.0.0.0.0.0.2-2" />
+    <rect
+       height="0.6"
+       width="0.8"
+       y="21.8"
+       x="117.63"
+       class="cls-12"
+       data-name="0.1.10.0.0.0.0.0.3.0.0"
+       id="_0.1.10.0.0.0.0.0.3.0.0-2" />
+    <polygon
+       points="119.53 23.09 120.43 23.09 120.43 22.7 119.53 22.7 119.53 23.09"
+       class="cls-22"
+       data-name="0.1.10.0.0.0.0.0.4.0"
+       id="_0.1.10.0.0.0.0.0.4.0-2" />
+    <path
+       style=""
+       d="M119.63,22.89h0c-0.2,0-.4-0.1-0.6-0.1a1.22,1.22,0,0,0-.8-0.4h-0.1a2,2,0,0,1,.8.4,1.54,1.54,0,0,1,.71.1h0Z"
+       class="cls-22"
+       data-name="0.1.10.0.0.0.0.0.4.1.0"
+       id="_0.1.10.0.0.0.0.0.4.1.0-2" />
+    <polygon
+       points="116.43 21.3 115.53 21.2 115.53 21.7 116.43 21.59 116.43 21.3"
+       class="cls-22"
+       data-name="0.1.10.0.0.0.0.0.4.2"
+       id="_0.1.10.0.0.0.0.0.4.2-2" />
+    <path
+       style=""
+       d="M117.93,22.2h0a2.77,2.77,0,0,0-1.8-.7h0a2,2,0,0,1,1.8.7h0Z"
+       class="cls-22"
+       data-name="0.1.10.0.0.0.0.0.4.3.0"
+       id="_0.1.10.0.0.0.0.0.4.3.0-2" />
+    <path
+       style=""
+       d="M118.33,22.2s-0.3,0-.3.2h0.3V22.2Z"
+       class="cls-22"
+       data-name="0.1.10.0.0.0.0.0.4.4"
+       id="_0.1.10.0.0.0.0.0.4.4-2" />
+    <path
+       style=""
+       d="M117.93,22s0.1,0.2,0,.2h-0.2Z"
+       class="cls-22"
+       data-name="0.1.10.0.0.0.0.0.4.5"
+       id="_0.1.10.0.0.0.0.0.4.5-2" />
+    <path
+       style=""
+       d="M118.33,22.4a3,3,0,0,1,.8.4,4.34,4.34,0,0,0,.5.1h0a4.34,4.34,0,0,1-.5-0.1,6.18,6.18,0,0,0-.8-0.4h0Z"
+       class="cls-23"
+       data-name="0.1.10.0.0.0.0.0.4.6"
+       id="_0.1.10.0.0.0.0.0.4.6-2" />
+    <polygon
+       points="116.43 21.59 115.53 21.7 115.53 21.7 116.43 21.59"
+       class="cls-23"
+       data-name="0.1.10.0.0.0.0.0.4.7"
+       id="_0.1.10.0.0.0.0.0.4.7-2" />
+    <path
+       style=""
+       d="M117.93,22.2a2.25,2.25,0,0,0-1.7-.7h0a2.25,2.25,0,0,1,1.7.7h0Z"
+       class="cls-23"
+       data-name="0.1.10.0.0.0.0.0.4.8"
+       id="_0.1.10.0.0.0.0.0.4.8-2" />
+    <path
+       style=""
+       d="M117.83,22.3c0.1,0.1.1,0,.2,0h-0.2Z"
+       class="cls-23"
+       data-name="0.1.10.0.0.0.0.0.4.10"
+       id="_0.1.10.0.0.0.0.0.4.10-2" />
+    <g
+       id="d2" class="component">
+      <rect
+         id="_0.1.10.0.0.0.0.0.1.0-2"
+         data-name="0.1.10.0.0.0.0.0.1.0"
+         class="cls-20"
+         x="114.73"
+         y="20.89"
+         width="6.7"
+         height="2.4" />
+      <path
+         id="_0.1.10.0.0.0.0.0.9-2"
+         data-name="0.1.10.0.0.0.0.0.9"
+         class="cls-22"
+         d="M114.73,23.3h0.7V23a0.36,0.36,0,0,1,.2-0.2V20.9h-0.9v2.4h0"
+         style="" />
+      <path
+         id="_0.1.10.0.0.0.0.0.11-2"
+         data-name="0.1.10.0.0.0.0.0.11"
+         class="cls-22"
+         d="M121.43,23.3h0V20.9h-1V23a0.21,0.21,0,0,1,.2.2v0.1h0.8"
+         style="" />
+    </g>
+    <g
+       data-name="0.1.0.2.21.0.0.0"
+       id="_0.1.0.2.21.0.0.0-10">
+      <text
+         id="text725"
+         transform="translate(117.01 25.81)"
+         class="cls-16">D2</text>
+    </g>
+    <line
+       style=""
+       id="line727"
+       y2="88.08"
+       x2="280.29"
+       y1="88.08"
+       x1="266.11"
+       class="cls-11" />
+    <polygon
+       id="polygon729"
+       points="108.15 23.8 109.66 22.3 109.66 18.4 108.15 16.9 82.6 16.9 81.1 18.4 81.1 22.3 82.6 23.8 108.15 23.8"
+       class="cls-24" />
+    <rect
+       height="2.3"
+       width="2.3"
+       y="19.2"
+       x="90.6"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.7.0"
+       id="_0.1.2.0.0.0.0.7.0" />
+    <g
+       class="pin"
+       id="spiPin5">
+      <rect
+         id="_0.1.2.0.0.0.0.32.0"
+         data-name="0.1.2.0.0.0.0.32.0"
+         class="cls-26"
+         x="91.1"
+         y="19.7"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.33"
+         data-name="0.1.2.0.0.0.0.33"
+         class="cls-27"
+         points="92.9 21.4 92.3 20.91 91.1 20.91 90.6 21.4 92.9 21.4" />
+      <polygon
+         id="_0.1.2.0.0.0.0.34"
+         data-name="0.1.2.0.0.0.0.34"
+         class="cls-28"
+         points="91.1 19.7 91.1 20.91 90.6 21.4 90.6 19.2 91.1 19.7" />
+      <polygon
+         id="_0.1.2.0.0.0.0.35"
+         data-name="0.1.2.0.0.0.0.35"
+         class="cls-29"
+         points="92.3 19.7 91.1 19.7 90.6 19.2 92.9 19.2 92.3 19.7" />
+      <polygon
+         id="_0.1.2.0.0.0.0.36"
+         data-name="0.1.2.0.0.0.0.36"
+         class="cls-30"
+         points="92.9 21.4 92.3 20.91 92.3 19.7 92.9 19.2 92.9 21.4" />
+    </g>
+    <rect
+       height="2.3"
+       width="2.3"
+       y="19.2"
+       x="97.8"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.6.0"
+       id="_0.1.2.0.0.0.0.6.0" />
+    <g
+       class="pin"
+       id="spiPin3">
+      <rect
+         id="_0.1.2.0.0.0.0.37.0"
+         data-name="0.1.2.0.0.0.0.37.0"
+         class="cls-26"
+         x="98.3"
+         y="19.7"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.38"
+         data-name="0.1.2.0.0.0.0.38"
+         class="cls-27"
+         points="100.1 21.4 99.5 20.91 98.3 20.91 97.8 21.4 100.1 21.4" />
+      <polygon
+         id="_0.1.2.0.0.0.0.39"
+         data-name="0.1.2.0.0.0.0.39"
+         class="cls-28"
+         points="98.3 19.7 98.3 20.91 97.8 21.4 97.8 19.2 98.3 19.7" />
+      <polygon
+         id="_0.1.2.0.0.0.0.40"
+         data-name="0.1.2.0.0.0.0.40"
+         class="cls-29"
+         points="99.5 19.7 98.3 19.7 97.8 19.2 100.1 19.2 99.5 19.7" />
+      <polygon
+         id="_0.1.2.0.0.0.0.41"
+         data-name="0.1.2.0.0.0.0.41"
+         class="cls-30"
+         points="100.1 21.4 99.5 20.91 99.5 19.7 100.1 19.2 100.1 21.4" />
+    </g>
+    <rect
+       height="2.3"
+       width="2.3"
+       y="19.2"
+       x="104.95"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.6.0"
+       id="_0.1.2.0.0.0.0.6.0-2" />
+    <g
+       class="pin"
+       id="spiPin1">
+      <rect
+         id="_0.1.2.0.0.0.0.37.0-2"
+         data-name="0.1.2.0.0.0.0.37.0"
+         class="cls-26"
+         x="105.46"
+         y="19.7"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.38-2"
+         data-name="0.1.2.0.0.0.0.38"
+         class="cls-27"
+         points="107.25 21.4 106.65 20.91 105.45 20.91 104.95 21.4 107.25 21.4" />
+      <polygon
+         id="_0.1.2.0.0.0.0.39-2"
+         data-name="0.1.2.0.0.0.0.39"
+         class="cls-28"
+         points="105.45 19.7 105.45 20.91 104.95 21.4 104.95 19.2 105.45 19.7" />
+      <polygon
+         id="_0.1.2.0.0.0.0.40-2"
+         data-name="0.1.2.0.0.0.0.40"
+         class="cls-29"
+         points="106.65 19.7 105.45 19.7 104.95 19.2 107.25 19.2 106.65 19.7" />
+      <polygon
+         id="_0.1.2.0.0.0.0.41-2"
+         data-name="0.1.2.0.0.0.0.41"
+         class="cls-30"
+         points="107.25 21.4 106.65 20.91 106.65 19.7 107.25 19.2 107.25 21.4" />
+    </g>
+    <rect
+       height="2.3"
+       width="2.3"
+       y="19.2"
+       x="83.4"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.7.0"
+       id="_0.1.2.0.0.0.0.7.0-2" />
+    <g
+       class="pin"
+       id="spiPin7">
+      <rect
+         id="_0.1.2.0.0.0.0.32.0-2"
+         data-name="0.1.2.0.0.0.0.32.0"
+         class="cls-26"
+         x="83.9"
+         y="19.7"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.33-2"
+         data-name="0.1.2.0.0.0.0.33"
+         class="cls-27"
+         points="85.7 21.4 85.1 20.91 84 20.91 83.4 21.4 85.7 21.4" />
+      <polygon
+         id="_0.1.2.0.0.0.0.34-2"
+         data-name="0.1.2.0.0.0.0.34"
+         class="cls-28"
+         points="84 19.7 84 20.91 83.4 21.4 83.4 19.2 84 19.7" />
+      <polygon
+         id="_0.1.2.0.0.0.0.35-2"
+         data-name="0.1.2.0.0.0.0.35"
+         class="cls-29"
+         points="85.1 19.7 84 19.7 83.4 19.2 85.7 19.2 85.1 19.7" />
+      <polygon
+         id="_0.1.2.0.0.0.0.36-2"
+         data-name="0.1.2.0.0.0.0.36"
+         class="cls-30"
+         points="85.7 21.4 85.1 20.91 85.1 19.7 85.7 19.2 85.7 21.4" />
+    </g>
+    <polygon
+       id="polygon755"
+       points="108.15 31 109.66 29.5 109.66 25.61 108.15 24.11 82.6 24.11 81.1 25.61 81.1 29.5 82.6 31 108.15 31"
+       class="cls-24" />
+    <rect
+       height="2.3"
+       width="2.3"
+       y="26.41"
+       x="90.6"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.7.0"
+       id="_0.1.2.0.0.0.0.7.0-3" />
+    <g
+       class="pin"
+       id="spiPin6">
+      <rect
+         id="_0.1.2.0.0.0.0.32.0-3"
+         data-name="0.1.2.0.0.0.0.32.0"
+         class="cls-26"
+         x="91.1"
+         y="26.91"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.33-3"
+         data-name="0.1.2.0.0.0.0.33"
+         class="cls-27"
+         points="92.9 28.61 92.3 28.11 91.1 28.11 90.6 28.61 92.9 28.61" />
+      <polygon
+         id="_0.1.2.0.0.0.0.34-3"
+         data-name="0.1.2.0.0.0.0.34"
+         class="cls-28"
+         points="91.1 26.91 91.1 28.11 90.6 28.61 90.6 26.41 91.1 26.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.35-3"
+         data-name="0.1.2.0.0.0.0.35"
+         class="cls-29"
+         points="92.3 26.91 91.1 26.91 90.6 26.41 92.9 26.41 92.3 26.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.36-3"
+         data-name="0.1.2.0.0.0.0.36"
+         class="cls-30"
+         points="92.9 28.61 92.3 28.11 92.3 26.91 92.9 26.41 92.9 28.61" />
+    </g>
+    <rect
+       height="2.3"
+       width="2.3"
+       y="26.41"
+       x="97.8"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.6.0"
+       id="_0.1.2.0.0.0.0.6.0-3" />
+    <g
+       class="pin"
+       id="spiPin4">
+      <rect
+         id="_0.1.2.0.0.0.0.37.0-3"
+         data-name="0.1.2.0.0.0.0.37.0"
+         class="cls-26"
+         x="98.3"
+         y="26.91"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.38-3"
+         data-name="0.1.2.0.0.0.0.38"
+         class="cls-27"
+         points="100.1 28.61 99.5 28.11 98.3 28.11 97.8 28.61 100.1 28.61" />
+      <polygon
+         id="_0.1.2.0.0.0.0.39-3"
+         data-name="0.1.2.0.0.0.0.39"
+         class="cls-28"
+         points="98.3 26.91 98.3 28.11 97.8 28.61 97.8 26.41 98.3 26.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.40-3"
+         data-name="0.1.2.0.0.0.0.40"
+         class="cls-29"
+         points="99.5 26.91 98.3 26.91 97.8 26.41 100.1 26.41 99.5 26.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.41-3"
+         data-name="0.1.2.0.0.0.0.41"
+         class="cls-30"
+         points="100.1 28.61 99.5 28.11 99.5 26.91 100.1 26.41 100.1 28.61" />
+    </g>
+    <rect
+       height="2.3"
+       width="2.3"
+       y="26.41"
+       x="104.95"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.6.0"
+       id="_0.1.2.0.0.0.0.6.0-4" />
+    <g
+       class="pin"
+       id="spiPin2">
+      <rect
+         id="_0.1.2.0.0.0.0.37.0-4"
+         data-name="0.1.2.0.0.0.0.37.0"
+         class="cls-26"
+         x="105.46"
+         y="26.91"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.38-4"
+         data-name="0.1.2.0.0.0.0.38"
+         class="cls-27"
+         points="107.25 28.61 106.65 28.11 105.45 28.11 104.95 28.61 107.25 28.61" />
+      <polygon
+         id="_0.1.2.0.0.0.0.39-4"
+         data-name="0.1.2.0.0.0.0.39"
+         class="cls-28"
+         points="105.45 26.91 105.45 28.11 104.95 28.61 104.95 26.41 105.45 26.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.40-4"
+         data-name="0.1.2.0.0.0.0.40"
+         class="cls-29"
+         points="106.65 26.91 105.45 26.91 104.95 26.41 107.25 26.41 106.65 26.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.41-4"
+         data-name="0.1.2.0.0.0.0.41"
+         class="cls-30"
+         points="107.25 28.61 106.65 28.11 106.65 26.91 107.25 26.41 107.25 28.61" />
+    </g>
+    <rect
+       height="2.3"
+       width="2.3"
+       y="26.41"
+       x="83.4"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.7.0"
+       id="_0.1.2.0.0.0.0.7.0-4" />
+    <g
+       class="pin"
+       id="spiPin8">
+      <rect
+         id="_0.1.2.0.0.0.0.32.0-4"
+         data-name="0.1.2.0.0.0.0.32.0"
+         class="cls-26"
+         x="83.9"
+         y="26.91"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.33-4"
+         data-name="0.1.2.0.0.0.0.33"
+         class="cls-27"
+         points="85.7 28.61 85.1 28.11 84 28.11 83.4 28.61 85.7 28.61" />
+      <polygon
+         id="_0.1.2.0.0.0.0.34-4"
+         data-name="0.1.2.0.0.0.0.34"
+         class="cls-28"
+         points="84 26.91 84 28.11 83.4 28.61 83.4 26.41 84 26.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.35-4"
+         data-name="0.1.2.0.0.0.0.35"
+         class="cls-29"
+         points="85.1 26.91 84 26.91 83.4 26.41 85.7 26.41 85.1 26.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.36-4"
+         data-name="0.1.2.0.0.0.0.36"
+         class="cls-30"
+         points="85.7 28.61 85.1 28.11 85.1 26.91 85.7 26.41 85.7 28.61" />
+    </g>
+    <text
+       id="text781"
+       transform="translate(111.53 17.05)"
+       class="cls-15">J1</text>
+    <rect
+       id="rect783"
+       height="17.86"
+       width="14.46"
+       y="16.88"
+       x="255.43"
+       class="cls-2" />
+    <rect
+       id="rect785"
+       height="14.17"
+       width="14.46"
+       y="16.88"
+       x="255.43"
+       class="cls-2" />
+    <circle
+       r="1.87"
+       cy="23.9"
+       cx="259.06"
+       class="pin cls-31"
+       id="j2Pin2" />
+    <circle
+       r="1.87"
+       cy="23.9"
+       cx="266.26"
+       class="cls-31"
+       id="connector32pin" />
+    <rect
+       height="3.75"
+       width="3.74"
+       y="22.03"
+       x="264.38"
+       class="pin cls-31"
+       data-name="0.1.0.21"
+       id="j2Pin1" />
+    <g
+       data-name="0.1.0.2.21.0.0.0"
+       id="_0.1.0.2.21.0.0.0-11">
+      <text
+         id="text791"
+         transform="translate(249.86 19.47)"
+         class="cls-32">J2</text>
+    </g>
+    <text
+       id="text793"
+       transform="translate(42.62 221.41)"
+       class="cls-15">JP1</text>
+    <polygon
+       id="polygon795"
+       points="144.13 218 145.63 216.5 145.63 212.6 144.13 211.1 53.76 211.1 52.26 212.6 52.26 216.5 53.76 218 144.13 218"
+       class="cls-24" />
+    <rect
+       height="2.3"
+       width="2.3"
+       y="213.4"
+       x="61.76"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.7.0"
+       id="_0.1.2.0.0.0.0.7.0-5" />
+    <g
+       class="pin"
+       id="lsePin3">
+      <rect
+         id="_0.1.2.0.0.0.0.32.0-5"
+         data-name="0.1.2.0.0.0.0.32.0"
+         class="cls-26"
+         x="62.26"
+         y="213.9"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.33-5"
+         data-name="0.1.2.0.0.0.0.33"
+         class="cls-27"
+         points="64.06 215.6 63.46 215.1 62.26 215.1 61.76 215.6 64.06 215.6" />
+      <polygon
+         id="_0.1.2.0.0.0.0.34-5"
+         data-name="0.1.2.0.0.0.0.34"
+         class="cls-28"
+         points="62.26 213.91 62.26 215.1 61.76 215.6 61.76 213.41 62.26 213.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.35-5"
+         data-name="0.1.2.0.0.0.0.35"
+         class="cls-29"
+         points="63.46 213.91 62.26 213.91 61.76 213.41 64.06 213.41 63.46 213.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.36-5"
+         data-name="0.1.2.0.0.0.0.36"
+         class="cls-30"
+         points="64.06 215.6 63.46 215.1 63.46 213.91 64.06 213.41 64.06 215.6" />
+    </g>
+    <rect
+       height="2.3"
+       width="2.3"
+       y="213.4"
+       x="68.96"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.6.0"
+       id="_0.1.2.0.0.0.0.6.0-5" />
+    <g
+       class="pin"
+       id="lsePin5">
+      <rect
+         id="_0.1.2.0.0.0.0.37.0-5"
+         data-name="0.1.2.0.0.0.0.37.0"
+         class="cls-26"
+         x="69.46"
+         y="213.9"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.38-5"
+         data-name="0.1.2.0.0.0.0.38"
+         class="cls-27"
+         points="71.26 215.6 70.66 215.1 69.46 215.1 68.96 215.6 71.26 215.6" />
+      <polygon
+         id="_0.1.2.0.0.0.0.39-5"
+         data-name="0.1.2.0.0.0.0.39"
+         class="cls-28"
+         points="69.46 213.91 69.46 215.1 68.96 215.6 68.96 213.41 69.46 213.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.40-5"
+         data-name="0.1.2.0.0.0.0.40"
+         class="cls-29"
+         points="70.66 213.91 69.46 213.91 68.96 213.41 71.26 213.41 70.66 213.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.41-5"
+         data-name="0.1.2.0.0.0.0.41"
+         class="cls-30"
+         points="71.26 215.6 70.66 215.1 70.66 213.91 71.26 213.41 71.26 215.6" />
+    </g>
+    <rect
+       height="2.3"
+       width="2.3"
+       y="213.4"
+       x="140.93"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.6.0"
+       id="_0.1.2.0.0.0.0.6.0-6" />
+    <g
+       class="pin"
+       id="lsePin25">
+      <rect
+         id="_0.1.2.0.0.0.0.37.0-6"
+         data-name="0.1.2.0.0.0.0.37.0"
+         class="cls-26"
+         x="141.44"
+         y="213.9"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.38-6"
+         data-name="0.1.2.0.0.0.0.38"
+         class="cls-27"
+         points="143.23 215.6 142.63 215.1 141.43 215.1 140.93 215.6 143.23 215.6" />
+      <polygon
+         id="_0.1.2.0.0.0.0.39-6"
+         data-name="0.1.2.0.0.0.0.39"
+         class="cls-28"
+         points="141.43 213.91 141.43 215.1 140.93 215.6 140.93 213.41 141.43 213.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.40-6"
+         data-name="0.1.2.0.0.0.0.40"
+         class="cls-29"
+         points="142.63 213.91 141.43 213.91 140.93 213.41 143.23 213.41 142.63 213.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.41-6"
+         data-name="0.1.2.0.0.0.0.41"
+         class="cls-30"
+         points="143.23 215.6 142.63 215.1 142.63 213.91 143.23 213.41 143.23 215.6" />
+    </g>
+    <rect
+       height="2.3"
+       width="2.3"
+       y="213.4"
+       x="54.56"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.7.0"
+       id="_0.1.2.0.0.0.0.7.0-6" />
+    <g
+       class="pin"
+       id="lsePin1">
+      <rect
+         id="_0.1.2.0.0.0.0.32.0-6"
+         data-name="0.1.2.0.0.0.0.32.0"
+         class="cls-26"
+         x="55.06"
+         y="213.9"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.33-6"
+         data-name="0.1.2.0.0.0.0.33"
+         class="cls-27"
+         points="56.86 215.6 56.26 215.1 55.16 215.1 54.56 215.6 56.86 215.6" />
+      <polygon
+         id="_0.1.2.0.0.0.0.34-6"
+         data-name="0.1.2.0.0.0.0.34"
+         class="cls-28"
+         points="55.16 213.91 55.16 215.1 54.56 215.6 54.56 213.41 55.16 213.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.35-6"
+         data-name="0.1.2.0.0.0.0.35"
+         class="cls-29"
+         points="56.26 213.91 55.16 213.91 54.56 213.41 56.86 213.41 56.26 213.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.36-6"
+         data-name="0.1.2.0.0.0.0.36"
+         class="cls-30"
+         points="56.86 215.6 56.26 215.1 56.26 213.91 56.86 213.41 56.86 215.6" />
+    </g>
+    <rect
+       height="2.3"
+       width="2.3"
+       y="213.4"
+       x="76.16"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.7.0"
+       id="_0.1.2.0.0.0.0.7.0-7" />
+    <g
+       class="pin"
+       id="lsePin7">
+      <rect
+         id="_0.1.2.0.0.0.0.32.0-7"
+         data-name="0.1.2.0.0.0.0.32.0"
+         class="cls-26"
+         x="76.66"
+         y="213.9"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.33-7"
+         data-name="0.1.2.0.0.0.0.33"
+         class="cls-27"
+         points="78.46 215.6 77.86 215.1 76.66 215.1 76.16 215.6 78.46 215.6" />
+      <polygon
+         id="_0.1.2.0.0.0.0.34-7"
+         data-name="0.1.2.0.0.0.0.34"
+         class="cls-28"
+         points="76.66 213.91 76.66 215.1 76.16 215.6 76.16 213.41 76.66 213.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.35-7"
+         data-name="0.1.2.0.0.0.0.35"
+         class="cls-29"
+         points="77.86 213.91 76.66 213.91 76.16 213.41 78.46 213.41 77.86 213.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.36-7"
+         data-name="0.1.2.0.0.0.0.36"
+         class="cls-30"
+         points="78.46 215.6 77.86 215.1 77.86 213.91 78.46 213.41 78.46 215.6" />
+    </g>
+    <rect
+       height="2.3"
+       width="2.3"
+       y="213.4"
+       x="83.37"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.6.0"
+       id="_0.1.2.0.0.0.0.6.0-7" />
+    <g
+       class="pin"
+       id="lsePin9">
+      <rect
+         id="_0.1.2.0.0.0.0.37.0-7"
+         data-name="0.1.2.0.0.0.0.37.0"
+         class="cls-26"
+         x="83.87"
+         y="213.9"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.38-7"
+         data-name="0.1.2.0.0.0.0.38"
+         class="cls-27"
+         points="85.66 215.6 85.06 215.1 83.86 215.1 83.36 215.6 85.66 215.6" />
+      <polygon
+         id="_0.1.2.0.0.0.0.39-7"
+         data-name="0.1.2.0.0.0.0.39"
+         class="cls-28"
+         points="83.86 213.91 83.86 215.1 83.36 215.6 83.36 213.41 83.86 213.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.40-7"
+         data-name="0.1.2.0.0.0.0.40"
+         class="cls-29"
+         points="85.06 213.91 83.86 213.91 83.36 213.41 85.66 213.41 85.06 213.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.41-7"
+         data-name="0.1.2.0.0.0.0.41"
+         class="cls-30"
+         points="85.66 215.6 85.06 215.1 85.06 213.91 85.66 213.41 85.66 215.6" />
+    </g>
+    <rect
+       height="2.3"
+       width="2.3"
+       y="213.4"
+       x="90.57"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.7.0"
+       id="_0.1.2.0.0.0.0.7.0-8" />
+    <g
+       class="pin"
+       id="lsePin11">
+      <rect
+         id="_0.1.2.0.0.0.0.32.0-8"
+         data-name="0.1.2.0.0.0.0.32.0"
+         class="cls-26"
+         x="91.07"
+         y="213.9"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.33-8"
+         data-name="0.1.2.0.0.0.0.33"
+         class="cls-27"
+         points="92.87 215.6 92.27 215.1 91.07 215.1 90.57 215.6 92.87 215.6" />
+      <polygon
+         id="_0.1.2.0.0.0.0.34-8"
+         data-name="0.1.2.0.0.0.0.34"
+         class="cls-28"
+         points="91.07 213.91 91.07 215.1 90.57 215.6 90.57 213.41 91.07 213.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.35-8"
+         data-name="0.1.2.0.0.0.0.35"
+         class="cls-29"
+         points="92.27 213.91 91.07 213.91 90.57 213.41 92.87 213.41 92.27 213.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.36-8"
+         data-name="0.1.2.0.0.0.0.36"
+         class="cls-30"
+         points="92.87 215.6 92.27 215.1 92.27 213.91 92.87 213.41 92.87 215.6" />
+    </g>
+    <rect
+       height="2.3"
+       width="2.3"
+       y="213.4"
+       x="97.77"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.6.0"
+       id="_0.1.2.0.0.0.0.6.0-8" />
+    <g
+       class="pin"
+       id="lsePin13">
+      <rect
+         id="_0.1.2.0.0.0.0.37.0-8"
+         data-name="0.1.2.0.0.0.0.37.0"
+         class="cls-26"
+         x="98.27"
+         y="213.9"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.38-8"
+         data-name="0.1.2.0.0.0.0.38"
+         class="cls-27"
+         points="100.07 215.6 99.47 215.1 98.27 215.1 97.77 215.6 100.07 215.6" />
+      <polygon
+         id="_0.1.2.0.0.0.0.39-8"
+         data-name="0.1.2.0.0.0.0.39"
+         class="cls-28"
+         points="98.27 213.91 98.27 215.1 97.77 215.6 97.77 213.41 98.27 213.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.40-8"
+         data-name="0.1.2.0.0.0.0.40"
+         class="cls-29"
+         points="99.47 213.91 98.27 213.91 97.77 213.41 100.07 213.41 99.47 213.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.41-8"
+         data-name="0.1.2.0.0.0.0.41"
+         class="cls-30"
+         points="100.07 215.6 99.47 215.1 99.47 213.91 100.07 213.41 100.07 215.6" />
+    </g>
+    <rect
+       height="2.3"
+       width="2.3"
+       y="213.4"
+       x="104.97"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.7.0"
+       id="_0.1.2.0.0.0.0.7.0-9" />
+    <g
+       class="pin"
+       id="lsePin15">
+      <rect
+         id="_0.1.2.0.0.0.0.32.0-9"
+         data-name="0.1.2.0.0.0.0.32.0"
+         class="cls-26"
+         x="105.47"
+         y="213.9"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.33-9"
+         data-name="0.1.2.0.0.0.0.33"
+         class="cls-27"
+         points="107.27 215.6 106.67 215.1 105.47 215.1 104.97 215.6 107.27 215.6" />
+      <polygon
+         id="_0.1.2.0.0.0.0.34-9"
+         data-name="0.1.2.0.0.0.0.34"
+         class="cls-28"
+         points="105.47 213.91 105.47 215.1 104.97 215.6 104.97 213.41 105.47 213.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.35-9"
+         data-name="0.1.2.0.0.0.0.35"
+         class="cls-29"
+         points="106.67 213.91 105.47 213.91 104.97 213.41 107.27 213.41 106.67 213.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.36-9"
+         data-name="0.1.2.0.0.0.0.36"
+         class="cls-30"
+         points="107.27 215.6 106.67 215.1 106.67 213.91 107.27 213.41 107.27 215.6" />
+    </g>
+    <rect
+       height="2.3"
+       width="2.3"
+       y="213.4"
+       x="112.17"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.6.0"
+       id="_0.1.2.0.0.0.0.6.0-9" />
+    <g
+       class="pin"
+       id="lsePin17">
+      <rect
+         id="_0.1.2.0.0.0.0.37.0-9"
+         data-name="0.1.2.0.0.0.0.37.0"
+         class="cls-26"
+         x="112.68"
+         y="213.9"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.38-9"
+         data-name="0.1.2.0.0.0.0.38"
+         class="cls-27"
+         points="114.47 215.6 113.87 215.1 112.67 215.1 112.17 215.6 114.47 215.6" />
+      <polygon
+         style="fill:#80795b"
+         transform="translate(0,-0.03114142)"
+         id="_0.1.2.0.0.0.0.39-9"
+         data-name="0.1.2.0.0.0.0.39"
+         class="cls-28"
+         points="112.67,215.1 112.17,215.6 112.17,213.41 112.67,213.91 112.67,213.91 " />
+      <polygon
+         id="_0.1.2.0.0.0.0.40-9"
+         data-name="0.1.2.0.0.0.0.40"
+         class="cls-29"
+         points="113.87 213.91 112.67 213.91 112.17 213.41 114.47 213.41 113.87 213.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.41-9"
+         data-name="0.1.2.0.0.0.0.41"
+         class="cls-30"
+         points="114.47 215.6 113.87 215.1 113.87 213.91 114.47 213.41 114.47 215.6" />
+    </g>
+    <rect
+       height="2.3"
+       width="2.3"
+       y="213.4"
+       x="119.38"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.7.0"
+       id="_0.1.2.0.0.0.0.7.0-10" />
+    <g
+       class="pin"
+       id="lsePin19">
+      <rect
+         id="_0.1.2.0.0.0.0.32.0-10"
+         data-name="0.1.2.0.0.0.0.32.0"
+         class="cls-26"
+         x="119.88"
+         y="213.9"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.33-10"
+         data-name="0.1.2.0.0.0.0.33"
+         class="cls-27"
+         points="121.68 215.6 121.08 215.1 119.88 215.1 119.38 215.6 121.68 215.6" />
+      <polygon
+         id="_0.1.2.0.0.0.0.34-10"
+         data-name="0.1.2.0.0.0.0.34"
+         class="cls-28"
+         points="119.88 213.91 119.88 215.1 119.38 215.6 119.38 213.41 119.88 213.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.35-10"
+         data-name="0.1.2.0.0.0.0.35"
+         class="cls-29"
+         points="121.08 213.91 119.88 213.91 119.38 213.41 121.68 213.41 121.08 213.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.36-10"
+         data-name="0.1.2.0.0.0.0.36"
+         class="cls-30"
+         points="121.68 215.6 121.08 215.1 121.08 213.91 121.68 213.41 121.68 215.6" />
+    </g>
+    <rect
+       height="2.3"
+       width="2.3"
+       y="213.4"
+       x="126.58"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.6.0"
+       id="_0.1.2.0.0.0.0.6.0-10" />
+    <g
+       class="pin"
+       id="lsePin21">
+      <rect
+         id="_0.1.2.0.0.0.0.37.0-10"
+         data-name="0.1.2.0.0.0.0.37.0"
+         class="cls-26"
+         x="127.08"
+         y="213.9"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.38-10"
+         data-name="0.1.2.0.0.0.0.38"
+         class="cls-27"
+         points="128.88 215.6 128.28 215.1 127.08 215.1 126.58 215.6 128.88 215.6" />
+      <polygon
+         id="_0.1.2.0.0.0.0.39-10"
+         data-name="0.1.2.0.0.0.0.39"
+         class="cls-28"
+         points="127.08 213.91 127.08 215.1 126.58 215.6 126.58 213.41 127.08 213.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.40-10"
+         data-name="0.1.2.0.0.0.0.40"
+         class="cls-29"
+         points="128.28 213.91 127.08 213.91 126.58 213.41 128.88 213.41 128.28 213.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.41-10"
+         data-name="0.1.2.0.0.0.0.41"
+         class="cls-30"
+         points="128.88 215.6 128.28 215.1 128.28 213.91 128.88 213.41 128.88 215.6" />
+    </g>
+    <rect
+       height="2.3"
+       width="2.3"
+       y="213.4"
+       x="133.78"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.7.0"
+       id="_0.1.2.0.0.0.0.7.0-11" />
+    <g
+       class="pin"
+       id="lsePin23">
+      <rect
+         id="_0.1.2.0.0.0.0.32.0-11"
+         data-name="0.1.2.0.0.0.0.32.0"
+         class="cls-26"
+         x="134.28"
+         y="213.9"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.33-11"
+         data-name="0.1.2.0.0.0.0.33"
+         class="cls-27"
+         points="136.08 215.6 135.48 215.1 134.28 215.1 133.78 215.6 136.08 215.6" />
+      <polygon
+         id="_0.1.2.0.0.0.0.34-11"
+         data-name="0.1.2.0.0.0.0.34"
+         class="cls-28"
+         points="134.28 213.91 134.28 215.1 133.78 215.6 133.78 213.41 134.28 213.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.35-11"
+         data-name="0.1.2.0.0.0.0.35"
+         class="cls-29"
+         points="135.48 213.91 134.28 213.91 133.78 213.41 136.08 213.41 135.48 213.91" />
+      <polygon
+         id="_0.1.2.0.0.0.0.36-11"
+         data-name="0.1.2.0.0.0.0.36"
+         class="cls-30"
+         points="136.08 215.6 135.48 215.1 135.48 213.91 136.08 213.41 136.08 215.6" />
+    </g>
+    <polygon
+       id="polygon875"
+       points="144.13 210.8 145.63 209.3 145.63 205.4 144.13 203.9 53.76 203.9 52.26 205.4 52.26 209.3 53.76 210.8 144.13 210.8"
+       class="cls-24" />
+    <rect
+       height="2.3"
+       width="2.3"
+       y="206.2"
+       x="61.76"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.7.0"
+       id="_0.1.2.0.0.0.0.7.0-12" />
+    <g
+       class="pin"
+       id="lsePin4">
+      <rect
+         id="_0.1.2.0.0.0.0.32.0-12"
+         data-name="0.1.2.0.0.0.0.32.0"
+         class="cls-26"
+         x="62.26"
+         y="206.7"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.33-12"
+         data-name="0.1.2.0.0.0.0.33"
+         class="cls-27"
+         points="64.06 208.4 63.46 207.91 62.26 207.91 61.76 208.4 64.06 208.4" />
+      <polygon
+         id="_0.1.2.0.0.0.0.34-12"
+         data-name="0.1.2.0.0.0.0.34"
+         class="cls-28"
+         points="62.26 206.71 62.26 207.91 61.76 208.4 61.76 206.21 62.26 206.71" />
+      <polygon
+         id="_0.1.2.0.0.0.0.35-12"
+         data-name="0.1.2.0.0.0.0.35"
+         class="cls-29"
+         points="63.46 206.71 62.26 206.71 61.76 206.21 64.06 206.21 63.46 206.71" />
+      <polygon
+         id="_0.1.2.0.0.0.0.36-12"
+         data-name="0.1.2.0.0.0.0.36"
+         class="cls-30"
+         points="64.06 208.4 63.46 207.91 63.46 206.71 64.06 206.21 64.06 208.4" />
+    </g>
+    <rect
+       height="2.3"
+       width="2.3"
+       y="206.2"
+       x="68.96"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.6.0"
+       id="_0.1.2.0.0.0.0.6.0-11" />
+    <g
+       class="pin"
+       id="lsePin6">
+      <rect
+         id="_0.1.2.0.0.0.0.37.0-11"
+         data-name="0.1.2.0.0.0.0.37.0"
+         class="cls-26"
+         x="69.46"
+         y="206.7"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.38-11"
+         data-name="0.1.2.0.0.0.0.38"
+         class="cls-27"
+         points="71.26 208.4 70.66 207.91 69.46 207.91 68.96 208.4 71.26 208.4" />
+      <polygon
+         id="_0.1.2.0.0.0.0.39-11"
+         data-name="0.1.2.0.0.0.0.39"
+         class="cls-28"
+         points="69.46 206.71 69.46 207.91 68.96 208.4 68.96 206.21 69.46 206.71" />
+      <polygon
+         id="_0.1.2.0.0.0.0.40-11"
+         data-name="0.1.2.0.0.0.0.40"
+         class="cls-29"
+         points="70.66 206.71 69.46 206.71 68.96 206.21 71.26 206.21 70.66 206.71" />
+      <polygon
+         id="_0.1.2.0.0.0.0.41-11"
+         data-name="0.1.2.0.0.0.0.41"
+         class="cls-30"
+         points="71.26 208.4 70.66 207.91 70.66 206.71 71.26 206.21 71.26 208.4" />
+    </g>
+    <rect
+       height="2.3"
+       width="2.3"
+       y="206.2"
+       x="140.93"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.6.0"
+       id="_0.1.2.0.0.0.0.6.0-12" />
+    <g
+       class="pin"
+       id="lsePin26">
+      <rect
+         id="_0.1.2.0.0.0.0.37.0-12"
+         data-name="0.1.2.0.0.0.0.37.0"
+         class="cls-26"
+         x="141.44"
+         y="206.7"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.38-12"
+         data-name="0.1.2.0.0.0.0.38"
+         class="cls-27"
+         points="143.23 208.4 142.63 207.91 141.43 207.91 140.93 208.4 143.23 208.4" />
+      <polygon
+         id="_0.1.2.0.0.0.0.39-12"
+         data-name="0.1.2.0.0.0.0.39"
+         class="cls-28"
+         points="141.43 206.71 141.43 207.91 140.93 208.4 140.93 206.21 141.43 206.71" />
+      <polygon
+         id="_0.1.2.0.0.0.0.40-12"
+         data-name="0.1.2.0.0.0.0.40"
+         class="cls-29"
+         points="142.63 206.71 141.43 206.71 140.93 206.21 143.23 206.21 142.63 206.71" />
+      <polygon
+         id="_0.1.2.0.0.0.0.41-12"
+         data-name="0.1.2.0.0.0.0.41"
+         class="cls-30"
+         points="143.23 208.4 142.63 207.91 142.63 206.71 143.23 206.21 143.23 208.4" />
+    </g>
+    <rect
+       height="2.3"
+       width="2.3"
+       y="206.2"
+       x="54.56"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.7.0"
+       id="_0.1.2.0.0.0.0.7.0-13" />
+    <g
+       class="pin"
+       id="lsePin2">
+      <rect
+         id="_0.1.2.0.0.0.0.32.0-13"
+         data-name="0.1.2.0.0.0.0.32.0"
+         class="cls-26"
+         x="55.06"
+         y="206.7"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.33-13"
+         data-name="0.1.2.0.0.0.0.33"
+         class="cls-27"
+         points="56.86 208.4 56.26 207.91 55.16 207.91 54.56 208.4 56.86 208.4" />
+      <polygon
+         id="_0.1.2.0.0.0.0.34-13"
+         data-name="0.1.2.0.0.0.0.34"
+         class="cls-28"
+         points="55.16 206.71 55.16 207.91 54.56 208.4 54.56 206.21 55.16 206.71" />
+      <polygon
+         id="_0.1.2.0.0.0.0.35-13"
+         data-name="0.1.2.0.0.0.0.35"
+         class="cls-29"
+         points="56.26 206.71 55.16 206.71 54.56 206.21 56.86 206.21 56.26 206.71" />
+      <polygon
+         id="_0.1.2.0.0.0.0.36-13"
+         data-name="0.1.2.0.0.0.0.36"
+         class="cls-30"
+         points="56.86 208.4 56.26 207.91 56.26 206.71 56.86 206.21 56.86 208.4" />
+    </g>
+    <rect
+       height="2.3"
+       width="2.3"
+       y="206.2"
+       x="76.16"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.7.0"
+       id="_0.1.2.0.0.0.0.7.0-14" />
+    <g
+       class="pin"
+       id="lsePin8">
+      <rect
+         id="_0.1.2.0.0.0.0.32.0-14"
+         data-name="0.1.2.0.0.0.0.32.0"
+         class="cls-26"
+         x="76.66"
+         y="206.7"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.33-14"
+         data-name="0.1.2.0.0.0.0.33"
+         class="cls-27"
+         points="78.46 208.4 77.86 207.91 76.66 207.91 76.16 208.4 78.46 208.4" />
+      <polygon
+         id="_0.1.2.0.0.0.0.34-14"
+         data-name="0.1.2.0.0.0.0.34"
+         class="cls-28"
+         points="76.66 206.71 76.66 207.91 76.16 208.4 76.16 206.21 76.66 206.71" />
+      <polygon
+         id="_0.1.2.0.0.0.0.35-14"
+         data-name="0.1.2.0.0.0.0.35"
+         class="cls-29"
+         points="77.86 206.71 76.66 206.71 76.16 206.21 78.46 206.21 77.86 206.71" />
+      <polygon
+         id="_0.1.2.0.0.0.0.36-14"
+         data-name="0.1.2.0.0.0.0.36"
+         class="cls-30"
+         points="78.46 208.4 77.86 207.91 77.86 206.71 78.46 206.21 78.46 208.4" />
+    </g>
+    <rect
+       height="2.3"
+       width="2.3"
+       y="206.2"
+       x="83.37"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.6.0"
+       id="_0.1.2.0.0.0.0.6.0-13" />
+    <g
+       class="pin"
+       id="lsePin10">
+      <rect
+         id="_0.1.2.0.0.0.0.37.0-13"
+         data-name="0.1.2.0.0.0.0.37.0"
+         class="cls-26"
+         x="83.87"
+         y="206.7"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.38-13"
+         data-name="0.1.2.0.0.0.0.38"
+         class="cls-27"
+         points="85.66 208.4 85.06 207.91 83.86 207.91 83.36 208.4 85.66 208.4" />
+      <polygon
+         id="_0.1.2.0.0.0.0.39-13"
+         data-name="0.1.2.0.0.0.0.39"
+         class="cls-28"
+         points="83.86 206.71 83.86 207.91 83.36 208.4 83.36 206.21 83.86 206.71" />
+      <polygon
+         id="_0.1.2.0.0.0.0.40-13"
+         data-name="0.1.2.0.0.0.0.40"
+         class="cls-29"
+         points="85.06 206.71 83.86 206.71 83.36 206.21 85.66 206.21 85.06 206.71" />
+      <polygon
+         id="_0.1.2.0.0.0.0.41-13"
+         data-name="0.1.2.0.0.0.0.41"
+         class="cls-30"
+         points="85.66 208.4 85.06 207.91 85.06 206.71 85.66 206.21 85.66 208.4" />
+    </g>
+    <rect
+       height="2.3"
+       width="2.3"
+       y="206.2"
+       x="90.57"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.7.0"
+       id="_0.1.2.0.0.0.0.7.0-15" />
+    <g
+       class="pin"
+       id="lsePin12">
+      <rect
+         id="_0.1.2.0.0.0.0.32.0-15"
+         data-name="0.1.2.0.0.0.0.32.0"
+         class="cls-26"
+         x="91.07"
+         y="206.7"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.33-15"
+         data-name="0.1.2.0.0.0.0.33"
+         class="cls-27"
+         points="92.87 208.4 92.27 207.91 91.07 207.91 90.57 208.4 92.87 208.4" />
+      <polygon
+         id="_0.1.2.0.0.0.0.34-15"
+         data-name="0.1.2.0.0.0.0.34"
+         class="cls-28"
+         points="91.07 206.71 91.07 207.91 90.57 208.4 90.57 206.21 91.07 206.71" />
+      <polygon
+         id="_0.1.2.0.0.0.0.35-15"
+         data-name="0.1.2.0.0.0.0.35"
+         class="cls-29"
+         points="92.27 206.71 91.07 206.71 90.57 206.21 92.87 206.21 92.27 206.71" />
+      <polygon
+         id="_0.1.2.0.0.0.0.36-15"
+         data-name="0.1.2.0.0.0.0.36"
+         class="cls-30"
+         points="92.87 208.4 92.27 207.91 92.27 206.71 92.87 206.21 92.87 208.4" />
+    </g>
+    <rect
+       height="2.3"
+       width="2.3"
+       y="206.2"
+       x="97.77"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.6.0"
+       id="_0.1.2.0.0.0.0.6.0-14" />
+    <g
+       class="pin"
+       id="lsePin14">
+      <rect
+         id="_0.1.2.0.0.0.0.37.0-14"
+         data-name="0.1.2.0.0.0.0.37.0"
+         class="cls-26"
+         x="98.27"
+         y="206.7"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.38-14"
+         data-name="0.1.2.0.0.0.0.38"
+         class="cls-27"
+         points="100.07 208.4 99.47 207.91 98.27 207.91 97.77 208.4 100.07 208.4" />
+      <polygon
+         id="_0.1.2.0.0.0.0.39-14"
+         data-name="0.1.2.0.0.0.0.39"
+         class="cls-28"
+         points="98.27 206.71 98.27 207.91 97.77 208.4 97.77 206.21 98.27 206.71" />
+      <polygon
+         id="_0.1.2.0.0.0.0.40-14"
+         data-name="0.1.2.0.0.0.0.40"
+         class="cls-29"
+         points="99.47 206.71 98.27 206.71 97.77 206.21 100.07 206.21 99.47 206.71" />
+      <polygon
+         id="_0.1.2.0.0.0.0.41-14"
+         data-name="0.1.2.0.0.0.0.41"
+         class="cls-30"
+         points="100.07 208.4 99.47 207.91 99.47 206.71 100.07 206.21 100.07 208.4" />
+    </g>
+    <rect
+       height="2.3"
+       width="2.3"
+       y="206.2"
+       x="104.97"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.7.0"
+       id="_0.1.2.0.0.0.0.7.0-16" />
+    <g
+       class="pin"
+       id="lsePin16">
+      <rect
+         id="_0.1.2.0.0.0.0.32.0-16"
+         data-name="0.1.2.0.0.0.0.32.0"
+         class="cls-26"
+         x="105.47"
+         y="206.7"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.33-16"
+         data-name="0.1.2.0.0.0.0.33"
+         class="cls-27"
+         points="107.27 208.4 106.67 207.91 105.47 207.91 104.97 208.4 107.27 208.4" />
+      <polygon
+         id="_0.1.2.0.0.0.0.34-16"
+         data-name="0.1.2.0.0.0.0.34"
+         class="cls-28"
+         points="105.47 206.71 105.47 207.91 104.97 208.4 104.97 206.21 105.47 206.71" />
+      <polygon
+         id="_0.1.2.0.0.0.0.35-16"
+         data-name="0.1.2.0.0.0.0.35"
+         class="cls-29"
+         points="106.67 206.71 105.47 206.71 104.97 206.21 107.27 206.21 106.67 206.71" />
+      <polygon
+         id="_0.1.2.0.0.0.0.36-16"
+         data-name="0.1.2.0.0.0.0.36"
+         class="cls-30"
+         points="107.27 208.4 106.67 207.91 106.67 206.71 107.27 206.21 107.27 208.4" />
+    </g>
+    <rect
+       height="2.3"
+       width="2.3"
+       y="206.2"
+       x="112.17"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.6.0"
+       id="_0.1.2.0.0.0.0.6.0-15" />
+    <g
+       class="pin"
+       id="lsePin18">
+      <rect
+         id="_0.1.2.0.0.0.0.37.0-15"
+         data-name="0.1.2.0.0.0.0.37.0"
+         class="cls-26"
+         x="112.68"
+         y="206.7"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.38-15"
+         data-name="0.1.2.0.0.0.0.38"
+         class="cls-27"
+         points="114.47 208.4 113.87 207.91 112.67 207.91 112.17 208.4 114.47 208.4" />
+      <polygon
+         id="_0.1.2.0.0.0.0.39-15"
+         data-name="0.1.2.0.0.0.0.39"
+         class="cls-28"
+         points="112.67 206.71 112.67 207.91 112.17 208.4 112.17 206.21 112.67 206.71" />
+      <polygon
+         id="_0.1.2.0.0.0.0.40-15"
+         data-name="0.1.2.0.0.0.0.40"
+         class="cls-29"
+         points="113.87 206.71 112.67 206.71 112.17 206.21 114.47 206.21 113.87 206.71" />
+      <polygon
+         id="_0.1.2.0.0.0.0.41-15"
+         data-name="0.1.2.0.0.0.0.41"
+         class="cls-30"
+         points="114.47 208.4 113.87 207.91 113.87 206.71 114.47 206.21 114.47 208.4" />
+    </g>
+    <rect
+       height="2.3"
+       width="2.3"
+       y="206.2"
+       x="119.38"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.7.0"
+       id="_0.1.2.0.0.0.0.7.0-17" />
+    <g
+       class="pin"
+       id="lsePin20">
+      <rect
+         id="_0.1.2.0.0.0.0.32.0-17"
+         data-name="0.1.2.0.0.0.0.32.0"
+         class="cls-26"
+         x="119.88"
+         y="206.7"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.33-17"
+         data-name="0.1.2.0.0.0.0.33"
+         class="cls-27"
+         points="121.68 208.4 121.08 207.91 119.88 207.91 119.38 208.4 121.68 208.4" />
+      <polygon
+         id="_0.1.2.0.0.0.0.34-17"
+         data-name="0.1.2.0.0.0.0.34"
+         class="cls-28"
+         points="119.88 206.71 119.88 207.91 119.38 208.4 119.38 206.21 119.88 206.71" />
+      <polygon
+         id="_0.1.2.0.0.0.0.35-17"
+         data-name="0.1.2.0.0.0.0.35"
+         class="cls-29"
+         points="121.08 206.71 119.88 206.71 119.38 206.21 121.68 206.21 121.08 206.71" />
+      <polygon
+         id="_0.1.2.0.0.0.0.36-17"
+         data-name="0.1.2.0.0.0.0.36"
+         class="cls-30"
+         points="121.68 208.4 121.08 207.91 121.08 206.71 121.68 206.21 121.68 208.4" />
+    </g>
+    <rect
+       height="2.3"
+       width="2.3"
+       y="206.2"
+       x="126.58"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.6.0"
+       id="_0.1.2.0.0.0.0.6.0-16" />
+    <g
+       class="pin"
+       id="lsePin22">
+      <rect
+         id="_0.1.2.0.0.0.0.37.0-16"
+         data-name="0.1.2.0.0.0.0.37.0"
+         class="cls-26"
+         x="127.08"
+         y="206.7"
+         width="1.2"
+         height="1.2" />
+      <polygon
+         id="_0.1.2.0.0.0.0.38-16"
+         data-name="0.1.2.0.0.0.0.38"
+         class="cls-27"
+         points="128.88 208.4 128.28 207.91 127.08 207.91 126.58 208.4 128.88 208.4" />
+      <polygon
+         id="_0.1.2.0.0.0.0.39-16"
+         data-name="0.1.2.0.0.0.0.39"
+         class="cls-28"
+         points="127.08 206.71 127.08 207.91 126.58 208.4 126.58 206.21 127.08 206.71" />
+      <polygon
+         id="_0.1.2.0.0.0.0.40-16"
+         data-name="0.1.2.0.0.0.0.40"
+         class="cls-29"
+         points="128.28 206.71 127.08 206.71 126.58 206.21 128.88 206.21 128.28 206.71" />
+      <polygon
+         id="_0.1.2.0.0.0.0.41-16"
+         data-name="0.1.2.0.0.0.0.41"
+         class="cls-30"
+         points="128.88 208.4 128.28 207.91 128.28 206.71 128.88 206.21 128.88 208.4" />
+    </g>
+    <rect
+       height="2.3"
+       width="2.3"
+       y="206.2"
+       x="133.78"
+       class="cls-25"
+       data-name="0.1.2.0.0.0.0.7.0"
+       id="_0.1.2.0.0.0.0.7.0-18" />
+    <g
+       class="pin"
+       id="lsePin24"
+       transform="translate(0.04404062,-0.02202031)">
+      <rect
+         id="_0.1.2.0.0.0.0.32.0-18"
+         data-name="0.1.2.0.0.0.0.32.0"
+         class="cls-26"
+         x="134.28"
+         y="206.7"
+         width="1.2"
+         height="1.2"
+         style="fill:#8c8663" />
+      <polygon
+         id="_0.1.2.0.0.0.0.33-18"
+         data-name="0.1.2.0.0.0.0.33"
+         class="cls-27"
+         points="135.48,207.91 134.28,207.91 133.78,208.4 136.08,208.4 136.08,208.4 "
+         style="fill:#b8af82" />
+      <polygon
+         id="_0.1.2.0.0.0.0.34-18"
+         data-name="0.1.2.0.0.0.0.34"
+         class="cls-28"
+         points="134.28,207.91 133.78,208.4 133.78,206.21 134.28,206.71 134.28,206.71 "
+         style="fill:#80795b" />
+      <polygon
+         id="_0.1.2.0.0.0.0.35-18"
+         data-name="0.1.2.0.0.0.0.35"
+         class="cls-29"
+         points="134.28,206.71 133.78,206.21 136.08,206.21 135.48,206.71 135.48,206.71 "
+         style="fill:#5e5b43" />
+      <polygon
+         id="_0.1.2.0.0.0.0.36-18"
+         data-name="0.1.2.0.0.0.0.36"
+         class="cls-30"
+         points="135.48,207.91 135.48,206.71 136.08,206.21 136.08,208.4 136.08,208.4 "
+         style="fill:#9a916c" />
+    </g>
+    <rect
+       id="rect961"
+       height="14.17"
+       width="2.83"
+       y="31.98"
+       x="129.75"
+       class="cls-24" />
+    <rect
+       id="rect967"
+       height="3.12"
+       width="25.57"
+       y="31.98"
+       x="136.56"
+       class="cls-24" />
+    <rect
+       id="rect977"
+       height="14.17"
+       width="2.83"
+       y="31.98"
+       x="166.09"
+       class="cls-24" />
+    <rect
+       id="rect983"
+       height="9.74"
+       width="1.28"
+       y="31.98"
+       x="166.87"
+       class="cls-8" />
+    <g
+       id="sata" class="component">
+      <rect
+         class="cls-11"
+         x="125.79"
+         y="13.27"
+         width="47.11"
+         height="18.71"
+         id="rect955" />
+      <rect
+         class="cls-24"
+         x="125.79"
+         y="31.98"
+         width="10.77"
+         height="14.17"
+         id="rect957" />
+      <rect
+         class="cls-33"
+         x="128.48"
+         y="31.98"
+         width="5.39"
+         height="14.17"
+         id="rect959" />
+      <rect
+         class="cls-24"
+         x="162.13"
+         y="31.98"
+         width="10.77"
+         height="14.17"
+         id="rect963" />
+      <rect
+         class="cls-33"
+         x="164.82"
+         y="31.98"
+         width="5.39"
+         height="14.17"
+         id="rect965" />
+      <rect
+         class="cls-33"
+         x="136.56"
+         y="35.1"
+         width="25.57"
+         height="5.53"
+         id="rect969" />
+      <rect
+         class="cls-24"
+         x="138.26"
+         y="29.15"
+         width="5.95"
+         height="2.83"
+         id="rect971" />
+      <rect
+         class="cls-34"
+         x="135.17"
+         y="14.81"
+         width="28.35"
+         height="14.34"
+         id="rect973" />
+      <rect
+         class="cls-24"
+         x="154.48"
+         y="29.15"
+         width="5.95"
+         height="2.83"
+         id="rect975" />
+      <rect
+         class="cls-8"
+         x="137.56"
+         y="35.1"
+         width="1.28"
+         height="11.22"
+         id="rect979" />
+      <rect
+         class="cls-8"
+         x="130.53"
+         y="31.98"
+         width="1.28"
+         height="9.74"
+         id="rect981" />
+      <rect
+         class="cls-8"
+         x="141.27"
+         y="35.1"
+         width="1.28"
+         height="11.22"
+         id="rect985" />
+      <rect
+         class="cls-8"
+         x="144.99"
+         y="35.1"
+         width="1.28"
+         height="11.22"
+         id="rect987" />
+      <rect
+         class="cls-8"
+         x="148.7"
+         y="35.1"
+         width="1.28"
+         height="11.22"
+         id="rect989" />
+      <rect
+         class="cls-8"
+         x="152.42"
+         y="35.1"
+         width="1.28"
+         height="11.22"
+         id="rect991" />
+      <rect
+         class="cls-8"
+         x="156.13"
+         y="35.1"
+         width="1.28"
+         height="11.22"
+         id="rect993" />
+      <rect
+         class="cls-8"
+         x="159.85"
+         y="35.1"
+         width="1.28"
+         height="11.22"
+         id="rect995" />
+      <polygon
+         class="cls-33"
+         points="174.88 43.16 172.9 46.16 172.9 13.27 174.88 13.27 174.88 43.16"
+         id="polygon997" />
+    </g>
+    <text
+       id="text999"
+       transform="translate(125.79 50.13)"
+       class="cls-15">J3</text>
+    <g
+       data-name="0.2"
+       id="_0.2">
+      <polygon
+         id="polygon1002"
+         points="220.46 48.95 221.96 47.45 221.96 43.55 220.46 42.05 180.4 42.05 178.9 43.55 178.9 47.45 180.4 48.95 220.46 48.95"
+         class="cls-24" />
+      <g
+         data-name="0.2.0"
+         class="pin"
+         id="ftdiPin1">
+        <g
+           data-name="0.2.0.0"
+           id="_0.2.0.0">
+          <rect
+             height="5.95"
+             width="7.2"
+             y="35.51"
+             x="178.78"
+             data-name="0.2.0.0.0"
+             id="_0.2.0.0.0" />
+          <g
+             data-name="0.2.0.0.1"
+             id="_0.2.0.0.1">
+            <polygon
+               points="181.22 16.06 181.79 13.71 182.97 13.71 183.52 16.06 183.52 36.94 181.22 36.94 181.22 16.06"
+               class="cls-27"
+               id="connector64pin" />
+            <rect
+               height="0.05"
+               y="15.32"
+               x="182.37"
+               class="cls-35"
+               id="connector64terminal" />
+            <polygon
+               points="181.79 13.71 181.63 14.37 183.12 14.37 182.97 13.71 181.79 13.71"
+               class="cls-36"
+               data-name="0.2.0.0.1.1"
+               id="_0.2.0.0.1.1" />
+            <polygon
+               points="183.25 36.94 183.25 16.06 182.69 13.71 182.97 13.71 183.52 16.06 183.52 36.94 183.25 36.94"
+               class="cls-37"
+               data-name="0.2.0.0.1.2"
+               id="_0.2.0.0.1.2" />
+            <polygon
+               points="181.21 36.94 181.21 16.06 181.77 13.71 182.05 13.71 181.49 16.06 181.49 36.94 181.21 36.94"
+               class="cls-38"
+               data-name="0.2.0.0.1.3"
+               id="_0.2.0.0.1.3" />
+          </g>
+          <polygon
+             points="181.22 46.62 183.52 46.62 183.52 39.34 181.22 39.34 181.22 46.62"
+             class="cls-27"
+             data-name="0.2.0.0.5"
+             id="_0.2.0.0.5" />
+          <polygon
+             points="181.22 46.62 183.52 46.62 183.52 46.18 181.22 46.18 181.22 46.62"
+             class="cls-30"
+             data-name="0.2.0.0.6"
+             id="_0.2.0.0.6" />
+          <polygon
+             points="181.22 46.16 183.52 46.16 183.52 45.5 181.22 45.5 181.22 46.16"
+             class="cls-36"
+             data-name="0.2.0.0.7"
+             id="_0.2.0.0.7" />
+          <rect
+             height="5.95"
+             width="5.15"
+             y="35.51"
+             x="179.8"
+             class="cls-24"
+             data-name="0.2.0.0.8"
+             id="_0.2.0.0.8" />
+          <polygon
+             points="179.8 35.51 178.78 35.51 178.78 41.47 179.8 41.47 179.8 35.51"
+             class="cls-33"
+             data-name="0.2.0.0.9"
+             id="_0.2.0.0.9" />
+          <polygon
+             points="184.95 41.47 185.97 41.47 185.97 35.51 184.95 35.51 184.95 41.47"
+             class="cls-39"
+             data-name="0.2.0.0.10"
+             id="_0.2.0.0.10" />
+          <polygon
+             points="183.52 41.47 183.52 46.62 183.25 46.62 183.25 41.47 183.52 41.47"
+             class="cls-37"
+             data-name="0.2.0.0.11"
+             id="_0.2.0.0.11" />
+          <polygon
+             points="181.49 41.47 181.49 46.62 181.21 46.62 181.21 41.47 181.49 41.47"
+             class="cls-38"
+             data-name="0.2.0.0.12"
+             id="_0.2.0.0.12" />
+        </g>
+      </g>
+      <g
+         data-name="0.2.1"
+         class="pin"
+         id="ftdiPin2">
+        <g
+           data-name="0.2.1.0"
+           id="_0.2.1.0">
+          <rect
+             height="5.95"
+             width="7.2"
+             y="35.51"
+             x="185.98"
+             data-name="0.2.1.0.0"
+             id="_0.2.1.0.0" />
+          <g
+             data-name="0.2.1.0.1"
+             id="_0.2.1.0.1">
+            <polygon
+               points="188.43 16.06 188.99 13.71 190.17 13.71 190.72 16.06 190.72 36.94 188.43 36.94 188.43 16.06"
+               class="cls-27"
+               id="connector63pin" />
+            <rect
+               height="0.05"
+               width="0.01"
+               y="15.32"
+               x="189.57"
+               class="cls-35"
+               id="connector63terminal" />
+            <polygon
+               points="188.99 13.71 188.83 14.37 190.32 14.37 190.17 13.71 188.99 13.71"
+               class="cls-36"
+               data-name="0.2.1.0.1.1"
+               id="_0.2.1.0.1.1" />
+            <polygon
+               points="190.44 36.94 190.44 16.06 189.89 13.71 190.17 13.71 190.72 16.06 190.72 36.94 190.44 36.94"
+               class="cls-37"
+               data-name="0.2.1.0.1.2"
+               id="_0.2.1.0.1.2" />
+            <polygon
+               points="188.41 36.94 188.41 16.06 188.97 13.71 189.25 13.71 188.69 16.06 188.69 36.94 188.41 36.94"
+               class="cls-38"
+               data-name="0.2.1.0.1.3"
+               id="_0.2.1.0.1.3" />
+          </g>
+          <polygon
+             points="188.43 46.62 190.72 46.62 190.72 39.34 188.43 39.34 188.43 46.62"
+             class="cls-27"
+             data-name="0.2.1.0.5"
+             id="_0.2.1.0.5" />
+          <polygon
+             points="188.43 46.62 190.72 46.62 190.72 46.18 188.43 46.18 188.43 46.62"
+             class="cls-30"
+             data-name="0.2.1.0.6"
+             id="_0.2.1.0.6" />
+          <polygon
+             points="188.43 46.16 190.72 46.16 190.72 45.5 188.43 45.5 188.43 46.16"
+             class="cls-36"
+             data-name="0.2.1.0.7"
+             id="_0.2.1.0.7" />
+          <rect
+             height="5.95"
+             width="5.15"
+             y="35.51"
+             x="187"
+             class="cls-24"
+             data-name="0.2.1.0.8"
+             id="_0.2.1.0.8" />
+          <polygon
+             points="187 35.51 185.97 35.51 185.97 41.47 187 41.47 187 35.51"
+             class="cls-33"
+             data-name="0.2.1.0.9"
+             id="_0.2.1.0.9" />
+          <polygon
+             points="192.15 41.47 193.18 41.47 193.18 35.51 192.15 35.51 192.15 41.47"
+             class="cls-39"
+             data-name="0.2.1.0.10"
+             id="_0.2.1.0.10" />
+          <polygon
+             points="190.72 41.47 190.72 46.62 190.44 46.62 190.44 41.47 190.72 41.47"
+             class="cls-37"
+             data-name="0.2.1.0.11"
+             id="_0.2.1.0.11" />
+          <polygon
+             points="188.69 41.47 188.69 46.62 188.41 46.62 188.41 41.47 188.69 41.47"
+             class="cls-38"
+             data-name="0.2.1.0.12"
+             id="_0.2.1.0.12" />
+        </g>
+      </g>
+      <g
+         data-name="0.2.2"
+         class="pin"
+         id="ftdiPin3">
+        <g
+           data-name="0.2.2.0"
+           id="_0.2.2.0">
+          <rect
+             height="5.95"
+             width="7.2"
+             y="35.51"
+             x="193.18"
+             data-name="0.2.2.0.0"
+             id="_0.2.2.0.0" />
+          <g
+             data-name="0.2.2.0.1"
+             id="_0.2.2.0.1">
+            <polygon
+               points="195.63 16.06 196.19 13.71 197.37 13.71 197.93 16.06 197.93 36.94 195.63 36.94 195.63 16.06"
+               class="cls-27"
+               id="connector62pin" />
+            <rect
+               height="0.05"
+               y="15.32"
+               x="196.77"
+               class="cls-35"
+               id="connector62terminal" />
+            <polygon
+               points="196.19 13.71 196.03 14.37 197.52 14.37 197.37 13.71 196.19 13.71"
+               class="cls-36"
+               data-name="0.2.2.0.1.1"
+               id="_0.2.2.0.1.1" />
+            <polygon
+               points="197.64 36.94 197.64 16.06 197.09 13.71 197.37 13.71 197.93 16.06 197.93 36.94 197.64 36.94"
+               class="cls-37"
+               data-name="0.2.2.0.1.2"
+               id="_0.2.2.0.1.2" />
+            <polygon
+               points="195.61 36.94 195.61 16.06 196.17 13.71 196.45 13.71 195.89 16.06 195.89 36.94 195.61 36.94"
+               class="cls-38"
+               data-name="0.2.2.0.1.3"
+               id="_0.2.2.0.1.3" />
+          </g>
+          <polygon
+             points="195.63 46.62 197.93 46.62 197.93 39.34 195.63 39.34 195.63 46.62"
+             class="cls-27"
+             data-name="0.2.2.0.5"
+             id="_0.2.2.0.5" />
+          <polygon
+             points="195.63 46.62 197.93 46.62 197.93 46.18 195.63 46.18 195.63 46.62"
+             class="cls-30"
+             data-name="0.2.2.0.6"
+             id="_0.2.2.0.6" />
+          <polygon
+             points="195.63 46.16 197.93 46.16 197.93 45.5 195.63 45.5 195.63 46.16"
+             class="cls-36"
+             data-name="0.2.2.0.7"
+             id="_0.2.2.0.7" />
+          <rect
+             height="5.95"
+             width="5.15"
+             y="35.51"
+             x="194.2"
+             class="cls-24"
+             data-name="0.2.2.0.8"
+             id="_0.2.2.0.8" />
+          <polygon
+             points="194.2 35.51 193.18 35.51 193.18 41.47 194.2 41.47 194.2 35.51"
+             class="cls-33"
+             data-name="0.2.2.0.9"
+             id="_0.2.2.0.9" />
+          <polygon
+             points="199.35 41.47 200.38 41.47 200.38 35.51 199.35 35.51 199.35 41.47"
+             class="cls-39"
+             data-name="0.2.2.0.10"
+             id="_0.2.2.0.10" />
+          <polygon
+             points="197.93 41.47 197.93 46.62 197.64 46.62 197.64 41.47 197.93 41.47"
+             class="cls-37"
+             data-name="0.2.2.0.11"
+             id="_0.2.2.0.11" />
+          <polygon
+             points="195.89 41.47 195.89 46.62 195.61 46.62 195.61 41.47 195.89 41.47"
+             class="cls-38"
+             data-name="0.2.2.0.12"
+             id="_0.2.2.0.12" />
+        </g>
+      </g>
+      <g
+         data-name="0.2.3"
+         class="pin"
+         id="ftdiPin4">
+        <g
+           data-name="0.2.3.0"
+           id="_0.2.3.0">
+          <rect
+             height="5.95"
+             width="7.2"
+             y="35.51"
+             x="200.38"
+             data-name="0.2.3.0.0"
+             id="_0.2.3.0.0" />
+          <g
+             data-name="0.2.3.0.1"
+             id="_0.2.3.0.1">
+            <polygon
+               points="202.83 16.06 203.39 13.71 204.57 13.71 205.12 16.06 205.12 36.94 202.83 36.94 202.83 16.06"
+               class="cls-27"
+               id="connector61pin" />
+            <rect
+               height="0.05"
+               y="15.32"
+               x="203.97"
+               class="cls-35"
+               id="connector61terminal" />
+            <polygon
+               points="203.39 13.71 203.23 14.37 204.72 14.37 204.57 13.71 203.39 13.71"
+               class="cls-36"
+               data-name="0.2.3.0.1.1"
+               id="_0.2.3.0.1.1" />
+            <polygon
+               points="204.84 36.94 204.84 16.06 204.29 13.71 204.57 13.71 205.12 16.06 205.12 36.94 204.84 36.94"
+               class="cls-37"
+               data-name="0.2.3.0.1.2"
+               id="_0.2.3.0.1.2" />
+            <polygon
+               points="202.81 36.94 202.81 16.06 203.37 13.71 203.65 13.71 203.09 16.06 203.09 36.94 202.81 36.94"
+               class="cls-38"
+               data-name="0.2.3.0.1.3"
+               id="_0.2.3.0.1.3" />
+          </g>
+          <polygon
+             points="202.83 46.62 205.12 46.62 205.12 39.34 202.83 39.34 202.83 46.62"
+             class="cls-27"
+             data-name="0.2.3.0.5"
+             id="_0.2.3.0.5" />
+          <polygon
+             points="202.83 46.62 205.12 46.62 205.12 46.18 202.83 46.18 202.83 46.62"
+             class="cls-30"
+             data-name="0.2.3.0.6"
+             id="_0.2.3.0.6" />
+          <polygon
+             points="202.83 46.16 205.12 46.16 205.12 45.5 202.83 45.5 202.83 46.16"
+             class="cls-36"
+             data-name="0.2.3.0.7"
+             id="_0.2.3.0.7" />
+          <rect
+             height="5.95"
+             width="5.15"
+             y="35.51"
+             x="201.4"
+             class="cls-24"
+             data-name="0.2.3.0.8"
+             id="_0.2.3.0.8" />
+          <polygon
+             points="201.4 35.51 200.38 35.51 200.38 41.47 201.4 41.47 201.4 35.51"
+             class="cls-33"
+             data-name="0.2.3.0.9"
+             id="_0.2.3.0.9" />
+          <polygon
+             points="206.55 41.47 207.58 41.47 207.58 35.51 206.55 35.51 206.55 41.47"
+             class="cls-39"
+             data-name="0.2.3.0.10"
+             id="_0.2.3.0.10" />
+          <polygon
+             points="205.12 41.47 205.12 46.62 204.84 46.62 204.84 41.47 205.12 41.47"
+             class="cls-37"
+             data-name="0.2.3.0.11"
+             id="_0.2.3.0.11" />
+          <polygon
+             points="203.09 41.47 203.09 46.62 202.81 46.62 202.81 41.47 203.09 41.47"
+             class="cls-38"
+             data-name="0.2.3.0.12"
+             id="_0.2.3.0.12" />
+        </g>
+      </g>
+      <g
+         data-name="0.2.4"
+         class="pin"
+         id="ftdiPin5">
+        <g
+           data-name="0.2.4.0"
+           id="_0.2.4.0">
+          <rect
+             height="5.95"
+             width="7.2"
+             y="35.51"
+             x="207.58"
+             data-name="0.2.4.0.0"
+             id="_0.2.4.0.0" />
+          <g
+             data-name="0.2.4.0.1"
+             id="_0.2.4.0.1">
+            <polygon
+               points="210.03 16.06 210.59 13.71 211.77 13.71 212.32 16.06 212.32 36.94 210.03 36.94 210.03 16.06"
+               class="cls-27"
+               id="connector60pin" />
+            <rect
+               height="0.05"
+               y="15.32"
+               x="211.17"
+               class="cls-35"
+               id="connector60terminal" />
+            <polygon
+               points="210.59 13.71 210.43 14.37 211.92 14.37 211.77 13.71 210.59 13.71"
+               class="cls-36"
+               data-name="0.2.4.0.1.1"
+               id="_0.2.4.0.1.1" />
+            <polygon
+               points="212.04 36.94 212.04 16.06 211.49 13.71 211.77 13.71 212.32 16.06 212.32 36.94 212.04 36.94"
+               class="cls-37"
+               data-name="0.2.4.0.1.2"
+               id="_0.2.4.0.1.2" />
+            <polygon
+               points="210.01 36.94 210.01 16.06 210.57 13.71 210.85 13.71 210.29 16.06 210.29 36.94 210.01 36.94"
+               class="cls-38"
+               data-name="0.2.4.0.1.3"
+               id="_0.2.4.0.1.3" />
+          </g>
+          <polygon
+             points="210.03 46.62 212.32 46.62 212.32 39.34 210.03 39.34 210.03 46.62"
+             class="cls-27"
+             data-name="0.2.4.0.5"
+             id="_0.2.4.0.5" />
+          <polygon
+             points="210.03 46.62 212.32 46.62 212.32 46.18 210.03 46.18 210.03 46.62"
+             class="cls-30"
+             data-name="0.2.4.0.6"
+             id="_0.2.4.0.6" />
+          <polygon
+             points="210.03 46.16 212.32 46.16 212.32 45.5 210.03 45.5 210.03 46.16"
+             class="cls-36"
+             data-name="0.2.4.0.7"
+             id="_0.2.4.0.7" />
+          <rect
+             height="5.95"
+             width="5.15"
+             y="35.51"
+             x="208.6"
+             class="cls-24"
+             data-name="0.2.4.0.8"
+             id="_0.2.4.0.8" />
+          <polygon
+             points="208.6 35.51 207.58 35.51 207.58 41.47 208.6 41.47 208.6 35.51"
+             class="cls-33"
+             data-name="0.2.4.0.9"
+             id="_0.2.4.0.9" />
+          <polygon
+             points="213.75 41.47 214.78 41.47 214.78 35.51 213.75 35.51 213.75 41.47"
+             class="cls-39"
+             data-name="0.2.4.0.10"
+             id="_0.2.4.0.10" />
+          <polygon
+             points="212.32 41.47 212.32 46.62 212.04 46.62 212.04 41.47 212.32 41.47"
+             class="cls-37"
+             data-name="0.2.4.0.11"
+             id="_0.2.4.0.11" />
+          <polygon
+             points="210.29 41.47 210.29 46.62 210.01 46.62 210.01 41.47 210.29 41.47"
+             class="cls-38"
+             data-name="0.2.4.0.12"
+             id="_0.2.4.0.12" />
+        </g>
+      </g>
+      <g
+         data-name="0.2.5"
+         class="pin"
+         id="ftdiPin6">
+        <g
+           data-name="0.2.5.0"
+           id="_0.2.5.0">
+          <rect
+             height="5.95"
+             width="7.2"
+             y="35.51"
+             x="214.78"
+             data-name="0.2.5.0.0"
+             id="_0.2.5.0.0" />
+          <g
+             data-name="0.2.5.0.1"
+             id="_0.2.5.0.1">
+            <polygon
+               points="217.23 16.06 217.79 13.71 218.97 13.71 219.53 16.06 219.53 36.94 217.23 36.94 217.23 16.06"
+               class="cls-27"
+               id="connector59pin" />
+            <rect
+               height="0.05"
+               y="15.32"
+               x="218.37"
+               class="cls-35"
+               id="connector59terminal" />
+            <polygon
+               points="217.79 13.71 217.63 14.37 219.12 14.37 218.97 13.71 217.79 13.71"
+               class="cls-36"
+               data-name="0.2.5.0.1.1"
+               id="_0.2.5.0.1.1" />
+            <polygon
+               points="219.25 36.94 219.25 16.06 218.69 13.71 218.97 13.71 219.53 16.06 219.53 36.94 219.25 36.94"
+               class="cls-37"
+               data-name="0.2.5.0.1.2"
+               id="_0.2.5.0.1.2" />
+            <polygon
+               points="217.21 36.94 217.21 16.06 217.77 13.71 218.05 13.71 217.49 16.06 217.49 36.94 217.21 36.94"
+               class="cls-38"
+               data-name="0.2.5.0.1.3"
+               id="_0.2.5.0.1.3" />
+          </g>
+          <polygon
+             points="217.23 46.62 219.53 46.62 219.53 39.34 217.23 39.34 217.23 46.62"
+             class="cls-27"
+             data-name="0.2.5.0.5"
+             id="_0.2.5.0.5" />
+          <polygon
+             points="217.23 46.62 219.53 46.62 219.53 46.18 217.23 46.18 217.23 46.62"
+             class="cls-30"
+             data-name="0.2.5.0.6"
+             id="_0.2.5.0.6" />
+          <polygon
+             points="217.23 46.16 219.53 46.16 219.53 45.5 217.23 45.5 217.23 46.16"
+             class="cls-36"
+             data-name="0.2.5.0.7"
+             id="_0.2.5.0.7" />
+          <rect
+             height="5.95"
+             width="5.15"
+             y="35.51"
+             x="215.8"
+             class="cls-24"
+             data-name="0.2.5.0.8"
+             id="_0.2.5.0.8" />
+          <polygon
+             points="215.8 35.51 214.78 35.51 214.78 41.47 215.8 41.47 215.8 35.51"
+             class="cls-33"
+             data-name="0.2.5.0.9"
+             id="_0.2.5.0.9" />
+          <polygon
+             points="220.95 41.47 221.98 41.47 221.98 35.51 220.95 35.51 220.95 41.47"
+             class="cls-39"
+             data-name="0.2.5.0.10"
+             id="_0.2.5.0.10" />
+          <polygon
+             points="219.53 41.47 219.53 46.62 219.25 46.62 219.25 41.47 219.53 41.47"
+             class="cls-37"
+             data-name="0.2.5.0.11"
+             id="_0.2.5.0.11" />
+          <polygon
+             points="217.49 41.47 217.49 46.62 217.21 46.62 217.21 41.47 217.49 41.47"
+             class="cls-38"
+             data-name="0.2.5.0.12"
+             id="_0.2.5.0.12" />
+        </g>
+      </g>
+      <text
+         id="text1106"
+         transform="translate(174.01 51.15)"
+         class="cls-15">J4</text>
+    </g>
+    <circle
+       r="1.87"
+       cy="65.3"
+       cx="98.86"
+       class="pin cls-31"
+       data-name="connector33pin"
+       id="j5Pin2" />
+    <rect
+       id="rect1109"
+       height="14.17"
+       width="6.52"
+       y="54.62"
+       x="95.6"
+       class="cls-2" />
+    <circle
+       r="1.87"
+       cy="58.1"
+       cx="98.86"
+       class="cls-31"
+       data-name="connector32pin"
+       id="connector32pin-2" />
+    <rect
+       height="3.74"
+       width="3.75"
+       y="56.23"
+       x="96.98"
+       class="pin cls-31"
+       data-name="0.1.0.21"
+       id="j5Pin1" />
+    <g
+       data-name="0.1.0.2.21.0.0.0"
+       id="_0.1.0.2.21.0.0.0-12">
+      <text
+         id="text1114"
+         transform="translate(97.78 52.82)"
+         class="cls-16">J5</text>
+    </g>
+    <circle
+       r="1.87"
+       cy="65.3"
+       cx="107.86"
+       class="pin cls-31"
+       data-name="connector33pin"
+       id="j6Pin2" />
+    <circle
+       r="1.87"
+       cy="58.1"
+       cx="107.86"
+       class="cls-31"
+       data-name="connector32pin"
+       id="connector32pin-3" />
+    <rect
+       height="3.74"
+       width="3.75"
+       y="56.23"
+       x="105.98"
+       class="pin cls-31"
+       data-name="0.1.0.21"
+       id="j6Pin1" />
+    <rect
+       id="rect1119"
+       height="14.17"
+       width="6.52"
+       y="54.62"
+       x="104.6"
+       class="cls-2" />
+    <g
+       data-name="0.1.0.2.21.0.0.0"
+       id="_0.1.0.2.21.0.0.0-13">
+      <text
+         id="text1122"
+         transform="translate(106.78 52.82)"
+         class="cls-16">J6</text>
+    </g>
+    <rect
+       id="rect1124"
+       height="14.17"
+       width="6.52"
+       y="67.22"
+       x="243.2"
+       class="cls-2" />
+    <circle
+       r="1.87"
+       cy="77.9"
+       cx="246.46"
+       class="pin cls-31"
+       data-name="connector33pin"
+       id="j7Pin2" />
+    <circle
+       r="1.87"
+       cy="70.7"
+       cx="246.46"
+       class="cls-31"
+       data-name="connector32pin"
+       id="connector32pin-4" />
+    <rect
+       height="3.74"
+       width="3.75"
+       y="68.83"
+       x="244.58"
+       class="pin cls-31"
+       data-name="0.1.0.21"
+       id="j7Pin1" />
+    <g
+       data-name="0.1.0.2.21.0.0.0"
+       id="_0.1.0.2.21.0.0.0-14">
+      <text
+         id="text1130"
+         transform="translate(245.38 65.94)"
+         class="cls-16">J7</text>
+    </g>
+    <path
+       style=""
+       id="path1132"
+       d="M28.16,69a20.1,20.1,0,0,1-5.82.32c-0.57-.1-1.17-0.21-1.81-0.31a15.3,15.3,0,0,0-7.36.61c-2.88.75-4.8,4-4.82,4.08H7.48c0.09-.15,2.14-4.19,5.43-5a16.27,16.27,0,0,1,7.76-.64c0.66,0.1,1.27.21,1.84,0.31a52.1,52.1,0,0,0,5.65.58V69Z"
+       class="cls-19" />
+    <path
+       style=""
+       id="path1134"
+       d="M28.15,68.63V69a25.67,25.67,0,0,1-5.84,0c-0.57-.1-1.17-0.21-1.81-0.31a15.3,15.3,0,0,0-7.36.61c-2.88.75-4.8,4-4.82,4.08l-0.85.32H8.35s1.94-3.33,4.82-4.08a15.28,15.28,0,0,1,7.36-.61c0.65,0.1,1.24.21,1.81,0.31A20.09,20.09,0,0,0,28.16,69V69Z"
+       class="cls-7" />
+    <path
+       style=""
+       id="path1136"
+       d="M28.16,126.37a20.1,20.1,0,0,0-5.82-.33c-0.57.1-1.17,0.21-1.81,0.31a15.3,15.3,0,0,1-7.36-.61c-2.88-.75-4.8-4-4.82-4.08H7.48c0.09,0.15,2.14,4.19,5.43,5a16.27,16.27,0,0,0,7.76.64c0.66-.1,1.27-0.21,1.84-0.31a52.1,52.1,0,0,1,5.65-.58v-0.08Z"
+       class="cls-19" />
+    <path
+       style=""
+       id="path1138"
+       d="M28.15,126.78v-0.4a25.67,25.67,0,0,0-5.84,0c-0.57.1-1.17,0.21-1.81,0.31a15.3,15.3,0,0,1-7.36-.61c-2.88-.75-4.8-4-4.82-4.08l-0.85-.32H8.35s1.94,3.33,4.82,4.08a15.28,15.28,0,0,0,7.36.61c0.65-.1,1.24-0.21,1.81-0.31a20.08,20.08,0,0,1,5.82.33v0.08Z"
+       class="cls-7" />
+    <rect
+       id="rect1140"
+       height="49.35"
+       width="53.45"
+       y="73.11"
+       x="6.82"
+       class="cls-40" />
+    <path
+       style=""
+       id="path1142"
+       d="M17.34,85.32a0.81,0.81,0,0,1,.81.82v3a0.82,0.82,0,0,1-.81.82H6.69a0.82,0.82,0,0,1-.81-0.82v-3a0.82,0.82,0,0,1,.81-0.82H17.34Z"
+       class="cls-8" />
+    <path
+       style=""
+       id="path1144"
+       d="M17.34,105.62a0.81,0.81,0,0,1,.81.82v3a0.82,0.82,0,0,1-.81.82H6.69a0.82,0.82,0,0,1-.81-0.82v-3a0.82,0.82,0,0,1,.81-0.82H17.34Z"
+       class="cls-8" />
+    <path
+       style=""
+       id="path1146"
+       d="M17.34,85.32a0.81,0.81,0,0,1,.81.82v3a0.82,0.82,0,0,1-.81.82H16V85.32h1.32Z"
+       class="cls-7" />
+    <path
+       style=""
+       id="path1148"
+       d="M17.34,105.62a0.81,0.81,0,0,1,.81.82v3a0.82,0.82,0,0,1-.81.82H16v-4.62h1.32Z"
+       class="cls-7" />
+    <rect
+       id="rect1150"
+       height="4.62"
+       width="4.58"
+       y="85.33"
+       x="11.65"
+       class="cls-19" />
+    <rect
+       id="rect1152"
+       height="4.62"
+       width="4.58"
+       y="105.62"
+       x="11.65"
+       class="cls-19" />
+    <rect
+       id="rect1154"
+       height="4.62"
+       width="4.37"
+       y="85.33"
+       x="8.98"
+       class="cls-8" />
+    <rect
+       id="rect1156"
+       height="4.62"
+       width="4.37"
+       y="105.62"
+       x="8.98"
+       class="cls-8" />
+    <rect
+       id="rect1158"
+       height="4.62"
+       width="1.65"
+       y="85.33"
+       x="9.68"
+       class="cls-7" />
+    <rect
+       id="rect1160"
+       height="4.62"
+       width="1.65"
+       y="105.62"
+       x="9.68"
+       class="cls-7" />
+    <rect
+       id="rect1162"
+       height="4.62"
+       width="0.35"
+       y="85.33"
+       x="16.06"
+       class="cls-6" />
+    <rect
+       id="rect1164"
+       height="4.62"
+       width="0.55"
+       y="85.33"
+       x="16.47"
+       class="cls-20" />
+    <path
+       style=""
+       id="ethernet"
+       d="M18.58,122.46h49V73.11h-49v0.32H6.82v11l0.81,0.05,5.75,0.38,5.75,0.38a0.88,0.88,0,0,1,.81.87v3a0.89,0.89,0,0,1-.81.87l-5.75.38-5.75.38h0l-0.81.06v13.94l0.81,0.06h0l5.75,0.39,5.76,0.39a0.88,0.88,0,0,1,.81.86v3a0.89,0.89,0,0,1-.81.87l-5.76.39-5.75.39h0l-0.81.06v11H18.58v0.3h0Z"
+       class="component cls-7" />
+    <text
+       id="text1168"
+       transform="translate(49.47 87.95) rotate(90)"
+       class="cls-41">LINK-PP</text>
+    <text
+       id="text1170"
+       transform="translate(50.58 104.67) rotate(90) scale(0.58)"
+       class="cls-41">TM</text>
+    <text
+       id="text1172"
+       transform="translate(45.47 88.41) rotate(90)"
+       class="cls-42">LPJG16314A4NL</text>
+    <text
+       id="text1174"
+       transform="translate(36.65 71.48)"
+       class="cls-15">J8</text>
+    <g
+       data-name="0.1.13"
+       id="power" class="component">
+      <g
+         data-name="powersupply dc-21mm"
+         id="powersupply_dc-21mm">
+        <g
+           data-name="0.1.13.0.0"
+           id="_0.1.13.0.0">
+          <g
+             data-name="0.1.13.0.0.0"
+             id="_0.1.13.0.0.0">
+            <g
+               data-name="0.1.13.0.0.0.0"
+               id="_0.1.13.0.0.0.0">
+              <g
+                 id="dc-21mm">
+                <g
+                   data-name="0.1.13.0.0.0.0.0.0"
+                   id="_0.1.13.0.0.0.0.0.0">
+                  <g
+                     data-name="0.1.13.0.0.0.0.0.0.0"
+                     id="_0.1.13.0.0.0.0.0.0.0">
+                    <g
+                       data-name="0.1.13.0.0.0.0.0.0.0.0"
+                       id="_0.1.13.0.0.0.0.0.0.0.0">
+                      <g
+                         data-name="0.1.13.0.0.0.0.0.0.0.0.0"
+                         id="_0.1.13.0.0.0.0.0.0.0.0.0">
+                        <rect
+                           height="23.73"
+                           width="35.78"
+                           y="174.04"
+                           x="18.13"
+                           class="cls-43"
+                           data-name="0.1.13.0.0.0.0.0.0.0.0.0.0"
+                           id="_0.1.13.0.0.0.0.0.0.0.0.0.0" />
+                        <rect
+                           height="1.65"
+                           width="34.74"
+                           y="174.61"
+                           x="18.74"
+                           class="cls-44"
+                           data-name="0.1.13.0.0.0.0.0.0.0.0.0.1"
+                           id="_0.1.13.0.0.0.0.0.0.0.0.0.1" />
+                        <rect
+                           height="5.37"
+                           width="34.74"
+                           y="176.26"
+                           x="18.74"
+                           class="cls-45"
+                           data-name="0.1.13.0.0.0.0.0.0.0.0.0.2"
+                           id="_0.1.13.0.0.0.0.0.0.0.0.0.2" />
+                        <rect
+                           height="1.62"
+                           width="35.78"
+                           y="195.64"
+                           x="17.7"
+                           data-name="0.1.13.0.0.0.0.0.0.0.0.0.3"
+                           id="_0.1.13.0.0.0.0.0.0.0.0.0.3" />
+                        <rect
+                           height="5.82"
+                           width="35.78"
+                           y="189.86"
+                           x="17.7"
+                           class="cls-46"
+                           data-name="0.1.13.0.0.0.0.0.0.0.0.0.4"
+                           id="_0.1.13.0.0.0.0.0.0.0.0.0.4" />
+                      </g>
+                    </g>
+                    <g
+                       data-name="0.1.13.0.0.0.0.0.0.0.3"
+                       id="_0.1.13.0.0.0.0.0.0.0.3">
+                      <path
+                         style=""
+                         d="M20.63,178.37v15.08h13.3a7.54,7.54,0,1,0,0-15.08H20.63Z"
+                         class="cls-43"
+                         data-name="0.1.13.0.0.0.0.0.0.0.3.0"
+                         id="_0.1.13.0.0.0.0.0.0.0.3.0" />
+                      <rect
+                         height="25.52"
+                         width="7.69"
+                         y="173.14"
+                         x="13.67"
+                         class="cls-43"
+                         data-name="0.1.13.0.0.0.0.0.0.0.3.1"
+                         id="_0.1.13.0.0.0.0.0.0.0.3.1" />
+                    </g>
+                    <rect
+                       height="5.71"
+                       width="1.7"
+                       y="183.05"
+                       x="53.91"
+                       class="cls-47"
+                       data-name="0.1.13.0.0.0.0.0.0.0.4"
+                       id="_0.1.13.0.0.0.0.0.0.0.4" />
+                    <rect
+                       height="11.23"
+                       width="0.98"
+                       y="180.29"
+                       x="53.91"
+                       class="cls-44"
+                       data-name="0.1.13.0.0.0.0.0.0.0.5"
+                       id="_0.1.13.0.0.0.0.0.0.0.5" />
+                    <rect
+                       height="1.06"
+                       width="6.27"
+                       y="173.56"
+                       x="14.36"
+                       class="cls-44"
+                       data-name="0.1.13.0.0.0.0.0.0.0.6"
+                       id="_0.1.13.0.0.0.0.0.0.0.6" />
+                    <rect
+                       height="1.05"
+                       width="6.27"
+                       y="197.25"
+                       x="14.36"
+                       data-name="0.1.13.0.0.0.0.0.0.0.7"
+                       id="_0.1.13.0.0.0.0.0.0.0.7" />
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       data-name="0.1.0.2.21.0.0.0"
+       id="_0.1.0.2.21.0.0.0-15">
+      <text
+         id="text1199"
+         transform="translate(19.75 172.52)"
+         class="cls-16">J9</text>
+    </g>
+    <g
+       data-name="0.1.0.2.21.0.0.0"
+       id="_0.1.0.2.21.0.0.0-16">
+      <text
+         id="text1202"
+         transform="translate(19.28 135.04)"
+         class="cls-32">BH1</text>
+    </g>
+    <g
+       id="rtcBatt">
+      <rect
+         class="cls-2"
+         x="19.28"
+         y="136.04"
+         width="42.52"
+         height="13.32"
+         id="rect1204" />
+      <circle
+         id="connector33pin-5"
+         data-name="connector33pin"
+         class="cls-31"
+         cx="26.14"
+         cy="138.38"
+         r="1.87" />
+      <circle
+         id="connector33pin-6"
+         data-name="connector33pin"
+         class="cls-31"
+         cx="54.94"
+         cy="138.38"
+         r="1.87" />
+      <circle
+         id="connector33pin-7"
+         data-name="connector33pin"
+         class="cls-31"
+         cx="40.54"
+         cy="147.02"
+         r="1.87" />
+      <path
+         class="cls-12"
+         d="M22.14,138.16h0.66l0.06,0,0,0.05a0.24,0.24,0,0,1,0,.14,0.24,0.24,0,0,1,0,.14l0,0.05-0.06,0H21.48l-0.06,0-0.06-.06v0a0.3,0.3,0,0,1,0-.12,0.3,0.3,0,0,1,0-.12,0.14,0.14,0,0,1,0-.06,0.14,0.14,0,0,1,.08,0h0.66Z"
+         id="path1209"
+         style="" />
+      <path
+         class="cls-12"
+         d="M58.94,138.16h0.66l0.06,0,0,0.05a0.24,0.24,0,0,1,0,.14,0.24,0.24,0,0,1,0,.14l0,0.05-0.06,0H58.28l-0.06,0-0.06-.06v0a0.3,0.3,0,0,1,0-.12,0.3,0.3,0,0,1,0-.12,0.14,0.14,0,0,1,0-.06,0.14,0.14,0,0,1,.08,0h0.66Z"
+         id="path1211"
+         style="" />
+      <path
+         class="cls-12"
+         d="M44.58,146.24h0a0.14,0.14,0,0,1,.07.07,0.56,0.56,0,0,1,0,.29v0.25h0.5a0.16,0.16,0,0,1,0,.31H44.7v0.25a0.57,0.57,0,0,1,0,.29,0.16,0.16,0,0,1-.2.08l-0.06,0a0.14,0.14,0,0,1,0-.06,0.9,0.9,0,0,1,0-.29v-0.24H43.86a0.16,0.16,0,0,1,0-.31h0.51v-0.24a0.88,0.88,0,0,1,0-.28,0.14,0.14,0,0,1,0-.06,0.15,0.15,0,0,1,.08,0h0.07Z"
+         id="path1213"
+         style="" />
+    </g>
+    <path
+       style=""
+       id="path1215"
+       d="M28.66,202a9.07,9.07,0,1,0,9.07,9.07A9.07,9.07,0,0,0,28.66,202Zm0,14.6a5.53,5.53,0,1,1,5.53-5.53A5.53,5.53,0,0,1,28.66,216.63Z"
+       class="cls-48" />
+    <path
+       style=""
+       id="path1217"
+       d="M278.78,211.1a9.07,9.07,0,1,0,9.07-9.07A9.07,9.07,0,0,0,278.78,211.1Zm14.6,0a5.53,5.53,0,1,1-5.53-5.53A5.53,5.53,0,0,1,293.38,211.1Z"
+       class="cls-48" />
+    <path
+       style=""
+       id="path1219"
+       d="M287.86,33a9.07,9.07,0,1,0-9.07-9.07A9.07,9.07,0,0,0,287.86,33Zm0-14.6a5.53,5.53,0,1,1-5.53,5.53A5.53,5.53,0,0,1,287.86,18.38Z"
+       class="cls-48" />
+    <path
+       style=""
+       id="path1221"
+       d="M37.73,23.9A9.07,9.07,0,1,0,28.66,33,9.07,9.07,0,0,0,37.73,23.9Zm-14.6,0a5.53,5.53,0,1,1,5.53,5.53A5.53,5.53,0,0,1,23.13,23.9Z"
+       class="cls-48" />
+    <g
+       id="sw1" class="component">
+      <path
+         style=""
+         id="path1224"
+         d="M45.21,19.56a1.39,1.39,0,0,1,1.39-1.39H60.83a1.39,1.39,0,0,1,1.39,1.39V33.8a1.39,1.39,0,0,1-1.39,1.39H46.59a1.39,1.39,0,0,1-1.38-1.39V19.56h0Z"
+         class="cls-19" />
+      <circle
+         id="circle1226"
+         r="1.47"
+         cy="32.7"
+         cx="59.74" />
+      <circle
+         id="circle1228"
+         r="1.47"
+         cy="32.68"
+         cx="47.64" />
+      <circle
+         id="circle1230"
+         r="1.47"
+         cy="20.58"
+         cx="47.67" />
+      <circle
+         id="circle1232"
+         r="1.47"
+         cy="20.61"
+         cx="59.77" />
+      <circle
+         id="circle1234"
+         r="4.96"
+         cy="26.68"
+         cx="53.71"
+         class="cls-49" />
+      <circle
+         id="circle1236"
+         r="4.96"
+         cy="26.68"
+         cx="53.71"
+         class="cls-12" />
+      <circle
+         id="circle1238"
+         r="4.36"
+         cy="26.45"
+         cx="53.71"
+         class="cls-50" />
+      <circle
+         id="circle1240"
+         r="4.25"
+         cy="26.65"
+         cx="53.71"
+         class="cls-12" />
+      <path
+         style=""
+         id="path1242"
+         d="M52.18,30.61a4.19,4.19,0,0,0,1,.26,4.24,4.24,0,0,0,2.53-.51l0.09-.24a4.81,4.81,0,0,1-2.82.54,4.76,4.76,0,0,1-.9-0.2Z"
+         class="cls-19" />
+    </g>
+    <g
+       data-name="0.1.0.2.21.0.0.0"
+       id="_0.1.0.2.21.0.0.0-17">
+      <text
+         id="text1245"
+         transform="translate(52.1 17.05)"
+         class="cls-16">SW1</text>
+    </g>
+    <g
+       data-name="0.2.49"
+       id="microHDMI" class="component">
+      <g
+         id="mcr-ab1-s-ra-smt">
+        <g
+           data-name="0.2.49.0.0"
+           id="_0.2.49.0.0">
+          <g
+             data-name="0.1.49.0"
+             id="_0.1.49.0">
+            <g
+               data-name="0.1.49.0.0"
+               id="_0.1.49.0.0">
+              <g
+                 data-name="0.2.49.0.0.0.0.0"
+                 id="_0.2.49.0.0.0.0.0">
+                <g
+                   data-name="0.1.49.0.0.0"
+                   id="_0.1.49.0.0.0">
+                  <rect
+                     height="0.99"
+                     width="0.65"
+                     y="43.4"
+                     x="34.57"
+                     class="cls-3"
+                     data-name="0.1.49.0.0.0.0"
+                     id="_0.1.49.0.0.0.0" />
+                </g>
+              </g>
+              <g
+                 data-name="0.2.49.0.0.0.0.1"
+                 id="_0.2.49.0.0.0.0.1">
+                <g
+                   data-name="0.1.49.0.0.1"
+                   id="_0.1.49.0.0.1">
+                  <rect
+                     height="0.09"
+                     width="0.51"
+                     y="43.4"
+                     x="34.71"
+                     class="cls-19"
+                     data-name="0.1.49.0.0.1.0"
+                     id="_0.1.49.0.0.1.0" />
+                </g>
+              </g>
+            </g>
+            <g
+               data-name="0.1.49.0.1"
+               id="_0.1.49.0.1">
+              <g
+                 data-name="0.2.49.0.0.0.1.0"
+                 id="_0.2.49.0.0.0.1.0">
+                <g
+                   data-name="0.1.49.0.1.0"
+                   id="_0.1.49.0.1.0">
+                  <rect
+                     height="0.99"
+                     width="0.65"
+                     y="45.24"
+                     x="34.57"
+                     class="cls-3"
+                     data-name="0.1.49.0.1.0.0"
+                     id="_0.1.49.0.1.0.0" />
+                </g>
+              </g>
+              <g
+                 data-name="0.2.49.0.0.0.1.1"
+                 id="_0.2.49.0.0.0.1.1">
+                <g
+                   data-name="0.1.49.0.1.1"
+                   id="_0.1.49.0.1.1">
+                  <rect
+                     height="0.09"
+                     width="0.51"
+                     y="45.24"
+                     x="34.71"
+                     class="cls-19"
+                     data-name="0.1.49.0.1.1.0"
+                     id="_0.1.49.0.1.1.0" />
+                </g>
+              </g>
+            </g>
+            <g
+               data-name="0.1.49.0.2"
+               id="_0.1.49.0.2">
+              <g
+                 data-name="0.2.49.0.0.0.2.0"
+                 id="_0.2.49.0.0.0.2.0">
+                <g
+                   data-name="0.1.49.0.2.0"
+                   id="_0.1.49.0.2.0">
+                  <rect
+                     height="0.99"
+                     width="0.65"
+                     y="47.08"
+                     x="34.57"
+                     class="cls-3"
+                     data-name="0.1.49.0.2.0.0"
+                     id="_0.1.49.0.2.0.0" />
+                </g>
+              </g>
+              <g
+                 data-name="0.2.49.0.0.0.2.1"
+                 id="_0.2.49.0.0.0.2.1">
+                <g
+                   data-name="0.1.49.0.2.1"
+                   id="_0.1.49.0.2.1">
+                  <rect
+                     height="0.09"
+                     width="0.51"
+                     y="47.08"
+                     x="34.71"
+                     class="cls-19"
+                     data-name="0.1.49.0.2.1.0"
+                     id="_0.1.49.0.2.1.0" />
+                </g>
+              </g>
+            </g>
+            <g
+               data-name="0.1.49.0.3"
+               id="_0.1.49.0.3">
+              <g
+                 data-name="0.2.49.0.0.0.3.0"
+                 id="_0.2.49.0.0.0.3.0">
+                <g
+                   data-name="0.1.49.0.3.0"
+                   id="_0.1.49.0.3.0">
+                  <rect
+                     height="0.99"
+                     width="0.65"
+                     y="48.93"
+                     x="34.57"
+                     class="cls-3"
+                     data-name="0.1.49.0.3.0.0"
+                     id="_0.1.49.0.3.0.0" />
+                </g>
+              </g>
+              <g
+                 data-name="0.2.49.0.0.0.3.1"
+                 id="_0.2.49.0.0.0.3.1">
+                <g
+                   data-name="0.1.49.0.3.1"
+                   id="_0.1.49.0.3.1">
+                  <rect
+                     height="0.09"
+                     width="0.51"
+                     y="48.93"
+                     x="34.71"
+                     class="cls-19"
+                     data-name="0.1.49.0.3.1.0"
+                     id="_0.1.49.0.3.1.0" />
+                </g>
+              </g>
+            </g>
+            <g
+               data-name="0.1.49.0.4"
+               id="_0.1.49.0.4">
+              <g
+                 data-name="0.2.49.0.0.0.4.0"
+                 id="_0.2.49.0.0.0.4.0">
+                <g
+                   data-name="0.1.49.0.4.0"
+                   id="_0.1.49.0.4.0">
+                  <rect
+                     height="0.99"
+                     width="0.65"
+                     y="50.77"
+                     x="34.57"
+                     class="cls-3"
+                     data-name="0.1.49.0.4.0.0"
+                     id="_0.1.49.0.4.0.0" />
+                </g>
+              </g>
+              <g
+                 data-name="0.2.49.0.0.0.4.1"
+                 id="_0.2.49.0.0.0.4.1">
+                <g
+                   data-name="0.1.49.0.4.1"
+                   id="_0.1.49.0.4.1">
+                  <rect
+                     height="0.09"
+                     width="0.51"
+                     y="50.77"
+                     x="34.71"
+                     class="cls-19"
+                     data-name="0.1.49.0.4.1.0"
+                     id="_0.1.49.0.4.1.0" />
+                </g>
+              </g>
+            </g>
+            <g
+               data-name="0.1.49.0.5"
+               id="_0.1.49.0.5">
+              <polygon
+                 points="19.68 57.02 17.85 56.96 17.85 38.28 19.5 38.17 34.86 38.17 34.86 57.02 19.68 57.02"
+                 class="cls-8"
+                 data-name="0.1.49.0.5.0"
+                 id="_0.1.49.0.5.0" />
+              <g
+                 data-name="0.2.49.0.0.0.5.1"
+                 id="_0.2.49.0.0.0.5.1">
+                <g
+                   data-name="0.1.49.0.5.1"
+                   id="_0.1.49.0.5.1">
+                  <rect
+                     height="1.83"
+                     width="3.04"
+                     y="57.22"
+                     x="25.2"
+                     class="cls-3"
+                     data-name="0.1.49.0.5.1.0"
+                     id="_0.1.49.0.5.1.0" />
+                </g>
+              </g>
+              <g
+                 data-name="0.2.49.0.0.0.5.2"
+                 id="_0.2.49.0.0.0.5.2">
+                <g
+                   data-name="0.1.49.0.5.2"
+                   id="_0.1.49.0.5.2">
+                  <rect
+                     height="1.83"
+                     width="3.04"
+                     y="36.11"
+                     x="25.2"
+                     class="cls-3"
+                     data-name="0.1.49.0.5.2.0"
+                     id="_0.1.49.0.5.2.0" />
+                </g>
+              </g>
+              <g
+                 data-name="0.2.49.0.0.0.5.3"
+                 id="_0.2.49.0.0.0.5.3">
+                <g
+                   data-name="0.1.49.0.5.3"
+                   id="_0.1.49.0.5.3">
+                  <rect
+                     height="10.29"
+                     width="18.64"
+                     y="42.43"
+                     x="16.22"
+                     class="cls-11"
+                     data-name="0.1.49.0.5.3.0"
+                     id="_0.1.49.0.5.3.0" />
+                </g>
+              </g>
+              <g
+                 data-name="0.2.49.0.0.0.5.4"
+                 id="_0.2.49.0.0.0.5.4">
+                <g
+                   data-name="0.1.49.0.5.4"
+                   id="_0.1.49.0.5.4">
+                  <rect
+                     height="1"
+                     width="1.08"
+                     y="36.94"
+                     x="15.95"
+                     class="cls-8"
+                     data-name="0.1.49.0.5.4.0"
+                     id="_0.1.49.0.5.4.0" />
+                </g>
+              </g>
+              <g
+                 data-name="0.2.49.0.0.0.5.5"
+                 id="_0.2.49.0.0.0.5.5">
+                <g
+                   data-name="0.1.49.0.5.5"
+                   id="_0.1.49.0.5.5">
+                  <rect
+                     height="0.64"
+                     width="1.08"
+                     y="37.3"
+                     x="15.95"
+                     class="cls-7"
+                     data-name="0.1.49.0.5.5.0"
+                     id="_0.1.49.0.5.5.0" />
+                </g>
+              </g>
+              <g
+                 data-name="0.2.49.0.0.0.5.6"
+                 id="_0.2.49.0.0.0.5.6">
+                <g
+                   data-name="0.1.49.0.5.6"
+                   id="_0.1.49.0.5.6">
+                  <rect
+                     height="1"
+                     width="1.08"
+                     y="57.22"
+                     x="15.95"
+                     class="cls-8"
+                     data-name="0.1.49.0.5.6.0"
+                     id="_0.1.49.0.5.6.0" />
+                </g>
+              </g>
+              <g
+                 data-name="0.2.49.0.0.0.5.7"
+                 id="_0.2.49.0.0.0.5.7">
+                <g
+                   data-name="0.1.49.0.5.7"
+                   id="_0.1.49.0.5.7">
+                  <rect
+                     height="0.64"
+                     width="1.08"
+                     y="57.22"
+                     x="15.95"
+                     class="cls-7"
+                     data-name="0.1.49.0.5.7.0"
+                     id="_0.1.49.0.5.7.0" />
+                </g>
+              </g>
+              <path
+                 style=""
+                 d="M34.86,53.83H33.22v-1.6h1.63V51.76H34.29V43.4h0.56V42.87H33.22V41.27h1.64V37.94H16.07V57.21H34.86V53.83ZM21,42.87H20.19V41.28h0.88a1.56,1.56,0,0,1,1.31-.71,1.46,1.46,0,0,1,1.37.71h4.48v1.59H23.74A1.55,1.55,0,0,1,21,42.87Zm0,10.89H20.19V52.17h0.88a1.56,1.56,0,0,1,1.31-.71,1.45,1.45,0,0,1,1.37.71h4.48v1.59H23.74A1.55,1.55,0,0,1,21,53.76Z"
+                 class="cls-6"
+                 data-name="0.1.49.0.5.8"
+                 id="_0.1.49.0.5.8" />
+              <polygon
+                 points="16.06 38.35 16.06 37.94 34.86 37.94 34.86 39.47 16.06 38.35"
+                 class="cls-20"
+                 data-name="0.1.49.0.5.9"
+                 id="_0.1.49.0.5.9" />
+              <polygon
+                 points="16.06 57.22 28.83 56.65 34.86 56.08 34.86 57.22 16.06 57.22"
+                 class="cls-19"
+                 data-name="0.1.49.0.5.10"
+                 id="_0.1.49.0.5.10" />
+              <g
+                 data-name="0.2.49.0.0.0.5.11"
+                 id="_0.2.49.0.0.0.5.11">
+                <g
+                   data-name="0.1.49.0.5.11"
+                   id="_0.1.49.0.5.11">
+                  <rect
+                     height="1.59"
+                     width="0.13"
+                     y="41.28"
+                     x="28.09"
+                     class="cls-7"
+                     data-name="0.1.49.0.5.11.0"
+                     id="_0.1.49.0.5.11.0" />
+                </g>
+              </g>
+              <g
+                 data-name="0.2.49.0.0.0.5.12"
+                 id="_0.2.49.0.0.0.5.12">
+                <g
+                   data-name="0.1.49.0.5.12"
+                   id="_0.1.49.0.5.12">
+                  <rect
+                     height="1.59"
+                     width="0.13"
+                     y="52.17"
+                     x="28.09"
+                     class="cls-7"
+                     data-name="0.1.49.0.5.12.0"
+                     id="_0.1.49.0.5.12.0" />
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       data-name="0.1.0.2.21.0.0.0"
+       id="_0.1.0.2.21.0.0.0-18">
+      <text
+         id="text1319"
+         transform="translate(20.18 37.03)"
+         class="cls-16">P1</text>
+    </g>
+    <path
+       style=""
+       id="path1321"
+       d="M299.47,113.06a0.87,0.87,0,0,1,.6.8v4.5a0.78,0.78,0,0,1-.6.8l-20.7,2.8a0.58,0.58,0,0,1-.6-0.6v-0.7a0.78,0.78,0,0,1,.6-0.8l17.4-2.1a0.78,0.78,0,0,0,.6-0.8v-1.7a0.78,0.78,0,0,0-.6-0.8l-17.4-2.1a0.78,0.78,0,0,1-.6-0.8V111a0.67,0.67,0,0,1,.6-0.7Zm0-18.6a0.87,0.87,0,0,1,.6.8v4.4a0.78,0.78,0,0,1-.6.8l-20.7,2.8a0.65,0.65,0,0,1-.6-0.6V102a0.78,0.78,0,0,1,.6-0.8l17.4-2.1a0.78,0.78,0,0,0,.6-0.8v-1.7a0.78,0.78,0,0,0-.6-0.8l-17.4-2.1a0.78,0.78,0,0,1-.6-0.8v-0.6a0.67,0.67,0,0,1,.6-0.7Z"
+       class="cls-51" />
+    <rect
+       id="rect1323"
+       height="32.21"
+       width="33.4"
+       y="90.65"
+       x="266.76"
+       class="cls-7" />
+    <path
+       style=""
+       id="path1325"
+       d="M297.26,89.45v-1a1.19,1.19,0,0,0,1-.3c0-.1.1-0.6,0.1-1h1a3.51,3.51,0,0,1-.3,1.6,1.84,1.84,0,0,1-1.7.7h-0.1Z"
+       class="cls-52" />
+    <path
+       style=""
+       id="path1327"
+       d="M298.17,88.25a2.18,2.18,0,0,1-.9.1v1h0a2.87,2.87,0,0,0,1.6-.4,1.09,1.09,0,0,0,.4-0.8A4.64,4.64,0,0,1,298.17,88.25Z"
+       class="cls-53" />
+    <path
+       style=""
+       id="path1329"
+       d="M297.26,124.06v1a1.18,1.18,0,0,1,1,.3c0,0.1.1,0.6,0.1,1h1a3.52,3.52,0,0,0-.3-1.6,1.85,1.85,0,0,0-1.7-.7h-0.1Z"
+       class="cls-52" />
+    <path
+       style=""
+       id="path1331"
+       d="M299.27,125.26a0.86,0.86,0,0,0-.5-0.8,2.71,2.71,0,0,0-1.61-.4h0v1c0.4,0,.7.1,0.9,0.1A4.79,4.79,0,0,1,299.27,125.26Z"
+       class="cls-53" />
+    <polygon
+       id="polygon1335"
+       points="292.36 117.66 292.36 114.56 290.76 114.36 290.76 117.75 292.36 117.66"
+       class="cls-35" />
+    <polygon
+       id="polygon1337"
+       points="290.76 114.36 292.36 114.56 292.36 117.66 290.76 117.75 290.76 114.36"
+       class="cls-54" />
+    <polygon
+       id="polygon1339"
+       points="290.76 114.36 290.06 114.26 290.06 117.86 290.76 117.75 290.76 114.36"
+       class="cls-3" />
+    <polygon
+       id="polygon1341"
+       points="292.36 98.95 292.36 95.85 290.76 95.65 290.76 99.15 292.36 98.95"
+       class="cls-35" />
+    <polygon
+       id="polygon1343"
+       points="290.76 95.65 292.36 95.85 292.36 98.95 290.76 99.15 290.76 95.65"
+       class="cls-54" />
+    <polygon
+       id="polygon1345"
+       points="290.76 95.65 290.06 95.65 290.06 99.25 290.76 99.15 290.76 95.65"
+       class="cls-3" />
+    <line
+       style=""
+       id="line1347"
+       y2="124.86"
+       x2="296.96"
+       y1="124.86"
+       x1="251.84"
+       class="cls-55" />
+    <line
+       style=""
+       id="line1349"
+       y2="88.55"
+       x2="297.16"
+       y1="88.55"
+       x1="251.84"
+       class="cls-55" />
+    <line
+       style=""
+       id="line1351"
+       y2="123.66"
+       x2="298.27"
+       y1="89.85"
+       x1="298.27"
+       class="cls-56" />
+    <rect
+       id="rect1353"
+       height="34.21"
+       width="0.7"
+       y="89.65"
+       x="298.77"
+       class="cls-52" />
+    <g
+       id="usb" class="component">
+      <path
+         class="cls-8"
+         d="M250.76,125.46h46.91v-1.6h1.7V89.65h-1.7v-1.6H250.76v37.41Zm44.41-12.4a0.87,0.87,0,0,1,.6.8v4.5a0.79,0.79,0,0,1-.6.8l-20.7,2.8a0.58,0.58,0,0,1-.6-0.6v-0.7a0.78,0.78,0,0,1,.6-0.8l17.4-2.1a0.78,0.78,0,0,0,.6-0.8v-1.7a0.78,0.78,0,0,0-.6-0.8l-17.4-2.1a0.78,0.78,0,0,1-.6-0.8V111a0.67,0.67,0,0,1,.6-0.7Zm0-18.6a0.88,0.88,0,0,1,.6.8v4.4a0.78,0.78,0,0,1-.6.8l-20.7,2.8a0.65,0.65,0,0,1-.6-0.6V102a0.78,0.78,0,0,1,.6-0.8l17.4-2.1a0.78,0.78,0,0,0,.6-0.8v-1.7a0.78,0.78,0,0,0-.6-0.8l-17.4-2.1a0.78,0.78,0,0,1-.6-0.8v-0.6a0.67,0.67,0,0,1,.6-0.7Z"
+         id="path1333"
+         style="" />
+      <rect
+         class="cls-57"
+         x="269.91"
+         y="125.46"
+         width="6.5"
+         height="4.6"
+         id="rect1355" />
+      <rect
+         class="cls-57"
+         x="269.91"
+         y="83.35"
+         width="6.5"
+         height="4.7"
+         id="rect1357" />
+      <rect
+         class="cls-57"
+         x="253.99"
+         y="125.46"
+         width="6.5"
+         height="4.6"
+         id="rect1359" />
+      <rect
+         class="cls-57"
+         x="253.99"
+         y="83.35"
+         width="6.5"
+         height="4.7"
+         id="rect1361" />
+    </g>
+    <text
+       id="text1363"
+       transform="translate(281.72 130.06)"
+       class="cls-15">USB1</text>
+  </g>
+</svg>

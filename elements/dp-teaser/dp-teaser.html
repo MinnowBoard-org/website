@@ -1,0 +1,164 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel='import' href='../markdown-it/markdown-it.html'/>
+<dom-module id='dp-teaser'>
+  <style>
+    :host{
+      width: 100%;
+      display: inline-block;
+    }
+    :host.home .container {
+      max-width: var(--homepage-max-width);
+    }
+    :host {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+    :host .teaser-wrapper {
+      flex: 1;
+    }
+    .with-media .inner-wrapper > div {
+      padding: 15px;
+    }
+    /*.inner-wrapper > div {
+      padding: 45px 0;
+    }*/
+    :host.bg-md {
+      background-color: var(--bg-md);
+    }
+    img {
+      width: 100%;
+    }
+    video {
+      width: 100%;
+    }
+    .hero {
+      --font-size: 16px;
+      --margin: 25px 0 50px 0;
+    }
+    .with-media ::content {
+      text-align: left;
+    }
+    .media {
+      margin-top: 40px;
+    }
+  </style>
+
+  <template>
+    <div class="teaser-wrapper">
+      <template is="dom-if" if="{{_hasTitle(title)}}">
+        <h1 class="container txt-center">{{title}}</h1>
+      </template>
+      <div class$="container {{cssMedia}}">
+        <div class="inner-wrapper">
+          <!-- If position is before. -->
+          <template is="dom-if" if="{{_hasMedia(media)}}">
+            <template is="dom-if" if="{{_validate(position, 'before')}}">
+              <div class$="col-{{cols}} media">
+                <!-- If media type is img. -->
+                <template is="dom-if" if="{{_validate(type, 'img')}}">
+                  <img src="{{media}}" title="{{title}}" class="img-resposive" alt="{{alt}}" desc="{{desc}}"/>
+                </template>
+                <!-- If media type is video. -->
+                <template is="dom-if" if="{{_validate(type, 'video')}}">
+                  <video preload controls>
+                    <source src="{{media}}" />
+                  </video>
+                </template>
+              </div>
+            </template>
+          </template>
+
+          <!-- Markdown element renders the src passed as parameter. -->
+          <div class$="{{cssClass}}">
+            <markdown-it edit={{edit}} src="{{src}}" class$="{{size}}"></markdown-it>
+          </div>
+
+          <!-- If position is after. -->
+          <template is="dom-if" if="{{_hasMedia(media)}}">
+            <template is="dom-if" if="{{_validate(position, 'after')}}">
+              <div class$="col-{{cols}} media">
+                <!-- If media type is img. -->
+                <template is="dom-if" if="{{_validate(type, 'img')}}">
+                  <img src="{{media}}" title="{{title}}" class="img-resposive" alt="{{alt}}" desc="{{desc}}"/>
+                </template>
+                <!-- If media type is video. -->
+                <template is="dom-if" if="{{_validate(type, 'video')}}">
+                  <video preload controls>
+                    <source src="{{media}}" />
+                  </video>
+                </template>
+              </div>
+            </template>
+          </template>
+
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <script>
+    Polymer({
+      is: "dp-teaser",
+      properties: {
+        position: {
+          type: String,
+          value: ''
+        },
+        size: {
+          type: String
+        },
+        media: {
+          type: String,
+          value: ''
+        },
+        cols: {
+          type: Number,
+          value: 24
+        },
+        cssClass: {
+          type: String,
+          value: 'col-24'
+        },
+        cssMedia: {
+          type: String,
+          value: 'no-media'
+        },
+        title: {
+          type: String,
+          value: ''
+        }
+      },
+      observers: [
+        'updateClass(media, cols)'
+      ],
+      updateClass: function(media, cols) {
+        if (media != '') {
+          this.cssClass = 'col-' + (24 - cols);
+          this.cssMedia = 'with-media';
+        } else {
+          this.cssClass = 'col-24';
+          this.cssMedia = 'no-media';
+        }
+      },
+      _validate: function(arg, cmp){
+          return arg === cmp;
+      },
+      _hasMedia: function(media) {
+          return typeof media === "undefined" ? false : true;
+      },
+      _hasTitle: function(title) {
+          return title === "" ? false : true;
+      }
+    });
+  </script>
+</dom-module>

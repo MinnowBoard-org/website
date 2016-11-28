@@ -1,0 +1,192 @@
+#!/bin/bash
+branch=$1
+
+[ "${branch}" == "" ] && {
+  cat << EOF
+usage: style-rebase BRANCH
+
+NOTE: This script is destructive to non-committed local changes!
+
+Creates a new branch called "BRANCH-styled" where all commits
+are JSBeautified. This should allow clean application on top of the
+master branch *EXCEPT* for actual merge conflicts.
+
+After running the script style-rebase, you should run:
+
+  git checkout BRANCH-styled
+  git fetch -a
+  git rebase master
+
+If the rebase is successful, you can do a merge request or push
+to the master branch.
+
+EOF
+  exit
+}
+
+changes=$(git diff --quiet --exit-code --shortstat 2> /dev/null)
+(( changes )) && {
+  cat << EOF
+Unstaged local changes:
+
+${changes}
+
+EOF
+  exit
+}
+
+function style {
+  file=$1
+  [ ${file/%.js} != ${file} ] && {
+    js-beautify -a -s 2 -r ${file}
+    return
+  }
+
+  [ ${file/%.css} != ${file} ] && {
+    css-beautify -s 2 -r ${file}
+    return
+  }
+
+  [ ${file/%.html} != ${file} ] && {
+    html-beautify -s 2 -r ${file}
+    return
+  }
+
+  echo "${file} - unchanged"
+}
+
+target=${branch}-styled
+stage=${target}-stage
+base=$(git merge-base master ${branch})
+commits=$(git log --reverse --no-merges --pretty=format:%H --first-parent ${base}..${branch})
+
+# If target branch exists, delete it.
+git rev-parse --quiet --verify ${target} > /dev/null && {
+  git branch --quiet -D ${target} || exit
+}
+
+# Create the style branch at the merge base to build on
+git branch -q ${target} ${base} || exit
+git checkout -q ${target} || exit
+
+# First commit on the staging branch re-styles *ALL* the files
+# in the tree.
+files=${files:=$(find . -name "*.html" -or -name "*.js" -or -name "*.css" | grep -Ev "(\./bower|\./node|\./external)")}
+
+echo -n "Performing PRE-BEAUTIFY."
+changes=0
+for file in ${files}; do
+  echo -n "."
+  style ${file} | grep -q "unchanged" || changes=$((changes+1))
+done
+
+(( changes )) && {
+  echo -e "\n${changes} files changed. Committing."
+  git commit -q -s -a -m "BEAUTIFY all *.html, *.js, and *.css"
+} || {
+  echo "done."
+}
+
+for c in ${commits}; do
+  echo -e "---\nProcessing commit: ${c}"
+
+  parents=$(git cat-file -p ${c} | grep parent | wc -l)
+  (( parents > 1 )) && {
+    echo "WARNING: Merge found where there shouldn't be one! Exiting."
+    exit -1
+  }
+
+  # Style any file that is listed as changing, then create the diff
+  # against the parent.
+  #
+  # Any merge conflict between this diff and the base is due to an actual
+  # conflict and not due to styling
+  changes=0
+  files=$(git diff --name-only ${c}^..${c})
+
+  # Create a stage branch that has styled versions of all the files from
+  # this commit
+  git rev-parse --quiet --verify ${stage} > /dev/null && {
+    git branch --quiet -D ${stage} || {
+      echo "Unable to delete staging branch."
+      exit
+    }
+  }
+
+  echo "${files}"
+
+  git checkout -q -b ${stage}
+
+  echo -n "Updating ${stage} to parent ${c}^: "
+  for file in ${files}; do
+    echo -n "c"
+    # Checkout the parent file, and style it. Then cache it.
+    git checkout -q -f ${c}^ -- ${file}
+    echo -n "s"
+    # Style it...
+    style ${file} > /dev/null
+    # cache it...
+  done
+  git commit -q -a -m "Stage of parent for ${c}"
+  echo -e "\nCommitted as ($(git show -s --pretty=format:%h HEAD))"
+
+  echo -n "Updating ${stage} to ${c}: "
+  for file in ${files}; do
+    changed=0
+    # Check out the actual file...
+    echo -n "c"
+    git checkout -q -f ${c} -- ${file}
+    echo -n "s"
+    style ${file} | grep -q "unchanged" || changed=1
+    (( changed )) && {
+      changes=$((changes+1))
+      echo -n "+"
+    } || {
+      echo -n "-"
+    }
+  done
+
+  message=$(git show -s --pretty=format:"BEAUTIFY: %s (%h)%n%n---%n%ncommit %H%nAuthor: %an %an%nDate:   %ad%n%n%s%n%b%n%n---%n" ${c})
+  git commit -q -s -a -m "${message}"
+  commit=$(git show -s --pretty=format:%H HEAD)
+  echo -e "\nCommitted as ($(git show -s --pretty=format:%h HEAD))"
+
+  echo "Cherry picking ${commit} into ${target}"
+  git checkout -q ${target}
+  git cherry-pick ${commit} || {
+    cat << EOF
+---
+
+Cherry pick failed for BEAUTY commit: ${commit}
+
+Dropping to shell. You can use normal git cherry-pick commands.
+
+For example, if there was a conflict in "index.html":
+
+1. Edit index.html to fix the conflict
+2. git add index.html
+3. git cherry-pick --continue
+
+When done, type exit to continue style rebase.
+
+EOF
+    /bin/bash
+  }
+
+  git branch -q -D ${stage}
+done
+
+cat << EOF
+
+All patches have been BEAUTIFIED onto ${target}.
+
+To apply:
+
+  git rebase master
+
+You can then reset your ${branch} to ${target} via:
+
+  git checkout -f ${branch}
+  git reset --hard ${target}
+
+EOF

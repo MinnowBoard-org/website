@@ -1,0 +1,583 @@
+
+<script src="../../polyfill/array.includes.js"></script>
+
+<link rel="import" href="../../bower_components/paper-drawer-panel/paper-drawer-panel.html">
+<link rel="import" href="../../bower_components/iron-accordions/iron-accordions.html">
+
+<link rel="import" href="../../bower_components/app-route/app-route.html">
+<link rel="import" href="../../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+<link rel="import" href="../../bower_components/paper-drawer-panel/paper-drawer-panel.html">
+<link rel='import' href='../../bower_components/paper-header-panel/paper-header-panel.html'>
+<link rel='import' href='../../bower_components/paper-icon-button/paper-icon-button.html'>
+<link rel="import" href="../../bower_components/paper-material/paper-material.html">
+<link rel="import" href="../../bower_components/paper-tabs/paper-tabs.html">
+<link rel="import" href="../../bower_components/paper-toolbar/paper-toolbar.html">
+
+<link rel="import" href="../../elements/contextual-tray/otc-tray.html">
+
+<link rel="import" href="../../elements/board-viewer/board-index.html">
+<link rel="import" href="../../elements/board-viewer/board-viewer.html">
+<link rel="import" href="../../elements/board-viewer/board-context.html">
+
+<dom-module id='board-viewer-page'>
+  <template>
+    <style include="iron-flex iron-flex-alignment iron-positioning" is="custom-style">
+      :host {
+        /* Used in board-viewer tab header */
+        --focus-foreground-color: #52595a;
+        --focus-background-color: #d6eab0;
+        --focus-border-color: #97ca41;
+        --blur-foreground-color: #52595a;
+        --blur-background-color: #f8f8f1;
+        --blur-border-color: #f0efe0;
+        --bg-l: #f8f8f1;
+      }
+
+      paper-drawer-panel [drawer] {
+        display: block;
+        position: relative;
+        overflow-y: auto;
+        margin-left: auto;
+        max-height: calc(100% - 64px);
+        padding: 2rem;
+      }
+
+      paper-drawer-panel {
+        --paper-drawer-panel-left-drawer-container: {
+          background-color: var(--bg-l);
+        };
+
+        --paper-drawer-panel-drawer-container: {
+          z-index: 0 !important;
+        };
+      }
+
+      #tabBar {
+        background-color: var(--blur-foreground-color);
+        border-bottom: 1px solid var(--focus-foreground-color);
+        --paper-toolbar-height: 54px;
+        --paper-toolbar-content: {
+          padding: 0px;
+        };
+      }
+
+      #tabList {
+        --paper-tabs: {
+          height: 54px;
+        };
+      }
+
+      #tabList paper-tab {
+        white-space: nowrap;
+        border-width: 0 2px;
+        border-style: solid;
+        border-color: var(--blur-foreground-color);
+        border-bottom-color: var(--focus-foreground-color);
+        cursor: pointer;
+        background-color: var(--blur-foreground-color);
+        color: var(--blur-foreground-color);
+        --paper-tab: {
+          padding: 0;
+        };
+
+        --paper-tab-content-unselected: {
+          opacity: 1;
+        };
+      }
+
+      #tabList paper-tab[aria-selected] {
+        background-color: var(--focus-foreground-color);
+        color: var(--focus-foreground-color);
+      }
+
+      /* The tab item box containing the component name above the pin */
+      #tabList paper-tab .component {
+        font-size: 0.5rem;
+        color: var(--blur-foreground-color);
+        background: var(--blur-border-color);
+        padding: 0.125rem 1rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      #tabList paper-tab[aria-selected] .component {
+        color: var(--focus-foreground-color);
+        background-color: var(--focus-border-color);
+      }
+
+      /* The tab item box containing the name and the Close button */
+      #tabList paper-tab .item {
+        padding: 0 1rem;
+        background-color: var(--blur-background-color);
+      }
+
+      #tabList paper-tab[aria-selected] .item {
+        background-color: var(--focus-background-color);
+      }
+
+      /* The actual item name */
+      #tabList .item > div {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      #tabList .item > paper-icon-button {
+        min-width: 32px;
+      }
+
+      otc-tray {
+        --otc-tray-tray-container: {
+          overflow-y: auto;
+          background-color: var(--bg-l);
+        };
+      }
+
+      #boardIndexDrawer {
+        --paper-drawer-panel-drawer-container: {
+          z-index: 1 !important;
+        };
+
+        --paper-drawer-panel-main-container: {
+          overflow: visible;
+          z-index: 1 !important;
+        };
+      }
+
+      div[header] {
+        border-bottom: 0.3em solid var(--focus-background-color);
+      }
+    </style>
+
+    <!--
+     * Fix #142 If the current page id matches the route prefix, this page
+     * is active and the app-route should be re-stamped in the DOM -->
+    <template is="dom-if" if="[[isPageActive(route.prefix)]]" restamp>
+      <app-route
+        route="{{route}}"
+        pattern="/:board"
+        data="{{routeData}}"
+        tail="{{subRoute}}"
+        active="{{boardActive}}"></app-route>
+
+      <app-route
+        route="{{subRoute}}"
+        pattern="/:pin"
+        data="{{pinData}}"
+        active="{{pinActive}}"></app-route>
+    </template>
+
+    <paper-drawer-panel
+      id="boardIndexDrawer"
+      class="fit"
+      on-narrow-changed="onIndexNarrowChanged"
+      force-narrow="[[isNarrow(layout)]]"
+      drawer-width="400px"
+      edge-swipe-sensitivity=0>
+
+      <board-index drawer
+        id="boardIndex"
+        on-pin-changed="hoverPinChanged"
+        pin="[[pin]]"
+        board="[[board]]"
+        edit="[[edit]]"
+        route="{{subRoute}}"></board-index>
+      <otc-tray
+        disable-scrim
+        main
+        on-closed-changed="onTrayClosed"
+        main-visible-height="{{trayVisibleHeight}}"
+        id="tray">
+        <board-viewer
+          main
+          id="boardViewer"
+          on-pin-changed="hoverPinChanged"
+          on-board-data-changed="boardDataChanged"
+          visible-height="[[trayVisibleHeight]]"
+          edit="[[edit]]"
+          pin="[[pin]]"
+          board="[[board]]"
+          route="{{subRoute}}"></board-viewer>
+        <div header>
+          <paper-toolbar id="tabBar">
+            <paper-tabs
+              scrollable
+              no-bar
+              id="tabList"
+              class="flex-auto layout horizontal">
+              <template id="tabRepeat" is="dom-repeat" items="[[tabs]]">
+                <paper-tab
+                  on-mousemove="_onTabHover"
+                  on-mouseleave="_onTabLeave"
+                  on-tap="_onTabOpen">
+                  <div class="layout vertical">
+                    <div class="component layout horizontal center">
+                      {{item.component}}
+                    </div>
+                    <div class="item grow horizontal layout center">
+                      <div>{{item.name}}</div>
+                      <paper-icon-button icon="close" on-tap="_onTabClose"></paper-icon-button>
+                    </div>
+                  </div>
+                </paper-tab>
+              </template>
+            </paper-tabs>
+            <paper-icon-button icon$="{{toggleButton}}" on-tap="_onTrayToggle"></paper-icon-button>
+            <!--paper-icon-button icon="close" on-tap="_onTrayClose"></paper-icon-button-->
+          </paper-toolbar>
+        </div>
+        <div tray>
+          <board-context tray
+            id="boardContext"
+            name="{{name}}"
+            component="{{component}}"
+            edit="[[edit]]"
+            board="[[board]]"></board-context>
+        </div>
+      </otc-tray>
+    </paper-drawer-panel>
+  </template>
+  <script>
+  "use strict";
+
+  Polymer({
+    is: "board-viewer-page",
+    properties: {
+      pageHasMenu: {
+        type: Boolean,
+        value: true,
+        reflectToAttribute: true,
+        notify: true
+      },
+      layout: {
+        type: String
+      },
+      board: {
+        type: String,
+        observer: 'onBoardChanged'
+      },
+      title: {
+        type: String
+      },
+      pin: {
+        type: String,
+        notify: true,
+        reflectToAttribute: true,
+        observer: 'onPinChanged'
+      },
+      indexMenu: {
+        type: Boolean
+      },
+      toggleButton: {
+        type: String,
+        value: 'expand-more'
+      },
+      tabs: {
+        type: Array,
+        notify: true,
+        value: []
+      },
+      boardActive: {
+        type: Boolean
+      }
+    },
+
+    observers: [
+      'onBoardRouteChanged(routeData.board)',
+      'onPinRouteChanged(pinData.pin)',
+      'onBoardActive(boardActive)'
+    ],
+
+    /* Fix #142 If the current page id matches the route prefix, this page
+     * is active and the app-route should be re-stamped in the DOM */
+    isPageActive: function(prefix) {
+      var regex = new RegExp('\/' + this.id + '$');
+      return regex.exec(prefix);
+    },
+
+    isNarrow: function(layout) {
+      return layout != 'desktop-layout';
+    },
+
+    /* Called by parent container if this child has set page-has-menu to true
+       and the user presses the appropriate item in the parent to toggle
+       the panel */
+    menuTapped: function() {
+      this.$.boardIndexDrawer.togglePanel();
+    },
+
+    onBoardActive: function(boardActive) {
+      if (!boardActive) {
+        this.board = 'minnowboard_turbot_B_21';
+      }
+    },
+
+    boardDataChanged: function(event) {
+      console.log('board-data changed by board-viewer');
+      this.boardData = event.detail.value;
+      this.$.boardIndex.set('boardData', event.detail.value);
+      this.$.boardContext.set('boardData', event.detail.value);
+    },
+
+    hoverPinChanged: function(event) {
+      // We used to want to suppress pin hover changing when
+      // the tray was opened, but now we want to move the
+      // highlight around, so commenting out the suppression.
+      //if (!this.$.tray.opened) {
+        this.pin = event.detail.value;
+      //}
+    },
+
+    onIndexNarrowChanged: function(event) {
+      this.indexMenu = !event.detail.value;
+      this.updateStyles();
+    },
+
+    toggleBoardIndex: function() {
+      if (!this.$.boardIndexDrawer.hasAttribute('opened')) {
+        this.$.boardSelectorDrawer.closeDrawer();
+      }
+      this.$.boardIndexDrawer.togglePanel();
+    },
+
+    toggleBoardSelector: function() {
+      if (!this.$.boardSelector.hasAttribute('opened')) {
+        this.$.boardIndexDrawer.closeDrawer();
+      }
+      this.$.boardSelector.togglePanel();
+    },
+
+    onTrayClosed: function(event) {
+      console.log('onTrayClosed: ' + event.detail.value);
+      if (!event.detail.value) {
+        return;
+      }
+      this.pin = '';
+      this.set('pinData.pin', '');
+    },
+
+    onBoardChanged: function(board) {
+      this.close();
+      if (this.tabs && this.tabs.length > 0) {
+        this.set('tabs', []);
+      }
+      if (!board) {
+        return;
+      }
+      console.log('TODO: Set route to include board name: /' + board);
+      // this.set('route.path', '/' + board);
+    },
+
+    onBoardRouteChanged: function(boardRoute) {
+      if (!boardRoute) {
+        this.set('route.path', '');
+      }
+      if (this.board != boardRoute) {
+        this.board = boardRoute || '';
+        console.log('Board set to: ' + this.board);
+      }
+    },
+
+    onPinRouteChanged: function(pin) {
+      if (!pin) {
+        this.close();
+        return;
+      }
+      console.log('Pin change to: ' + pin);
+      if (this.pin != pin) {
+        this.pin = pin;
+      }
+
+      this.$.boardContext.pin = this.pin;
+      this.open();
+    },
+
+    onPinChanged: function(pin) {
+      console.log('Pin hover change (non-route) to: ' + pin);
+    },
+
+    /* open the context tray. On entry, boardContext.pin must
+     * be set. If a tab exist for that pin, it is selected otherwise
+     * a new tab is created and the new tab is selected. The
+     * context tray is then opened. */
+    open: function() {
+      console.log('open');
+      var self = this;
+      self._selectOrCreateTab();
+      self.$.tray.openTray();
+      self.toggleButton = 'expand-more';
+      /* Opening from collapsed changes the height of the header, which
+       * the tray needs to know about, so notify it of a resize */
+      self.$.tray.notifyResize();
+    },
+
+    collapse: function() {
+      console.log('collapse');
+      this.$.tray.collapseTray();
+      this.toggleButton = 'expand-less';
+      this.updateStyles();
+      /* Collapsing the tray from open changes the height of the header, which
+       * the tray needs to know about during collapse */
+      this.$.tray.notifyResize();
+
+      /* Remove pin details from the route... */
+      if (this.pinActive && this.pin) {
+        this.set('pinData.pin', '');
+//        this.set('route.path', this.route.path.replace('/' + this.pin, ''));
+      }
+    },
+
+    close: function() {
+      console.log('close');
+      var self = this;
+      self.$.tray.closeTray();
+      self.updateStyles();
+      self.$.tray.notifyResize();
+      /* Remove pin details from the route... */
+      if (self.pinActive && self.pin) {
+        self.set('route.path', self.route.path.replace('/' + self.pin, ''));
+      }
+    },
+
+    toggle: function() {
+      console.log('toggle');
+      var self = this;
+      if (self.$.tray.collapsed) {
+        self.open();
+      } else {
+        self.collapse();
+      }
+    },
+
+    _onTrayToggle: function() {
+      console.log('_onTrayToggle');
+      if (this.$.tray.collapsed) {
+        this.open();
+      } else {
+        this._selectOrCreateTab();
+        this.collapse();
+      }
+    },
+
+    _onTrayClose: function() {
+      console.log('_onTrayClose');
+      var self = this;
+      for (var i = 0; i < self.tabs.length; i++) {
+        if (self.tabs[i].tabId == self.pin) {
+          self.splice('tabs', i, 1);
+          self.$.tabRepeat.render();
+          /* Remove pin details from the route... */
+          if (self.pinActive) {
+            self.set('route.path', self.route.path.replace('/' + self.pin, ''));
+          }
+          break;
+        }
+      }
+
+      self.$.tabList.selected = self.tabs.length;
+
+      if (self.tabs.length == 0) {
+        self.close();
+      } else {
+        self.collapse();
+      }
+    },
+
+    _onTabClose: function(event) {
+      console.log('_onTabClose');
+      var self = this, i, isActive, focusToRight = true;
+      for (i = 0; i < self.tabs.length; i++) {
+        if (self.tabs[i].tabId == self.pin) {
+          focusToRight = false;
+        }
+
+        if (self.tabs[i].tabId == event.model.item.tabId) {
+          isActive = self.tabs[i].tabId == self.pin;
+          self.splice('tabs', i, 1);
+          self.$.tabRepeat.render();
+
+          /* If this is not the active tab and the current selection
+           * is to the right, shift it to the left by one (since we just
+           * removed a tab) */
+          if (!isActive && focusToRight) {
+            self.$.tabList.selected--;
+          }
+          /* If this was the active tab, select the next available
+           * tab (if any are available) */
+          if (isActive && self.tabs.length) {
+            self.$.tabList.selected = (i + 1) % self.tabs.length;
+            self.pin = self.tabs[self.$.tabList.selected].tabId;
+          }
+
+          break;
+        }
+      }
+
+      /* If there are no more tabs left, close the tab bar */
+      if (self.tabs.length == 0) {
+        self.close();
+        return;
+      }
+    },
+
+    _onTabHover: function(event) {
+      this.pin = event.model.item.tabId;
+    },
+
+    _onTabLeave: function(event) {
+      if (this.pin == event.model.item.tabId) {
+        this.pin = '';
+      }
+    },
+
+    _onTabOpen: function(event) {
+      console.log('_onTabOpen');
+      var self = this;
+      /* Loop through the set of tabs to see which one is being opened
+       * and then set the active pin to that tab */
+      for (var i = 0; i < self.tabs.length; i++) {
+        if (self.tabs[i].tabId == event.model.item.tabId) {
+          self.pin = self.tabs[i].tabId;
+          self.$.boardContext.pin = self.pin;
+          self.$.tabList.selected = i;
+          self.open();
+          return;
+        }
+      }
+    },
+
+    _selectOrCreateTab: function() {
+      console.log('_selectOrCreateTab');
+      var self = this;
+      if (!self.$.boardContext.pin) {
+        return;
+      }
+
+      /* If this item is already an active tab, just return */
+      for (var i = 0; i < self.tabs.length; i++) {
+        if (self.$.boardContext.pin == self.tabs[i].tabId) {
+          self.$.tabList.selected = i;
+          return;
+        }
+      }
+
+      self.push('tabs', {
+        tabId: self.$.boardContext.pin,
+        name: self.$.boardContext.name,
+        component: self.$.boardContext.component
+      });
+      self.$.tabRepeat.render();
+      self.$.tabList.selected = self.tabs.length - 1;
+    },
+
+    _onCollapsedChanged: function(event) {
+      console.log('_onCollapsedChanged');
+      var self = this;
+      if (event.detail.value) {
+        self.collapse();
+      }
+    }
+  });
+  </script>
+</dom-module>

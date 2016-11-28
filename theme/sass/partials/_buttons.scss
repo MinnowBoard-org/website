@@ -1,0 +1,35 @@
+.btn,
+.tag,
+.btn:visited {
+  @include transition-custom(background-color);
+  @include inline;
+  @include border-radius(25px);
+  background-color: $primary-background-color;
+  border: 2px solid $primary-border-color;
+  color: $primary-txt-color;
+  cursor: pointer;
+  padding: 5px 25px;
+  text-transform: uppercase;
+  font-weight: $font-bold;
+  font-size: $btn-txt-size;
+
+  &:hover {
+    background-color: $primary-background-color-hover;
+    border-color: $primary-border-color-hover;
+    color: $primary-txt-color-hover;
+    text-decoration: none;
+  }
+
+  &.disabled {
+    cursor: default;
+  }
+}
+
+.btn a,
+.btn a:visited {
+  color: $primary-txt-color;
+}
+
+.btn:hover a {
+  color: $primary-txt-color-hover;
+}

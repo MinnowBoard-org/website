@@ -1,0 +1,18 @@
+{
+  "img": "elements/tuto-reader/tutorials/ftdi-serial-connection/MinnowBoard-Turbot-FTDI-serial.jpg",
+  "content": "elements/tuto-reader/tutorials/ftdi-serial-connection/docs/ftdi-serial-connection.md",
+  "meta": {
+      "info": [
+          {"label": "Last updated", "value": "November 2016"},
+          {"label": "Board", "value": "MinnowBoard Turbot"}
+  ],
+    "links": {
+        "label": "Other Tutorials",
+        "value": [
+          {"title": "Power up the MinnowBoard Turbot", "location": "tutorials/powering-on-minnowboardturbot"},
+          {"title": "Install Ubuntu 16.04 LTS", "location": "tutorials/installing-ubuntu-16.04-on-minnowboardmax"},
+          {"title": "Blinking the Turbot D2 LED", "location": "tutorials/Turbot-blink"}
+        ]
+      }
+}
+}

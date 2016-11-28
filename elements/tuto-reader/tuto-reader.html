@@ -1,0 +1,61 @@
+<dom-module id='tuto-reader'>
+  <template>
+    <style is="custom-style">
+      .tile-grid ::content h5 {
+        color: var(--primary-color-2);
+        font-weight: 400;
+        text-transform: none;
+      }
+
+      .tile-grid ::content h4 {
+        font-weight: 700;
+        text-transform: none;
+      }
+
+      .tuto-reader ::content .item {
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 5px;
+        margin-right: 2.08334%;
+      }
+
+      .tuto-reader-container ::content .tuto-sidebar {
+        display: none;
+      }
+    </style>
+    <div class="tuto-reader-container">
+      <div class="tuto-content">
+        <markdown-it edit="[[edit]]" src="[[content]]"></markdown-it>
+        <template is="dom-if" if="{{meta.steps}}">
+          <div class="grid container clearfix tile-grid">
+            <template is="dom-repeat" items="{{meta.steps}}">
+              <div class="col-8 item">
+                <h5>Next step</h5>
+                <h4>{{item.title}}</h4>
+                <p>{{item.description}}</p>
+                <a href="{{item.href}}">Start the tutorial</a>
+              </div>
+            </template>
+          </div>
+        </template>
+      </div>
+    </div>
+  </template>
+
+  <script>
+    "use strict";
+    Polymer({
+      is: "tuto-reader",
+      properties: {
+        showTutorial: {
+          type: Boolean,
+          value: true,
+        },
+        content: {
+          type: String,
+          value: ''
+        }
+      }
+    });
+  </script>
+</dom-module>

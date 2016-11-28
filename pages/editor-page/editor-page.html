@@ -1,0 +1,447 @@
+
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<link rel="import" href="../../bower_components/app-route/app-route.html">
+<link rel="import" href="../../bower_components/paper-drawer-panel/paper-drawer-panel.html">
+<link rel="import" href="../../bower_components/paper-input/paper-textarea.html">
+<link rel="import" href="../../bower_components/iron-accordions/iron-accordions.html">
+<link rel="import" href="../../bower_components/iron-resizable-behavior/iron-resizable-behavior.html">
+
+<link rel="import" href="../../elements/markdown-it/markdown-it.html">
+
+<dom-module id='editor-page'>
+  <template>
+    <style>
+      :host {
+        margin: 0;
+        padding: 0;
+        --iron-autogrow-textarea: {
+          font-family: monospace !important;
+          font-size: 0.9em;
+        };
+      }
+
+      /* Allow vertical scrolling in the paper-drawer-panel drawer and main */
+      paper-drawer-panel [drawer] {
+        display: block;
+        position: relative;
+        overflow-y: auto;
+        margin-left: auto;
+        max-height: calc(100% - 64px);
+      }
+
+      #paper-drawer-panel-container {
+        padding: 2rem;
+        background-color: var(--bg-l);
+      }
+
+      paper-drawer-panel [main] {
+        overflow-y: auto;
+      }
+
+      paper-drawer-panel {
+        --paper-drawer-panel-left-drawer-container: {
+          background-color: #fff;
+        };
+
+        --paper-drawer-panel-right-drawer-container: {
+          background-color: var(--bg-l);
+        };
+
+        --paper-drawer-panel-drawer-container: {
+          z-index: 0 !important;
+        };
+      }
+
+      paper-drawer-panel[narrow] {
+        --paper-drawer-panel-drawer-container: {
+          z-index: 2 !important;
+        };
+      }
+
+      #intro {
+        display: block;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      }
+
+      #intro ::content h3:first-child {
+        margin-top: 0;
+      }
+
+      #after {
+        display: block;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+      }
+
+      #after ::content h3:last-child {
+        margin-bottom: 0;
+      }
+
+      #links [header] {
+        font-size: 14px;
+        padding: 0.7rem 0;
+      }
+
+      #links [header].active {
+        background-color: var(--bg-md);
+      }
+
+      #links [header]::before,
+      #links [header]::after {
+        display: none;
+      }
+
+      #content {
+        display: inline-block;
+        margin: 0 1.5rem;
+      }
+
+      #filler {
+        display: block;
+        min-height: 0px;
+      }
+
+      paper-tabs {
+        color: black;
+      }
+
+      paper-toolbar {
+        border-bottom: 1px solid black;
+      }
+
+      [page="edit"] {
+        padding: 1em;
+        border: 1px solid orange;
+      }
+
+      [page="preview"] {
+        padding: 1em;
+        border: 1px solid purple;
+      }
+    </style>
+
+    <!--
+     * Fix #142 If the current page id matches the route prefix, this page
+     * is active and the app-route should be re-stamped in the DOM -->
+    <template is="dom-if" if="[[isPageActive(route.prefix)]]" restamp>
+      <app-route route="{{route}}"></app-route>
+    </template>
+
+    <!-- While in desktop layout (!isNarrow) the panel is on the left, open,
+         and not toggleable. While in !desktop layout (isNarrow), the panel
+         is on the right, and toggleable. -->
+    <paper-drawer-panel id="layout"
+      drawer-width="400px"
+      edge-swipe-sensitivity=0
+      force-narrow="[[isNarrow(layout)]]">
+      <div id="drawer" drawer>
+        <div id="paper-drawer-panel-container">
+          <markdown-it no-error id="intro" edit="{{edit}}" src="editor-page-intro.md"></markdown-it>
+          <iron-accordions id="links" attr-for-selected="slug">
+            <template is="dom-repeat" items="[[headings]]">
+              <iron-accordion class="slug">
+                <h4 header slug="{{item.slug}}" on-tap="menuItemTapped">{{item.text}}</h4>
+              </iron-accordion>
+            </template>
+          </iron-accordions>
+        </div>
+      </div>
+      <div main class="layout vertical">
+        <paper-toolbar>
+          <paper-tabs selected="{{tab}}" attr-for-selected="tab">
+            <paper-tab tab="edit">Edit</paper-tab><paper-tab tab="preview">Preview</paper-tab>
+          </paper-tabs>
+        </paper-toolbar>
+        <iron-pages selected="[[tab]]" attr-for-selected="page">
+          <div page="edit" class="layout horizontal">
+            <paper-textarea id="editor" class="fit flex"></paper-textarea>
+          </div>
+          <div page="preview">
+            <div id="scroller">
+              <markdown-it
+                no-error
+                id="content"
+                headings="{{headings}}">
+              </markdown-it>
+            <div id="filler"></div>
+          </div>
+        </div>
+      </iron-pages>
+    </div>
+    </paper-drawer-panel>
+  </template>
+
+  <script>
+  "use strict";
+  Polymer({
+    is: 'editor-page',
+
+    behaviors: [Polymer.IronResizableBehavior],
+
+    properties: {
+      tab: {
+        type: String,
+        value: "edit"
+      },
+      route: {
+        type: Object,
+        reflectToAttribute: true
+      },
+      active: {
+        type: String,
+        notify: true,
+        observer: 'onActiveChanged'
+      },
+      pageHasMenu: {
+        type: Boolean,
+        value: true,
+        reflectToAttribute: true,
+        notify: true
+      },
+      layout: {
+        type: String
+      },
+      headings: {
+        type: Array,
+        value: []
+      }
+    },
+
+    listeners: {
+      'iron-resize': '_onIronResize',
+    },
+
+    observers: [
+      'updatePageHeight(headings)',
+      'onTabChanged(tab)'
+    ],
+
+    /* Fix #142 If the current page id matches the route prefix, this page
+     * is active and the app-route should be re-stamped in the DOM */
+    isPageActive: function(prefix) {
+      var regex = new RegExp('\/' + this.id + '$');
+      return regex.exec(prefix);
+    },
+
+    onTabChanged: function(tab) {
+      if (tab == 'preview') {
+        this.$.content.markdown = this.$.editor.value;
+      } else {
+        this.$.content.markdown = '';
+        if (this.$.editor.value === undefined) {
+          this.$.editor.value = '# Markdown editor\nType in some content here, then click the **Preview** tab to see it.';
+        }
+      }
+    },
+
+    _onIronResize: function() {
+      this.updatePageHeight(this.headings);
+    },
+
+    onActiveChanged: function(active) {
+      Array.prototype.forEach.call(
+        Polymer.dom(this.$.links).querySelectorAll('[header]'), function(el) {
+          if (el.slug == active) {
+            el.classList.add('active');
+          } else {
+            el.classList.remove('active');
+          }
+        })
+    },
+
+    isNarrow: function(layout) {
+      return layout != 'desktop-layout';
+    },
+
+    /* Called by parent container if this child has set page-has-menu to true
+       and the user presses the appropriate item in the parent to toggle
+       the panel */
+    menuTapped: function() {
+      this.$.layout.togglePanel();
+    },
+
+    menuItemTapped: function(event) {
+      this.set('route.path', '/' + event.model.item.slug);
+      this.locationUpdated(event.model.item.slug);
+    },
+
+    locationUpdated: function(path) {
+      var self = this;
+
+      path = path.replace(/^\//, '');
+
+      /* Find an active sub-route and scroll to it... */
+      if (path == '') {
+        return;
+      }
+
+      for (var i = 0; i < this.headings.length; i++) {
+        if (this.headings[i].slug != path) {
+          continue;
+        }
+
+        var el = self.$.content.querySelector('h2[slug="' + this.headings[i].slug + '"]'),
+          margin = parseFloat(window.getComputedStyle(el).getPropertyValue('margin-top'));
+        self.scroll(el.offsetTop - margin, true);
+        self.$.links.selected = this.headings[i].slug;
+        break;
+      }
+    },
+
+    attached: function() {
+      this.$.scroller.addEventListener('scroll', this._onScroll.bind(this));
+    },
+
+    _onScroll: function() {
+      this.debounce('onScroll', function() {
+        var active = '';
+        if (this.headings.length != 0) {
+          var top = this.$.scroller.scrollTop;
+          active = this.headings[0].slug;
+          for (var i = 0; i < this.headings.length; i++) {
+            var el = this.$.content.querySelector('[slug="'+this.headings[i].slug+'"]'),
+              margin = parseFloat(window.getComputedStyle(el).getPropertyValue('margin-top'));
+            if (top >= el.offsetTop - margin) {
+              active = this.headings[i].slug;
+            }
+          }
+        }
+        if (this.active != active) {
+          this.active = active;
+        }
+      }, 100);
+    },
+
+    updatePageHeight: function(headings) {
+      /* Make sure all DOM writes are complete. */
+      Polymer.dom.flush();
+
+      /* Fix the drawer height to be full height minus the top page toolbar */
+      var rect = this.getBoundingClientRect();
+      this.$.drawer.style.maxHeight = 'calc(100% - ' + rect.top + 'px)';
+
+      /* If no headings available yet, the rest of the fixups can't occur */
+      if (headings.length == 0) {
+        return;
+      }
+
+      /* If no active link is set, set it to the first heading. */
+      this.active = this.active || headings[0].slug;
+
+      /* Find the distance between the last header and the end of the
+       * page and make sure there is enough client space to allow element
+       * to top-align with the page when it is scrolled to */
+      var slug = headings[headings.length - 1].slug,
+        target = this.$.content.querySelector('h2[slug="' + slug + '"]'),
+        filler, top;
+      if (!target) {
+        console.log('Unable to find slug in content: ' + slug)
+        return;
+      }
+      top = target.offsetTop;
+      top -= parseFloat(window.getComputedStyle(target).getPropertyValue('margin-top'));
+      filler = this.$.scroller.clientHeight -
+        (this.$.content.getBoundingClientRect().height - top);
+      if (filler > 0) {
+        this.$.filler.style.minHeight = filler + 'px';
+      } else {
+        this.$.filler.style.minHeight = '0px';
+      }
+    },
+
+    /* The following scroll code was derived from
+     * https://github.com/PolymerElements/paper-scroll-header-panel/blob/master/paper-scroll-header-panel.html
+     * Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+     * This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+     */
+
+     /**
+     * Scroll to a specific y coordinate.
+     *
+     * @method scroll
+     * @param {number} top The coordinate to scroll to, along the y-axis.
+     * @param {boolean} smooth true if the scroll position should be smoothly adjusted.
+     */
+    scroll: function(top, smooth) {
+      // the scroll event will trigger _updateScrollState directly,
+      // However, _updateScrollState relies on the previous `scrollTop` to update the states.
+      // Calling _updateScrollState will ensure that the states are synced correctly.
+      if (smooth) {
+        // TODO(blasten): use CSS scroll-behavior once it ships in Chrome.
+        var easingFn = function easeOutQuad(t, b, c, d) {
+          t /= d;
+          return -c * t*(t-2) + b;
+        };
+        var animationId = Math.random();
+        var duration = 200;
+        var startTime = Date.now();
+        var currentScrollTop = this.$.scroller.scrollTop;
+        var deltaScrollTop = top - currentScrollTop;
+        this._currentAnimationId = animationId;
+        (function updateFrame() {
+          var now = Date.now();
+          var elapsedTime = now - startTime;
+          if (elapsedTime > duration) {
+            this.$.scroller.scrollTop = top;
+            this._updateScrollState(top);
+          } else if (this._currentAnimationId === animationId) {
+            this.$.scroller.scrollTop = easingFn(elapsedTime, currentScrollTop, deltaScrollTop, duration);
+            requestAnimationFrame(updateFrame.bind(this));
+          }
+        }).call(this);
+      } else {
+        this.$.scroller.scrollTop = top;
+        this._updateScrollState(top);
+      }
+    },
+    /**
+     * Scroll to the top of the content.
+     *
+     * @method scrollToTop
+     * @param {boolean} smooth true if the scroll position should be smoothly adjusted.
+     */
+    scrollToTop: function(smooth) {
+      this.scroll(0, smooth);
+    },
+    /** @param {Event=} event */
+    _scroll: function(event) {
+      if (this.header) {
+        this._updateScrollState(this.$.scroller.scrollTop);
+        this.fire('content-scroll', {
+          target: this.$.scroller
+        },
+        {
+          cancelable: false
+        });
+      }
+    },
+    _updateScrollState: function(scrollTop) {
+      var deltaScrollTop = scrollTop - this._prevScrollTop;
+      var y = Math.max(0, scrollTop);
+      this._prevScrollTop = Math.max(scrollTop, 0);
+      this._y = y;
+    },
+    onClick: function(e){
+      var app = document.querySelector('minnowboard-app');
+      if (app.$.img_dialog.opened == true) {
+        app.$.img_dialog.toggle();
+      }
+      if (e.target.tagName == 'IMG' && e.target.attributes.class.nodeValue.includes('markdown-it')) {
+        app.$.img_dialog_content.innerHTML = '';
+        var img = document.createElement('img');
+        img.classList.add("img_dialog_image");
+        img.src = e.target.attributes.src.nodeValue;
+        img.alt = e.target.attributes.alt ? e.target.attributes.alt.nodeValue : '';
+        app.$.img_dialog_content.appendChild(img);
+        app.$.img_dialog_title.innerHTML = img.alt;
+        app.$.img_dialog.toggle();
+      }
+      return;
+    },
+    ready: function(){
+      var app = document.querySelector('minnowboard-app');
+      this.listen(app, 'click', 'onClick');
+    }
+  });
+  </script>
+</dom-module>

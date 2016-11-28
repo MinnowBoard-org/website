@@ -1,0 +1,20 @@
+{
+  "content": "docs/powering-up-board.md",
+  "img": "elements/tuto-reader/tutorials/dummy-example/image.jpg",
+  "meta": {
+      "author": {
+          "name": "David Kinder",
+          "location": "Oregon, US",
+          "img": "https://i.ytimg.com/vi/zPvAGYTnFaU/hqdefault.jpg"
+      },
+      "info": [
+          {"label": "Level", "value": "Beginner"},
+          {"label": "Last updated", "value": "July 8, 2016"}
+          {"label": "Board", "value": "MinnowBoard Turbot"}
+
+      ],
+      "keywords": [
+          {"label": "Other tutorials", "value": ["Install Ubuntu 16.04 LTS", "Update the firmware", "Blinking the Turbot D2 LED"]}
+      ]
+  }
+}

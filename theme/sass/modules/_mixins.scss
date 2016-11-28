@@ -1,0 +1,18 @@
+@mixin circle($size) {
+  height: $size;
+  width: $size;
+  -moz-border-radius: $size;
+  -webkit-border-radius: $size;
+  border-radius: $size;
+}
+
+@mixin inline {
+  display: inline-block;
+  vertical-align: top;
+}
+
+@mixin transition-custom($property, $time: 150ms, $timing: ease-in) {
+  @include transition-property($property);
+  @include transition-duration($time);
+  @include transition-timing-function($timing);
+}

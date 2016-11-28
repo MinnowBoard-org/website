@@ -1,0 +1,53 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel='import' href='../markdown-it/markdown-it.html'/>
+
+<dom-module id='dp-ribbon'>
+  <style>
+    :host{
+      width: 100%;
+      display: inline-block;
+      background-color: var(--lightgray-ll);
+      padding: 0 15px;
+      box-sizing: border-box;
+    }
+    :host.home .container {
+      max-width: var(--homepage-max-width);
+    }
+    :host {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+    :host .container {
+      flex: 1;
+    }
+  </style>
+
+  <template>
+     <div class="container">
+      <div class="inner-wrapper txt-center">
+        <markdown-it src="{{src}}" edit={{edit}}></markdown-it>
+      </div>
+    </div>
+  </template>
+
+  <script>
+    Polymer({
+      is: "dp-ribbon",
+      properties: {
+        src: {
+          type: String
+        }
+      }
+    });
+  </script>
+</dom-module>

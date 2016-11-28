@@ -1,0 +1,18 @@
+{
+  "img": "elements/tuto-reader/tutorials/updating_your_firmware/image.png",
+  "content": "elements/tuto-reader/tutorials/updating_your_firmware/docs/updating-your-firmware.md",
+  "meta": {
+      "info": [
+          {"label": "Last updated", "value": "November 2016"},
+          {"label": "Board", "value": "MinnowBoard Turbot"}
+  ],
+    "links": {
+        "label": "Other Tutorials",
+        "value": [
+          {"title": "Power up the MinnowBoard Turbot", "location": "tutorials/powering-on-minnowboardturbot"},
+          {"title": "Install Ubuntu 16.04 LTS", "location": "tutorials/installing-ubuntu-16.04-on-minnowboardmax"},
+          {"title": "Blinking the Turbot D2 LED", "location": "tutorials/Turbot-blink"}
+        ]
+      }
+}
+}

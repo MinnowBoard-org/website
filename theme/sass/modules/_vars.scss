@@ -1,0 +1,85 @@
+// =============================================================================
+// @file:
+// VARIABLES for SASS/COMPASS
+// =============================================================================
+
+$primary-color-1: #23ccfc; // blue
+$primary-color-2: #98ca3c; //green
+
+$darkgray: #3b404c; // grey
+$darkgray-l: #5f646a; // grey 80%
+$darkgray-ll: #959796; // grey 60%
+
+$lightgray: #caccc3; // grey 40%
+$lightgray-l: #f0f0e2; // grey 20%
+$lightgray-ll: #f8f8f1; // grey 10%
+
+$bg-md: $darkgray-l;
+$bg-l: $lightgray-l;
+
+$accent-color-1: #23ccfc; // orange
+$accent-color-2: #98ca3c; // red
+$accent-color-3: #3b404c; // purple
+$accent-color-4: #f8f8f1; // plum
+$accent-color-5: #f0f0e2; // blue
+
+// Grayscale
+// White
+/*$lightgray: #F0F2F4;
+$lightgray-l: #F6F7F8;
+$lightgray-ll: #FFF;
+
+// Gray
+$gray: rgb(145, 145, 150);
+$gray-l: rgb(175, 178, 181);
+$gray-ll: rgb(209, 211, 213);
+
+// Dark Gray
+$darkgray: rgb(45, 50, 55);
+$darkgray-l: rgb(76, 81, 85);
+$darkgray-ll: rgb(108, 112, 116);*/
+
+// Facebook
+$facebook-color: #3b5998;
+// Twitter
+$twitter-color: #55acee;
+// GooglePlus
+$google-plus-color: #dd4b39;
+// LinkedIn
+$linkedin-color: #0077b5;
+// YouTube
+$youtube-color: #cd201f;
+// GitHub
+$github-color: #999;
+
+$base-font-family: Roboto, Helvetica, Arial, sans-serif;
+$base-font-size: 16px;
+$base-line-height: 1.42857143;
+$base-font-color: $darkgray;
+$font-bold: 700;
+$font-medium: 500;
+$font-normal: 400;
+
+// Fixed Font
+$fixed-font-family: monospace;
+$fixed-font-size: 85%;
+$fixed-line-height: $base-line-height;
+
+// Headings
+$header-font-color: $darkgray;
+$header-font-weight: bold;
+$h1-font-size: 30px;
+$h2-font-size: 18px;
+$h3-font-size: 18px;
+$h4-font-size: 14px;
+$h5-font-size: 14px;
+$h6-font-size: 14px;
+
+$primary-background-color: transparent;
+$primary-border-color: $darkgray;
+$primary-txt-color: $darkgray;
+$primary-background-color-hover: $darkgray;
+$primary-border-color-hover: $darkgray;
+$primary-txt-color-hover: #fff;
+
+$btn-txt-size: 12px;

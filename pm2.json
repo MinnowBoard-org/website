@@ -1,0 +1,19 @@
+{
+  "apps": [{
+    "name": process.cwd().replace(/^.*?\/([^/]*)$/, "$1"),
+    "script": "bin/www",
+    "watch": true,
+    "env_production": {
+      "BASE": "/minnow/",
+      "PORT": 3000
+    },
+    "env_staging": {
+      "BASE": "/stg.minnow/",
+      "PORT": 3001
+    },
+    "env_ux": {
+      "BASE": "/ux.minnow/",
+      "PORT": 3002
+    }
+  }]
+}

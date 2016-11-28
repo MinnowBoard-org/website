@@ -1,0 +1,21 @@
+{
+  "content": "docs/welcome-message.md",
+  "img": "elements/tuto-reader/tutorials/dummy-example/image.jpg",
+  "meta": {
+    "author": {
+      "name": "Julio Rivera",
+      "location": "Zapopan, MX",
+      "img": "https://i.ytimg.com/vi/zPvAGYTnFaU/hqdefault.jpg"
+    },
+    "info": [
+      {"label": "Level", "value": "Very Very Hard"},
+      {"label": "Created", "value": "12/13/1987"},
+      {"label": "Board", "value": "MinnowBoard"}
+    ],
+    "keywords": [
+      {"label": "Technology", "value": ["HTML5", "CSS3"]},
+      {"label": "Software & Libraries", "value": ["Polymer"]},
+      {"label": "Tags", "value": ["Design", "Propotype"]}
+    ]
+  }
+}

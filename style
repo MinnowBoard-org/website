@@ -1,0 +1,67 @@
+#!/bin/bash
+beautify=$(which js-beautify) || {
+cat << EOF
+
+js-beautify not found.
+
+You can install js-beautify by running:
+
+  sudo npm install -g js-beautify@1.5.10
+
+NOTE: 1.5.10 is used as all versions since (up to 1.6.3) do not actually
+      reformate HTML.
+
+EOF
+exit
+}
+
+
+function style {
+  file=$1
+  [ ${file/%.js} != ${file} ] && {
+    js-beautify -a -s 2 -r ${file}
+    return
+  }
+
+  [ ${file/%.css} != ${file} ] && {
+    css-beautify -s 2 -r ${file}
+    return
+  }
+
+  [ ${file/%.html} != ${file} ] && {
+    html-beautify -s 2 -r ${file}
+    return
+  }
+
+  echo "${file} - unchanged"
+}
+
+files=$*
+files=${files:=$(git diff --name-only)}
+files=${files:=$(find . -name "*.html" -or -name "*.js" -or -name "*.css" | grep -Ev "(\./bower|\./node|\./external)")}
+
+cat << EOF
+About to JS-BEAUTIFY the following files:
+
+${files}
+
+EOF
+
+while true; do
+  read -p "Continue? [Yn]" key
+  case ${key} in
+  N|n) exit
+      ;;
+  Y|y|"") break
+      ;;
+  esac
+done
+
+changes=0
+for file in ${files}; do
+  output=$(style ${file})
+  echo ${output} | grep -q "unchanged" || changes=$((changes+1))
+  echo ${output}
+done
+
+echo "${changes} files changed."

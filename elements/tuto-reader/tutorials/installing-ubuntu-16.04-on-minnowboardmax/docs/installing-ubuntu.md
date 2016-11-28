@@ -1,7 +1,7 @@
 ## Installing Ubuntu 16.04.1 LTS
 
 Despite its small size, the MinnowBoard Turbot can run desktop PC versions
-of operating systems such as Linux* and Windows*.  This tutorial explains
+of operating systems such as Linux* and Windows*. This tutorial explains
 how to install a popular Linux release, Ubuntu 16.04.1 LTS. Once installed, you can
 use regular Linux commands and programs to explore and develop applications 
 using the MinnowBoard Turbot and connected devices.
@@ -39,8 +39,7 @@ depending on the OS your host computer is running. While it's tempting to just
 copy the image to the USB thumb drive, this won't create the needed boot image
 structure on the USB thumb drive, so please follow one of these suggested steps:
 - For Windows* users, we strongly recommend you follow these 
-  [Create a USB Stick on Windows](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows) 
-  instructions. 
+  [Create a USB Stick on Windows](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows) instructions. 
 - For Ubuntu users, follow the 
   [Create a USB Stick on Ubuntu](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-ubuntu) 
   instructions.
@@ -57,8 +56,8 @@ the board, you'll need to:
    to install Ubuntu with a mouse, so you'd need to connect a USB hub to the top
    USB connector on the MinnowBoard Turbot, and then connect the keyboard and mouse
    into the hub.
-1. Plug the ethernet cable into your network port and into the MinnowBoard Turbot
-   ethernet jack
+1. Plug the Ethernet cable into your network port and into the MinnowBoard Turbot
+   Ethernet jack
 1. Connect the 5v power connector to the board, but not into the wall outlet just yet
 1. Plug the USB thumb drive with the Ubuntu image you just created into the bottom USB connector.
 1. Plug the microSD card into the microSD card slot (insert the microSD card with
@@ -117,7 +116,7 @@ For installation, select the following:
 **Screen 1: Welcome**
 - Select English (or your preferred language) and then Continue
 
-**Screen 2: Preparing to install ubuntu**
+**Screen 2: Preparing to install Ubuntu**
 - Verify **Download updates...** and **Install third-party software...** are
   **not** selected, then Continue  (checking these options on adds a lot of
   time to the installation process and is something you can do later)
@@ -127,7 +126,7 @@ For installation, select the following:
 -  Write the changes to disks? (verify the disk is the MMC/SD card), then Continue
 
 **Screen 4: Where are you?**
--  Select **Los Angeles Time** for the US Pacific timezone, for example: 
+-  Select **Los Angeles Time** for the US Pacific time zone, for example: 
    if you only have a keyboard connected,
    use the tab key to highlight the field (if it's not already selected) 
    and start typing the name and press enter when a match shows up
@@ -168,7 +167,7 @@ onto the MinnowBoard Turbot.
     "Returning from blank screen")
 
 At this point, you can use the MinnowBoard Turbot as you would a desktop PC.  
-Explose the Ubuntu interface, check out the installed programs and file system, 
+Expose the Ubuntu interface, check out the installed programs and file system, 
 open a shell prompt (terminal) and play with the linux command-line shell, and more.
 
 ### Update the installed Ubuntu software
@@ -182,7 +181,7 @@ to update manually.
 
 You can update the system to have the latest software 
 and security patches via the command line (you'll need to have the network 
-connecton working on the MinnowBoard Turbot for this step):
+connection working on the MinnowBoard Turbot for this step):
 
 1.  Navigate the user interface to launch the `terminal` program by pressing **ALT-F1**.
 2.  Press **ENTER** to start the "Search your computer" application.
@@ -195,7 +194,7 @@ connecton working on the MinnowBoard Turbot for this step):
     sudo apt-get -y dist-upgrade
     ```
     
-    This first update and upgrade can take a long time (even a hour or two) depending
+    This first update and upgrade can take a long time (even an hour or two) depending
     on your network speed and the number of software upgrades that need to be
     installed.  Subsequent upgrades will typically have fewer files to download
     and install and be much faster.

@@ -46,7 +46,7 @@ chmod +x blinkd2.sh
 You can give this script a try on your MinnowBoard Turbot running Ubuntu:
 
 1. Within a terminal window, create a file `blinkd2.sh` containing the script
-   shown above. (If you cut and paste all the text above into a commandline 
+   shown above. (If you cut and paste all the text above into a command line 
    window, it will do that for you.)
 2. Run the script with the ``sudo`` command:
 
@@ -63,8 +63,8 @@ You can give this script a try on your MinnowBoard Turbot running Ubuntu:
 
 With the basics in hand of accessing the board's GPIO interface through the filesystem,
 you can go on to create something more complex.  Here's another 
-bash script to convert words (alpha-numeric characters only) on the commandline 
-into morse code displayed with the D2 LED:
+bash script to convert words (alpha-numeric characters only) on the command line 
+into Morse Code displayed with the D2 LED:
 
 ``` bash
 cat << 'EOF' > morse.sh
@@ -153,10 +153,10 @@ chmod +x morse.sh
 You can give this script a try on your MinnowBoard Turbot running Ubuntu:
 
 1. Within a terminal window, create a file `morse.sh` containing the script
-   shown above. (If you cut and paste all the text above into a commandline 
+   shown above. (If you cut and paste all the text above into a command line 
    window, it will do that for you.)
 2. Run the script with the ``sudo`` command 
-   and you'll see the D2 LED blinking with the Morse code translation
+   and you'll see the D2 LED blinking with the Morse Code translation
    of the words given on the command line. For us humans, the script also 
    prints out the characters and dit-dah translation to the console.  (Press CTRL-C
    to stop the script from running.)

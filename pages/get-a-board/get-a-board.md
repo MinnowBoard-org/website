@@ -27,7 +27,7 @@ follow the listed requirements when buying the parts.
 |----|----|----|
 | Brillo accessory kit | [Netgate](http://store.netgate.com/BrilloKit.aspx) | This optional kit includes 802.11n USB Wifi Adapter (Realtek rtl8192); FTDI USB RS232 to 6P female breakout cable; Transcend 8GB microSD Class-10 storage card (or equivalent); 7.1 Channel Stereo Card USB Audio Adapter. |
 | Desktop/Laptop computer | - | The desktop/laptop can run Windows, Linux, or OS X. It is used to download the OS image and write to the USB flash drive. |
-| Ethernet cable | - | The ethernet cable is used to perform software updates and download the additional packages not provided with the base operating system. |
+| Ethernet cable | - | The Ethernet cable is used to perform software updates and download the additional packages not provided with the base operating system. |
 | Expansion board - Desert Lure | [Netgate](http://store.netgate.com/Lures/Desert.aspx) | Prototype expansion board that plugs into the Low Speed Expansion (LSE) connector on the top of the board. |
 | Expansion board - Debugger Lure | [Tin Can Tools](http://www.tincantools.com/Debugger-Lure.html) | Expansion board for the Turbot that adds a JTAG debugging interface for the Intel XDP. |
 | Expansion board - Moray Lure (XBee) | [Netgate](http://store.netgate.com/Lures/Moray.aspx) | Prototype expansion board that plugs into the Low Speed Expansion (LSE) connector on the top of the board. |

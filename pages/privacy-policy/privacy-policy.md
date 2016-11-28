@@ -269,7 +269,7 @@ We comply with the Children’s Online Privacy Protection Act of the United Stat
 and similar laws around the world where applicable to MinnowBoard.org Services.
 We do not knowingly collect personal information from children without proper
 parental consent. If you believe that we may have collected personal information
-from someone under the age of thirteen (13),or under the applicable age of consent
+from someone under the age of thirteen (13), or under the applicable age of consent
 in your country, without parental consent, please let us know and we will take
 appropriate measures to investigate and address the issue promptly.
 

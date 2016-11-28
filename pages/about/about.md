@@ -1,5 +1,5 @@
 ## About the MinnowBoard.org Foundation
-The MinnowBoard.org Foundation is a is an Oregon-based non-profit providing education
+The MinnowBoard.org Foundation is an Oregon-based non-profit providing education
 and promotion of the design and use of open-source software and hardware in 
 embedded computing, including for the Internet of Things. The foundation supports 
 the Open Source Hardware Association (OSHWA.org) principles.

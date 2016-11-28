@@ -20,7 +20,7 @@ Here's the basic idea:
 
 MinnowBoard.org is providing a framework for discussion and user generated
 information to expand the knowledge base of open source hardware and software.
-Please note that articles, as well as any other user content on MinnowBoard.org.
+Please note that articles, as well as any other user content on MinnowBoard.org
 (such as blogs, directory content, forums, comments, etc.), do not reflect the
 views or endorsements of MinnowBoard.org, its staff, or its members. We recognize
 there may be inaccurate information reflected in this site and that users should

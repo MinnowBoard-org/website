@@ -32,7 +32,7 @@ Enter the MinnowBoard Turbot UEFI boot option screen by following these steps:
 
     ![image](elements/tuto-reader/tutorials/updating_your_firmware/docs/MB-FirmwareVersion.png)
     
-    The MinnowBoard Turbot is MinnowBoard MAX compatible and uses the same firware
+    The MinnowBoard Turbot is MinnowBoard MAX compatible and uses the same firmware
     as the MinnowBoard MAX (hence the references to the MAX in the firmware).
 
 ###  Find the latest available version of the firmware
@@ -72,7 +72,7 @@ To update the firmware of the MinnowBoard Turbot, complete the following steps:
 4.  Power off the MinnowBoard Turbot.  
 5.  Insert the USB thumb drive into the bottom 
     USB port on your MinnowBoard Turbot and USB keyboard in the top port. 
-    If you have an microSD card installed in the 
+    If you have a microSD card installed in the 
     MinnowBoard Turbot, we recommend you remove it for this update process.
 6.  Power up the MinnowBoard Turbot.
 7.  After a few seconds, you will see the UEFI shell and a map display of the 

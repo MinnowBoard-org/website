@@ -96,7 +96,7 @@ to a graphics mode (such as booting a Linux GUI), output to the serial port will
 stop until some application running on the MinnowBoard Turbot writes to the serial port.
 
 If you're running linux on your Turbot, you can output messages to the 
-serial port for exmample, by using shell commands on your board (as root):
+serial port for example, by using shell commands on your board (as root):
 
 ``` bash
 stty -F /dev/ttyS0 speed 115200

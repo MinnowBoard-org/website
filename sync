@@ -7,3 +7,4 @@ EOF
 git pull >> update.log 2>&1 || exit -1
 bower install >> update.log 2>&1 || exit -2
 npm install >> update.log 2>&1 || exit -3
+echo "Success: $(date)" >> update.log

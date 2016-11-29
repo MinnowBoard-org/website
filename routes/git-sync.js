@@ -14,11 +14,12 @@ const express = require('express');
 const fs = require('fs');
 const exec = require('child_process').exec;
 const path = require('path');
+const root = path.dirname(require.main.filename);
 
 let router = express.Router();
 
 function execSync(res, hook) {
-  const cmd = "sudo -u www-update " + path.join(__dirname, 'sync') + " " + [
+  const cmd = "sudo -u www-update " + path.join(root, 'sync') + " " + [
     hook.repository.full_name,
     hook.ref,
     hook.pusher.name,

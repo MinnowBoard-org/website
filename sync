@@ -1,4 +1,9 @@
 #!/bin/bash
-git pull || exit -1
-bower install || exit -2
-npm install || exit -3
+cat << EOF >> update.log
+
+$(date)
+$@
+EOF
+git pull >> update.log 2>&1 || exit -1
+bower install >> update.log 2>&1 || exit -2
+npm install >> update.log 2>&1 || exit -3

@@ -28,7 +28,9 @@ function execSync(res, hook) {
 
   console.log("Executing: " + cmd);
 
-  exec(cmd, function (error, stdout, stderr) {
+  exec(cmd, {
+    cwd: root
+  }, function (error, stdout, stderr) {
     if (error) {
       console.log("Unable to update via GitHub sync.");
       res.status(500).send("Error");

@@ -1,0 +1,4 @@
+#!/bin/bash
+git pull || exit -1
+bower install || exit -2
+npm install || exit -3

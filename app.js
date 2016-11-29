@@ -21,8 +21,9 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const url = require('url');
 
-const routes = require('./routes/index');
+const index = require('./routes/index');
 const help = require('./routes/help');
+const sync = require('./routes/git-sync');
 
 const app = express();
 /* Set basePath to the directory name wrapped in slashes */
@@ -39,14 +40,18 @@ app.use(cookieParser());
 app.get(basePath + 'messages.log', function(req, res, next) {
   res.status(401).send("Unauthorized.");
 });
+app.get(basePath + '.git', function(req, res, next) {
+  res.status(401).send("Unauthorized.");
+});
 
 app.use(basePath + 'bower_components', express.static(path.join(__dirname, 'bower_components')));
+app.use(basePath, index);
+app.use(basePath + 'help-request', help);
+app.use(basePath + 'sync', sync);
 app.use(basePath, express.static(path.join(__dirname, '.'), {
   redirect: true,
   index: false
 }));
-app.use(basePath, routes);
-app.use(basePath + 'help-request', help);
 
 /* To handle dynamic routes, we return index.html to every 404.
 * However, that introduces site development problems when assets are
@@ -145,4 +150,3 @@ server.on('error', function(error) {
 server.on('listening', function() {
   console.log("Listening on " + port);
 });
-

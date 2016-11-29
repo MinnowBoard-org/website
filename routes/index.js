@@ -11,7 +11,6 @@ const fs = require('fs');
 const express = require('express');
 let router = express.Router();
 
-
 /* GET landing page. */
 router.get('/', (req, res, next) => {
   const basePath = process.env.BASE || process.cwd().replace(/^.*?([^/]*)$/, '/$1/');

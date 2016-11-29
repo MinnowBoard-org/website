@@ -40,7 +40,7 @@ app.use(cookieParser());
 app.get(basePath + 'messages.log', function(req, res, next) {
   res.status(401).send("Unauthorized.");
 });
-app.get(basePath + '.git', function(req, res, next) {
+app.get(basePath + '.git/?*', function(req, res, next) {
   res.status(401).send("Unauthorized.");
 });
 

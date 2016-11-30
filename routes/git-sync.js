@@ -19,7 +19,7 @@ const root = path.dirname(require.main.filename);
 let router = express.Router();
 
 function execSync(res, hook) {
-  const cmd = "sudo -u www-update " + path.join(root, 'sync') + " " + [
+  const cmd = "sudo -u www-update -H " + path.join(root, 'sync') + " " + [
     hook.repository.full_name,
     hook.ref,
     hook.pusher.name,

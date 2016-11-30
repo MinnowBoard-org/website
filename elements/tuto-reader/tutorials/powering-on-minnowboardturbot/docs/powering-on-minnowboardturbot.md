@@ -6,7 +6,7 @@ power up your new MinnowBoard Turbot.
 ### Components 
 
 To get started, you will need 
-these necessary hardware components (see [this page](get-a-board) for recommendations):
+these necessary hardware components (see [Get a board](get-a-board) for recommendations):
 
 - MinnowBoard Turbot Board
 - 5V 2.5A Power Supply
@@ -103,7 +103,7 @@ At this point you've got the MinnowBoard Turbot powered up and you can explore
 the board using the UEFI shell.  The `help -b` command will display all the
 UEFI shell commands.  You can learn more about the UEFI shell and its commands 
 on the [MinnowBoard Wiki](http://wiki.minnowboard.org/UEFI) and at 
-https://software.intel.com/en-us/articles/uefi-shell.  
+[https://software.intel.com/en-us/articles/uefi-shell](https://software.intel.com/en-us/articles/uefi-shell).  
 
 If you enter `exit` to the UEFI shell, you'll be taken to the UEFI boot menu where
 you can explore and set board configuration options, including boot order, something
@@ -114,6 +114,6 @@ we'll use in the next step.
 ***
 Despite its small size, the MinnowBoard Turbot can run desktop PC versions of
 operating systems such as Linux* and Windows*. This tutorial explains how to
-install a popular Linux release, Ubuntu 16.0...
+install a popular Linux release, Ubuntu 16.0.
 
 *This page is licensed under CC-BY-SA 3.0 and may have portions derived from other CC-BY-SA 3.0 content. See [Attributions page](attributions).

@@ -25,16 +25,16 @@ follow the listed requirements when buying the parts.
 #### Optional
 |**Part** | **Suppliers** | **Requirements/Description** |
 |----|----|----|
-| Brillo accessory kit | [Netgate](http://store.netgate.com/BrilloKit.aspx) | This optional kit includes 802.11n USB Wifi Adapter (Realtek rtl8192); FTDI USB RS232 to 6P female breakout cable; Transcend 8GB microSD Class-10 storage card (or equivalent); 7.1 Channel Stereo Card USB Audio Adapter. |
-| Desktop/Laptop computer | - | The desktop/laptop can run Windows, Linux, or OS X. It is used to download the OS image and write to the USB flash drive. |
-| Ethernet cable | - | The Ethernet cable is used to perform software updates and download the additional packages not provided with the base operating system. |
+| Brillo accessory kit | [Netgate](http://store.netgate.com/BrilloKit.aspx) | Kit includes 802.11n USB Wifi Adapter (Realtek rtl8192); FTDI USB RS232 to 6P female breakout cable; Transcend 8GB microSD Class-10 storage card (or equivalent); 7.1 Channel Stereo Card USB Audio Adapter. |
+| Desktop/Laptop computer | - | Can run Windows, Linux, or OS X. Used to download the OS image and write to the USB flash drive. |
+| Ethernet cable | - | Used to perform software updates and download the additional packages not provided with the base operating system. |
 | Expansion board - Desert Lure | [Netgate](http://store.netgate.com/Lures/Desert.aspx) | Prototype expansion board that plugs into the Low Speed Expansion (LSE) connector on the top of the board. |
 | Expansion board - Debugger Lure | [Tin Can Tools](http://www.tincantools.com/Debugger-Lure.html) | Expansion board for the Turbot that adds a JTAG debugging interface for the Intel XDP. |
 | Expansion board - Moray Lure (XBee) | [Netgate](http://store.netgate.com/Lures/Moray.aspx) | Prototype expansion board that plugs into the Low Speed Expansion (LSE) connector on the top of the board. |
 | Expansion board - Silverjaw Lure | [Netgate](http://store.netgate.com/Silverjaw-Lure-for-MinnowBoard-Max-with-mSATA-and-mPCIe-P2433.aspx) | Prototype expansion board that plugs into the High Speed Expansion (HSE) connector on the bottom. |
-| FTDI serial to USB cable | [Amazon](https://www.amazon.com/FTDI-TTL-232R-3V3-SERIAL-CONVERTER-CABLE/dp/B00DDF8TV6/ref=sr_1_10?ie=UTF8&qid=1478709033&sr=8-10&keywords=ftdi+usb+to+ttl ) | 3.3v FTDI serial to USB cable. The FTDI cable connects MinnowBoard Turbot to USB on your host computer to run Turbot in a headless configuration (without keyboard and monitor). |
+| FTDI serial to USB cable | [Amazon](https://www.amazon.com/FTDI-TTL-232R-3V3-SERIAL-CONVERTER-CABLE/dp/B00DDF8TV6/ref=sr_1_10?ie=UTF8&qid=1478709033&sr=8-10&keywords=ftdi+usb+to+ttl ) | 3.3v FTDI serial to USB cable. Connects MinnowBoard Turbot to USB on your host computer to run Turbot in a headless configuration (without keyboard and monitor). |
 | Internet connected router/switch/hub | - | In order to download packages or update an OS, you will need to be able to connect to the internet. |
-| RTC battery | - | Optional: 3V lithium coin battery (CR1225 or equivalent) for maintaining the Real-time clock (RTC) date and time when the board is powered off. | 
-| Turbot case | [Netgate](http://store.netgate.com/MBX/Case.aspx) | Protect your Turbot when it's not in use. |
+| RTC battery | - | 3V lithium coin battery (CR1225 or equivalent) for maintaining the Real-time clock (RTC) date and time when the board is powered off. | 
+| Turbot case | [Netgate](http://store.netgate.com/MBX/Case.aspx) | For protecting your Turbot when it's not in use. |
 | USB hub | - | For connecting more than two devices. |
-| USB mouse | - | Optional - If you install an OS with a graphical user interface, a USB mouse is handy to have. |
+| USB mouse | - | If you install an OS with a graphical user interface, a USB mouse is handy to have. |

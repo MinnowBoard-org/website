@@ -15,9 +15,9 @@ To perform these steps you'll need:
 
 - MinnowBoard Turbot board
 - 5V 2.5A Power Supply
-- USB thumb drive (2 GB or larger)
-- microSD card (8 GB or larger)
-- micro-HDMI to HDMI cable and HDMI-capable monitor
+- USB thumb drive (2GB or larger)
+- microSD card (8GB or larger)
+- microHDMI to HDMI cable and HDMI-capable monitor
 - USB keyboard
 - Ethernet cable and internet connection
 - optionally a USB mouse (and USB hub)
@@ -51,7 +51,7 @@ structure on the USB thumb drive, so please follow one of these suggested steps:
 
 Now you can proceed to set up the MinnowBoard Turbot.  As we did for powering up
 the board, you'll need to:
-1. Connect a micro-HDMI cable from the board to your monitor (and turn the monitor on)
+1. Connect a microHDMI cable from the board to your monitor (and turn the monitor on)
 1. Connect a USB keyboard to the top USB connector.  While not required, it's easier
    to install Ubuntu with a mouse, so you'd need to connect a USB hub to the top
    USB connector on the MinnowBoard Turbot, and then connect the keyboard and mouse

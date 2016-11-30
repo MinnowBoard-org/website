@@ -11,7 +11,7 @@ To perform these steps you’ll need:
 - 5V 2.5A Power Supply
 - microSD card (8GB or larger, Class 10) 
 or USB thumb drive (2GB or larger, USB3 preferred)
-- micro-HDMI to HDMI cable and HDMI-capable monitor
+- microHDMI to HDMI cable and HDMI-capable monitor
 - USB keyboard
 - USB mouse 
 - Optionally a USB hub if you're loading the OS onto a USB Flash Drive
@@ -30,8 +30,8 @@ first steps.
 image file is a bootable image of Pulsar Linux.
 
 
-### Load Pulsar OS on SD-Card or USB Thumb Drive
-1. Insert the SD-Card or Thmb Drive into your computer.
+### Load Pulsar OS on SD card or USB Thumb Drive
+1. Insert the SD card or Thmb Drive into your computer.
 2. Determine the drive (Windows) or device node (Linux or Mac OS X) that the 
 memory device is mapped to on your host system.
 
@@ -65,7 +65,7 @@ sudo diskutil unmountDisk /dev/diskN
 Your device node may be different. To determine what your device node is, refer 
 to the output of the diskutil list command.
 
-5. Copy the certified image (.img file) onto your SD-Card or Flash Drive.
+5. Copy the certified image (.img file) onto your SD card or Flash Drive.
 
 On Windows, you can use the Win32 Disk Imager application or something similar.
 On Linux and Mac OS X, you can use the dd command or something similar.
@@ -86,14 +86,14 @@ sudo dd if=/path_to/pulsar7-certifiedDevice.img of=/dev/rdiskN bs=1m
 Your device node may be different. To determine what your device node is, refer 
 to the output of the diskutil list command.
 
-6. Safely eject and remove the SD-Card or Flash Drive when the copy operation is 
+6. Safely eject and remove the SD card or Flash Drive when the copy operation is 
 completed.
 
 ### Setup Your MinnowBoard Turbot and Boot to Wind River Pulsar
 1. Connect a USB keyboard and USB mouse to the USB ports on the board.  
 2. Connect an HDMI monitor to the microHDMI port on the board.
 3. Plug in Ethernet cable to your board.
-4. Plug the Micro SD-Card into your board. It's inserted with the metal pins 
+4. Plug the Micro SD card into your board. It's inserted with the metal pins 
 upwards.  If you're using a Flash Drive, use the bottom USB3 port on the Turbot.
 5. Plug in the power adapter to power your board on.
 6. Pulsar Linux boots up to the XFCE graphical desktop.
@@ -103,10 +103,10 @@ upwards.  If you're using a Flash Drive, use the bottom USB3 port on the Turbot.
 
 **Important:**
 
-If your board will not boot from the SD-Card and you see a black screen, you 
+If your board will not boot from the SD card and you see a black screen, you 
 will need to go into the Firmware options in the Boot Manager, select ‘EFI Misc 
-Device’ and press 'ENTER'. This will force a reboot to the SD-Card. To 
-permanently boot from the SD-Card, you can move it to the top of the boot 
+Device’ and press 'ENTER'. This will force a reboot to the SD card. To 
+permanently boot from the SD card, you can move it to the top of the boot 
 order in the firmware (Boot Maintenance Manager / Boot Options / Change Boot 
 Order). See details on [how to do this here](tutorials/updating_your_firmware).
 

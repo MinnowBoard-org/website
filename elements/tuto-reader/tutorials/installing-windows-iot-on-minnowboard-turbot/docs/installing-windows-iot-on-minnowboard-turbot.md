@@ -13,12 +13,12 @@ To perform these steps you’ll need:
 - MinnowBoard Turbot board
 - 5V 2.5A Power Supply
 - microSD card (8GB or larger, Class 10)
-- USB SD-Card Adapter (needed to mount it on your Windows computer)
-- micro-HDMI to HDMI cable and HDMI-capable monitor
+- USB SD card Adapter (needed to mount it on your Windows computer)
+- microHDMI to HDMI cable and HDMI-capable monitor
 - USB keyboard
 - USB mouse
 - Ethernet cable and internet connection
-- host computer running Windows
+- Host computer running Windows
 
 You’ll be using your host computer (and not the MinnowBoard Turbot) for these first steps.
 
@@ -38,30 +38,30 @@ You’ll be using your host computer (and not the MinnowBoard Turbot) for these 
     on our [firmware tutorial page](tutorials/updating_your_firmware).
 
 
-### Use Dashboard to Download Windows IoT Core OS on SD-Card
+### Use Dashboard to Download Windows IoT Core OS on SD card
 1.  Open the Windows 10 IoT Core Dashboard you downloaded and installed from the 
     Get the tools page.
 1.  Click "Set up a new device".
 1.  Select **MinnowBoard Max** from the dropdown. Each board has its own specialized 
     image and this one will work for ALL MinnowBoard boards. See choices in 
     screenshot below.
-1.  Make sure your micro SD-Card is compliant. Plug it into your computer using a 
-    USB card adapter. SD-Cards need to be at least 8 GB in size. Slower and older 
-    cards are inconsistent when flashing and may fail to work. Class 4 SD-Cards 
-    are not supported and at a minimum Class 10 SD-Cards should be used.
+1.  Make sure your microSD card is compliant. Plug it into your computer using a 
+    USB card adapter. SD cards need to be at least 8GB in size. Slower and older 
+    cards are inconsistent when flashing and may fail to work. Class 4 SD cards 
+    are not supported and at a minimum Class 10 SD cards should be used.
 1.  Enter device name and password. Wifi isn’t necessary since we will connect 
     via Ethernet.
 1.  Choose a unique name for your device and a new Administrator password for the 
     device.  The login name will be ‘Administrator’ unless you change it.
-1.  Download and install Windows 10 IoT Core to your SD-Card.
+1.  Download and install Windows 10 IoT Core to your SD card.
 
 A window will pop up to show you the progress. This step can take several minutes 
-depending on the speed of your SD-Card.
+depending on the speed of your SD card.
 
 ![image](elements/tuto-reader/tutorials/installing-windows-iot-on-minnowboard-turbot/docs/ms-dashboard.png)
 
 ### Boot Your MinnowBoard Turbot Running Windows IoT Core OS
-1.  Plug the microSD-Card into your board. It's inserted with the metal pins upwards.
+1.  Plug the microSD card into your board. It's inserted with the metal pins upwards.
 1.  We recommend that you plug in a USB keyboard and mouse to the board.
 1.  Plug in the power adapter to power your board on.
 
@@ -71,10 +71,10 @@ installation. You should see the blue Windows logo on your monitor. If you have
 specified a different device name from default (minwinpc) it will cause a restart 
 to happen automatically.
 
-If your board will not boot from the SD-Card and you see a black screen, you will 
+If your board will not boot from the SD card and you see a black screen, you will 
 need to go into the Firmware options in the Boot Manager, select ‘EFI Misc Device’ 
-and press 'ENTER'. This will force a reboot to the SD-Card. To permanently boot 
-from the SD-Card, you can move it to the top of the boot order in the 
+and press 'ENTER'. This will force a reboot to the SD card. To permanently boot 
+from the SD card, you can move it to the top of the boot order in the 
 firmware (Boot Maintenance Manager / Boot Options / Change Boot Order). See details 
 on [how to do this here](tutorials/updating_your_firmware).
 

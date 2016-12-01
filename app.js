@@ -29,8 +29,9 @@ const app = express();
 /* Set basePath to the directory name wrapped in slashes */
 const basePath = process.env.BASE || process.cwd().replace(/^.*?([^/]*)$/, '/$1/');
 
-//let invalid certs work because site is internal
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+/* App is behind an nginx proxy which we trust, so use the remote address
+ * set in the headers */
+app.use('trust proxy', true);
 
 app.use(logger('common'));
 app.use(bodyParser.json());

@@ -32,7 +32,7 @@ const basePath = process.env.BASE || process.cwd().replace(/^.*?([^/]*)$/, '/$1/
 //let invalid certs work because site is internal
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
-app.use(logger('dev'));
+app.use(logger('common'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());

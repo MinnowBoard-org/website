@@ -32,8 +32,17 @@ h6, .h6 {
   color: $header-font-color;
   margin: 0;
   line-height: 1.4;
-  padding-top: 0;
-  margin-bottom: 5px;
+}
+
+#scroller {
+  h1, .h1,
+  h2, .h2,
+  h3, .h3,
+  h4, .h4,
+  h5, .h5,
+  h6, .h6 {
+    margin: 2rem 0 1rem 0;
+  }
 }
 
 h1, .h1 {
@@ -64,7 +73,6 @@ h5, .h5 {
 h6, .h6 {
   font-size: $h6-font-size;
   font-weight: $font-bold;
-  margin-bottom: $base-font-size;
 }
 
 .small {

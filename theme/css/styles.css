@@ -1110,97 +1110,104 @@ h6, .h6 {
   color: #3b404c;
   margin: 0;
   line-height: 1.4;
-  padding-top: 0;
-  margin-bottom: 5px;
 }
 
-/* line 39, ../sass/partials/_global.scss */
+/* line 38, ../sass/partials/_global.scss */
+#scroller h1, #scroller .h1,
+#scroller h2, #scroller .h2,
+#scroller h3, #scroller .h3,
+#scroller h4, #scroller .h4,
+#scroller h5, #scroller .h5,
+#scroller h6, #scroller .h6 {
+  margin: 2rem 0 1rem 0;
+}
+
+/* line 48, ../sass/partials/_global.scss */
 h1, .h1 {
   font-weight: 500;
   font-size: 30px;
 }
 
-/* line 44, ../sass/partials/_global.scss */
+/* line 53, ../sass/partials/_global.scss */
 h2, .h2 {
   font-weight: 700;
   font-size: 18px;
 }
 
-/* line 49, ../sass/partials/_global.scss */
+/* line 58, ../sass/partials/_global.scss */
 h3, .h3 {
   font-weight: 500;
   font-size: 18px;
 }
 
-/* line 54, ../sass/partials/_global.scss */
+/* line 63, ../sass/partials/_global.scss */
 h4, .h4 {
   font-size: 14px;
   font-weight: 700;
 }
 
-/* line 59, ../sass/partials/_global.scss */
+/* line 68, ../sass/partials/_global.scss */
 h5, .h5 {
   font-size: 14px;
   font-weight: 700;
 }
 
-/* line 64, ../sass/partials/_global.scss */
+/* line 73, ../sass/partials/_global.scss */
 h6, .h6 {
   font-size: 14px;
   font-weight: 700;
-  margin-bottom: 16px;
 }
 
-/* line 70, ../sass/partials/_global.scss */
+/* line 78, ../sass/partials/_global.scss */
 .small {
   font-size: 14px;
 }
 
-/* line 74, ../sass/partials/_global.scss */
+/* line 82, ../sass/partials/_global.scss */
 .large {
   font-size: 18px;
 }
 
-/* line 78, ../sass/partials/_global.scss */
+/* line 86, ../sass/partials/_global.scss */
 .txt-center {
   text-align: center;
 }
 
-/* line 82, ../sass/partials/_global.scss */
+/* line 90, ../sass/partials/_global.scss */
 ul, ol {
   margin-bottom: 16px;
 }
 
-/* line 86, ../sass/partials/_global.scss */
+/* line 94, ../sass/partials/_global.scss */
 .title,
 #title {
   font-weight: 700;
   font-size: 14px;
 }
 
-/* line 92, ../sass/partials/_global.scss */
+/* line 100, ../sass/partials/_global.scss */
 .subtitle {
   font-weight: 700;
 }
 
-/* line 96, ../sass/partials/_global.scss */
+/* line 104, ../sass/partials/_global.scss */
 .right {
   float: right;
 }
 
-/* line 100, ../sass/partials/_global.scss */
+/* line 108, ../sass/partials/_global.scss */
 .left {
   float: left;
 }
 
-/* line 105, ../sass/partials/_global.scss */
+/* line 113, ../sass/partials/_global.scss */
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 112, ../sass/partials/_global.scss */
+/* line 120, ../sass/partials/_global.scss */
 .fa {
   -moz-transition-property: background-color;
   -o-transition-property: background-color;
@@ -1224,31 +1231,31 @@ ul, ol {
   font-size: 16px;
   text-align: center;
 }
-/* line 120, ../sass/partials/_global.scss */
+/* line 128, ../sass/partials/_global.scss */
 .fa.selected, .fa:hover {
   background-color: #3b404c;
   color: #fff;
 }
-/* line 126, ../sass/partials/_global.scss */
+/* line 134, ../sass/partials/_global.scss */
 .fa::before {
   position: relative;
   top: 8px;
 }
 
-/* line 133, ../sass/partials/_global.scss */
+/* line 141, ../sass/partials/_global.scss */
 paper-button .fa:hover {
   background-color: transparent;
   color: inherit;
 }
 
-/* line 139, ../sass/partials/_global.scss */
+/* line 147, ../sass/partials/_global.scss */
 span.fa,
 i {
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 144, ../sass/partials/_global.scss */
+/* line 152, ../sass/partials/_global.scss */
 a {
   -moz-transition-property: color;
   -o-transition-property: color;
@@ -1266,47 +1273,47 @@ a {
   text-decoration: none;
   font-weight: 500;
 }
-/* line 150, ../sass/partials/_global.scss */
+/* line 158, ../sass/partials/_global.scss */
 a:visited {
   color: #23ccfc;
 }
-/* line 154, ../sass/partials/_global.scss */
+/* line 162, ../sass/partials/_global.scss */
 a:hover, a:focus, a:active, a.active {
   text-decoration: underline;
 }
 
-/* line 162, ../sass/partials/_global.scss */
+/* line 170, ../sass/partials/_global.scss */
 iron-accordions[attr-for-selected="slug"] {
   padding: 15px 0;
 }
 
-/* line 167, ../sass/partials/_global.scss */
+/* line 175, ../sass/partials/_global.scss */
 #drawer iron-accordion h4 {
   position: relative;
   padding-right: 25px;
 }
-/* line 172, ../sass/partials/_global.scss */
+/* line 180, ../sass/partials/_global.scss */
 #drawer iron-accordion h4 .fa {
   position: absolute;
   top: 8px;
   right: 5px;
   font-size: 12px;
 }
-/* line 178, ../sass/partials/_global.scss */
+/* line 186, ../sass/partials/_global.scss */
 #drawer iron-accordion h4 .fa:hover {
   background-color: transparent;
   color: inherit;
 }
-/* line 184, ../sass/partials/_global.scss */
+/* line 192, ../sass/partials/_global.scss */
 #drawer iron-accordion[opened] .fa::before {
   content: '\f077';
 }
 
-/* line 189, ../sass/partials/_global.scss */
+/* line 197, ../sass/partials/_global.scss */
 #drawer .slug {
   border-bottom: none;
 }
-/* line 192, ../sass/partials/_global.scss */
+/* line 200, ../sass/partials/_global.scss */
 #drawer .slug h4 {
   background-color: transparent;
   color: #3b404c;
@@ -1314,44 +1321,44 @@ iron-accordions[attr-for-selected="slug"] {
   padding: 5px 0 !important;
   text-decoration: underline;
 }
-/* line 199, ../sass/partials/_global.scss */
+/* line 207, ../sass/partials/_global.scss */
 #drawer .slug h4.active {
   background-color: transparent !important;
   font-weight: 700;
 }
 
-/* line 207, ../sass/partials/_global.scss */
+/* line 215, ../sass/partials/_global.scss */
 #drawer .slug:hover h4 {
   color: #3b404c;
   font-weight: 700;
 }
 
-/* line 213, ../sass/partials/_global.scss */
+/* line 221, ../sass/partials/_global.scss */
 code, pre {
   font-family: monospace;
   font-weight: 400;
 }
 
-/* line 219, ../sass/partials/_global.scss */
+/* line 227, ../sass/partials/_global.scss */
 .menu-inline li {
   display: inline-block;
   vertical-align: top;
   padding: 0 10px;
   margin: 0 5px;
 }
-/* line 224, ../sass/partials/_global.scss */
+/* line 232, ../sass/partials/_global.scss */
 .menu-inline li.social-link {
   padding: 0;
 }
 
-/* line 230, ../sass/partials/_global.scss */
+/* line 238, ../sass/partials/_global.scss */
 #edit {
   padding: 5px 15px;
   background-color: #fff;
   border: 1px dotted #23ccfc;
 }
 
-/* line 236, ../sass/partials/_global.scss */
+/* line 244, ../sass/partials/_global.scss */
 #edit::after {
   content: '\f040';
   color: #23ccfc;
@@ -1361,28 +1368,28 @@ code, pre {
 }
 
 /* logo cursor to pointer indicating you can click... */
-/* line 245, ../sass/partials/_global.scss */
+/* line 253, ../sass/partials/_global.scss */
 .clickable {
   cursor: pointer;
 }
 
-/* line 249, ../sass/partials/_global.scss */
+/* line 257, ../sass/partials/_global.scss */
 #drawer iron-accordion {
   border-bottom: 1px solid #caccc3;
 }
-/* line 251, ../sass/partials/_global.scss */
+/* line 259, ../sass/partials/_global.scss */
 #drawer iron-accordion h1, #drawer iron-accordion h2, #drawer iron-accordion h3,
 #drawer iron-accordion h4, #drawer iron-accordion h5, #drawer iron-accordion h6 {
   font-weight: bold;
   text-transform: none;
   color: #3b404c;
 }
-/* line 256, ../sass/partials/_global.scss */
+/* line 264, ../sass/partials/_global.scss */
 #drawer iron-accordion h1:hover, #drawer iron-accordion h2:hover, #drawer iron-accordion h3:hover,
 #drawer iron-accordion h4:hover, #drawer iron-accordion h5:hover, #drawer iron-accordion h6:hover {
   color: #23ccfc;
 }
-/* line 259, ../sass/partials/_global.scss */
+/* line 267, ../sass/partials/_global.scss */
 #drawer iron-accordion h1:after, #drawer iron-accordion h2:after, #drawer iron-accordion h3:after,
 #drawer iron-accordion h4:after, #drawer iron-accordion h5:after, #drawer iron-accordion h6:after {
   content: '\f105';
@@ -1394,13 +1401,13 @@ code, pre {
   right: 0;
 }
 
-/* line 274, ../sass/partials/_global.scss */
+/* line 282, ../sass/partials/_global.scss */
 #drawer iron-accordion[opened] h1:after, #drawer iron-accordion[opened] h2:after, #drawer iron-accordion[opened] h3:after,
 #drawer iron-accordion[opened] h4:after, #drawer iron-accordion[opened] h5:after, #drawer iron-accordion[opened] h6:after {
   content: '';
 }
 
-/* line 280, ../sass/partials/_global.scss */
+/* line 288, ../sass/partials/_global.scss */
 .wordmark {
   margin: 1rem;
   width: 400px;
@@ -1414,28 +1421,28 @@ code, pre {
   line-height: 64px;
 }
 
-/* line 293, ../sass/partials/_global.scss */
+/* line 301, ../sass/partials/_global.scss */
 .wordmark span:first-child {
   color: #9af530;
 }
 
-/* line 297, ../sass/partials/_global.scss */
+/* line 305, ../sass/partials/_global.scss */
 .wordmark span:last-child {
   color: #6ae2fd;
 }
 
-/* line 301, ../sass/partials/_global.scss */
+/* line 309, ../sass/partials/_global.scss */
 .owl-item > div {
   padding: 25px 0;
   text-align: center;
 }
 
-/* line 306, ../sass/partials/_global.scss */
+/* line 314, ../sass/partials/_global.scss */
 .owl-dots {
   margin-top: 15px;
   text-align: center;
 }
-/* line 310, ../sass/partials/_global.scss */
+/* line 318, ../sass/partials/_global.scss */
 .owl-dots .owl-dot {
   height: 10px;
   width: 10px;
@@ -1448,19 +1455,19 @@ code, pre {
   border: 1px solid #fff;
   margin: 0 5px;
 }
-/* line 317, ../sass/partials/_global.scss */
+/* line 325, ../sass/partials/_global.scss */
 .owl-dots .owl-dot.active {
   background-color: #fff;
 }
 
-/* line 324, ../sass/partials/_global.scss */
+/* line 332, ../sass/partials/_global.scss */
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 331, ../sass/partials/_global.scss */
+/* line 339, ../sass/partials/_global.scss */
 .img-responsive img,
 img.img-responsive,
 img.markdown-it {
@@ -1468,12 +1475,12 @@ img.markdown-it {
   height: auto;
 }
 
-/* line 339, ../sass/partials/_global.scss */
+/* line 347, ../sass/partials/_global.scss */
 .tuto-reader-container .tuto-content {
   display: block;
   padding: 25px;
 }
-/* line 343, ../sass/partials/_global.scss */
+/* line 351, ../sass/partials/_global.scss */
 .tuto-reader-container .tuto-sidebar {
   width: 100%;
   display: table;
@@ -1481,53 +1488,53 @@ img.markdown-it {
   line-height: 2em;
   color: #3b404c;
 }
-/* line 350, ../sass/partials/_global.scss */
+/* line 358, ../sass/partials/_global.scss */
 .tuto-reader-container p.title {
   color: #000;
   font-size: 1em;
   padding-bottom: 10px;
   text-alignment: left;
 }
-/* line 357, ../sass/partials/_global.scss */
+/* line 365, ../sass/partials/_global.scss */
 .tuto-reader-container .tuto-author span.name {
   color: #000;
   font-weight: bold;
   font-size: 1.2em;
 }
-/* line 362, ../sass/partials/_global.scss */
+/* line 370, ../sass/partials/_global.scss */
 .tuto-reader-container .tuto-author span.location {
   color: #caccc3;
 }
-/* line 365, ../sass/partials/_global.scss */
+/* line 373, ../sass/partials/_global.scss */
 .tuto-reader-container .tuto-author p.title {
   display: none;
 }
-/* line 372, ../sass/partials/_global.scss */
+/* line 380, ../sass/partials/_global.scss */
 .tuto-reader-container .tuto-author .image {
   display: inline-block;
 }
-/* line 374, ../sass/partials/_global.scss */
+/* line 382, ../sass/partials/_global.scss */
 .tuto-reader-container .tuto-author .image img {
   width: 80px;
   height: 80px;
   border-radius: 50px;
 }
-/* line 380, ../sass/partials/_global.scss */
+/* line 388, ../sass/partials/_global.scss */
 .tuto-reader-container .tuto-author .description {
   display: inline-block;
   padding-left: 15px;
 }
-/* line 388, ../sass/partials/_global.scss */
+/* line 396, ../sass/partials/_global.scss */
 .tuto-reader-container .tuto-keywords {
   display: table-cell;
 }
-/* line 391, ../sass/partials/_global.scss */
+/* line 399, ../sass/partials/_global.scss */
 .tuto-reader-container .sidebar-section {
   padding: 25px;
   border-bottom: none;
 }
 
-/* line 397, ../sass/partials/_global.scss */
+/* line 405, ../sass/partials/_global.scss */
 .home-section {
   min-height: auto;
   box-sizing: border-box;
@@ -1535,94 +1542,94 @@ img.markdown-it {
   position: relative;
 }
 
-/* line 404, ../sass/partials/_global.scss */
+/* line 412, ../sass/partials/_global.scss */
 .gallery .item {
   padding: 5% 0 70px 0;
 }
 
-/* line 408, ../sass/partials/_global.scss */
+/* line 416, ../sass/partials/_global.scss */
 .gallery .item .container {
   padding: 0 5%;
   box-sizing: border-box;
 }
 
-/* line 413, ../sass/partials/_global.scss */
+/* line 421, ../sass/partials/_global.scss */
 .background-img {
   display: none;
 }
 
 @media (min-width: 767px) {
-  /* line 418, ../sass/partials/_global.scss */
+  /* line 426, ../sass/partials/_global.scss */
   .background-img {
     display: inherit;
   }
 
-  /* line 422, ../sass/partials/_global.scss */
+  /* line 430, ../sass/partials/_global.scss */
   .gallery .item {
     padding: 5% 0 0 0;
   }
 
-  /* line 426, ../sass/partials/_global.scss */
+  /* line 434, ../sass/partials/_global.scss */
   .home-section {
     min-height: 300px;
     padding: 5% 0;
   }
 
-  /* line 431, ../sass/partials/_global.scss */
+  /* line 439, ../sass/partials/_global.scss */
   .gallery .item .container {
     padding: 0;
   }
 
-  /* line 435, ../sass/partials/_global.scss */
+  /* line 443, ../sass/partials/_global.scss */
   .tuto-reader-container {
     display: table;
     min-height: 100%;
   }
-  /* line 438, ../sass/partials/_global.scss */
+  /* line 446, ../sass/partials/_global.scss */
   .tuto-reader-container .tuto-sidebar {
     display: table-cell;
     vertical-align: top;
     padding: 15px;
     width: 350px;
   }
-  /* line 444, ../sass/partials/_global.scss */
+  /* line 452, ../sass/partials/_global.scss */
   .tuto-reader-container .tuto-sidebar .tuto-author {
     display: block;
   }
-  /* line 446, ../sass/partials/_global.scss */
+  /* line 454, ../sass/partials/_global.scss */
   .tuto-reader-container .tuto-sidebar .tuto-author .title {
     display: inherit;
   }
-  /* line 449, ../sass/partials/_global.scss */
+  /* line 457, ../sass/partials/_global.scss */
   .tuto-reader-container .tuto-sidebar .tuto-author .details {
     display: table;
   }
-  /* line 452, ../sass/partials/_global.scss */
+  /* line 460, ../sass/partials/_global.scss */
   .tuto-reader-container .tuto-sidebar .tuto-author .image {
     display: table-cell;
     padding-bottom: 15px;
     padding-right: 15px;
   }
-  /* line 457, ../sass/partials/_global.scss */
+  /* line 465, ../sass/partials/_global.scss */
   .tuto-reader-container .tuto-sidebar .tuto-author .description {
     display: table-cell;
     vertical-align: middle;
   }
-  /* line 462, ../sass/partials/_global.scss */
+  /* line 470, ../sass/partials/_global.scss */
   .tuto-reader-container .tuto-sidebar .tuto-info {
     display: block;
   }
-  /* line 465, ../sass/partials/_global.scss */
+  /* line 473, ../sass/partials/_global.scss */
   .tuto-reader-container .tuto-sidebar .tuto-keywords {
     display: block;
   }
-  /* line 468, ../sass/partials/_global.scss */
+  /* line 476, ../sass/partials/_global.scss */
   .tuto-reader-container .tuto-sidebar .sidebar-section {
     padding: 15px 15px 30px 15px;
     border-bottom: 1px solid #caccc3;
     border-right: none;
   }
-  /* line 474, ../sass/partials/_global.scss */
+  /* line 482, ../sass/partials/_global.scss */
   .tuto-reader-container .tuto-content {
     display: table-cell;
     vertical-align: top;

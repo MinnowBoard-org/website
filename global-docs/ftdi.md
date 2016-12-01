@@ -15,7 +15,7 @@ program with the following settings:
 * Bits: 8
 * Stop: 1
 
-![3.3v FTDI 6-pin connector](boards/minnowboard_turbot_B_21/images/MinnowBoardMAX-A2-Serial-pinout.png) 
+![3.3v FTDI 6-pin connector](boards/minnowboard_turbot_B_41/images/MinnowBoardMAX-A2-Serial-pinout.png) 
 The serial console port (UART0), located near the SATA connector at the 
 top of the board, uses a 3.3v FTDI serial cable with a 6-pin connector. 
 This is a reasonably common cable, also used on the Arduino Pro, Arduino 

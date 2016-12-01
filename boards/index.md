@@ -2,6 +2,6 @@
 
 ### Single Board Computers
 
-* [MinnowBoard Turbot B 21](board-viewer/minnowboard_turbot_B_21)
+* [MinnowBoard Turbot B 21](board-viewer/minnowboard_turbot_B_41)
 
 ### Lures

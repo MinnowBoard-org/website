@@ -48,4 +48,4 @@ on [irc.minnowboard.org](https://irc.minnowboard.org/).
 -   [Facebook (@MinnowBoard)](https://www.facebook.com/pages/MinnowBoard/388667897899215)
 
 ### MinnowBoard.org wiki
-You can find additional community contributed documentation at the [MinnowBoard.org wiki](https://wiki.minnowboard.org/).
+You can find additional community contributed documentation at the [MinnowBoard.org wiki](http://wiki.minnowboard.org/).

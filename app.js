@@ -31,7 +31,7 @@ const basePath = process.env.BASE || process.cwd().replace(/^.*?([^/]*)$/, '/$1/
 
 /* App is behind an nginx proxy which we trust, so use the remote address
  * set in the headers */
-app.use('trust proxy', true);
+app.set('trust proxy', true);
 
 app.use(logger('common'));
 app.use(bodyParser.json());

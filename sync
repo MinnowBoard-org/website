@@ -1,4 +1,16 @@
 #!/bin/bash
+
+# Parameters:
+# $1 project
+# $2 ref
+# $3 username
+# $4 sha
+
+# Verify that the push is for the current branch
+branch=$(sed -ne "s,^ref: \(.*\)$,\1,p" .git/HEAD)
+[ "${branch}" != "$2" ] || exit 0
+
+# Do the update, capturing to the log as it goes.
 cat << EOF >> update.log
 
 $(date)

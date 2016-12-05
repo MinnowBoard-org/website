@@ -27,7 +27,17 @@ const sync = require('./routes/git-sync');
 
 const app = express();
 /* Set basePath to the directory name wrapped in slashes */
-const basePath = process.env.BASE || process.cwd().replace(/^.*?([^/]*)$/, '/$1/');
+let basePath = process.env.BASE || path.sep + path.basename(process.cwd()) + path.sep;
+let port = parseInt(process.env.PORT) || 8080;
+
+if (process.argv.length > 2) {
+  basePath = process.argv[2];
+}
+if (process.argv.length > 3) {
+  port = parseInt(process.argv[3]);
+}
+
+console.log("Serving files from root path: '" + basePath + "'");
 
 /* App is behind an nginx proxy which we trust, so use the remote address
  * set in the headers */
@@ -119,9 +129,6 @@ const http = require('http');
 /**
  * Create HTTP server and listen for new connections
  */
-
-const port = parseInt(process.env.PORT) || 8080;
-
 app.set('port', port);
 
 const server = http.createServer(app);

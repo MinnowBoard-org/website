@@ -27,7 +27,7 @@ const sync = require('./routes/git-sync');
 
 const app = express();
 /* Set basePath to the directory name wrapped in slashes */
-let basePath = process.env.BASE || path.sep + path.basename(process.cwd()) + path.sep;
+let basePath = process.env.BASE || path.basename(process.cwd());
 let port = parseInt(process.env.PORT) || 8080;
 
 if (process.argv.length > 2) {
@@ -37,7 +37,8 @@ if (process.argv.length > 3) {
   port = parseInt(process.argv[3]);
 }
 
-console.log("Serving files from root path: '" + basePath + "'");
+console.log("Serving files to docroot: '" + basePath + "'");
+console.log("Serving files from filepath: '" + __dirname + "'");
 
 /* App is behind an nginx proxy which we trust, so use the remote address
  * set in the headers */

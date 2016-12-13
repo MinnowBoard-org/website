@@ -1,0 +1,18 @@
+{
+  "img": "elements/tuto-reader/tutorials/getting-started/image.jpg",
+  "content": "elements/tuto-reader/tutorials/getting-started/docs/getting-started.md",
+  "meta": {
+      "info": [
+          {"label": "Last updated", "value": "November 2016"},
+          {"label": "Board", "value": "MinnowBoard Turbot"}
+],
+    "links": {
+        "label": "Other Tutorials",
+        "value": [
+          {"title": "Power up the MinnowBoard Turbot", "location": "tutorials/powering-on-minnowboardturbot"},
+          {"title": "Update the firmware", "location": "tutorials/updating_your_firmware"},
+          {"title": "Blinking the Turbot D2 LED", "location": "tutorials/Turbot-blink"}
+        ]
+      }
+}
+}

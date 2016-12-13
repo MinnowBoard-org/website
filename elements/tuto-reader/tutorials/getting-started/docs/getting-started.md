@@ -1,17 +1,17 @@
 ##Getting Started
 Congratulations on purchasing your new MinnowBoard Turbot! This is the landing page for developers who are taking their boards out of the box. We provide guidance on getting started, navigating the website content, and how to get help along the way. The MinnowBoard.org goal is for developers to prototype AND productize! Let's get started... 
 
-##Components
+###Components
 - **MinnowBoard Turbot**
 
-##Get a board
+###Get a board
 Visit [Get a board](get-a-board) to find the right board and accessories to support your project.
 
 
 - **Buy a Board**: If you are on this page, you most likely have your board; if not, visit the [Get a board](get-a-board) page to find a list of available boards and where to buy them.
 - **Buy Accessories**: Once you have your board, take some time to check out the optional and required accessories. Make sure you purchase (or locate) the items from the required list, and look over the optional list as well. To ensure compatibility, when purchasing follow the requirements listed with each accessory.
 
-##Tutorials
+###Tutorials
 Visit the [Tutorials](tutorials) page to learn how to power up your board and install an OS, and then explore other tutorials that will teach you how to use features on the board. 
 
 
@@ -20,7 +20,7 @@ Visit the [Tutorials](tutorials) page to learn how to power up your board and in
 - **Installing Ubuntu 16.04.1 LTS**: Despite its small size, the MinnowBoard Turbot can run desktop PC versions of operating systems such as Linux and Windows. This [tutorial](tutorials/installing-ubuntu-16.04-on-minnowboardmax) explains how to install a popular Linux release, Ubuntu 16.04.1 LTS. 
 - **Blinking the Turbot D2 LED!** Ready for some fun? Try making the [MinnowBoard Turbot D2 LED](tutorials/Turbot-blink) blink as your first project!
 
-##Explore the board
+###Explore the board
 Visit the interactive [board viewer](board-viewer) tool to learn about each feature of your MinnowBoard Turbot. 
 
 
@@ -28,7 +28,7 @@ Visit the interactive [board viewer](board-viewer) tool to learn about each feat
 - **Pins**: For pins that have programmability, the contextual tray, which opens when an item is selected, will provide details on how to control and use those pins.
 - **Learn more**: To find out more about the MinnowBoard Turbot, as well as to download the schematic and design files, visit the [Learn More](learn-more) page.
 
-##Get help
+###Get help
 Visit the [Get help](help) page if you come across a problem on the board or on the website and are looking for help.  
 
 

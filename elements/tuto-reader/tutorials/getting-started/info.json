@@ -3,8 +3,8 @@
   "content": "elements/tuto-reader/tutorials/getting-started/docs/getting-started.md",
   "meta": {
       "info": [
-          {"label": "Last updated", "value": "November 2016"},
-          {"label": "Board", "value": "MinnowBoard Turbot"}
+          {"label": "Last updated", "value": "December 2016"},
+          {"label": "Board", "value": "MinnowBoard Turbot dual- and quad-core"}
 ],
     "links": {
         "label": "Other Tutorials",

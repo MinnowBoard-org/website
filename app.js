@@ -56,6 +56,10 @@ app.use(cookieParser());
   });
 });
 
+app.use(basePath + 'setup', function(req, res, next) {
+  res.redirect(basePath + 'tutorials/getting-started');
+});
+
 app.use(basePath + 'bower_components', express.static(path.join(__dirname, 'bower_components')));
 app.use(basePath, index);
 app.use(basePath + 'help-request', help);

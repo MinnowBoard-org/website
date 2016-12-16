@@ -4,9 +4,7 @@
 
 Did you find a bug or are you having a problem with a board?
 
-We currently have a project set up in our
-[MinnowBoard.org: GitHub group](https://github.com/minnowboard-org/bugs-and-help) for filing questions
-and issues.
+We track MinnowBoard.org related issues on our GitHub project "bugs-and-help". Please visit the [issues section](https://github.com/minnowboard-org/bugs-and-help/issues) of that project to submit an issue.
 
 ### Ask a question
 

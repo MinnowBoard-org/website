@@ -80,7 +80,7 @@ To update the firmware of the MinnowBoard Turbot, complete the following steps:
     storage devices were found (for example, you didn't plug in the USB thumb 
     drive containing the firmware update file):
 
-    ```
+    ``` console
     UEFI Interactive Shell v2.1
     EDK II
     UEFI v2.40 (EDK II, 0x00010000)
@@ -95,7 +95,7 @@ To update the firmware of the MinnowBoard Turbot, complete the following steps:
     is the only storage device plugged in (and it should be at this point), 
     then it will be device `fs0` and you'll see something like this displayed:
 
-    ```
+    ``` console
     UEFI Interactive Shell v2.1
     EDK II
     UEFI v2.40 (EDK II, 0x00010000)
@@ -110,7 +110,7 @@ To update the firmware of the MinnowBoard Turbot, complete the following steps:
     ```
 9.  At the prompt, enter the value for the USB thumb drive 
     
-    ```
+    ``` console
     Shell> fs0:
     ```
 
@@ -126,7 +126,7 @@ To update the firmware of the MinnowBoard Turbot, complete the following steps:
     so you can enter `cd M` and a **TAB** instead of typing the whole directory 
     name:
 
-    ```
+    ``` console
     FS0:\> ls
     Directory of: FS0:\
     07/18/2016  11:45 <DIR>         4,096  MinnowBoard.MAX_.X64.92.R01
@@ -147,10 +147,9 @@ To update the firmware of the MinnowBoard Turbot, complete the following steps:
  
 11. Run the UEFI installer (the `.efi` program) and specify the firmware 
     image to load (the `.bin` file) -- don't forget about using the **TAB** key 
-    (you can enter `Min` **TAB** ` MNW` **TAB** ) :
+    (you can enter `Min` **TAB** ` MNW` **TAB** ):
 
-
-    ```
+    ``` console
     fs0:\> MinnowBoard.MAX.FirmwareUpdateX64.efi MNW2MAX1.X64.0092.R01.1605221712.bin
     Intel(R) UDK2014 Firmware Update Utility for the Intel(R) Server Board S1200V3RPS
     Version 0.97

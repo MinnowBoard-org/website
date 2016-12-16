@@ -27,7 +27,18 @@ const sync = require('./routes/git-sync');
 
 const app = express();
 /* Set basePath to the directory name wrapped in slashes */
-const basePath = process.env.BASE || process.cwd().replace(/^.*?([^/]*)$/, '/$1/');
+let basePath = process.env.BASE || path.basename(process.cwd());
+let port = parseInt(process.env.PORT) || 8080;
+
+if (process.argv.length > 2) {
+  basePath = process.argv[2];
+}
+if (process.argv.length > 3) {
+  port = parseInt(process.argv[3]);
+}
+
+console.log("Serving files to docroot: '" + basePath + "'");
+console.log("Serving files from filepath: '" + __dirname + "'");
 
 /* App is behind an nginx proxy which we trust, so use the remote address
  * set in the headers */
@@ -43,6 +54,10 @@ app.use(cookieParser());
   app.get(basePath + pattern, function(req, res, next) {
     res.status(401).send("Unauthorized.");
   });
+});
+
+app.use(basePath + 'setup', function(req, res, next) {
+  res.redirect(basePath + 'tutorials/getting-started');
 });
 
 app.use(basePath + 'bower_components', express.static(path.join(__dirname, 'bower_components')));
@@ -119,9 +134,6 @@ const http = require('http');
 /**
  * Create HTTP server and listen for new connections
  */
-
-const port = parseInt(process.env.PORT) || 8080;
-
 app.set('port', port);
 
 const server = http.createServer(app);

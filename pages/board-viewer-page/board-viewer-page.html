@@ -292,7 +292,7 @@
     /* Fix #142 If the current page id matches the route prefix, this page
      * is active and the app-route should be re-stamped in the DOM */
     isPageActive: function(prefix) {
-      var regex = new RegExp('\/' + this.id + '$');
+      var regex = new RegExp('/' + this.id + '$');
       return regex.exec(prefix);
     },
 

@@ -759,6 +759,10 @@
         console.log('Route changed to: ' + JSON.stringify(path, null, '  '));
       },
 
+      attached: function() {
+        window.siteLoaded = true;
+      },
+
       ready: function() {
         var self = this;
         self.edit = ('edit' in self.$.location.queryParams) ? self.edit : undefined;
@@ -815,8 +819,41 @@
   <!-- End of Google Analytics Content Experiment code -->
 </dom-module>
 
+<style>
+#loading {
+  display: inline-block;
+  margin: 1em 2em;
+  white-space: nowrap;
+}
+
+#loading #spinner {
+  width: 1.5em;
+  text-align: center;
+  display: inline-block;
+}
+</style>
+
 <body class="fullbleed layout vertical" style="margin:0">
+  <div id="loading">
+    Please wait... MinnowBoard.org is loading. <div id="spinner"></div>
+  </div>
   <minnowboard-app edit="https://sxc.jf.intel.com/gitlab/minnowboard/website/edit/master/" class="flex"></minnowboard-app>
 </body>
+
+<script>
+"use strict";
+window.siteLoaded = false;
+(function() {
+  var i = 0, spinner = [ "--", "\\", "|", "/" ];
+  function spin() {
+    document.querySelector('#spinner').textContent = spinner[i];
+    i = (i + 1) % spinner.length;
+    if (!window.siteLoaded) {
+      window.setTimeout(spin, 100);
+    }
+  }
+  spin();
+})();
+</script>
 
 </html>

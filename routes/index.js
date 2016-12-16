@@ -9,11 +9,16 @@
 
 const fs = require('fs');
 const express = require('express');
+const path = require('path');
 let router = express.Router();
 
 /* GET landing page. */
 router.get('/', (req, res, next) => {
-  const basePath = process.env.BASE || process.cwd().replace(/^.*?([^/]*)$/, '/$1/');
+  let basePath = process.env.BASE || path.basename(process.cwd());
+  if (process.argv.length > 2) {
+    basePath = process.argv[2];
+  }
+
   /* Replace {{base}} in index.html with the basePath
    * We don't really use handlebars, but the syntax is nice for this specific
    * usage */

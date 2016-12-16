@@ -16,10 +16,13 @@ const fs = require('fs');
 
 let router = express.Router();
 
+let transporter = null;
+/*
 let transporter = nm.createTransport({
   host: "minnowboard.org",
   port: 25
 });
+*/
 
 router.post('/', function(req, res, next) {
   if (!req.body.question) {

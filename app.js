@@ -26,12 +26,12 @@ const help = require('./routes/help');
 const sync = require('./routes/git-sync');
 
 const app = express();
-/* Set basePath to the directory name wrapped in slashes */
-let basePath = process.env.BASE || path.basename(process.cwd());
+/* Set basePath to docroot */
+let basePath = '/';
 let port = parseInt(process.env.PORT) || 8080;
 
 if (process.argv.length > 2) {
-  basePath = process.argv[2];
+  console.log('Ignoring deprecated BASE. / is always used.');
 }
 if (process.argv.length > 3) {
   port = parseInt(process.argv[3]);
@@ -91,12 +91,7 @@ app.use(function(req, res, next) {
 
   const parts = url.parse(req.url);
   if (!extensionMatch.exec(parts.pathname)) {
-    /* Replace {{base}} in index.html with the basePath
-     * We don't really use handlebars, but the syntax is nice for this specific
-     * usage */
-    const index = fs.readFileSync('./index.html', 'utf8').replace(/\{\{base\}\}/, basePath);
-
-    res.send(index);
+    res.send(fs.readFileSync('./index.html', 'utf8'));
     return;
   }
 

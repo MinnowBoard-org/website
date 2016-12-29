@@ -7,24 +7,13 @@
  */
 "use strict";
 
-const fs = require('fs');
 const express = require('express');
-const path = require('path');
+const fs = require('fs');
 let router = express.Router();
 
 /* GET landing page. */
 router.get('/', (req, res, next) => {
-  let basePath = process.env.BASE || path.basename(process.cwd());
-  if (process.argv.length > 2) {
-    basePath = process.argv[2];
-  }
-
-  /* Replace {{base}} in index.html with the basePath
-   * We don't really use handlebars, but the syntax is nice for this specific
-   * usage */
-  const index = fs.readFileSync('./index.html', 'utf8').replace(/\{\{base\}\}/, basePath);
-
-  res.send(index);
+  res.send(fs.readFileSync('./index.html', 'utf8'));
 });
 
 module.exports = router;

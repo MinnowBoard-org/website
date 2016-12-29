@@ -10,7 +10,10 @@ secure https:// communication. A configuration for `nginx` is documented
 below.
 
 
-## /help -- Where do the "Get Help" submissions go?
+## Where do the "Get Help" submissions go?
+If you navigate to the /help page of the website, it provides a web
+form that allows users to submit a question directly to the MinnowBoard
+support team.
 
 In the NodeJS application, the /help functionality is implemented in 
 `routes/help.js`.
@@ -128,3 +131,14 @@ parser.  While it supports the commonmark markdown language, it includes some
 extensions as documented at https://markdown-it.github.io/
 
 Embedded html tags are not enabled.
+
+
+# Building the production code
+
+Polymer Build is used to create the "build" version of the site that is hosted
+on minnowboard.org. Prior to pushing to staging, you need to run the following:
+
+```bash
+poymer build index.html
+git commit -s -a -m 'Polymer Build regeneration'
+```

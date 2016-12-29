@@ -204,7 +204,8 @@
         Array.prototype.forEach.call(Polymer.dom(el).querySelectorAll('a'),
           function(anchor) {
             var url = anchor.href.split("#");
-            var path = document.querySelector('base').href;
+            var path = document.querySelector('base');
+            path = path ? path.href : '/';
             if(url[1] && url[0] == path) {
               path += document.querySelector('app-route').data.tab ? document.querySelector('app-route').data.tab : "";
               path += document.querySelector('app-route').tail.path ? document.querySelector('app-route').tail.path : "";

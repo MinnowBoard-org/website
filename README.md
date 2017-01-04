@@ -34,16 +34,14 @@ an update to the GIT master branch.
 
 ## Production: minnowboard.org
 
-The production server, minnowboard.org, is manually updated by pulling from the
-`production` branch. When a version of the staging server is ready to be moved
-to production, it should be pushed to the production branch:
+The production server, minnowboard.org, is manually updated by merging from 
+`master` into the `production` branch.
 
-```bash
-git push origin master:production
-```
+When a version of the staging server is ready to be moved to production, it
+can be moved to `production` using the GitHub web front-end.
 
 
-# Installation
+# Developer Installation: Linux
 
 The following assumes you are using nginx as a webserver proxy
 

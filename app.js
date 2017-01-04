@@ -72,6 +72,13 @@ app.use(docRoot, express.static(path.join(basePath, '.'), {
   redirect: true,
   index: false
 }));
+/* If a file does not exist in one of the above locations, check to see
+ * if it exists in the base root of the project (markdown files, etc. are
+ * not migrated into the build/ directory when `polymer build` runs) */
+app.use(docRoot, express.static('.', {
+  redirect: true,
+  index: false
+}));
 
 /* To handle dynamic routes, we return index.html to every 404.
 * However, that introduces site development problems when assets are

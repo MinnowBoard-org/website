@@ -26,19 +26,23 @@ const help = require('./routes/help');
 const sync = require('./routes/git-sync');
 
 const app = express();
-/* Set basePath to docroot */
-let basePath = '/';
+const docRoot = '/';
+
 let port = parseInt(process.env.PORT) || 8080;
+let basePath = process.env.BASE || __dirname;
 
 if (process.argv.length > 2) {
-  console.log('Ignoring deprecated BASE. / is always used.');
+  basePath = process.argv[2];
 }
 if (process.argv.length > 3) {
   port = parseInt(process.argv[3]);
 }
 
-console.log("Serving files to docroot: '" + basePath + "'");
-console.log("Serving files from filepath: '" + __dirname + "'");
+app.locals.basePath = basePath;
+app.locals.docRoot = docRoot;
+
+console.log("Serving files to docroot: '" + docRoot + "'");
+console.log("Serving files from filepath: '" + basePath + "'");
 
 /* App is behind an nginx proxy which we trust, so use the remote address
  * set in the headers */
@@ -51,20 +55,20 @@ app.use(cookieParser());
 
 /* Return 401's for the following path-regexps */
 [ 'messages.log', '.git/?*', 'update.log' ].forEach(function(pattern) {
-  app.get(basePath + pattern, function(req, res, next) {
+  app.get(docRoot + pattern, function(req, res, next) {
     res.status(401).send("Unauthorized.");
   });
 });
 
-app.use(basePath + 'setup', function(req, res, next) {
-  res.redirect(basePath + 'tutorials/getting-started');
+app.use(docRoot + 'setup', function(req, res, next) {
+  res.redirect(docRoot + 'tutorials/getting-started');
 });
 
-app.use(basePath + 'bower_components', express.static(path.join(__dirname, 'bower_components')));
-app.use(basePath, index);
-app.use(basePath + 'help-request', help);
-app.use(basePath + 'sync', sync);
-app.use(basePath, express.static(path.join(__dirname, '.'), {
+app.use(docRoot + 'bower_components', express.static(path.join(basePath, 'bower_components')));
+app.use(docRoot, index);
+app.use(docRoot + 'help-request', help);
+app.use(docRoot + 'sync', sync);
+app.use(docRoot, express.static(path.join(basePath, '.'), {
   redirect: true,
   index: false
 }));
@@ -91,7 +95,7 @@ app.use(function(req, res, next) {
 
   const parts = url.parse(req.url);
   if (!extensionMatch.exec(parts.pathname)) {
-    res.send(fs.readFileSync('./index.html', 'utf8'));
+    res.send(fs.readFileSync(path.join(basePath, 'index.html'), 'utf8'));
     return;
   }
 

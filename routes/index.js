@@ -9,11 +9,13 @@
 
 const express = require('express');
 const fs = require('fs');
+const path = require('path');
+
 let router = express.Router();
 
 /* GET landing page. */
 router.get('/', (req, res, next) => {
-  res.send(fs.readFileSync('./index.html', 'utf8'));
+  res.send(fs.readFileSync(path.join(req.app.locals.basePath, 'index.html'), 'utf8'));
 });
 
 module.exports = router;

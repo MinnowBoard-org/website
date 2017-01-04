@@ -63,7 +63,11 @@
       },
 
       computeBase: function(src) {
-        return src.replace(document.querySelector('base').href, '');
+        var base = document.querySelector('base');
+        if (!base) {
+          return src;
+        }
+        return src.replace(base.href, '');
       },
 
       onHeadingsChanged: function() {

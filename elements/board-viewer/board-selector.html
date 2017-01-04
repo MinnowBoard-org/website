@@ -90,7 +90,7 @@
             <h3 class="title">[[item.title]]</h3>
           </div>
           <!-- Hide the details if the in a tiny window -->
-          <template is="dom-if" if="[[!tinyLayout]]"
+          <template is="dom-if" if="[[!tinyLayout]]">
             <div class="details">
               <markdown-it edit=[[edit]] no-error src$="boards/[[item.board]]/summary.md"></markdown-it>
             </div>

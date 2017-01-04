@@ -10,7 +10,62 @@ secure https:// communication. A configuration for `nginx` is documented
 below.
 
 
-## /help -- Where do the "Get Help" submissions go?
+## Quick init: Assumes prerequisites already installed
+
+### Prerequisites
+
+The website uses NodeJS, npm, and bower:
+
+```bash
+npm install -g bower
+```
+
+### Cloning and building
+
+```bash
+git clone git@github.com:minnowboard-ord/website.git minnow
+cd minnow
+npm install
+bower install
+```
+
+### Load the website:
+
+```bash
+npm start &
+xdg-open http://localhost:8080/
+```
+
+### Optimizing the website
+Bower projects can introduce a large number of dependent web projects,
+all of which need to be fetched when the website loads. The Polymer 
+project has a utility to vulanize and optimize a website into a reduced
+set of resources.
+
+To build the optimized version of the site, you need polymer-cli.
+
+Unfortunately, polymer-cli has problems being installed behind a 
+proxy due to a dependency on test-fixture, so if you use a proxy, you
+might not be able to install the polymer-cli project:
+
+```bash
+npm install -g polymer-cli
+polymer build index.html
+```
+
+Running `polymer build` will create a `build` directory. To host the
+website out of that directory, provide the `BASE` environment
+variable to the `npm start` command:
+
+```bash
+BASE=build/bundled/ npm start &
+xdg-open http://localhost:8080/
+```
+
+## Where do the "Get Help" submissions go?
+If you navigate to the /help page of the website, it provides a web
+form that allows users to submit a question directly to the MinnowBoard
+support team.
 
 In the NodeJS application, the /help functionality is implemented in 
 `routes/help.js`.
@@ -126,3 +181,14 @@ parser.  While it supports the commonmark markdown language, it includes some
 extensions as documented at https://markdown-it.github.io/
 
 Embedded html tags are not enabled.
+
+
+# Building the production code
+
+Polymer Build is used to create the "build" version of the site that is hosted
+on minnowboard.org. Prior to pushing to staging, you need to run the following:
+
+```bash
+poymer build index.html
+git commit -s -a -m 'Polymer Build regeneration'
+```

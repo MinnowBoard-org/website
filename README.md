@@ -38,13 +38,13 @@ xdg-open http://localhost:8080/
 
 ### Optimizing the website
 Bower projects can introduce a large number of dependent web projects,
-all of which need to be fetched when the website loads. The Polymer 
+all of which need to be fetched when the website loads. The Polymer
 project has a utility to vulanize and optimize a website into a reduced
 set of resources.
 
 To build the optimized version of the site, you need polymer-cli.
 
-Unfortunately, polymer-cli has problems being installed behind a 
+Unfortunately, polymer-cli has problems being installed behind a
 proxy due to a dependency on test-fixture, so if you use a proxy, you
 might not be able to install the polymer-cli project:
 
@@ -67,7 +67,7 @@ If you navigate to the /help page of the website, it provides a web
 form that allows users to submit a question directly to the MinnowBoard
 support team.
 
-In the NodeJS application, the /help functionality is implemented in 
+In the NodeJS application, the /help functionality is implemented in
 `routes/help.js`.
 
 In addition to having an email sent whenever a user submits a help request
@@ -89,58 +89,17 @@ an update to the GIT master branch.
 
 ## Production: minnowboard.org
 
-The production server, minnowboard.org, is manually updated by merging from 
+The production server, minnowboard.org, is manually updated by merging from
 `master` into the `production` branch.
 
 When a version of the staging server is ready to be moved to production, it
 can be moved to `production` using the GitHub web front-end.
 
+# Developer Installation
 
-# Developer Installation: Linux
+For instructions for developing using Linux, see [INSTALL-LINUX](INSTALL-LINUX.md).
 
-The following assumes you are using nginx as a webserver proxy
-
-```bash
-git clone git@github.com/minnowboard-org/website minnow
-cd minnow
-bower install
-npm install
-```
-
-NOTE: If you don't have bower (or node) installed, you can run the following:
-```bash
-sudo apt install npm nodejs nodejs-legacy
-sudo npm install -g bower
-```
-
-That should install everything you need to run the site from a webserver.
-
-To launch the service, use npm start:
-
-```bash
-npm start
-```
-
-The above will launch the express.js application, which will open port
-8080 for inbound HTTP connections.
-
-If you are using nginx as a proxy (and https) server, you need to add a
-location mapping from the root host directory to the application:
-
-```nginx
-# At the top level
-  upstream minnow {
-    server 127.0.0.1:8080;
-  }
-
-# Within a server {} block
-  location / {
-    proxy_pass http://minnow;
-    proxy_http_version 1.1;
-    proxy_set_header Upgrade $http_upgrade;
-    proxy_set_header Connection "upgrade";
-  }
-```
+For instructions for developing using Windows, see [INSTALL-WINDOWS](INSTALL-WINDOWS.md).
 
 # Updating stg.minnowboard.org
 
@@ -160,7 +119,6 @@ parameter to the site URL. For example:
 This will populate the page with the href links to the specific content pages
 managed in the GIT scm.
 
-
 # Coding Style Guidelines
 
 JSBeautify is used for the HTML, CSS, and Javascript files created for this
@@ -176,9 +134,9 @@ style guide[1] should be followed.
 
 # Markdown language
 
-The markdown content is interpreted on the client through the markdown-it javascript
-parser.  While it supports the commonmark markdown language, it includes some
-extensions as documented at https://markdown-it.github.io/
+The markdown content is interpreted on the client through the markdown-it
+javascript parser.  While it supports the commonmark markdown language, it
+includes some extensions as documented at https://markdown-it.github.io/
 
 Embedded html tags are not enabled.
 

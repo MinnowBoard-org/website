@@ -53,7 +53,7 @@ npm install -g polymer-cli
 polymer build index.html
 ```
 
-Running `polymer build` will create a `build` directory with a version 
+Running `polymer build` will create a `build` directory with a version
 of the website with all HTML and CSS dependencies in a single file.
 
 At this point, there are two manual changes that must be made:
@@ -139,7 +139,7 @@ project that triggers a the site to automatically update from GitHub.
 
 # Editing site markdown content
 
-When deployed to the live server, edit links ("internal mode: edit") are
+When deployed to the live server, edit links ("View content page on GitHub") are
 disabled by default. To simplify editing of the site content, you can enable
 edit mode and make those links visible by affixing the "edit=on" query
 parameter to the site URL. For example:
@@ -147,7 +147,7 @@ parameter to the site URL. For example:
     https://minnowboard.org/?edit=on
 
 This will populate the page with the href links to the specific content pages
-managed in the GIT scm.
+managed on GitHub.
 
 
 # Coding Style Guidelines

@@ -60,6 +60,10 @@ app.use(cookieParser());
   });
 });
 
+app.get(docRoot + "*/shared-bundle.html", function(req, res, next) {
+  res.send(fs.readFileSync(path.join(basePath, 'shared-bundle.html'), 'utf8'));
+});
+
 app.use(docRoot + 'setup', function(req, res, next) {
   res.redirect(docRoot + 'tutorials/getting-started');
 });

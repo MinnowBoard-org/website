@@ -20,5 +20,10 @@ git pull >> update.log 2>&1 || exit -1
 bower install >> update.log 2>&1 || exit -2
 npm install >> update.log 2>&1 || exit -3
 polymer build index.html >> update.log 2>&1 || exit -4
+
+# Fix-ups due to `polymer build` issues with <base href="/"> and shared-bundle.html
+touch build/bundled/shared-bundle.html
+sed -i -e "s,<script>'base href=\"/\"';</script>,<base href=\"/\">,g" build/bundled/index.html
+
 echo "Success: $(date)" >> update.log
 touch trigger-restart

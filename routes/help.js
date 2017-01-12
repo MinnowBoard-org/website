@@ -16,13 +16,10 @@ const fs = require('fs');
 
 let router = express.Router();
 
-let transporter = null;
-/*
 let transporter = nm.createTransport({
-  host: "minnowboard.org",
+  host: "localhost",
   port: 25
 });
-*/
 
 router.post('/', function(req, res, next) {
   if (!req.body.question) {
@@ -54,7 +51,10 @@ router.post('/', function(req, res, next) {
   }
 
   if (transporter) {
+    let old = process.env.NODE_TLS_REJECT_UNAUTHORIZE;
+    process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
     transporter.sendMail(options, function (error, info) {
+      process.env.NODE_TLS_REJECT_UNAUTHORIZED = old;
       if (error) {
         console.log('Error submitting question to ' + options.to);
         console.log(error);
@@ -64,6 +64,7 @@ router.post('/', function(req, res, next) {
       res.send('Message submitted.');
     });
   } else {
+    process.env.NODE_TLS_REJECT_UNAUTHORIZED = old;
     console.log('Question written to file, but not sent via email.');
     res.send('Message submitted.');
   }

@@ -63,7 +63,8 @@
       },
 
       computeBase: function(src) {
-        return src.replace(window.location.origin, '');
+        /* Remove origin from page URL and any subsequent slash prefix */
+        return src.replace(window.location.origin, '').replace(/^\//, '');
       },
 
       onHeadingsChanged: function() {

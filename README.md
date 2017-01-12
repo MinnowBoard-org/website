@@ -53,16 +53,38 @@ npm install -g polymer-cli
 polymer build index.html
 ```
 
-Running `polymer build` will create a `build` directory. To host the
-website out of that directory, provide the `BASE` environment
-variable to the `npm start` command:
+Running `polymer build` will create a `build` directory with a version 
+of the website with all HTML and CSS dependencies in a single file.
+
+At this point, there are two manual changes that must be made:
+
+1. Uncomment the <base href="/"> line in build/bundled/index.html
+2. Create the file build/bundled/shared-bundle.html
+
+The first is needed because if we provide `<base href="/">` in the
+index.html, polymer build will be unable to find the files it needs
+to parse.
+
+The second is needed due to polymer build's app-shell logic, which
+does not work well if you aren't using an app-shell. You can perform
+both of the above via:
+
+```bash
+touch build/bundled/shared-bundle.html
+sed -i -e "s,<script>'base href=\"/\"';</script>,<base href=\"/\">,g" \
+  build/bundled/index.html
+```
+
+To host the website out of the `build/bundled/` directory, provide the
+`BASE` environment variable to the `npm start` command:
 
 ```bash
 BASE=build/bundled/ npm start &
-xdg-open http://localhost:8080/
+xdg-open http://localhost:8080
 ```
 
 ## Where do the "Get Help" submissions go?
+
 If you navigate to the /help page of the website, it provides a web
 form that allows users to submit a question directly to the MinnowBoard
 support team.
@@ -78,13 +100,17 @@ via /help, the messages are written to the messages.log file.
 
 The website runs on two servers:
 
+
 ## Staging: stg.minnowboard.org  
 
 The staging server, stg.minnowboard.org is typically running the `master`
 version of the GIT project hosted on https://github.com/minnowboard-org/website.
 
 It is configured to automatically pull down the latest code any time there is
-an update to the GIT master branch.
+an update to the GIT master branch via a Webhook configured on the GitHub project.
+
+The Webhook invokes the `sync` script which performs the `polymer build`, performs
+the two manual fixups described previously, as well as npm and bower updates.
 
 
 ## Production: minnowboard.org
@@ -93,13 +119,17 @@ The production server, minnowboard.org, is manually updated by merging from
 `master` into the `production` branch.
 
 When a version of the staging server is ready to be moved to production, it
-can be moved to `production` using the GitHub web front-end.
+can be moved to `production` using the GitHub web front-end. The server will
+then automatically upgrade via the same Webhook infrastructure that
+stg.minnowboard.org uses.
+
 
 # Developer Installation
 
 For instructions for developing using Linux, see [INSTALL-LINUX](INSTALL-LINUX.md).
 
 For instructions for developing using Windows, see [INSTALL-WINDOWS](INSTALL-WINDOWS.md).
+
 
 # Updating stg.minnowboard.org
 
@@ -118,6 +148,7 @@ parameter to the site URL. For example:
 
 This will populate the page with the href links to the specific content pages
 managed in the GIT scm.
+
 
 # Coding Style Guidelines
 

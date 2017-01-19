@@ -674,7 +674,8 @@
         }
 
         console.log('GA: ' + this.route.path);
-        ga('send', 'pageview', this.route.path);
+        ga('set', 'page', this.route.path);
+        ga('send', 'pageview');
         console.log('Tab changed to: ' + tab);
       },
 
@@ -690,7 +691,8 @@
 
       onRouteChanged: function(path) {
         console.log('GA: ' + path);
-        ga('send', 'pageview', path);
+        ga('set', 'page', path);
+        ga('send', 'pageview');
         console.log('Route changed to: ' + JSON.stringify(path, null, '  '));
       },
 

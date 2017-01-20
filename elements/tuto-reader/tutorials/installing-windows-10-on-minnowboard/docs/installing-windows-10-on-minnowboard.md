@@ -11,7 +11,7 @@ This tutorial shows you how to install Windows 10 full desktop version on your M
 ### Create Windows 10 bootable USB Drive
 - In order to install the OS, you will need to create a Windows 10 bootable USB drive using the Microsoft Creation Tool.  This tool will download Windows 10 and create the installer for you.  Download the tool [HERE](https://www.microsoft.com/en-us/software-download/windows10/).  This takes up to 30 minutes in total to complete. 
 
-INSERT PHOTO HERE
+![image](elements/tuto-reader/tutorials/installing-windows-10-on-minnowboard/docs/Win-10-tool.png)
 
 ### Setup MinnowBoard Turbot. 
 1. Plug in keyboard or USB hub with keyboard and mouse in top USB slot.  

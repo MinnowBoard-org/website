@@ -1,3 +1,5 @@
+## Installing Windows 10
+
 This tutorial shows you how to install Windows 10 full desktop version on your Minnowboard.  This process will not immediately need a purchased serial key, but you eventually need one.
 
 ### Items needed:
@@ -19,8 +21,6 @@ This tutorial shows you how to install Windows 10 full desktop version on your M
 3. Plug in ethernet cable.
 4. Plug in micro-HDMI cable to your Turbot and monitor.
 5. Make sure your SilverJaw Lure or SATA drive is attached to your Turbot.
-
-INSERT PHOTO HERE
 
 ### Boot to USB installer
 1. Plug in your power to the Turbot.  This will begin the boot sequence.

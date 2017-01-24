@@ -9,6 +9,18 @@
   <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
   <script src="fetch.js"></script>
 
+  <meta name="google-site-verification" content="ItC7g2v9pxJGO8ArKGBGNKrSGRYJcNyuRsoQ_nooYl8"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+  <meta name="description" content="Meet the MinnowBoard Turbot - compact and affordable open source hardware platform that puts the power of a 64-bit Intel® Atom™ E38xx Series System on a Chip">
+  <meta property="og:title" content="MinnowBoard"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://minnowboard.org/theme/images/logo.svg"/>
+  <meta property="og:image" content="http://ia.media-imdb.com/images/rock.jpg"/>
+  <meta name="og:description" content="Meet the MinnowBoard Turbot - compact and affordable open source hardware platform that puts the power of a 64-bit Intel® Atom™ E38xx Series System on a Chip">
+
+  <meta name="google-site-verification" content="ItC7g2v9pxJGO8ArKGBGNKrSGRYJcNyuRsoQ_nooYl8"/>
 
   <link rel="import" href="bower_components/app-route/app-location.html">
   <link rel="import" href="bower_components/app-route/app-route.html">
@@ -49,7 +61,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,500" rel="stylesheet" type="text/css">
 
-  <!-- 
+  <!--
        Sustom style elements must be in a separate file to workaround bug in vulcanize:
        https://github.com/Polymer/vulcanize/issues/375
   -->
@@ -674,7 +686,8 @@
         }
 
         console.log('GA: ' + this.route.path);
-        ga('send', 'pageview', this.route.path);
+        ga('set', 'page', this.route.path);
+        ga('send', 'pageview');
         console.log('Tab changed to: ' + tab);
       },
 
@@ -690,7 +703,8 @@
 
       onRouteChanged: function(path) {
         console.log('GA: ' + path);
-        ga('send', 'pageview', path);
+        ga('set', 'page', path);
+        ga('send', 'pageview');
         console.log('Route changed to: ' + JSON.stringify(path, null, '  '));
       },
 
@@ -772,7 +786,10 @@
   <div id="loading">
     Please wait... MinnowBoard.org is loading. <div id="spinner"></div>
   </div>
-  <minnowboard-app edit="https://sxc.jf.intel.com/gitlab/minnowboard/website/edit/master/" class="flex"></minnowboard-app>
+  <minnowboard-app
+    edit="https://github.com/MinnowBoard-org/website/blob/master/"
+    class="flex">
+  </minnowboard-app>
 </body>
 
 <script>

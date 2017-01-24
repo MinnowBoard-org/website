@@ -38,13 +38,13 @@ xdg-open http://localhost:8080/
 
 ### Optimizing the website
 Bower projects can introduce a large number of dependent web projects,
-all of which need to be fetched when the website loads. The Polymer 
+all of which need to be fetched when the website loads. The Polymer
 project has a utility to vulanize and optimize a website into a reduced
 set of resources.
 
 To build the optimized version of the site, you need polymer-cli.
 
-Unfortunately, polymer-cli has problems being installed behind a 
+Unfortunately, polymer-cli has problems being installed behind a
 proxy due to a dependency on test-fixture, so if you use a proxy, you
 might not be able to install the polymer-cli project:
 
@@ -53,21 +53,43 @@ npm install -g polymer-cli
 polymer build index.html
 ```
 
-Running `polymer build` will create a `build` directory. To host the
-website out of that directory, provide the `BASE` environment
-variable to the `npm start` command:
+Running `polymer build` will create a `build` directory with a version
+of the website with all HTML and CSS dependencies in a single file.
+
+At this point, there are two manual changes that must be made:
+
+1. Uncomment the <base href="/"> line in build/bundled/index.html
+2. Create the file build/bundled/shared-bundle.html
+
+The first is needed because if we provide `<base href="/">` in the
+index.html, polymer build will be unable to find the files it needs
+to parse.
+
+The second is needed due to polymer build's app-shell logic, which
+does not work well if you aren't using an app-shell. You can perform
+both of the above via:
+
+```bash
+touch build/bundled/shared-bundle.html
+sed -i -e "s,<script>'base href=\"/\"';</script>,<base href=\"/\">,g" \
+  build/bundled/index.html
+```
+
+To host the website out of the `build/bundled/` directory, provide the
+`BASE` environment variable to the `npm start` command:
 
 ```bash
 BASE=build/bundled/ npm start &
-xdg-open http://localhost:8080/
+xdg-open http://localhost:8080
 ```
 
 ## Where do the "Get Help" submissions go?
+
 If you navigate to the /help page of the website, it provides a web
 form that allows users to submit a question directly to the MinnowBoard
 support team.
 
-In the NodeJS application, the /help functionality is implemented in 
+In the NodeJS application, the /help functionality is implemented in
 `routes/help.js`.
 
 In addition to having an email sent whenever a user submits a help request
@@ -78,69 +100,36 @@ via /help, the messages are written to the messages.log file.
 
 The website runs on two servers:
 
+
 ## Staging: stg.minnowboard.org  
 
 The staging server, stg.minnowboard.org is typically running the `master`
 version of the GIT project hosted on https://github.com/minnowboard-org/website.
 
 It is configured to automatically pull down the latest code any time there is
-an update to the GIT master branch.
+an update to the GIT master branch via a Webhook configured on the GitHub project.
+
+The Webhook invokes the `sync` script which performs the `polymer build`, performs
+the two manual fixups described previously, as well as npm and bower updates.
 
 
 ## Production: minnowboard.org
 
-The production server, minnowboard.org, is manually updated by merging from 
+The production server, minnowboard.org, is manually updated by merging from
 `master` into the `production` branch.
 
 When a version of the staging server is ready to be moved to production, it
-can be moved to `production` using the GitHub web front-end.
+can be moved to `production` using the GitHub web front-end. The server will
+then automatically upgrade via the same Webhook infrastructure that
+stg.minnowboard.org uses.
 
 
-# Developer Installation: Linux
+# Developer Installation
 
-The following assumes you are using nginx as a webserver proxy
+For instructions for developing using Linux, see [INSTALL-LINUX](INSTALL-LINUX.md).
 
-```bash
-git clone git@github.com/minnowboard-org/website minnow
-cd minnow
-bower install
-npm install
-```
+For instructions for developing using Windows, see [INSTALL-WINDOWS](INSTALL-WINDOWS.md).
 
-NOTE: If you don't have bower (or node) installed, you can run the following:
-```bash
-sudo apt install npm nodejs nodejs-legacy
-sudo npm install -g bower
-```
-
-That should install everything you need to run the site from a webserver.
-
-To launch the service, use npm start:
-
-```bash
-npm start
-```
-
-The above will launch the express.js application, which will open port
-8080 for inbound HTTP connections.
-
-If you are using nginx as a proxy (and https) server, you need to add a
-location mapping from the root host directory to the application:
-
-```nginx
-# At the top level
-  upstream minnow {
-    server 127.0.0.1:8080;
-  }
-
-# Within a server {} block
-  location / {
-    proxy_pass http://minnow;
-    proxy_http_version 1.1;
-    proxy_set_header Upgrade $http_upgrade;
-    proxy_set_header Connection "upgrade";
-  }
-```
 
 # Updating stg.minnowboard.org
 
@@ -150,7 +139,7 @@ project that triggers a the site to automatically update from GitHub.
 
 # Editing site markdown content
 
-When deployed to the live server, edit links ("internal mode: edit") are
+When deployed to the live server, edit links ("View content page on GitHub") are
 disabled by default. To simplify editing of the site content, you can enable
 edit mode and make those links visible by affixing the "edit=on" query
 parameter to the site URL. For example:
@@ -158,7 +147,7 @@ parameter to the site URL. For example:
     https://minnowboard.org/?edit=on
 
 This will populate the page with the href links to the specific content pages
-managed in the GIT scm.
+managed on GitHub.
 
 
 # Coding Style Guidelines
@@ -176,9 +165,9 @@ style guide[1] should be followed.
 
 # Markdown language
 
-The markdown content is interpreted on the client through the markdown-it javascript
-parser.  While it supports the commonmark markdown language, it includes some
-extensions as documented at https://markdown-it.github.io/
+The markdown content is interpreted on the client through the markdown-it
+javascript parser.  While it supports the commonmark markdown language, it
+includes some extensions as documented at https://markdown-it.github.io/
 
 Embedded html tags are not enabled.
 

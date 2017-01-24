@@ -31,7 +31,7 @@
         The following link will take you to a 404 because this page does not
         yet exist.<br><br>
       </template>
-      <a href="{{edit}}{{computeBase(src)}}">edit page</a>
+      <a href="{{edit}}{{computeBase(src)}}">View content page on GitHub</a>
     </template>
   </template>
 
@@ -63,11 +63,8 @@
       },
 
       computeBase: function(src) {
-        var base = document.querySelector('base');
-        if (!base) {
-          return src;
-        }
-        return src.replace(base.href, '');
+        /* Remove origin from page URL and any subsequent slash prefix */
+        return src.replace(window.location.origin, '').replace(/^\//, '');
       },
 
       onHeadingsChanged: function() {

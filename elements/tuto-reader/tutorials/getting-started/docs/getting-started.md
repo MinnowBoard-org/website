@@ -32,7 +32,7 @@ Visit the interactive [board viewer](board-viewer) tool to learn about each feat
 Visit the [Get help](help) page if you come across a problem on the board or on the website and are looking for help.  
 
 
-- **Frequently Asked Questions**: First, try visiting the list of [FAQs]((faq) to see if there is a quick answer to your question.
+- **Frequently Asked Questions**: First, try visiting the list of [FAQs](faq) to see if there is a quick answer to your question.
 - **Find a bug?** Did you find a bug or are you having a problem with a board? We currently have a project set up in our [MinnowBoard.org: GitHub group](https://github.com/minnowboard-org/bugs-and-help) for filing questions and issues.
 - **Ask a question**: Looking for some help? Want a quick answer to a question about using a board, the website, or the MinnowBoard.org Foundation? Ask your questions on the Get help page.
 - **Stack Overflow**: You can also ask your question on [Stack Overflow](http://stackoverflow.com/search?q=minnowboard); just be sure to put MinnowBoard in the question title or as a keyword.

@@ -1,8 +1,9 @@
-##   Update the firmware
+﻿##   Update the firmware
 
 The MinnowBoard Turbot firmware is updated occasionally to make improvements or 
 fix issues.  This tutorial explains how to check and update your board's firmware
 to the latest release.
+
 
 ### The general process
 

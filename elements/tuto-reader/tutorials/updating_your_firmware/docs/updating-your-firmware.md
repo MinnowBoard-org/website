@@ -7,8 +7,8 @@ to the latest release.
 ### The general process
 
 1.  Find out which firmware version your MinnowBoard Turbot is running
-2.  Find the latest version of the firmware available
-3.  Update the firmware if needed
+1.  Find the latest version of the firmware available
+1.  Update the firmware if needed
 
 ###  Components
 
@@ -19,13 +19,14 @@ To complete these steps you will need the following:
 ###   Find out which firmware version your MinnowBoard Turbot is running
 
 Enter the MinnowBoard Turbot UEFI boot option screen by following these steps:
-1.  After the board has powered up, wait a few seconds for the message 
+
+  1.  After the board has powered up, wait a few seconds for the message 
     **Start boot option** to appear at the bottom of the screen.
-2.  Press **F2** or **DEL** (within 5 seconds) to enter the boot options screen. 
+  1.  Press **F2** or **DEL** (within 5 seconds) to enter the boot options screen. 
     (If you wait too long, you might end up entering the EFI shell 
     and be staring at a `Shell> ` prompt. If this happens, 
     enter `exit` and return, to get to the boot manager screen.
-3.  At the top of the screen, the firmware bit support (e.g., X64) and 
+  1.  At the top of the screen, the firmware bit support (e.g., X64) and 
     firmware version number (e.g., 0083) are displayed. You'll also see an **R** 
     for Release or **D** for Debug version for the firmware, followed by the 
     timestamp (YYMMDDHHMM) of the firmware build.
@@ -41,9 +42,9 @@ Enter the MinnowBoard Turbot UEFI boot option screen by following these steps:
 1. Check under the “Firmware Releases” heading for the newest firmware version.
 1. If your firmware version number is lower than the newest version, 
     we recommend that you update the board's firmware.  
- 1. Or testing indicates that firmware version 0.83 has no critical issues for common 
-    uses for the MinnowBoard Turbot; additional firmware releases address issues 
-    found in the field and further testing.{n}
+  1. Or testing indicates that firmware version 0.83 has no critical issues for common 
+  uses for the MinnowBoard Turbot; additional firmware releases address issues 
+  found in the field and further testing.{n}
    
 
 ###  Update the firmware

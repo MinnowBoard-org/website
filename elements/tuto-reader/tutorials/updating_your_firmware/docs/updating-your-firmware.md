@@ -37,13 +37,14 @@ Enter the MinnowBoard Turbot UEFI boot option screen by following these steps:
 
 ###  Find the latest available version of the firmware
 
-1.  Go to Intel’s [MinnowBoard board firmware website](https://firmware.intel.com/projects/minnowboard-max).
-2.  Check under the “Firmware Releases” heading for the newest firmware version.
-3.  If your firmware version number is lower than the newest version, 
+1. Go to Intel’s [MinnowBoard board firmware website](https://firmware.intel.com/projects/minnowboard-max). 
+1. Check under the “Firmware Releases” heading for the newest firmware version.
+1. If your firmware version number is lower than the newest version, 
     we recommend that you update the board's firmware.  
-4.  Our testing indicates that firmware version 0.83 has no critical issues for common 
+ 1. Or testing indicates that firmware version 0.83 has no critical issues for common 
     uses for the MinnowBoard Turbot; additional firmware releases address issues 
     found in the field and further testing.{n}
+   
 
 ###  Update the firmware
 

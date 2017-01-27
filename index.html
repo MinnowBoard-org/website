@@ -422,14 +422,13 @@
           </template>
         </paper-toolbar>
 
-        <iron-pages id="pages" selected="[[tab]]" attr-for-selected='id'>
-
-          <template is="dom-if" if="[[showError(tab)]]">
-            Page '{{tab}}' not found.
-            <error-page id="error" edit="{{edit}}" page="{{tab}}"></error-page>
-          </template>
-
+        <iron-pages id="pages" selected="[[tab]]" attr-for-selected='id' fallback-selection="error">
           <default-page id="default" edit="{{edit}}" route="{{route}}"></default-page>
+
+
+          <error-page id="error" edit="{{edit}}" route="{{subRoute}}" page="{{tab}}"></error-page>
+
+
           <!-- The list here needs to be kept in sync with the "tabs" property
                (mainly the id used needs to match the appropriate item)
 
@@ -446,95 +445,95 @@
                DOM stamping... oh well.
               -->
 
-          <template is="dom-if" if="[[showPage('learn-more', tab)]]">
+
             <generic-page id='learn-more' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
-          </template>
-          <template is="dom-if" if="[[showPage('faq', tab)]]">
+
+
+
             <generic-page id='faq' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
-          </template>
-          <template is="dom-if" if="[[showPage('get-a-board', tab)]]">
+
+
             <generic-page id='get-a-board' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
-          </template>
-          <template is="dom-if" if="[[showPage('tutorials', tab)]]">
+
+
             <tutorials-page id='tutorials' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></tutorials-page>
-          </template>
-          <template is="dom-if" if="[[showPage('board-viewer', tab)]]">
+
+
             <board-viewer-page id='board-viewer' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></board-viewer-page>
-          </template>
-          <template is="dom-if" if="[[showPage('about', tab)]]">
+
+
             <generic-page id='about' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
-          </template>
-          <template is="dom-if" if="[[showPage('community', tab)]]">
+
+
             <generic-page id='community' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
-          </template>
-          <template is="dom-if" if="[[showPage('help', tab)]]">
+
+
             <help-page id='help' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></help-page>
-          </template>
-          <template is="dom-if" if="[[showPage('max-hse', tab)]]">
+
+
             <generic-page id='max-hse' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
-          </template>
-          <template is="dom-if" if="[[showPage('markdown-style-guide', tab)]]">
+
+
             <generic-page id='markdown-style-guide' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
-          </template>
-          <template is="dom-if" if="[[showPage('cookies-notice', tab)]]">
+
+
             <generic-page id='cookies-notice' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
-          </template>
-           <template is="dom-if" if="[[showPage('privacy-policy', tab)]]">
+
+
             <generic-page id='privacy-policy' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
-          </template>
-          <template is="dom-if" if="[[showPage('terms-of-service', tab)]]">
-            <generic-page id='terms-of-service' edit="{{edit}}"
+
+             <generic-page id='terms-of-service' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
-          </template>
-          <template is="dom-if" if="[[showPage('attributions', tab)]]">
+
+
             <generic-page id='attributions' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
-          </template>
 
-          <editor-page id='editor'
-            on-page-has-menu-changed='onPageHasMenuChanged'
-            layout="[[layoutClass]]"
-            route="{{subRoute}}"></editor-page>
+            <editor-page id='editor'
+              on-page-has-menu-changed='onPageHasMenuChanged'
+              layout="[[layoutClass]]"
+              route="{{subRoute}}"></editor-page>
+
         </iron-pages>
       </paper-header-panel>
     </paper-drawer-panel>
@@ -668,13 +667,6 @@
       getLayoutClass: function(tinyLayout, tabletLayout) {
         return tinyLayout ? "tiny-layout" :
           tabletLayout ? "tablet-layout" : "desktop-layout";
-      },
-
-      showError: function(tab) {
-        if(tab != 'default') {
-          var page = Polymer.dom(this.$.pages).querySelector('#' + tab);
-          return page ? false : true;
-        }
       },
 
       showPage: function(page, tab) {

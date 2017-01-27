@@ -1,0 +1,16 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/app-route/app-route.html">
+<link rel="import" href="../../elements/markdown-it/markdown-it.html">
+
+<dom-module id="error-page">
+  <template>
+    Page [[page]] was not found.
+    <markdown-it edit="[[edit]]" src="error.md"></markdown-it>
+  </template>
+  <script>
+    "use strict";
+    Polymer({
+      is: "error-page"
+    });
+  </script>
+</dom-module>

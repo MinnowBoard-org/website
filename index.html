@@ -48,6 +48,7 @@
   <link rel="import" href="bower_components/iron-fit-behavior/demo/simple-fit.html">
 
   <link rel="import" href="pages/default-page/default-page.html">
+  <link rel="import" href="pages/error-page/error-page.html">
   <link rel="import" href="pages/board-viewer-page/board-viewer-page.html">
   <link rel="import" href="pages/help-page/help-page.html">
   <link rel="import" href="pages/generic-page/generic-page.html">
@@ -422,6 +423,12 @@
         </paper-toolbar>
 
         <iron-pages id="pages" selected="[[tab]]" attr-for-selected='id'>
+
+          <template is="dom-if" if="[[showError(tab)]]">
+            Page '{{tab}}' not found.
+            <error-page id="error" edit="{{edit}}" page="{{tab}}"></error-page>
+          </template>
+
           <default-page id="default" edit="{{edit}}" route="{{route}}"></default-page>
           <!-- The list here needs to be kept in sync with the "tabs" property
                (mainly the id used needs to match the appropriate item)
@@ -438,6 +445,7 @@
                However in Polymer 1.2 there is no dynamic type injection for
                DOM stamping... oh well.
               -->
+
           <template is="dom-if" if="[[showPage('learn-more', tab)]]">
             <generic-page id='learn-more' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
@@ -522,6 +530,7 @@
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
           </template>
+
           <editor-page id='editor'
             on-page-has-menu-changed='onPageHasMenuChanged'
             layout="[[layoutClass]]"
@@ -631,6 +640,7 @@
         if (!page) {
           return currentPageMenu == tab;
         }
+
         return page.pageHasMenu;
       },
 
@@ -660,6 +670,13 @@
           tabletLayout ? "tablet-layout" : "desktop-layout";
       },
 
+      showError: function(tab) {
+        if(tab != 'default') {
+          var page = Polymer.dom(this.$.pages).querySelector('#' + tab);
+          return page ? false : true;
+        }
+      },
+
       showPage: function(page, tab) {
         return page == tab;
       },
@@ -684,6 +701,7 @@
             this.set('routeData.tab', '');
           }
         }
+
 
         console.log('GA: ' + this.route.path);
         ga('set', 'page', this.route.path);

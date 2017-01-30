@@ -1,11 +1,35 @@
-[ {
-  "pattern": "/help/:path*",
+[  {
+  "pattern": "/board-viewer/?*",
+  "meta-tags": [
+    "name='description' content='Interactive MinnowBoard board viewer'",
+    "property='og:title' content='MinnowBoard: Explore'"
+  ]
+},  {
+  "pattern": "/get-a-board/?*",
+  "meta-tags": [
+    "name='description' content='Ready to buy a MinnowBoard?'",
+    "property='og:title' content='MinnowBoard: Get a Board'"
+  ]
+},  {
+  "pattern": "/community/?*",
+  "meta-tags": [
+    "name='description' content='Learn about the MinnowBoard community'",
+    "property='og:title' content='MinnowBoard: Community'"
+  ]
+},  {
+  "pattern": "/tutorial/?*",
+  "meta-tags": [
+    "name='description' content='Learn how to use the MinnowBoard!'",
+    "property='og:title' content='MinnowBoard: Tutorials'"
+  ]
+}, {
+  "pattern": "/help/?*",
   "meta-tags": [
     "name='description' content='Have a MinnowBoard question?'",
     "property='og:title' content='MinnowBoard: Help'"
   ]
 }, {
-  "pattern": "/:path*",
+  "pattern": "/?*",
   "meta-tags": [
     "name='description' content='Meet the MinnowBoard Turbot - compact and affordable open source hardware platform that puts the power of a 64-bit Intel® Atom™ E38xx Series System on a Chip'",
     "name='og:description' content='Meet the MinnowBoard Turbot - compact and affordable open source hardware platform that puts the power of a 64-bit Intel® Atom™ E38xx Series System on a Chip'",

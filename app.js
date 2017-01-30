@@ -117,9 +117,7 @@ app.use(function(req, res, next) {
 
   const parts = url.parse(req.url);
   if (!extensionMatch.exec(parts.pathname)) {
-    console.log("Replacing 404 with index");
     handleIndex(req, res, next);
-    console.log("Returned...");
     return;
   }
 

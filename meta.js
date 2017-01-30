@@ -33,6 +33,8 @@ const fs = require('fs'),
 
 const metaPatterns = JSON.parse(fs.readFileSync('meta.json', 'utf8'));
 
+const debug = false;
+
 /* Pre-compile all regex patterns */
 metaPatterns.forEach(function(entry) {
   entry.pattern = pathToRegexp(entry.pattern);
@@ -41,11 +43,14 @@ metaPatterns.forEach(function(entry) {
 module.exports = {
   match: function(route) {
     for (var i = 0; i < metaPatterns.length; i++) {
-      if (metaPatterns[i].pattern.exec(route)) {
-        return "<meta-tag "
-          + metaPatterns[i]['meta-tags'].join("/>\n<meta-tag ")
-          + "/>\n";
+      if (!metaPatterns[i].pattern.exec(route)) {
+        if (debug) console.log("No match for pattern " + i + ": " + metaPatterns[i].pattern + " against " + route);
+        continue;
       }
+      if (debug) console.log("Match pattern " + i + ": " + metaPatterns[i].pattern + " against " + route);
+      return "<meta-tag "
+        + metaPatterns[i]['meta-tags'].join("/>\n<meta-tag ")
+        + "/>\n";
     }
     return "";
   }

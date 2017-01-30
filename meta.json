@@ -1,0 +1,13 @@
+[ {
+  "pattern": "/",
+  "meta-tags": [
+      "name='description' content='MinnowBoard.org'",
+      "property='og:title' content='MinnowBoard.org'"
+  ]
+}, {
+  "pattern": "/help/:path*",
+  "meta-tags": [
+      "name='description' content='Have a MinnowBoard question?'",
+      "property='og:title' content='MinnowBoard: Help'"
+  ]
+} ]

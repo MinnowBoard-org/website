@@ -162,6 +162,13 @@ style guide[1] should be followed.
 
 1. https://google.github.io/styleguide/javascriptguide.xml
 
+# Meta-Tag Injection
+
+Modify the file `meta.json` to provide a list of patterns and corresponding
+meta-tags to inject into the single-page-app returned with the URL.
+
+The first pattern matched is the first set of tags returned.
+To test a pattern, use the [Express Route Tester](http://forbeslindesay.github.io/express-route-tester/).
 
 # Markdown language
 

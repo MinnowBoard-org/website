@@ -1,13 +1,17 @@
 [ {
-  "pattern": "/",
-  "meta-tags": [
-      "name='description' content='MinnowBoard.org'",
-      "property='og:title' content='MinnowBoard.org'"
-  ]
-}, {
   "pattern": "/help/:path*",
   "meta-tags": [
-      "name='description' content='Have a MinnowBoard question?'",
-      "property='og:title' content='MinnowBoard: Help'"
+    "name='description' content='Have a MinnowBoard question?'",
+    "property='og:title' content='MinnowBoard: Help'"
+  ]
+}, {
+  "pattern": "/:path*",
+  "meta-tags": [
+    "name='description' content='Meet the MinnowBoard Turbot - compact and affordable open source hardware platform that puts the power of a 64-bit Intel® Atom™ E38xx Series System on a Chip'",
+    "name='og:description' content='Meet the MinnowBoard Turbot - compact and affordable open source hardware platform that puts the power of a 64-bit Intel® Atom™ E38xx Series System on a Chip'",
+    "property='og:title' content='MinnowBoard'",
+    "property='og:type' content='website'",
+    "property='og:url' content='https://minnowboard.org/theme/images/logo.svg'",
+    "property='og:image' content='http://ia.media-imdb.com/images/rock.jpg'"
   ]
 } ]

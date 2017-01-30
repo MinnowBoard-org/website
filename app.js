@@ -21,9 +21,9 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const url = require('url');
 
-const index = require('./routes/index');
 const help = require('./routes/help');
 const sync = require('./routes/git-sync');
+const meta = require('./meta.js');
 
 const app = express();
 const docRoot = '/';
@@ -69,7 +69,7 @@ app.use(docRoot + 'setup', function(req, res, next) {
 });
 
 app.use(docRoot + 'bower_components', express.static(path.join(basePath, 'bower_components')));
-app.use(docRoot, index);
+app.get(docRoot, handleIndex);
 app.use(docRoot + 'help-request', help);
 app.use(docRoot + 'sync', sync);
 app.use(docRoot, express.static(path.join(basePath, '.'), {
@@ -83,6 +83,17 @@ app.use(docRoot, express.static('.', {
   redirect: true,
   index: false
 }));
+
+
+function handleIndex(req, res, next) {
+  var metaTags = meta.match(req.url),
+    content = fs.readFileSync(path.join(req.app.locals.basePath, 'index.html'), 'utf8');
+  if (metaTags) {
+    res.send(content.replace(/<script>"meta-tag-injection";<\/script>/, metaTags));
+  } else {
+    res.send(content);
+  }
+}
 
 /* To handle dynamic routes, we return index.html to every 404.
 * However, that introduces site development problems when assets are
@@ -106,7 +117,7 @@ app.use(function(req, res, next) {
 
   const parts = url.parse(req.url);
   if (!extensionMatch.exec(parts.pathname)) {
-    res.send(fs.readFileSync(path.join(basePath, 'index.html'), 'utf8'));
+    handleIndex(req, res, next);
     return;
   }
 

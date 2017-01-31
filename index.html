@@ -422,13 +422,9 @@
           </template>
         </paper-toolbar>
 
-        <iron-pages id="pages" selected="[[tab]]" attr-for-selected='id' fallback-selection="error">
+        <iron-pages id="pages" selected="[[tab]]" attr-for-selected='id'>
           <default-page id="default" edit="{{edit}}" route="{{route}}"></default-page>
-
-
-          <error-page id="error" edit="{{edit}}" route="{{subRoute}}" page="{{tab}}"></error-page>
-
-
+          <error-page id="not-found" edit="{{edit}}" route="{{subRoute}}" page></error-page>
           <!-- The list here needs to be kept in sync with the "tabs" property
                (mainly the id used needs to match the appropriate item)
 
@@ -444,96 +440,94 @@
                However in Polymer 1.2 there is no dynamic type injection for
                DOM stamping... oh well.
               -->
-
-
+          <template is="dom-if" class="tpl learn-more" if="[[showPage('learn-more', tab)]]">
             <generic-page id='learn-more' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
-
-
-
+          </template>
+          <template is="dom-if" class="tpl faq" if="[[showPage('faq', tab)]]">
             <generic-page id='faq' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
-
-
+          </template>
+          <template is="dom-if" class="tpl get-a-board" if="[[showPage('get-a-board', tab)]]">
             <generic-page id='get-a-board' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
-
-
+          </template>
+          <template is="dom-if" class="tpl tutorials" if="[[showPage('tutorials', tab)]]">
             <tutorials-page id='tutorials' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></tutorials-page>
-
-
+          </template>
+          <template is="dom-if" class="tpl board-viewer" if="[[showPage('board-viewer', tab)]]">
             <board-viewer-page id='board-viewer' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></board-viewer-page>
-
-
+          </template>
+          <template is="dom-if" class="tpl about" if="[[showPage('about', tab)]]">
             <generic-page id='about' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
-
-
+          </template>
+          <template is="dom-if" class="tpl community" if="[[showPage('community', tab)]]">
             <generic-page id='community' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
-
-
+          </template>
+          <template is="dom-if" class="tpl help" if="[[showPage('help', tab)]]">
             <help-page id='help' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></help-page>
-
-
+          </template>
+          <template is="dom-if" class="tpl mx-hse" if="[[showPage('max-hse', tab)]]">
             <generic-page id='max-hse' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
-
-
+          </template>
+          <template is="dom-if" class="tpl markdown-style-guide" if="[[showPage('markdown-style-guide', tab)]]">
             <generic-page id='markdown-style-guide' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
-
-
+          </template>
+          <template is="dom-if" class="tpl cookies-notice" if="[[showPage('cookies-notice', tab)]]">
             <generic-page id='cookies-notice' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
-
-
+          </template>
+           <template is="dom-if" class="tpl privacy-policy" if="[[showPage('privacy-policy', tab)]]">
             <generic-page id='privacy-policy' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
-
-             <generic-page id='terms-of-service' edit="{{edit}}"
+          </template>
+          <template is="dom-if" class="tpl terms-of-service" if="[[showPage('terms-of-service', tab)]]">
+            <generic-page id='terms-of-service' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
-
-
+          </template>
+          <template is="dom-if" class="tpl attributions" if="[[showPage('attributions', tab)]]">
             <generic-page id='attributions' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
-
-            <editor-page id='editor'
-              on-page-has-menu-changed='onPageHasMenuChanged'
-              layout="[[layoutClass]]"
-              route="{{subRoute}}"></editor-page>
-
+          </template>
+          <editor-page id='editor'
+            on-page-has-menu-changed='onPageHasMenuChanged'
+            layout="[[layoutClass]]"
+            route="{{subRoute}}"></editor-page>
         </iron-pages>
       </paper-header-panel>
     </paper-drawer-panel>
@@ -670,6 +664,15 @@
       },
 
       showPage: function(page, tab) {
+        /*if (tab != 'default') {
+          var tpl = Polymer.dom(this.$.pages).querySelector('.tpl.' + tab);
+          if (!tpl) {
+            var error = Polymer.dom(this.$.pages).querySelector('#not-found');
+            error.page = tab;
+            this.set('routeData.tab', 'not-found');
+          }
+        }*/
+
         return page == tab;
       },
 
@@ -688,12 +691,12 @@
 
         if (this.routeData) {
           if (tab != 'default') {
-            this.set('routeData.tab', tab);
+            var tpl = Polymer.dom(this.$.pages).querySelector('.tpl.' + tab);
+            this.set('routeData.tab', tpl ? tab : 'not-found');
           } else {
             this.set('routeData.tab', '');
           }
         }
-
 
         console.log('GA: ' + this.route.path);
         ga('set', 'page', this.route.path);
@@ -707,6 +710,10 @@
 
       onRouteTabChanged: function(tab) {
         tab = tab ? tab : 'default';
+        if (this.tab!= 'default' && this.tab != tab) {
+          var error = Polymer.dom(this.$.pages).querySelector('#not-found');
+          error.page = this.tab;
+        }
         console.log('Route changing tab from ' + this.tab + ' to ' + tab);
         this.set('tab', tab);
       },
@@ -719,13 +726,12 @@
       },
 
       attached: function() {
-        window.siteLoaded = true;
+        window.siteLoaded = true;;
       },
 
       ready: function() {
         var self = this;
         self.edit = ('edit' in self.$.location.queryParams) ? self.edit : undefined;
-
         /* Only show version string on non-production domains */
         if (window.location.hostname == 'minnowboard.org') {
           return;

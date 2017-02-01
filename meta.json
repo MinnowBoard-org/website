@@ -1,41 +1,53 @@
 [  {
   "pattern": "/board-viewer/?*",
   "meta-tags": [
-    "name='description' content='Interactive MinnowBoard board viewer'",
-    "property='og:title' content='MinnowBoard: Explore'"
+    "name='description' content='Click on the board viewer to explore the MinnowBoard Turbot, a compact and affordable open source hardware platform that puts the power of a 64-bit Intel® Atom™ E38xx Series SoC in a small but versatile form factor.'",
+    "property='og:title' content='MinnowBoard.org | Explore MinnowBoard Turbot'"
   ]
 },  {
   "pattern": "/get-a-board/?*",
   "meta-tags": [
-    "name='description' content='Ready to buy a MinnowBoard?'",
-    "property='og:title' content='MinnowBoard: Get a Board'"
+    "name='description' content='Find where to buy your board and its accessories from this page. The MinnowBoard Turbot, manufactured by ADI, is available from Mouser Electronics, Arrow, Amazon, and Netgate.'",
+    "property='og:title' content='MinnowBoard.org | Buy a MinnowBoard Turbot and Accessories'"
   ]
 },  {
   "pattern": "/community/?*",
   "meta-tags": [
-    "name='description' content='Learn about the MinnowBoard community'",
-    "property='og:title' content='MinnowBoard: Community'"
+    "name='description' content='Visit our GitHub project for active MinnowBoard hardware discussions, bugs and issues.'",
+    "property='og:title' content='MinnowBoard.org | MinnowBoard Turbot Community Resources'"
   ]
 },  {
   "pattern": "/tutorial/?*",
   "meta-tags": [
-    "name='description' content='Learn how to use the MinnowBoard!'",
-    "property='og:title' content='MinnowBoard: Tutorials'"
+    "name='description' content='Get the tutorials to start developing IoT projects including powering up the board, installing Windows IOT core, Wind River Pulsar Linux, and Ubuntu, and blinking Turbot D2 LED.'",
+    "property='og:title' content='MinnowBoard.org Tutorials | Develop MinnowBoard Turbot Projects'"
   ]
 }, {
   "pattern": "/help/?*",
   "meta-tags": [
-    "name='description' content='Have a MinnowBoard question?'",
-    "property='og:title' content='MinnowBoard: Help'"
+    "name='description' content='Get support, ask questions, and troubleshoot common issues with MinnowBoard hardware using FAQ, our GitHub project bugs-and-help, community forums, or join our mailing list.'",
+    "property='og:title' content='MinnowBoard.org Help | Get Support for MinnowBoard Hardware'"
+  ]
+}, {
+  "pattern": "/about/?*",
+  "meta-tags": [
+    "name='description' content='MinnowBoard.org Foundation is an Oregon-based non-profit providing education and promotion of the design and use of open-source software and hardware in embedded computing.'",
+    "property='og:title' content='About the MinnowBoard.org Foundation'"
+  ]
+}, {
+  "pattern": "/learn-more/?*",
+  "meta-tags": [
+    "name='description' content='View the technical specifications and design files of the MinnowBoard Turbot and find details on its compatibility with MinnowBoard MAX and breakout boards (Lures).'",
+    "property='og:title' content='MinnowBoard.org | MinnowBoard Turbot Technical Specifications'"
   ]
 }, {
   "pattern": "/?*",
   "meta-tags": [
-    "name='description' content='Meet the MinnowBoard Turbot - compact and affordable open source hardware platform that puts the power of a 64-bit Intel® Atom™ E38xx Series System on a Chip'",
-    "name='og:description' content='Meet the MinnowBoard Turbot - compact and affordable open source hardware platform that puts the power of a 64-bit Intel® Atom™ E38xx Series System on a Chip'",
-    "property='og:title' content='MinnowBoard'",
+    "name='description' content='Use the MinnowBoard Turbot - a high-performance, open source hardware platform - to launch your IoT project. It packs quad-core, compute intensive performance into a small form factor.'",
+    "name='og:description' content='Use the MinnowBoard Turbot - a high-performance, open source hardware platform - to launch your IoT project. It packs quad-core, compute intensive performance into a small form factor.'",
+    "property='og:title' content='MinnowBoard.org Foundation | MinnowBoard Turbot Official Site'",
     "property='og:type' content='website'",
-    "property='og:url' content='https://minnowboard.org/theme/images/logo.svg'",
-    "property='og:image' content='http://ia.media-imdb.com/images/rock.jpg'"
+    "property='og:url' content='https://minnowboard.org/'",
+    "property='og:image' content='https://minnowboard.org/theme/images/minnow-og.png'"
   ]
 } ]

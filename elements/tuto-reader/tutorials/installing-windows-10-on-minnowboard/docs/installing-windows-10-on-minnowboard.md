@@ -1,16 +1,17 @@
 ## Installing Windows 10
 
-This tutorial shows you how to install Windows 10 full desktop version on your Minnowboard.  
+This tutorial shows you how to install Windows 10 full desktop version on your MinnowBoard board.  
 
-**Note:** This install process will not immediately need a purchased serial key, but you'll eventually need one to continue using the OS.  Also, Windows 10 will NOT install on an SD-Card or USB thumbdrive.  As per their requirement, it will only install onto a Hard Drive.  This tutorial shows a path using the Silverjaw external board Lure with a m-SATA drive on it for installation.  It can also be installed using the the SATA expansion port with an external powered harddrive.
+**Note:** This install process will not immediately need a purchased serial key, but you'll eventually need one to continue using the OS. Also, Windows 10 will NOT install on an SD card or USB flash drive. Per their requirement, it will only install onto a hard drive. 
 
-### Items needed:
-- [Silverjaw Expansion SATA Lure](get-a-board) with M-SATA Harddrive or External SATA Harddrive
-- 4GB+ USB Flash Thumb drive (Used to create bootable WIN installer. USB3 recommended for speed.)
+**Note:** This tutorial shows a path using the Silverjaw expansion board (lure) with an m-SATA drive on it for installation. It can also be installed using the the SATA expansion port with an external powered hard drive.
+
+### Components
+- [Silverjaw Expansion SATA Lure](get-a-board) with M-SATA hard drive or external SATA hard drive
+- 4GB+ USB Flash drive (Used to create bootable WIN installer; USB3 recommended for speed)
 - USB Keyboard and mouse
 - Ethernet cable and internet access
 - Computer running Windows
-
 
 ### Create Windows 10 bootable USB Drive
 - In order to install the OS, you will need to create a Windows 10 bootable USB drive using the Microsoft Creation Tool.  This tool will download Windows 10 and create the installer for you.  [Download the tool HERE](https://www.microsoft.com/en-us/software-download/windows10/).  This takes up to 30 minutes in total to complete. 

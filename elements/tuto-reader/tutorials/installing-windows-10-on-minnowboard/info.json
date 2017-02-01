@@ -1,0 +1,19 @@
+{
+  "img": "elements/tuto-reader/tutorials/installing-windows-10-on-minnowboard/image.jpg",
+  "content": "elements/tuto-reader/tutorials/installing-windows-10-on-minnowboard/docs/installing-windows-10-on-minnowboard.md",
+  "meta": {
+      "info": [
+          {"label": "Last updated", "value": "Jan 2017"},
+          {"label": "Board", "value": "MinnowBoard Turbot"}
+  ],
+    "links": {
+        "label": "Other Tutorials",
+        "value": [
+          {"title": "Power up the MinnowBoard Turbot", "location": "tutorials/powering-on-minnowboardturbot"},
+          {"title": "Install Ubuntu 16.04 LTS", "location": "tutorials/installing-ubuntu-16.04-on-minnowboardmax"},
+          {"title": "Install Ubuntu 16.04 LTS", "location": "tutorials/installing-windows-iot-on-minnowboard-turbot"},
+          {"title": "Blinking the Turbot D2 LED", "location": "tutorials/Turbot-blink"}
+        ]
+      }
+}
+}

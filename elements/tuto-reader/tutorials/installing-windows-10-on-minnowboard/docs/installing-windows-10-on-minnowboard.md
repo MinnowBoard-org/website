@@ -27,11 +27,11 @@ To install the OS, you will need to create a Windows 10 bootable USB drive using
 1. Plug in your power to the board. This will begin the boot sequence.
 2. If the board boots from the USB, go to the next section.
 3. If the board boots to the board shell, you will need to tell your board to boot from the USB flash drive by doing the following: 
-    a. Exit to the firmware{n} 
-    b. Go to Boot Manager{n} 
-    c. Highlight **'EFI USB Device'**{n} 
-    d. Press **‘ENTER’**{n}  
-    e. This will reboot the board from the USB flash drive. If you need further details on how to do this, see the [Update your firmware tutorial](tutorials/updating_your_firmware).{n}
+     1. Exit to the firmware{n} 
+     1. Go to Boot Manager{n}
+     1. Highlight **'EFI USB Device'**{n} 
+     1. Press **‘ENTER’**{n}  
+     1. This will reboot the board from the USB flash drive. If you need further details on how to do this, see the [Update your firmware tutorial](tutorials/updating_your_firmware).{n}
 
 ### Install Windows to the m-SATA drive
 1. When booting from the Windows installer USB flash drive, you will see the Windows logo.

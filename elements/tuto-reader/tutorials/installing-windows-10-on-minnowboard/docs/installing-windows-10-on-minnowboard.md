@@ -2,7 +2,7 @@
 
 This tutorial shows you how to install Windows 10 full desktop version on your Minnowboard.  
 
-**Note:** This install process will not immediately need a purchased serial key, but you'll eventually need one to continue using the OS.  Also, Windows 10 will NOT install on an SD-Card or USB thumbdrive.  As per their requirement, it will only install onto a Hard Drive.  This tutorial shows a path using the Silverjaw external board Lure with a m-SATA drive on it for installation.  It can also be installed using the the SATA expansion port with an external HD.
+**Note:** This install process will not immediately need a purchased serial key, but you'll eventually need one to continue using the OS.  Also, Windows 10 will NOT install on an SD-Card or USB thumbdrive.  As per their requirement, it will only install onto a Hard Drive.  This tutorial shows a path using the Silverjaw external board Lure with a m-SATA drive on it for installation.  It can also be installed using the the SATA expansion port with an external powered harddrive.
 
 ### Items needed:
 - [Silverjaw Expansion SATA Lure](get-a-board) with M-SATA Harddrive or External SATA Harddrive

@@ -5,7 +5,7 @@ This tutorial shows you how to install Windows 10 full desktop version on your M
 **Note:** This install process will not immediately need a purchased serial key, but you'll eventually need one to continue using the OS. Also, Windows 10 will NOT install on an SD card or USB flash drive. Per their requirement, it will only install onto a hard drive. 
 
 ### Components
-- [Silverjaw expansion SATA lure](get-a-board) with M-SATA hard drive or external SATA hard drive. **Note** This tutorial shows a path using the Silverjaw expansion board (lure) with an m-SATA drive on it for installation. It can also be installed using the SATA expansion port with an external powered hard drive.
+- [Silverjaw expansion SATA lure](get-a-board) with M-SATA hard drive or external SATA hard drive. **Note:** This tutorial shows a path using the Silverjaw expansion board (lure) with an m-SATA drive on it for installation. It can also be installed using the SATA expansion port with an external powered hard drive.
 - 4GB+ USB Flash drive (Used to create bootable WIN installer; USB3 recommended for speed)
 - USB Keyboard and mouse
 - Ethernet cable and internet access
@@ -25,8 +25,8 @@ To install the OS, you will need to create a Windows 10 bootable USB drive using
 
 ### Boot to USB installer
 1. Plug in your power to the board. This will begin the boot sequence.
-1. If the board boots from the USB, go to the next section.
-1. If the board boots to the board shell, you will need to tell your board to boot from the USB flash drive by doing the following: 
+2. If the board boots from the USB, go to the next section.
+3. If the board boots to the board shell, you will need to tell your board to boot from the USB flash drive by doing the following: 
     a. Exit to the firmware{n} 
     b. Go to Boot Manager{n} 
     c. Highlight **'EFI USB Device'**{n} 
@@ -44,4 +44,4 @@ To install the OS, you will need to create a Windows 10 bootable USB drive using
 ### Boot up and you're ready to go
 1. Windows will now update using the internet ethernet connection. This may take more than two hours depending on your connection speed and how many updates are needed. 
 2. Just like a desktop, it may require a reboot when complete.
-2. Once the OS updates are completed, your board is now running Windows 10 and you can proceed with development.
+3. Once the OS updates are completed, your board is now running Windows 10 and you can proceed with development.

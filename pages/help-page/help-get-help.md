@@ -3,7 +3,6 @@
 MinnowBoard.org is here to help you have a successful experience with your board.
 There are several ways to seek answers, including the preferred GitHub issues system.
 
-
 ### Submit a question on GitHub – the preferred method for getting help
 
 We encourage users with general questions to post them to our GitHub MinnowBoard 
@@ -11,9 +10,7 @@ We encourage users with general questions to post them to our GitHub MinnowBoard
 Posting here means responses are easily searchable and visible 
 to a broad set of developers, including those developers not subscribed to our mailing 
 list. All MinnowBoard-related topics are appropriate. If you don’t have an account, 
-it’s free and easy to [create one](https://github.com/join?source=header-home).
-
-View all issues and bugs on GitHub BUTTON    
+it’s free and easy to [create one](https://github.com/join?source=header-home).   
 
 IMAGE
 
@@ -28,10 +25,7 @@ posted to join the discussion.
 list link takes you to the issues repository with the filters set to show both 
 open and closed issues. The default issues filter is 
 to hide closed issues, but you can use the direct link above or modify the issues 
-filter as shown in the below screenshot.
-
-IMAGE
-
+filter.
 
 ### Ask a question via email web form
 
@@ -43,8 +37,6 @@ at the email address you provide. If you don’t provide an email address, we’
 question or comment as feedback. **Note:** If you provide an email address, we won’t use 
 your address for any other purpose. See [Privacy Policy](/privacy-policy) for more information.
 
-
-FORM
 
 
 

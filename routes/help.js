@@ -13,6 +13,7 @@
 const express = require('express');
 const nm = require('nodemailer');
 const fs = require('fs');
+const bodyParser = require('body-parser');
 
 let router = express.Router();
 
@@ -21,7 +22,7 @@ let transporter = nm.createTransport({
   port: 25
 });
 
-router.post('/', function(req, res, next) {
+router.post('/', bodyParser.json(), function(req, res, next) {
   if (!req.body.question) {
     req.status(422);
     req.send('question parameter not supplied');

@@ -15,6 +15,8 @@ const fs = require('fs');
 const child_process = require('child_process');
 const path = require('path');
 const root = path.dirname(require.main.filename);
+const crypto = require('crypto');
+const bufferCompare = require('buffer-equal-constant-time');
 
 let router = express.Router();
 
@@ -34,7 +36,7 @@ function execSync(res, hook) {
   child_process.execFile("sudo", args, { cwd: root }, function (error, stdout, stderr) {
     if (error) {
       console.log("Unable to update via GitHub sync.");
-      res.status(500).send("Error");
+      res.status(500).send("Error executing Webhook.");
       return;
     }
 
@@ -80,19 +82,42 @@ router.post('/', function(req, res, next) {
     return;
   }
 
-  const computedSignature = computeSignature(process.env.GITHUB_SECRET, req.body);
-  if (!bufferEq(new Buffer(signature), computedSignature)) {
-    console.log('Signature missing.');
-    res.status(401).send("Unauthorized: Invalid signature.");
-    return;
-  }
 
-  try {
-    execSync(res, req.body);
-  } catch (err) {
-    console.warn('Error parsing WebHook: ' + JSON.stringify(err));
-    res.status(400).send("Invalid hook received.");
-  }
+  var body = [];
+
+  req.on('error', function(err) {
+    // This prints the error message and stack trace to `stderr`.
+    console.log("Error receiving body from request.");
+    res.status(400).send("Data stream error.");
+  }).on('data', function(chunk) {
+    body.push(chunk);
+  }).on('end', function() {
+    body = Buffer.concat(body);
+
+    const computedSignature = computeSignature(process.env.GITHUB_SECRET, body);
+    if (!bufferCompare(new Buffer(signature), new Buffer(computedSignature))) {
+      console.log('Signature does not match.');
+      res.status(401).send("Unauthorized: Invalid signature.");
+      return;
+    }
+
+    var hook;
+    try {
+      hook = JSON.parse(body.toString());
+    } catch (err) {
+      console.warn('Error parsing WebHook: ' + JSON.stringify(err));
+      res.status(400).send("Invalid hook received.");
+      return;
+    }
+
+    if (!hook.head_commit || !hook.repository || !hook.ref || !hook.pusher) {
+      console.log("Missing fields in webhook.");
+      res.status(400).send("Missing hook fields.");
+      return;
+    }
+
+    execSync(res, JSON.parse(body.toString()));
+  });
 });
 
 module.exports = router;

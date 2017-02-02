@@ -18,7 +18,6 @@ const path = require('path');
 const fs = require('fs');
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
-const bodyParser = require('body-parser');
 const url = require('url');
 
 const help = require('./routes/help');
@@ -49,8 +48,6 @@ console.log("Serving files from filepath: '" + basePath + "'");
 app.set('trust proxy', true);
 
 app.use(logger('common'));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 /* Return 401's for the following path-regexps */

@@ -9,7 +9,7 @@ development paradigm with:
 - high performance (dual and quad core versions) 
 - regulatory compliance* for immediate productization 
 - open source hardware files - build your own custom version
-- fast POC and prototyping through versatile extensibilty (LURES)
+- fast POC and prototyping through versatile extensibility (LURES)
 - adaptors for industry standard
 - open source firmware that is accessible for HW bring up
 - it's Intel, so OS's "just run" and your software will too
@@ -39,9 +39,6 @@ Data Plane Development Kit (DPDK) in a box development kit includes a MinnowBoar
 Turbot. You’ll see the MinnowBoard Turbot being used in demos in almost every 
 embedded and IoT focused event in the US and Europe because it is a versatile, 
 low-cost, PC-like capable embedded board.
-
-### Where can I find other developers?
-MinnowBoard Turbot is supported by an active MinnowBoard.org community. 
 
 ### MinnowBoard Turbot variations
 MinnowBoard Turbot boards combine variations of Dual Core and Quad Core.
@@ -118,19 +115,14 @@ Silicom Ltd.
 
 ![OSHA](pages/learn-more/oshw-logo-100-px.png){align-right container-30}  
 
-All design files available for MinnowBoard Turbot are fully
-modifiable under [Creative Commons licensing](http://creativecommons.org/). The MinnowBoard Turbot is intended
+You can find the MinnowBoard Turbot design files on 
+**[GitHub - MinnowBoard design files](https://github.com/MinnowBoard-org/design-files)**. 
+All design files are released under [Creative Commons CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). 
+Read about what this license allows for on the Creative Commons website. 
+
+The MinnowBoard Turbot is intended
 to comply with all requirements and guidelines set forth by the [Open Source
 Hardware Association](http://www.oshwa.org/).
 
-For specific copyright and license terms for each file, see the contents of the file.
-
--   [X205 Schematic](http://wiki.minnowboard.org/images/b/bd/Minnowboard_Turbot_X205_Sch.pdf) (PDF)
--   [X205 Bill of Materials](http://wiki.minnowboard.org/images/8/85/Minnowboard_Turbot_X205_BOM.zip)
--   [X205 Schematic and F200 Layout Design Source](http://wiki.minnowboard.org/images/5/5a/Minnowboard_Turbot_F200_X205_VX_Release.zip) (Mentor Graphics Xpedition Enterprise VX)
--   [F200 Gerbers](http://wiki.minnowboard.org/images/a/af/Minnowboard_Turbot_F200_Gerber.zip)
--   [F200 3D Model](http://wiki.minnowboard.org/images/4/42/Minnowboard_Turbot_F200_3D.pdf) (Interactive PDF)
--   [F200 3D Model](http://wiki.minnowboard.org/images/e/ec/Turbot_F200_Board_STEP.zip) (STEP File)
--   [F200 STEP Library](http://wiki.minnowboard.org/images/9/9e/Turbot_F200_STEPLibrary.zip) (STEP File)
 
 *This page is licensed under CC-BY-SA 3.0 and may have portions derived from other CC-BY-SA 3.0 content. See [Attributions page](attributions).

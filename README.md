@@ -98,7 +98,13 @@ via /help, the messages are written to the messages.log file.
 
 # Overview
 
-The website runs on two servers:
+The website runs on two servers, using Webhooks for continuous integration and
+deployment.
+
+**NOTE**: To ensure only trusted updates are received from GitHub, Webhooks must
+be configured with a Secret. The Secret is used to create a payload signature,
+which is then sent in the X-Hub-Signature header from GitHub. `routes/git-sync.js`
+takes the GITHUB_SECRET from the environment and uses that as the signature.
 
 
 ## Staging: stg.minnowboard.org  
@@ -111,6 +117,9 @@ an update to the GIT master branch via a Webhook configured on the GitHub projec
 
 The Webhook invokes the `sync` script which performs the `polymer build`, performs
 the two manual fixups described previously, as well as npm and bower updates.
+Because `polymer build` can take a long time to complete, the GitHub webhook
+may timeout, which means the reporting console on the server will indicate
+webhook failures. Check the update.log to see if the update completed.
 
 
 ## Production: minnowboard.org

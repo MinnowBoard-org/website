@@ -6,9 +6,14 @@
 # $3 username
 # $4 sha
 
+PROJECT=$1
+REF=$2
+USER=$3
+SHA=$4
+
 # Verify that the push is for the current branch
 branch=$(sed -ne "s,^ref: \(.*\)$,\1,p" .git/HEAD)
-[ "${branch}" == "$2" ] || exit 0
+[ "${branch}" == "${REF}" ] || exit 0
 
 # Do the update, capturing to the log as it goes.
 cat << EOF >> update.log
@@ -20,6 +25,15 @@ git pull >> update.log 2>&1 || exit -1
 bower install >> update.log 2>&1 || exit -2
 npm install >> update.log 2>&1 || exit -3
 polymer build index.html >> update.log 2>&1 || exit -4
+
+cat << EOF > version.json
+{
+  "user": "$USER",
+  "commit": "$SHA",
+  "project": "$PROJECT",
+  "branch": "$REF"
+}
+EOF
 
 # Fix-ups due to `polymer build` issues with <base href="/"> and shared-bundle.html
 touch build/bundled/shared-bundle.html

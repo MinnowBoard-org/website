@@ -6,7 +6,7 @@ There are several ways to seek answers, including the preferred GitHub issues sy
 ### Submit a question on GitHub – the preferred method for getting help
 
 We encourage users with general questions to post them to our GitHub MinnowBoard 
-[bugs and help page](https://github.com/MinnowBoard-org/bugs-and-help).
+[bugs and help page](https://github.com/MinnowBoard-org/bugs-and-help/issues?utf8=%E2%9C%93&q=).
 Posting here means responses are easily searchable and visible 
 to a broad set of developers, including those developers not subscribed to our mailing 
 list. All MinnowBoard-related topics are appropriate. If you don’t have an account, 

@@ -1,10 +1,16 @@
 {
   "apps": [{
-    "name": process.cwd().replace(/^.*?\/([^/]*)$/, "$1"),
-    "script": "bin/www",
-    "watch": true,
+    "name": "minnowboard.org",
+    "script": "app.js",
+    "watch": [ "trigger-restart" ],
+    "cwd": "/var/www",
+    "error_file": "/var/log/www/minnowboard.org.err",
+    "out_file": "/var/log/www/minnowboard.org.log",
     "env_production": {
-      "PORT": 3000
+      "PORT": 8080,
+      "BASE": "build/bundled/",
+      "GITHUB_SECRET": "PUT-GITHUB-WEBHOOK-SECRET-HERE",
+      "NODE_ENV": "production"
     }
   }]
 }

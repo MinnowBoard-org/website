@@ -197,3 +197,37 @@ on minnowboard.org. Prior to pushing to staging, you need to run the following:
 poymer build index.html
 git commit -s -a -m 'Polymer Build regeneration'
 ```
+
+
+# Managing server instance with pm2
+
+You can use the pm2 process manager to manage the website instance.
+
+Install PM2 if you don't have it already:
+```bash
+sudo npm install -g pm2
+```
+
+Edit `pm2.json` so that `cwd` matches the directory you will run the server
+from. For example, if you cloned it into /var/repos/minnowboard.org, change
+cwd to `"/var/repos/minnowboard.org"`:
+
+```text
+  "cwd": "/var/respo/minnowboard.org"
+```
+
+If you want to put log files somewhere other than /var/log/www, change
+the following entries as well:
+
+```text
+  "error_file": "/var/log/www/minnowboard.org.err",
+  "out_file": "/var/log/www/minnowboard.org.log",
+```
+
+**NOTE**: The user you run the application as needs to have write 
+permission to `/var/log/www`:
+
+```text
+sudo mkdir -p /var/log/www
+sudo chown $(whoami): /var/log/www
+```

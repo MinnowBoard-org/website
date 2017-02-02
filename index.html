@@ -735,7 +735,7 @@
               text = 'Viewing "' + version.project + '" version ' +
               version.commit.substr(0, 8) + ' committed by ' + version.user;
             self.$.version_toast.onclick = function() {
-              window.open(version.url, version.project);
+              window.open("https://github.com/" + version.project, "GitHub");
               self.$.version_toast.close();
             };
             self.$.version_toast.text = text;

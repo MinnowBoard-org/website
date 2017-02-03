@@ -12,7 +12,7 @@ to a broad set of developers, including those developers not subscribed to our m
 list. All MinnowBoard-related topics are appropriate. If you don’t have an account, 
 it’s free and easy to [create one](https://github.com/join?source=header-home).   
 
-![GitHub Help](/help/get-help.png)
+![GitHub Help](pages/help-page/help/get-help.png)
 
 ### Search existing Github issues
 
@@ -20,6 +20,8 @@ Before you submit a new issue, take a moment to scan the existing bugs list in [
 enter a few keywords, and check to see if your question has already been answered by 
 the community. Feel free to comment or reply to those issues that have already been 
 posted to join the discussion. 
+
+![GitHub Search](pages/help-page/help/get-help2.png)
 
 **Note:** The [GitHub MinnowBoard bugs and help](https://github.com/MinnowBoard-org/bugs-and-help/issues?utf8=%E2%9C%93&q=is%3Aissue) 
 list link takes you to the issues repository with the filters set to show both 

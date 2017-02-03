@@ -12,7 +12,7 @@ to a broad set of developers, including those developers not subscribed to our m
 list. All MinnowBoard-related topics are appropriate. If you don’t have an account, 
 it’s free and easy to [create one](https://github.com/join?source=header-home).   
 
-IMAGE
+![GitHub Help](/help/get-help.png)
 
 ### Search existing Github issues
 

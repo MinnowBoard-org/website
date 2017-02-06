@@ -1,0 +1,19 @@
+{
+  "img": "elements/tuto-reader/tutorials/alternate-firmware/image.jpg",
+  "content": "elements/tuto-reader/tutorials/alternate-firmware/docs/installing-alternate-firmware.md",
+  "meta": {
+      "info": [
+          {"label": "Last updated", "value": "February 2017"},
+          {"label": "Board", "value": "MinnowBoard Turbot"}
+  ],
+    "links": {
+        "label": "Other Tutorials",
+        "value": [
+          {"title": "Power up the MinnowBoard Turbot", "location": "tutorials/powering-on-minnowboardturbot"},
+          {"title": "Install Ubuntu 16.04 LTS", "location": "tutorials/installing-ubuntu-16.04-on-minnowboardmax"},
+          {"title": "Install Windows IoT Core", "location": "tutorials/installing-windows-iot-on-minnowboard-turbot"},
+          {"title": "Blinking the Turbot D2 LED", "location": "tutorials/Turbot-blink"}
+        ]
+      }
+}
+}

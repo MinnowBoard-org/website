@@ -7,9 +7,11 @@
   },
   "dependencies": {
     "body-parser": "~1.15.1",
+    "buffer-equal-constant-time": "^1.0.1",
     "config": "^1.21.0",
     "cookie-parser": "~1.4.3",
     "cron": "^1.1.0",
+    "crypt": "0.0.2",
     "debug": "~2.2.0",
     "express": "~4.13.4",
     "hbs": "~4.0.0",

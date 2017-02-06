@@ -98,7 +98,13 @@ via /help, the messages are written to the messages.log file.
 
 # Overview
 
-The website runs on two servers:
+The website runs on two servers, using Webhooks for continuous integration and
+deployment.
+
+**NOTE**: To ensure only trusted updates are received from GitHub, Webhooks must
+be configured with a Secret. The Secret is used to create a payload signature,
+which is then sent in the X-Hub-Signature header from GitHub. `routes/git-sync.js`
+takes the GITHUB_SECRET from the environment and uses that as the signature.
 
 
 ## Staging: stg.minnowboard.org  
@@ -111,6 +117,9 @@ an update to the GIT master branch via a Webhook configured on the GitHub projec
 
 The Webhook invokes the `sync` script which performs the `polymer build`, performs
 the two manual fixups described previously, as well as npm and bower updates.
+Because `polymer build` can take a long time to complete, the GitHub webhook
+may timeout, which means the reporting console on the server will indicate
+webhook failures. Check the update.log to see if the update completed.
 
 
 ## Production: minnowboard.org
@@ -162,6 +171,13 @@ style guide[1] should be followed.
 
 1. https://google.github.io/styleguide/javascriptguide.xml
 
+# Meta-Tag Injection
+
+Modify the file `meta.json` to provide a list of patterns and corresponding
+meta-tags to inject into the single-page-app returned with the URL.
+
+The first pattern matched is the first set of tags returned.
+To test a pattern, use the [Express Route Tester](http://forbeslindesay.github.io/express-route-tester/).
 
 # Markdown language
 
@@ -180,4 +196,38 @@ on minnowboard.org. Prior to pushing to staging, you need to run the following:
 ```bash
 poymer build index.html
 git commit -s -a -m 'Polymer Build regeneration'
+```
+
+
+# Managing server instance with pm2
+
+You can use the pm2 process manager to manage the website instance.
+
+Install PM2 if you don't have it already:
+```bash
+sudo npm install -g pm2
+```
+
+Edit `pm2.json` so that `cwd` matches the directory you will run the server
+from. For example, if you cloned it into /var/repos/minnowboard.org, change
+cwd to `"/var/repos/minnowboard.org"`:
+
+```text
+  "cwd": "/var/respo/minnowboard.org"
+```
+
+If you want to put log files somewhere other than /var/log/www, change
+the following entries as well:
+
+```text
+  "error_file": "/var/log/www/minnowboard.org.err",
+  "out_file": "/var/log/www/minnowboard.org.log",
+```
+
+**NOTE**: The user you run the application as needs to have write 
+permission to `/var/log/www`:
+
+```text
+sudo mkdir -p /var/log/www
+sudo chown $(whoami): /var/log/www
 ```

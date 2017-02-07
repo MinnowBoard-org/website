@@ -8,6 +8,7 @@ Here's a step-by-step guide to building coreboot for the Minnowboard MAX.
 
 ### Coreboot
 Coreboot (formerly known as LinuxBIOS) is a free and open source extended firmware platform that delivers a fast and secure boot experience for embedded systems as an alternative option to using proprietary BIOS firmware. In contrast to a conventional BIOS, Coreboot initializes only the minimum required hardware (such as RAM, PCI, serial) and then executes additional payload boot logic for the rest. This two-stage approach helps achieve minimal boot times and a small footprint.
+
 With the separation of hardware initialization and later boot logic, Coreboot can do the following: 
 
 - Scale from specialized applications that run directly from firmware 
@@ -37,7 +38,7 @@ For simplicity, put all downloads and items extracted into the same directory.
  	$ cd coreboot
  	$ git submodule update --init --checkout
  	$ git checkout b9a0809faeeef67e46cda17cf8f7a839c6fe614c
- 	$ wget http://wiki.minnowboard.org/images/c/cd/Minnowboard_Max_Coreboot_config.txt
+ 	$ wget https://minnowboard.org/tutorials/alternate-firmware/docs/Minnowboard_Max_Coreboot_config.txt
   ```
 
 ### Get Intel® Firmware Support Package (Intel® FSP)

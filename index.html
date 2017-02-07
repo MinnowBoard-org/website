@@ -686,9 +686,7 @@
           }
         }
 
-        console.log('GA: ' + this.route.path);
-        ga('set', 'page', this.route.path);
-        ga('send', 'pageview');
+        this.sendGA(this.route.path);
         console.log('Tab changed to: ' + tab);
       },
 
@@ -706,10 +704,22 @@
         this.set('tab', tab);
       },
 
+      sendGA: (function() {
+        var cached = null;
+        return function(path) {
+          if (path == cached) {
+            console.log("Skipping GA set for: " + path);
+            return;
+          }
+          cached = path;
+          console.log('GA: ' + path);
+          ga('set', 'page', path);
+          ga('send', 'pageview');
+        };
+      })(),
+
       onRouteChanged: function(path) {
-        console.log('GA: ' + path);
-        ga('set', 'page', path);
-        ga('send', 'pageview');
+        this.sendGA(path);
         console.log('Route changed to: ' + JSON.stringify(path, null, '  '));
       },
 

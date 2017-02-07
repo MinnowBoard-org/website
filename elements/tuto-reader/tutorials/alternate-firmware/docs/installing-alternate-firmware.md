@@ -66,7 +66,7 @@ See [this guide] (http://www.intel.com/content/www/us/en/embedded/products/bay-t
   	--bout ../minnowboard-max.fsp
   ```
 
-If you have a single core MinnowBoard MAX, change “minnowmax_2gb.absf” to “minnowmax_1gb.absf.” It's not necessary to use the GUI; it does not work on every kind of Linux distro.
+If you have a single core MinnowBoard MAX, change `minnowmax_2gb.absf` to `minnowmax_1gb.absf.` It's not necessary to use the GUI; it does not work on every kind of Linux distro.
 
   ```
  	 $ cd ..
@@ -115,19 +115,7 @@ The other two flashregion files can be safely ignored, as they won't be used.
 $ cd coreboot
 ```
 
-In 
-
-```
-src/soc/intel/fsp_baytrail/Kconfig
-```
- 
-line 127, change 'string' to 'string "ME PATH"'
-
-```
-$ make menuconfig
-```
-
-and load provided config and save config to .config
+In `src/soc/intel/fsp_baytrail/Kconfig` line 127, change 'string' to 'string "ME PATH"' `$ make menuconfig`and load provided config and save config to .config
 
 - If you have a single core Minnowboard Max, change "Mainboard" -> "Memory SKU to build" to 1GB
 - Set "Chipset" -> "ME PATH" to the directory containing TXE and SPI descriptor(../maxfirmware)

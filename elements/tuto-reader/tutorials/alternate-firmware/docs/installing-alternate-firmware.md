@@ -42,20 +42,16 @@ For simplicity, put all downloads and items extracted into the same directory.
 
 ### Get Intel® Firmware Support Package (Intel® FSP)
 1. Download either a Windows or Linux version, depending on the needs of your system:
-
-- [Windows](http://www.intel.com/content/www/us/en/embedded/software/fsp/atom-e3800-fsp-g3-windows-download.html)
-- [Linux](http://www.intel.com/content/www/us/en/embedded/software/fsp/atom-e3800-fsp-g3-linux-download.html)
-- Archive [Intel® FSP for Intel® Atom™ Processor E3800 Series](http://downloadcenter.intel.com/download/24496)
-
+    1. [Windows](http://www.intel.com/content/www/us/en/embedded/software/fsp/atom-e3800-fsp-g3-windows-download.html){n}
+    1. [Linux](http://www.intel.com/content/www/us/en/embedded/software/fsp/atom-e3800-fsp-g3-linux-download.html){n}
+    1. Archive [Intel® FSP for Intel® Atom™ Processor E3800 Series](http://downloadcenter.intel.com/download/24496){n}
 2. To extract from archive, follow the instructions in the Readme_Extract.
 
 ### Get Intel® Binary Configuration Tool (Intel® BCT) 
 1. Download either a Windows or Linux version, depending on the needs of your system: 
-
-- [Windows](https://edc.intel.com/Link.aspx?id=10034)
-- [Linux 32-bit](https://edc.intel.com/Link.aspx?id=10033)  
-- [Linux 64-bit](https://edc.intel.com/Link.aspx?id=10032)
-
+    1. [Windows](https://edc.intel.com/Link.aspx?id=10034){n}
+    1. [Linux 32-bit](https://edc.intel.com/Link.aspx?id=10033){n}  
+    1. [Linux 64-bit](https://edc.intel.com/Link.aspx?id=10032){n}
 
 ### Setup Firmware Support Package
 1. See [this guide] (http://www.intel.com/content/www/us/en/embedded/products/bay-trail/atom-e3800-minnowboard-max-platform-guide.html) for the most current info. The following is from an older version previously tested to work. 

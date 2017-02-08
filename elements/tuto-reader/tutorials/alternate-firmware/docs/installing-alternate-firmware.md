@@ -173,5 +173,11 @@ To use WinZent’s firmware on your MinnowBoard MAX or Turbot, register on
 
 ### U-Boot
 
+In February 2015, the [U-Boot mailing list](http://lists.denx.de/pipermail/u-boot/2015-February/204622.html) 
+announced that support for the MinnowBoard MAX had landed in U-Boot mainline, noting that 
+you *can run it both 'bare metal' and as a coreboot payload.*
+
+Access the U-Boot git tree [README file](http://git.denx.de/?p=u-boot.git;a=blob;f=doc/README.x86) 
+for information and build instructions. **Note:** This release applies to both the MinnowBoard MAX and Turbot. 
 
 

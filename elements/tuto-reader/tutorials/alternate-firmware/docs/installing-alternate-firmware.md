@@ -1,26 +1,38 @@
-## Installing Alternate Firmware
+## Installing Alternate Firmware: Coreboot, WinZent, and U-Boot
 
-Here's a step-by-step guide to building coreboot for the Minnowboard MAX.
-
-### Components
-
-?
+This tutorial provides instructions for installing alternate firmware 
+on your MinnowBoard MAX or Turbot: Coreboot, WinZent, and U-Boot. 
 
 ### Coreboot
-Coreboot (formerly known as LinuxBIOS) is a free and open source extended firmware platform that delivers a fast and secure boot experience for embedded systems as an alternative option to using proprietary BIOS firmware. In contrast to a conventional BIOS, Coreboot initializes only the minimum required hardware (such as RAM, PCI, serial) and then executes additional payload boot logic for the rest. This two-stage approach helps achieve minimal boot times and a small footprint.
+Coreboot (formerly known as LinuxBIOS) is a free and open source extended firmware 
+platform that delivers a fast and secure boot experience for embedded systems as an 
+alternative option to using proprietary BIOS firmware. In contrast to a conventional 
+BIOS, Coreboot initializes only the minimum required hardware (such as RAM, PCI, 
+serial) and then executes additional payload boot logic for the rest. This two-stage 
+approach helps achieve minimal boot times and a small footprint.
 
-With the separation of hardware initialization and later boot logic, Coreboot can do the following: 
+With the separation of hardware initialization and later boot logic, Coreboot can do 
+the following: 
 
 - Scale from specialized applications that run directly from firmware 
 - Run operating systems in flash 
 - Load custom boot-loaders 
 - Implement firmware standards such as PC BIOS services or UEFI 
 
-By permitting systems the ability to include only the features necessary to run the target application, code and flash space required are reduced. For further information, refer to the [Coreboot website]( http://www.coreboot.org).
+By permitting systems the ability to include only the features necessary to run the 
+target application, code and flash space required are reduced. For further information, 
+refer to the [Coreboot website]( http://www.coreboot.org).
 
-The status on Coreboot's [Supported Motherboards](http://www.coreboot.org/Supported_Motherboards) page indicates an unknown status for MinnowBoard MAX; however, mainline coreboot support for MinnowBoard MAX (by Sage Electronic Engineering) does exist, as shown on [review.coreboot.org](http://review.coreboot.org/gitweb?p=coreboot.git). Coreboot supports booting from Serial ATA and USB 2.0/3.0. Booting from SD storage isn't working, and S3 suspend/resume support isn't working either. 
+The status on Coreboot's [Supported Motherboards](http://www.coreboot.org/Supported_Motherboards) 
+page indicates an unknown status for MinnowBoard boards; however, mainline coreboot 
+support for MinnowBoard boards (by Sage Electronic Engineering) does exist, as shown 
+on [review.coreboot.org](http://review.coreboot.org/gitweb?p=coreboot.git). Coreboot 
+supports booting from Serial ATA and USB 2.0/3.0. Booting from SD storage isn't working, 
+and S3 suspend/resume support isn't working either. 
 
-### Install the dependencies
+Below is a step-by-step guide to building coreboot for the Minnowboard MAX and Turbot.
+
+#### Install the dependencies
 
   ``` 
   $ sudo apt-get install
@@ -30,7 +42,7 @@ The status on Coreboot's [Supported Motherboards](http://www.coreboot.org/Suppor
   gcc git make ncurses-dev flex bison
   ```
 
-### Get Coreboot 
+#### Get Coreboot 
 For simplicity, put all downloads and items extracted into the same directory.
 
   ```
@@ -41,20 +53,20 @@ For simplicity, put all downloads and items extracted into the same directory.
  	$ wget https://minnowboard.org/tutorials/alternate-firmware/docs/Minnowboard_Max_Coreboot_config.txt
   ```
 
-### Get Intel® Firmware Support Package (Intel® FSP)
+#### Get Intel® Firmware Support Package (Intel® FSP)
 1. Download either a Windows or Linux version, depending on the needs of your system:
     1. [Windows](http://www.intel.com/content/www/us/en/embedded/software/fsp/atom-e3800-fsp-g3-windows-download.html){n}
     1. [Linux](http://www.intel.com/content/www/us/en/embedded/software/fsp/atom-e3800-fsp-g3-linux-download.html){n}
     1. Archive [Intel® FSP for Intel® Atom™ Processor E3800 Series](http://downloadcenter.intel.com/download/24496){n}
 2. To extract from archive, follow the instructions in the Readme_Extract.
 
-### Get Intel® Binary Configuration Tool (Intel® BCT) 
+#### Get Intel® Binary Configuration Tool (Intel® BCT) 
 1. Download either a Windows or Linux version, depending on the needs of your system: 
     1. [Windows](https://edc.intel.com/Link.aspx?id=10034){n}
     1. [Linux 32-bit](https://edc.intel.com/Link.aspx?id=10033){n}  
     1. [Linux 64-bit](https://edc.intel.com/Link.aspx?id=10032){n}
 
-### Setup Firmware Support Package
+#### Setup Firmware Support Package
 1. See [this guide] (http://www.intel.com/content/www/us/en/embedded/products/bay-trail/atom-e3800-minnowboard-max-platform-guide.html) for the most current info. The following is from an older version previously tested to work. 
 
   ```
@@ -64,13 +76,14 @@ For simplicity, put all downloads and items extracted into the same directory.
   	--bout ../minnowboard-max.fsp
   ```
 
-2. If you have a single core MinnowBoard MAX, change `minnowmax_2gb.absf` to `minnowmax_1gb.absf.` It's not necessary to use the GUI; it does not work on every kind of Linux distro.
+2. If you have a single core MinnowBoard MAX, change `minnowmax_2gb.absf` to `minnowmax_1gb.absf.` 
+  It's not necessary to use the GUI; it does not work on every kind of Linux distro.
 
   ```
  	 $ cd ..
   ```
   
-### Setup TXE and SPI descriptor 
+#### Setup TXE and SPI descriptor 
 1. First build a coreboot utility called ifdtool to be located within the coreboot directory:
 
 ```
@@ -93,7 +106,8 @@ For simplicity, put all downloads and items extracted into the same directory.
   $ ../coreboot/util/ifdtool/ifdtool -x MNW2MAX1.X64.[version].bin
 ```
 
-4. You should now have 4 files starting with flashregion_ . Use a symbolic link to link flashregion_0_flashdescriptor.bin to descriptor.bin:
+4. You should now have 4 files starting with flashregion_ . Use a symbolic link 
+  to link flashregion_0_flashdescriptor.bin to descriptor.bin:
 
 ```
 $ ln -s flashregion_0_flashdescriptor.bin descriptor.bin
@@ -107,18 +121,19 @@ $ ln -s flashregion_0_flashdescriptor.bin descriptor.bin
 
 6. You can safely ignore the other two flashregion files, as they won't be used.
 
-### Setup Coreboot 
+#### Setup Coreboot 
 
 ```
 $ cd coreboot
 ```
 
-In `src/soc/intel/fsp_baytrail/Kconfig` line 127, change 'string' to 'string "ME PATH"' `$ make menuconfig`and load provided config and save config to .config
+In `src/soc/intel/fsp_baytrail/Kconfig` line 127, change 'string' to 'string "ME PATH"'
+`$ make menuconfig`and load provided config and save config to .config
 
-- If you have a single core Minnowboard Max, change "Mainboard" -> "Memory SKU to build" to 1GB
+- If you have a single core Minnowboard MAX, change "Mainboard" -> "Memory SKU to build" to 1GB
 - Set "Chipset" -> "ME PATH" to the directory containing TXE and SPI descriptor(../maxfirmware)
 
-### Building 
+#### Building 
 
 ```
   $ make crossgcc
@@ -128,7 +143,7 @@ In `src/soc/intel/fsp_baytrail/Kconfig` line 127, change 'string' to 'string "ME
 The firmware produced is `build/coreboot.rom`
 
 
-### Building without TXE/SPI descriptor 
+#### Building without TXE/SPI descriptor 
 
 ```
  $ make menuconfig
@@ -141,12 +156,22 @@ The firmware produced is `build/coreboot.rom`
   $ make
 ```
 
-2. When flashing the firmware, flash only the last 3MB of the 8 MB image onto the last 3MB of the chip. Example command using flashrom and a dediprog: 
+2. When flashing the firmware, flash only the last 3MB of the 8 MB image onto the 
+  last 3MB of the chip. Example command using flashrom and a dediprog: 
 
 ```
  $ echo 00500000:007fffff coreboot > regions.txt ; sudo flashrom -p dediprog -l regions.txt -i coreboot -w coreboot.rom
 ```
 
-3. If you accidentally overwrite the first half, you will need to reflash the original firmware; instructions can be found in [Updating the firmware](tutorials/updating_your_firmware).
+3. If you accidentally overwrite the first half, you will need to reflash the 
+  original firmware; instructions can be found in [Updating the firmware](tutorials/updating_your_firmware).
+
+### WinZent
+
+To use WinZent’s firmware on your MinnowBoard MAX or Turbot, register on 
+[WinZent’s website](http://winzenttech.com/). It boots in 0.56 seconds and reboots in 0.21 seconds.
+
+### U-Boot
+
 
 

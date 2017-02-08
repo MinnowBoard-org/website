@@ -20,4 +20,4 @@ choice for you: [Learn more](learn-more). {large}
 |Storage    | 1x SATA2, 1x MicroSD |
 |I/O Connectors   |  1x USB 2.0 host, 1x USB 3.0 host, 8x buffered GPIO, I2C, SPI, 1Gb Ethernet |
 
-View the full technical specs at [Explore the board](learn-more/high-level-technical-specifications) {txt-center}
+[View the full technical specs](learn-more/high-level-technical-specifications) {txt-center}

@@ -194,7 +194,7 @@ Polymer Build is used to create the "build" version of the site that is hosted
 on minnowboard.org. Prior to pushing to staging, you need to run the following:
 
 ```bash
-poymer build index.html
+polymer build index.html
 git commit -s -a -m 'Polymer Build regeneration'
 ```
 

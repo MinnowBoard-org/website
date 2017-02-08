@@ -166,10 +166,14 @@ The firmware produced is `build/coreboot.rom`
 3. If you accidentally overwrite the first half, you will need to reflash the 
   original firmware; instructions can be found in [Updating the firmware](tutorials/updating_your_firmware).
 
+--- 
+
 ### WinZent
 
 To use WinZent’s firmware on your MinnowBoard MAX or Turbot, register on 
 [WinZent’s website](http://winzenttech.com/). It boots in 0.56 seconds and reboots in 0.21 seconds.
+
+--- 
 
 ### U-Boot
 

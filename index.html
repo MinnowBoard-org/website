@@ -399,13 +399,13 @@
           <template is="dom-if" if="[[desktopLayout]]">
             <div class="top-navigation">
               <paper-menu class='site-nav' attr-for-selected='id' selected="{{tab}}">
-                <paper-item id="default"><div></div></paper-item>
+                <paper-item id="default" on-tap="resetTab"><div></div></paper-item>
               </paper-menu>
 
               <paper-menu class='site-nav right-nav' attr-for-selected='id' selected="{{tab}}">
                 <!-- the list stored in "tabs" needs to be kept in sync with the list in the iron-pages below -->
                 <template is="dom-repeat" items="{{tabs}}">
-                  <paper-item id="{{item.id}}">{{item.text}}</paper-item>
+                  <paper-item id="{{item.id}}" on-tap="resetTab">{{item.text}}</paper-item>
                 </template>
               </paper-menu>
             </div>
@@ -640,9 +640,10 @@
         }
       },
 
-      navMenuTapped: function() {
+      navMenuTapped: function(event) {
         var menu = document.querySelector('#global-nav');
         menu.togglePanel();
+        this.resetTab(event);
       },
 
       pageMenuTapped: function() {
@@ -717,6 +718,10 @@
           ga('send', 'pageview');
         };
       })(),
+
+      resetTab: function(event) {
+        this.set('route.path', '/' + event.model.item.id);
+      },
 
       onRouteChanged: function(path) {
         this.sendGA(path);

@@ -76,52 +76,52 @@ For simplicity, put all downloads and items extracted into the same directory.
   It's not necessary to use the GUI; it does not work on every kind of Linux distro.
 
   ```
- 	 $ cd ..
+ 	$ cd ..
   ```
   
 #### Setup TXE and SPI descriptor 
 1. First build a coreboot utility called ifdtool to be located within the coreboot directory:
 
-```
+  ```
   $ cd coreboot/util/ifdtool
   $ make
   $ cd ../../../
-```
+  ```
 
 2. Accept the license and download the original [firmware binary]( https://firmware.intel.com/projects/minnowboard-max):
 
-```
+  ```
   $ mkdir MB_UEFI_Firmware
   $ unzip MB_UEFI_Firmware_v1.00.zip -d MB_UEFI_Firmware
   $ cd MB_UEFI_Firmware
-```
+  ```
 
 3. Run “ifdtool” to extract the TXE and SPI descriptor from the firmware image:
 
-```
+  ```
   $ ../coreboot/util/ifdtool/ifdtool -x MNW2MAX1.X64.[version].bin
-```
+  ```
 
 4. You should now have 4 files starting with flashregion_ . Use a symbolic link 
   to link flashregion_0_flashdescriptor.bin to descriptor.bin:
 
-```
-$ ln -s flashregion_0_flashdescriptor.bin descriptor.bin
-```
+  ```
+  $ ln -s flashregion_0_flashdescriptor.bin descriptor.bin
+  ```
 
 5. And do the same thing to link flashregion_1_bios.bin to txe.bin:
 
-```
+  ```
   $ ln -s flashregion_1_bios.bin txe.bin
-```
+  ```
 
 6. You can safely ignore the other two flashregion files, as they won't be used.
 
 #### Setup Coreboot 
 
-```
-$ cd coreboot
-```
+  ```
+  $ cd coreboot
+  ```
 
 In `src/soc/intel/fsp_baytrail/Kconfig` line 127, change 'string' to 'string "ME PATH"'
 `$ make menuconfig`and load provided config and save config to .config
@@ -131,33 +131,33 @@ In `src/soc/intel/fsp_baytrail/Kconfig` line 127, change 'string' to 'string "ME
 
 #### Building 
 
-```
+  ```
   $ make crossgcc
   $ make
-```
+  ```
 
 The firmware produced is `build/coreboot.rom`
 
 
 #### Building without TXE/SPI descriptor 
 
-```
+  ```
  $ make menuconfig
-```
+  ```
 
 1. Set Chipset -> Include the TXE to `No`
 
-```
-  $ make crossgcc
-  $ make
-```
+  ```
+ $ make crossgcc
+ $ make
+  ```
 
 2. When flashing the firmware, flash only the last 3MB of the 8 MB image onto the 
   last 3MB of the chip. Example command using flashrom and a dediprog: 
 
-```
- $ echo 00500000:007fffff coreboot > regions.txt ; sudo flashrom -p dediprog -l regions.txt -i coreboot -w coreboot.rom
-```
+  ```
+  $ echo 00500000:007fffff coreboot > regions.txt ; sudo flashrom -p dediprog -l regions.txt -i coreboot -w coreboot.rom
+  ```
 
 3. If you accidentally overwrite the first half, you will need to reflash the 
   original firmware; instructions can be found in [Updating the firmware](tutorials/updating_your_firmware).

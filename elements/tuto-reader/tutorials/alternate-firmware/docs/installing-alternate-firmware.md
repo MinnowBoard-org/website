@@ -35,11 +35,7 @@ Below is a step-by-step guide to building coreboot for the Minnowboard MAX and T
 #### Install the dependencies
 
   ``` 
-  $ sudo apt-get install
-  ```
-
-  ``` 
-  gcc git make ncurses-dev flex bison
+  $ sudo apt-get install gcc git make ncurses-dev flex bison
   ```
 
 #### Get Coreboot 

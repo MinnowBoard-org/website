@@ -9,7 +9,7 @@ We encourage users with general questions to post them to our GitHub MinnowBoard
 [bugs and help page](https://github.com/MinnowBoard-org/bugs-and-help/issues?utf8=%E2%9C%93&q=).
 Posting here means responses are easily searchable and visible 
 to a broad set of developers, including those developers not subscribed to our mailing 
-list. All MinnowBoard-related topics are appropriate, except EDK II [firmware](https://github.com/tianocore/tianocore.github.io/wiki/Reporting-Issues) and 
+list. All MinnowBoard-related topics are appropriate, except UEFI [firmware](https://github.com/tianocore/tianocore.github.io/wiki/Reporting-Issues) and 
 [firmware security](https://github.com/tianocore/tianocore.github.io/wiki/Reporting-Security-Issues) issues. 
 If you don’t have an account, it’s free and easy to [create one](https://github.com/join?source=header-home).   
 

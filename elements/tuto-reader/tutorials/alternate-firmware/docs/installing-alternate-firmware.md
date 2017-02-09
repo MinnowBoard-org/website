@@ -63,13 +63,13 @@ For simplicity, put all downloads and items extracted into the same directory.
     1. [Linux 64-bit](https://edc.intel.com/Link.aspx?id=10032){n}
 
 #### Setup Firmware Support Package
-1. See [this guide] (http://www.intel.com/content/www/us/en/embedded/products/bay-trail/atom-e3800-minnowboard-max-platform-guide.html) for the most current info. The following is from an older version previously tested to work. 
+1. See [this guide](http://www.intel.com/content/www/us/en/embedded/products/bay-trail/atom-e3800-minnowboard-max-platform-guide.html) for the most current info. The following is from an older version previously tested to work. 
 
   ```
-  	$ cd bct
-  	$ ./bct --bin ../BAY_TRAIL_FSP_KIT/FSP/BAYTRAIL_FSP_GOLD_002_10-JANUARY-2014.fd  \
-  	--absf ../coreboot/src/vendorcode/intel/fsp/baytrail/absf/minnowmax_2gb.absf \
-  	--bout ../minnowboard-max.fsp
+  $ cd bct
+  $ ./bct --bin ../BAY_TRAIL_FSP_KIT/FSP/BAYTRAIL_FSP_GOLD_002_10-JANUARY-2014.fd  \
+  --absf ../coreboot/src/vendorcode/intel/fsp/baytrail/absf/minnowmax_2gb.absf \
+  --bout ../minnowboard-max.fsp
   ```
 
 2. If you have a single core MinnowBoard MAX, change `minnowmax_2gb.absf` to `minnowmax_1gb.absf.` 

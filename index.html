@@ -399,13 +399,13 @@
           <template is="dom-if" if="[[desktopLayout]]">
             <div class="top-navigation">
               <paper-menu class='site-nav' attr-for-selected='id' selected="{{tab}}">
-                <paper-item id="default"><div></div></paper-item>
+                <paper-item id="default" on-tap="resetTab"><div></div></paper-item>
               </paper-menu>
 
               <paper-menu class='site-nav right-nav' attr-for-selected='id' selected="{{tab}}">
                 <!-- the list stored in "tabs" needs to be kept in sync with the list in the iron-pages below -->
                 <template is="dom-repeat" items="{{tabs}}">
-                  <paper-item id="{{item.id}}">{{item.text}}</paper-item>
+                  <paper-item id="{{item.id}}" on-tap="resetTab">{{item.text}}</paper-item>
                 </template>
               </paper-menu>
             </div>
@@ -480,7 +480,7 @@
               layout="[[layoutClass]]"
               route="{{subRoute}}"></help-page>
           </template>
-          <template is="dom-if" id="mx-hse-template" if="[[showPage('max-hse', tab)]]">
+          <template is="dom-if" id="max-hse-template" if="[[showPage('max-hse', tab)]]">
             <generic-page id='max-hse' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
@@ -640,9 +640,10 @@
         }
       },
 
-      navMenuTapped: function() {
+      navMenuTapped: function(event) {
         var menu = document.querySelector('#global-nav');
         menu.togglePanel();
+        this.resetTab(event);
       },
 
       pageMenuTapped: function() {
@@ -686,9 +687,7 @@
           }
         }
 
-        console.log('GA: ' + this.route.path);
-        ga('set', 'page', this.route.path);
-        ga('send', 'pageview');
+        this.sendGA(this.route.path);
         console.log('Tab changed to: ' + tab);
       },
 
@@ -706,10 +705,26 @@
         this.set('tab', tab);
       },
 
+      sendGA: (function() {
+        var cached = null;
+        return function(path) {
+          if (path == cached) {
+            console.log("Skipping GA set for: " + path);
+            return;
+          }
+          cached = path;
+          console.log('GA: ' + path);
+          ga('set', 'page', path);
+          ga('send', 'pageview');
+        };
+      })(),
+
+      resetTab: function(event) {
+        this.set('route.path', '/' + event.model.item.id);
+      },
+
       onRouteChanged: function(path) {
-        console.log('GA: ' + path);
-        ga('set', 'page', path);
-        ga('send', 'pageview');
+        this.sendGA(path);
         console.log('Route changed to: ' + JSON.stringify(path, null, '  '));
       },
 

@@ -83,6 +83,12 @@ BASE=build/bundled/ npm start &
 xdg-open http://localhost:8080
 ```
 
+The `sync` script performs a site upgrade by building the lastest 
+version and then renaming the `build` directory to 
+`${branch}-${shortSha}`, then setting a symlink from `live` to that new
+directory. BASE is therefore set to point to `live/` on the staging
+and production systems.
+
 ## Where do the "Get Help" submissions go?
 
 If you navigate to the /help page of the website, it provides a web
@@ -194,7 +200,7 @@ Polymer Build is used to create the "build" version of the site that is hosted
 on minnowboard.org. Prior to pushing to staging, you need to run the following:
 
 ```bash
-poymer build index.html
+polymer build index.html
 git commit -s -a -m 'Polymer Build regeneration'
 ```
 

@@ -41,9 +41,10 @@ sed -i -e "s,<script>'base href=\"/\"';</script>,<base href=\"/\">,g" build/bund
 
 # Move the build directory into a version stamped directory, then
 # symlink `live` to the new path
+branch=$(basename ${branch})
 short=${SHA:0:8}
 mv build "${branch}-${short}"
-ln -sfT "${branch}-${short}" live
+ln -sfT "${branch}-${short}/bundled" live
 
 echo "Success: $(date)" >> update.log
 touch trigger-restart

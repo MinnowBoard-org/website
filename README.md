@@ -83,6 +83,12 @@ BASE=build/bundled/ npm start &
 xdg-open http://localhost:8080
 ```
 
+The `sync` script performs a site upgrade by building the lastest 
+version and then renaming the `build` directory to 
+`${branch}-${shortSha}`, then setting a symlink from `live` to that new
+directory. BASE is therefore set to point to `live/` on the staging
+and production systems.
+
 ## Where do the "Get Help" submissions go?
 
 If you navigate to the /help page of the website, it provides a web

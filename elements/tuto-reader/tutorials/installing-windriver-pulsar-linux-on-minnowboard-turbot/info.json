@@ -3,6 +3,7 @@
   "content": "elements/tuto-reader/tutorials/installing-windriver-pulsar-linux-on-minnowboard-turbot/docs/installing-windriver-pulsar-linux-on-minnowboard-turbot.md",
   "meta": {
       "info": [
+          {"label": "Difficulty", "value": "Low"},
           {"label": "Last updated", "value": "November 2016"},
           {"label": "Board", "value": "MinnowBoard Turbot"}
   ],

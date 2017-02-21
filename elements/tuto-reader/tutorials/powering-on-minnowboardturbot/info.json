@@ -3,6 +3,7 @@
   "content": "elements/tuto-reader/tutorials/powering-on-minnowboardturbot/docs/powering-on-minnowboardturbot.md",
   "meta": {
       "info": [
+          {"label": "Difficulty", "value": "Low"},
           {"label": "Last updated", "value": "November 2016"},
           {"label": "Board", "value": "MinnowBoard Turbot"}
       ],

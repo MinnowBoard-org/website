@@ -211,8 +211,6 @@ change the default boot option to booting into Ubuntu off the microSD card:
     default boot configuration on future reboots of the board).  
 
 
-##### For more information about UEFI: [MinnowBoard wiki](http://wiki.minnowboard.org/UEFI)
-
 ##### Try this tutorial next: 
 [Blinking the Turbot D2 LED](tutorials/Turbot-blink)
 ***

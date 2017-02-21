@@ -3,6 +3,7 @@
   "content": "elements/tuto-reader/tutorials/ftdi-serial-connection/docs/ftdi-serial-connection.md",
   "meta": {
       "info": [
+          {"label": "Difficulty", "value": "Low"},  
           {"label": "Last updated", "value": "November 2016"},
           {"label": "Board", "value": "MinnowBoard Turbot"}
   ],

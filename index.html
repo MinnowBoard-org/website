@@ -697,9 +697,12 @@
 
       onRouteTabChanged: function(tab) {
         tab = tab ? tab : 'default';
-        if (this.tab!= 'default' && this.tab != tab) {
-          var error = Polymer.dom(this.$.pages).querySelector('#not-found');
-          error.page = this.tab;
+        /* If `tab` does not exist as a page, set the error-page's page and
+         * missingPage property */
+        if (tab != "not-found" &&
+          !Polymer.dom(this.$.pages).querySelector('#' + tab + "-template")) {
+          Polymer.dom(this.$.pages).querySelector('#not-found').page = tab;
+          this.missingPage = tab;
         }
         console.log('Route changing tab from ' + this.tab + ' to ' + tab);
         this.set('tab', tab);
@@ -715,7 +718,16 @@
           cached = path;
           console.log('GA: ' + path);
           ga('set', 'page', path);
-          ga('send', 'pageview');
+
+          /* If this.missingPage is set, pass it to GA using a custom
+           * dimension */
+          if (this.missingPage) {
+            ga('send', 'pageview', { 'dimension1': this.missingPage });
+            /* Clear `missingPage` so it isn't sent with each page change */
+            delete this.missingPage;
+          } else {
+            ga('send', 'pageview');
+          }
         };
       })(),
 

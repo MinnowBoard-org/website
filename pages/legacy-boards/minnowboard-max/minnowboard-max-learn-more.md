@@ -76,3 +76,10 @@ MinnowBoard MAX is the second generation MinnowBoard (released in July 2014), up
  |colspan="2"|'''Note:''' These features and specifications may be subject to change without notice.
  |-
 |}
+
+#### LSE Layout
+
+The Linux GPIO base address changed (by adding 256) from Linux kernel versions 3.17 to 3.18, so you'll need to know which kernel version you're using to select the correct GPIO numbers. This table lists the GPIO number for both the 3.17 and earlier kernels, and 3.18 and later kernels, for each pin on the connector:
+
+![MinnowBoard MAX LSE Layout](pages/legacy-boards/minnowboard-max/lse-layout.png)
+

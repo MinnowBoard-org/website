@@ -326,7 +326,7 @@ Here's how firmware should initialize the board's memory given the above:
 
 You can find the MinnowBoard MAX design files on [GitHub - MinnowBoard design files](https://github.com/MinnowBoard-org/design-files/tree/master/minnowboard-max). All design files are released under [Creative Commons CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Read about what this license allows for on the Creative Commons website.
 
-The MinnowBoard Turbot is intended to comply with all requirements and guidelines set forth by the [Open Source Hardware Association](http://www.oshwa.org/).
+The MinnowBoard MAX is intended to comply with all requirements and guidelines set forth by the [Open Source Hardware Association](http://www.oshwa.org/).
 
 ### Cases
 

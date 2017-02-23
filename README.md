@@ -184,7 +184,7 @@ called `super-fancy` that can be accessed via https://minnowboard.org/super-fanc
 
 ## Create the directory for the page
 ```bash
-cd website
+cd minnow # Or whatever directory you cloned the website into
 mkdir pages/super-fancy
 ```
 
@@ -211,7 +211,24 @@ the `<iron-pages>`. You can look for the comment string `<!-- pages are listed h
 
 **NOTE:** In the above, there are three instances of `super-fancy` you need to change.
 
-And that's it. You can now load the page `https://minnowboard.org/super-fancy`
+## Add an entry to the meta.json
+
+If you want open graph tags for the new page, edit `meta.json` and add a section
+describing the page (see the section [Meta-Tag Injection](#meta-tag-injection) for
+information on those tags.)
+
+## Add your changes to git
+
+And that's it. You can now load the page. Once you've tested it, you're ready to 
+add your page to git, commit, and push to GitHub:
+
+```bash
+git branch add-super-fancy
+git checkout add-super-fancy
+git add pages/super-fancy/*
+git commit -s -a -m "Added 'super-fancy' page"
+git push origin add-super-fancy:add-super-fancy
+```
 
 # Meta-Tag Injection
 

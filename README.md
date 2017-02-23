@@ -177,6 +177,42 @@ style guide[1] should be followed.
 
 1. https://google.github.io/styleguide/javascriptguide.xml
 
+# Creating a top-level page
+
+Creating a new top level page is pretty quick. Let's say you want a new page
+called `super-fancy` that can be accessed via https://minnowboard.org/super-fancy.
+
+## Create the directory for the page
+```bash
+cd website
+mkdir pages/super-fancy
+```
+
+## Create the markdown files
+
+We will use the generic markdown page loader. It users two markdown files. One
+for the left-navigation panel and one for the main panel. These files are loaded
+from the `pages/super-fancy` directory and are named `super-fancy-intro.md` and
+`super-fancy.md`.
+
+## Add the page loader to `index.html`
+
+Add the following chunk of HTML (changing `super-fancy` to your page name) in 
+the `<iron-pages>`. You can look for the comment string `<!-- pages are listed here -->`.
+
+```html
+<template is="dom-if" id="super-fancy-template" if="[[showPage('super-fancy', tab)]]">
+  <generic-page id='super-fancy' edit="{{edit}}"
+    on-page-has-menu-changed='onPageHasMenuChanged'
+    layout="[[layoutClass]]"
+    route="{{subRoute}}"></generic-page>
+</template>
+```
+
+**NOTE:** In the above, there are three instances of `super-fancy` you need to change.
+
+And that's it. You can now load the page `https://minnowboard.org/super-fancy`
+
 # Meta-Tag Injection
 
 Modify the file `meta.json` to provide a list of patterns and corresponding

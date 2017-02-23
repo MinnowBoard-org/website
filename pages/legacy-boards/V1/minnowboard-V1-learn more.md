@@ -1,6 +1,6 @@
 ## MinnowBoard V1
 
-The original MinnowBoard is no longer sold and was replaced by the MinnowBoard MAX in July 2014. The following information is for the original MinnowBoard (V1) exclusively, and does not reflect any technical features of the MinnowBoard MAX.
+The original MinnowBoard is no longer sold and was replaced by the MinnowBoard MAX in July 2014. The following information is for the original MinnowBoard V1 exclusively, and does not reflect any technical features of the MinnowBoard MAX.
 
 ![MinnowBoard V1](pages/legacy-boards/V1/MinnowBoard-RevA-Angled2.jpg)
 
@@ -18,22 +18,18 @@ You can find the MinnowBoard V1 design files on [GitHub - MinnowBoard design fil
 
 ### MinnowBoard Getting Started Resources
 
-**NOTE:** The following guides are for the MinnowBoard (v1) NOT for the MinnowBoard Max.
+**NOTE:** The following guides are for the MinnowBoard v1 NOT for the MinnowBoard Max.
 
 Here are some intro-level resources to help you learn about the (original) MinnowBoard and some things you can begin exploring with it. We also offer PDFs for convenient offline reading.
 
-- MinnowBoard Basics (PDF version, 30 MB): This introduction will take you from unboxing your new MinnowBoard to learning about its components and features, and booting up the included Angstrom Linux OS image.
-- Toggling a User LED on the MinnowBoard ( PDF version, 35 MB ): The MinnowBoard has two user-controllable LEDs, and this guide will teach you how to manipulate them from the Linux command line.
-- GPIO Programming on the MinnowBoard ( PDF version, 39 MB ): This guide will show you how to make use of the 8 GPIO (general purpose I/O) pins on the MinnowBoard, which you can use to interact with external electronics.
-- Physical Computing with the MinnowBoard: This guide will help teach you how to interface some basic electronic circuits (e.g, switches and LEDs) with the MinnowBoard's GPIO header.
+- MinnowBoard Basics [PDF version](https://github.com/MinnowBoard-org/design-files/blob/master/minnowboard-v1/rev-a/Getting-Started-Guides/Getting%20Started%20with%20the%20Minnowboard.pdf): This introduction will take you from unboxing your new MinnowBoard to learning about its components and features, and booting up the included Angstrom Linux OS image.
+- Toggling a User LED on the MinnowBoard [PDF version](https://github.com/MinnowBoard-org/design-files/blob/master/minnowboard-v1/rev-a/Getting-Started-Guides/Toggling%20LED%20on%20MinnowBoard.pdf): The MinnowBoard has two user-controllable LEDs, and this guide will teach you how to manipulate them from the Linux command line.
+- GPIO Programming on the MinnowBoard [PDF version](https://github.com/MinnowBoard-org/design-files/blob/master/minnowboard-v1/rev-a/Getting-Started-Guides/GPIO%20Programming%20on%20the%20MinnowBoard.pdf): This guide will show you how to make use of the 8 GPIO (general purpose I/O) pins on the MinnowBoard, which you can use to interact with external electronics.
+- Physical Computing with the MinnowBoard [PDF version](https://github.com/MinnowBoard-org/design-files/blob/master/minnowboard-v1/rev-a/Getting-Started-Guides/Minnowboard-Physical-Computing.pdf): This guide will help teach you how to interface some basic electronic circuits (e.g, switches and LEDs) with the MinnowBoard's GPIO header.
 
 ### OS Images
-MinnowBoard ships with the [Angstrom embedded Linux distribution](http://www.angstrom-distribution.org/) already installed on a microSD card.
-
-The latest release of the Angstrom Linux OS image can be downloaded from files.minnowboard.org. Instructions on writing this image to a microSD card can be found on our wiki.
-
-At this time, Angstrom is the only operating system we offer official disk images for. Alternate OS documentation provided by the community can be found in the OS Support section of our a wiki home page.
+MinnowBoard V1 shipped with the [Angstrom embedded Linux distribution](http://www.angstrom-distribution.org/) already installed on a microSD card.
 
 ### Firmware Images
-Firmware images for the MinnowBoard (v1) are available [here](http://firmware.intel.com/projects/minnowboard-uefi-firmware).
+Firmware images for the MinnowBoard V1 are available [here](http://firmware.intel.com/projects/minnowboard-uefi-firmware).
 

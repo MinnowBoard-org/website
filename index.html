@@ -417,21 +417,7 @@
             <default-page id="default" edit="{{edit}}" route="{{route}}"></default-page>
           </template>
           <error-page id="not-found" edit="{{edit}}" route="{{subRoute}}" page></error-page>
-          <!-- The list here needs to be kept in sync with the "tabs" property
-               (mainly the id used needs to match the appropriate item)
-
-               Each item is wrapped in a dom-if to keep the site from having to recursively
-               load the entire web-site when the main landing page loads.
-
-               We had explored using:
-
-              <template is="dom-repeat" items="{{tabs}}">
-                <div is="{{items.tag}}" route={{route}} id="{{items.id}}"></div>
-              </template>
-
-               However in Polymer 1.2 there is no dynamic type injection for
-               DOM stamping... oh well.
-              -->
+          <!-- pages are listed here -->
           <template is="dom-if" id="learn-more-template" if="[[showPage('learn-more', tab)]]">
             <generic-page id='learn-more' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
@@ -521,6 +507,12 @@
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></editor-page>
+          </template>
+          <template is="dom-if" id="super-fancy-template" if="[[showPage('super-fancy', tab)]]">
+            <generic-page id='super-fancy' edit="{{edit}}"
+              on-page-has-menu-changed='onPageHasMenuChanged'
+              layout="[[layoutClass]]"
+              route="{{subRoute}}"></generic-page>
           </template>
         </iron-pages>
       </paper-header-panel>

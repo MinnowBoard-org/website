@@ -169,3 +169,120 @@ The Linux GPIO base address changed (by adding 256) from Linux kernel versions 3
 
 ![MinnowBoard MAX LSE Layout](pages/legacy-boards/minnowboard-max/lse-layout.png)
 
+#### High Speed Expansion Connector (Bottom)
+
+The High speed expansion connector uses a TE Connectivity-compatible 60-pin header. We recommend using the 3-5177986-2 or the 60POS .8MM FH 8H GOLD part that rises 7.85mm. This permits using 3/8" standoffs at the corners for attaching a lure to the MinnowBoard MAX.
+
+Link to connector used is [here](http://www.digikey.com/product-detail/en/5177985-2/A99190CT-ND/1894007). 
+
+Mating connectors are listed at the bottom but include:
+
+- A99196DKR-ND - CONN PLUG 60POS .8MM FH 5H GOLD
+- A115336-ND - CONN PLUG 60POS DL BRD/BRD VERT
+- 5179030-2-ND - CONN PLUG 60POS FH .8MM BRD-BRD
+- 5177984-2-ND - CONN PLUG 60POS VERT FH .8MM
+- [A99215CT-ND](http://www.digikey.com/product-detail/en/3-5177986-2/A99215CT-ND/1894032) - CONN PLUG 60POS .8MM FH 8H GOLD   <-- Recommended connector
+- A99209CT-ND - CONN PLUG 60POS .8MM FH 7H GOLD
+- A99203CT-ND - CONN PLUG 60POS .8MM FH 6H GOLD
+- A99196CT-ND - CONN PLUG 60POS .8MM FH 5H GOLD
+- A99215TR-ND - CONN PLUG 60POS .8MM FH 8H GOLD
+- A99209TR-ND - CONN PLUG 60POS .8MM FH 7H GOLD
+
+##### HSE Layout
+
+![MinnowBoard MAX HSE Layout](pages/legacy-boards/minnowboard-max/hse-layout.png)
+
+#### Low Speed Signal Mapping
+
+Interfacing to the various low speed I/O pins is in some cases a little non-obvious, particularly with how various aspects refer to the busses (hint: they don't always match up the way you would expect). The following sections should at least help de-mystify some of these interfaces.
+
+#### GPIO Mapping
+
+The Linux GPIO base address changed (by adding 256) from Linux kernel versions 3.17 to 3.18, so you'll need to know which kernel version you're using to select the correct GPIO numbers. This table lists the GPIO number for both the 3.17 and earlier kernels, and 3.18 and later kernels, for each pin on the connector:
+
+![MinnowBoard MAX GPIO Mapping](pages/legacy-boards/minnowboard-max/gpio-layout.PNG)
+
+##### I2C Mapping
+
+The externally facing I2C busses on the MinnowBoard MAX / Turbot are provided by the DesignWare IP block in the SoC. This typically ends up enumerating as bus #7 under Linux (you'll note it gets referred to as bus #5 above, that's because that's a hardware / firmware centric view and naming, not how the OS enumerates it). You can figure out what bus numbering you are looking at for sure by running:
+
+	```
+	# i2cdetect -l
+	i2c-0    unknown       i915 gmbus ssc                      N/A
+	i2c-1    unknown       i915 gmbus vga                      N/A
+	i2c-2    unknown       i915 gmbus panel                    N/A
+	i2c-3    unknown       i915 gmbus dpc                      N/A
+	i2c-4    unknown       i915 gmbus dpb                      N/A
+	i2c-5    unknown       i915 gmbus dpd                      N/A
+	i2c-6    unknown       DPDDC-B                             N/A
+	i2c-7    unknown       Synopsys DesignWare I2C adapter     N/A    <-- First one should be LSE
+	i2c-8    unknown       Synopsys DesignWare I2C adapter     N/A    <-- Second one should be HSE
+	#
+	```
+	
+You'll note in this case that that the two DesignWare devices are i2c-7 and i2c-8. Under normal enumeration the first of the two DesignWare adapters should be the LSE, the second should be the I2C in the HSE.
+
+You'll also find that the DesignWare IP block does NOT support the SMBus Quick Write command, so if you see something like "Error: Can't use SMBus Quick Write command on this bus" when you try to use the bus, please remember to disable Quick Write support. For example, to find out what's on the specific I2C bus:
+
+	```
+	# i2cdetect  -y -r 7
+     	0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+	00:          -- -- -- -- -- -- -- -- -- -- -- -- -- 
+	10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+	20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+	30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+	40: 40 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+	50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+	60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+	70: -- -- -- -- -- -- -- --
+	```
+
+should list out devices that are detected on the bus. Noting we have seen, in some cases, some devices do not get detected, but are read/writeable directly to their addresses. You'll note in the above there is a single address detected, a device at address 40. If you have multiple devices they will show up independently. To directly read / write the those devices you would use `i2cget` and `i2cset`. You can see some example code of this from the [Calamari examples](https://github.com/MinnowBoard/minnow-max-extras/blob/master/calamari/calamari-i2c-eeprom.sh).
+
+**NOTE:** The I2C pins have the same property as the pins in the Low Speed Expansion Header, in that their primary purpose is I2C, but can be switched to GPIO in the firmware.
+
+**NOTE:** Rhproxy or Resource Hub Proxy Device ("MSFT8000") is a software device on Windows that exposes GPIO, I2C, SPI, and Serial busses to user mode applications and allows access hardware busses in user mode. (under Linux it will show up in sysfs as MSFT8000)
+Learn more [here](https://sec.ch9.ms/sessions/winhec/slides/02_AccessHardwareBusesinUserMode_DevinWong_Final.pdf).
+
+#### SPI Header to Firmware flashing J1
+This is a pinned out port for external flashing of the boot SPI. Dediprog and Flyswatter devices have been tested and verified to work.
+
+##### J1 Layout
+
+![MinnowBoard MAX J1 Layout](pages/legacy-boards/minnowboard-max/J1-layout.PNG)
+
+#### Power Connection J2 (SIP2_FAN)
+
+This is a 5V 2-pin pin out originally intended for a CPU fan. The single core (E3815) and the dual core (E3825) use passive heat sinks and do not, under normal circumstances, need a fan. While it's theoretically possible to pull upwards of 1A through this port, you should refer to the released schematics to verify this before attempting to use these power pins.
+
+The pins have a 2.54mm pitch and Screw Terminals 2.54mm Pitch are an example of a compatible component.
+
+**NOTE:** This is not populated on the Single, or Dual core boards as shipped.
+
+##### J2 Layout
+
+![MinnowBoard MAX J2 Layout](pages/legacy-boards/minnowboard-max/J2-layout.PNG)
+
+**NOTE:** If you are using an A0 board, the pinout is reversed. Always verify pin output, preferably with a multimeter, before using J2.
+
+#### Switch Jumper J5
+
+These pins are intended for power toggling via a remote switch or relay, fundamentally no different than pressing SW1.
+
+**NOTE:** This is not populated, by default.
+
+##### J5 Layout
+
+![MinnowBoard MAX J5 Layout](pages/legacy-boards/minnowboard-max/J5-layout.PNG)
+
+#### SATA LED J6
+
+J6 header allows an external LED to be connected to the SATA interface's activity signal, causing it to blink based on the amount of SATA read/write activity.
+
+**NOTE:** This is not populated, by default.
+
+##### J6 Layout
+
+![MinnowBoard MAX J6 Layout](pages/legacy-boards/minnowboard-max/J6-layout.PNG)
+
+

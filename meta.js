@@ -48,7 +48,7 @@ module.exports = {
         continue;
       }
       if (debug) console.log("Match pattern " + i + ": " + metaPatterns[i].pattern + " against " + route);
-      return "<meta-tag "
+      return "<meta "
         + metaPatterns[i]['meta-tags'].join("/>\n<meta-tag ")
         + "/>\n";
     }

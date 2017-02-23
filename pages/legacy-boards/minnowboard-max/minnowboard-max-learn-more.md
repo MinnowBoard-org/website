@@ -285,4 +285,42 @@ J6 header allows an external LED to be connected to the SATA interface's activit
 
 ![MinnowBoard MAX J6 Layout](pages/legacy-boards/minnowboard-max/J6-layout.PNG)
 
+#### SD Card Write Protect J7
+
+This is a jumper point, intended for debugging, that enables SD card write-protect explicitly. This is not populated on shipping boards.
+
+#### RTC Battery Holder
+
+The Real-Time Clock Battery Holder is not populated on shipping boards, however you can add one using this part:
+
+Known Compatible parts: 
+Part number: BS-1225-PC	
+[Data Sheet](http://www.memoryprotectiondevices.com/datasheets/BS-1225-PC-datasheet.pdf)	
+Purchase from [Digikey](http://www.digikey.com/product-detail/en/BS-1225-PC/BS-1225-PC-ND/3029215)
+		
+**NOTE:** The battery holder is not populated by default, and a resistor needed for the correct option may also be missing. Check MinnowBoard MAX RTC Hardware Known Issues
+
+**NOTE:** The silkscreen on the MinnowBoard MAX is wrong for the polarity of the RTC battery; it should be:
+
+![RTC Silkscreen](pages/legacy-boards/minnowboard-max/MinnowBoardMAX-board-layout4-rtc-silkscreen.png)
+
+#### GPIO for 1GB vs 2GB
+
+This is for firmware development, but there is a specific GPIO set at manufacture time that determines 1GB or 2GB (or more) memory sizes.
+
+GPIO_S5_5 is the GPIO that will determine the memory configuration:
+
+- 0 - 1GB configuration
+- 1 - 2/4GB configuration
+
+The 2GB and 4GB configurations are the same since the 4GB configuration is a double die of the 2GB. In firmware, you only need to initialize enough memory for Linux to boot and program the I2C EEPROM.
+
+Here's how firmware should initialize the board's memory given the above:
+
+1. Read the SPD; if valid, use that and DO NOT do anything with the GPIO_S5_5 pin
+2. If the SPD is invalid or empty, read GPIO_S5_5:
+- If GPIO_S5_5 is 0 - use a hard coded 1GB configuration 
+- If GPIO_S5_5 is 1 - use a hard coded 2GB configuration (even if the board has 4GB of memory)
+
+
 

@@ -322,5 +322,129 @@ Here's how firmware should initialize the board's memory given the above:
 - If GPIO_S5_5 is 0 - use a hard coded 1GB configuration 
 - If GPIO_S5_5 is 1 - use a hard coded 2GB configuration (even if the board has 4GB of memory)
 
+### MinnowBoard MAX design files
 
+You can find the MinnowBoard MAX design files on [GitHub - MinnowBoard design files](https://github.com/MinnowBoard-org/design-files/tree/master/minnowboard-max). All design files are released under [Creative Commons CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Read about what this license allows for on the Creative Commons website.
+
+The MinnowBoard Turbot is intended to comply with all requirements and guidelines set forth by the [Open Source Hardware Association](http://www.oshwa.org/).
+
+### Cases
+
+#### For Sale
+
+- Full Case: Netgate - [MinnowBoard MAX Blue Enclosure](http://store.netgate.com/MBX/Case.aspx)
+- Full Case + Lure: [TackleBox by Providiusdesign on Tindie](https://www.tindie.com/products/ProvidiusDesign/tacklebox-for-minnowboard-and-lure-attachment/)
+
+#### Buildable
+
+- Plexiglass: [Case based on SC::Elementary](http://shrimp.alerce.com/minnow_max_case/#!case.md)
+
+#### 3D Printable
+
+##### Half cases
+
+- https://github.com/warthog9/minnowboardmax-case
+- http://www.thingiverse.com/thing:389100
+- http://www.shapeways.com/model/2205839/minnowboard-max-half-case.html?li=search-results&materialId=99
+- https://www.youtube.com/watch?v=WKLuHodiSfc
+
+##### Full cases
+
+- http://www.thingiverse.com/thing:877434
+- http://www.thingiverse.com/thing:1102506
+
+### Accessories (Lures)
+
+Lures are accessory boards that attach to the MinnowBoard MAX and provide additional functionality. Lures are owned and supported by their respective owners and manufacturers. Information on Lures can be found on the MinnowBoard MAX Lure wiki page.
+
+### Known Issues
+
+#### MinnowBoard MAX Open Bugs (Bugzilla)
+
+Bugzilla:
+
+- We currently use the [YoctoProject Bugzilla instance](http://bugzilla.yoctoproject.org)
+- [Bug Triage](https://wiki.yoctoproject.org/wiki/Minnow_Bug_Triage)
+
+#### Weak HDMI signal causing some monitors to not work
+
+The MinnowBoard MAX was found to be missing a level shifter on a differential pair for the HDMI signal. This causes our HDMI signal to be marginal. For many monitors this isn't an issue and many folks don't see this issue. However this does mean several things WILL NOT work currently:
+
+- Non-passive adapters (un-powered VGA adapters being the big one)
+- Some HDMI monitors
+
+If you require a monitor to work, but it's not there is a work around that seems to resolve the issue for most folks. Specifically placing a POWERED HDMI switch between the MinnowBoard MAX and the display offsets the missing level shifter, as most powered HDMI switches do their own level shifting.
+
+[Bugzilla #7027](https://bugzilla.yoctoproject.org/show_bug.cgi?id=7027) has more specific technical details about the issue.
+
+#### MinnowBoard MAX not booting: only one blue LED (D1) on, other (D2) is off
+
+The MinnowBoard MAX does not have over-voltage protection; accidentally using a 12-volt power supply will likely result in a pop and smoke, and after that only one LED lights the the board fails to boot. The D2 blue LED indicates "Power OK". Developers have reported replacing the damaged Power Controller IC (U35) with a new part (inexpensive and widely available: NUVOTON, part# NCT3012S TR) has returned their board to a working state. Note this requires delicate soldering skills and could further damage the board if done incorrectly, and attempting this fix will almost certainly VOID YOUR WARRANTY
+
+#### CPU Strapping issues
+
+Some of the pins on the LSE and HSE, specifically those when switched into GPIO mode, can alter the way the CPU attempts to boot. In some cases the changes can prevent the system from successfully booting.
+
+- LSE - Pin 16 - GPIO_I2S_FRM
+- If set as GPIO (not native function) and pin is held low, de-selects SPI boot flash and firmware is not actually read from the on-board SPI flash
+
+When using these pins, particularly on Lures, please be aware of the limitations.
+
+#### LSE Pin 26 Change notification
+
+Pin 26 on the Low Speed Expansion connector was intended to provide a good MCLK (Master Clock) for I2S functionality, however the pin that was chosen originally does not actually meet this need. In a later revision of the board (A4 onwards) this signal will be replaced with one that will provide a good MCLK. If you make use of pin 26, software and hardware may need to be updated once the A4, or later, designs are available. (There is currently no ETA for the A4 boards, and this is being mentioned just so people are aware of the impending change.)
+
+#### Plate over High Speed Expansion Headers[edit]
+There is an issue for some boards manufactured in early 2015: a protective metal plate (used during the manufacturing process for the pick-and-place machine) may have been left covering the High Speed Expansion Headers (HSE) on the bottom of the board. You should remove the metal plate if it's still there.
+Here's the HSE connector with the manufacturing cover
+that should be removed:	   	and here's what the connector should look like
+without the manufacturing connector:
+
+HSE-Connector-wCover.png	   	HSE-Connector-woCover.png
+
+#### Firmware
+
+See the bug list, linked above.
+
+#### NVRam issue
+
+There are some reports of the UEFI firmware getting corrupted for firmware releases before 0.71. Symptoms include boot failure with no HDMI display output and both board LEDs are on. This problem has been fixed in firmware release 0.71 and above. Please update your [firmware](tutorials/updating_your_firmware) to the latest release.
+
+#### Monitors
+
+There is an issue with regards to some monitors not being able to display from the MinnowBoard MAX. Most monitors seem to be fine, but some will either completely not show a display (even at firmware boot-up) or may only show a display after the operating system is booting. This turns out to be an issue with HDMI vs. DVI detection and initialization. Firmware release 0.71 fixed this problem.
+
+There have been additional reports saying some monitors may still not be working in the Firmware (UEFI shell), but are working once the OS (Linux) comes up. If you have a monitor that is having a problem please file a bug on our Bugzilla database and be sure to include the make, model, native resolution and the exact cabling used to connect the monitor to the MinnowBoard MAX
+
+#### RTC
+
+The Real-Time clock may not function correctly (when a battery is added) because resistor R278 (back side of the board) may be missing. Adding a 1K or 2K resistor should resolve this.
+
+#### USB[edit]
+There is a potential issue when using a powered USB hub that (erroneously) provides power over the USB 3 or USB 2 input connector. This is in violation of the USB spec. If such a powered USB hub is used, the MinnowBoard MAX will use that as power; this will be rectified in a future revision of the MinnowBoard MAX.
+Hubs known to cause this:
+iXCC 7 Port USB 3.0 Hub
+Amazon Link
+iXCC Website
+We recommend you check your powered USB hub to confirm that it does not provide power back to the board, as described. If you have a hub that is doing this, please report it here and either stop using it, or use it with its external power turned off.
+NOTE: This is not an indication that hubs do not work, or that USB does not work. This is merely an indication that some powered hubs violate the USB spec, and there is a flaw (a diode should be added) in the MinnowBoard MAX design.
+Another issue might appear if a wireless USB dongle operating at 2.4 GHz (e.g., a wireless receiver for input devices) is connected to the USB2.0 port together with an USB3.0 device attached to the USB3.0 host connector. In this case the device connected to the USB dongle can become unresponsive due to radio frequency interference form the USB3.0 connection. A solution is to use an extension cable or hub to move the the dongle further away from the board NOTE: This interference problem seems to be a general USB3.0 issue. Information on this can be found at Intel.com
+
+#### UART dies with "Too much work for irq"
+
+This is [bug 6280](https://bugzilla.yoctoproject.org/show_bug.cgi?id=6280). A temporary fix is to set the receive trigger on the UART to 1 byte. This can be done through the sysfs interface as follows:
+
+	```
+	echo 1 > /sys/class/tty/ttyS0/rx_trig_bytes
+	```
+
+This can be applied on startup through init scripts, and since it only affects the receive side it should not affect boot times.
+
+### Export Information
+
+#### MinnowBoard MAX Dual Core (E3825) w/ 2GB RAM
+
+- Export Control Classification Number (ECCN) = 5A002.a.1
+- CCATS number = G143235
+- ENC is Unrestricted
 

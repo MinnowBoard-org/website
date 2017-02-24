@@ -91,26 +91,26 @@ _This is italic text_
 
 ### Steps List
 
-1.   **Find out which firmware version your MinnowBoard Turbot is running**  
+1.   **Find out which firmware version your MinnowBoard Turbot is running**
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-2.   **Find the latest version of the firmware available**  
+2.   **Find the latest version of the firmware available**
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-3.   **Update the firmware if needed**  
+3.   **Update the firmware if needed**
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
 {steps-list}
 
 Here's another list:
 
-1.   **Find out which firmware version your MinnowBoard Turbot is running**  
-     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+1.   **Find out which firmware version your MinnowBoard Turbot is running**
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
 
-2.   **Find the latest version of the firmware available**  
-     Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+2.   **Find the latest version of the firmware available**
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
 
-3.   **Update the firmware if needed**  
-     Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+3.   **Update the firmware if needed**
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
 {steps-list}
 
@@ -182,7 +182,7 @@ $ dmesg | grep FTDI
 [10170.991219] ftdi_sio: v1.6.0:USB FTDI Serial Converters Driver
 ```
 
-Bash syntax highlight should look different than console 
+Bash syntax highlight should look different than console
 
 ``` bash
 $ dmesg | grep FTDI
@@ -342,6 +342,56 @@ And you can combine the classes too by separating them with a space.  See?  {tex
 
 Inline classes aren't supported though so the **danger text** {text-danger}
 isn't noted here.
+
+### Youtube video embedding
+
+#### Current syntax allowed:
+
+```
+![@Youtube](id|?param-1=value-1|&param-2=value-2|&...|&param-n=value-n){class1- | class-2 | ... | class-n}
+```
+
+To add a video hosted in youtube is quite simple, you only need to take in consideration the url of your video and get the video id, following the next url (https://www.youtube.com/watch?v=qkwBk4eZAPI), we going to explain how to add the video using md files:
+
+#### Default player
+
+```markdown
+![@Youtube](qkwBk4eZAPI)
+```
+
+![@Youtube](qkwBk4eZAPI)
+
+#### Adding classes to the player
+
+```markdown
+![@Youtube](qkwBk4eZAPI){player-xs}
+```
+
+![@Youtube](qkwBk4eZAPI){player-xs}
+
+```markdown
+![@Youtube](qkwBk4eZAPI){player-sm}
+```
+
+![@Youtube](qkwBk4eZAPI){player-sm}
+
+```markdown
+![@Youtube](qkwBk4eZAPI){player-md}
+```
+
+![@Youtube](qkwBk4eZAPI){player-md}
+
+```markdown
+![@Youtube](qkwBk4eZAPI){player-lg}
+```
+
+![@Youtube](qkwBk4eZAPI){player-lg}
+
+```markdown
+![@Youtube](qkwBk4eZAPI){player-xl}
+```
+
+![@Youtube](qkwBk4eZAPI){player-xl}
 
 
 ### Contextual backgrounds

@@ -720,6 +720,10 @@
       })(),
 
       resetTab: function(event) {
+        var players = document.querySelectorAll('.youtube-player');
+        Array.prototype.forEach.call(players, function(player){
+          player.contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+        });
         this.set('route.path', '/' + event.model.item.id);
       },
 

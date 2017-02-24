@@ -22,15 +22,15 @@ MinnowBoard MAX is the second generation MinnowBoard (released in July 2014), up
 ### Board layout
 Here are photos showing the MinnowBoard MAX board layout identifying key hardware items; items are described later in this section.
 
-![MinnowBoard MAX Board Layout 1](pages/legacy-boards/minnowboard-max/MinnowBoardMAX-board-layout1.png)
+![MinnowBoard MAX Board Layout 1](pages/minnowboard-max/MinnowBoardMAX-board-layout1.png)
 
 NOTE: On Rev A1 boards and beyond, FTDI serial pin 1 is nearest the SATA connector, but on A0 boards pin 1 is furthest away. (A0 boards are rare, and are only being documented for completeness.)
 
-![MinnowBoard MAX Board Layout 1](pages/legacy-boards/minnowboard-max/MinnowBoardMAX-board-layout2.png)
+![MinnowBoard MAX Board Layout 1](pages/minnowboard-max/MinnowBoardMAX-board-layout2.png)
 
 NOTE: Some items, such as the Real Time Clock battery pad are not populated when the boards are manufactured.
 
-![MinnowBoard MAX Board Layout 1](pages/legacy-boards/minnowboard-max/MinnowBoardMAX-board-layout3.png)
+![MinnowBoard MAX Board Layout 1](pages/minnowboard-max/MinnowBoardMAX-board-layout3.png)
 
 #### Power plug
 
@@ -67,7 +67,7 @@ On your host computer, configure your terminal emulation software with these set
 
 The serial console port (UART0), located near the SATA connector at the top of the board, uses a 3.3v FTDI serial cable with a 6-pin connector. This is a reasonably common cable, also used on the Arduino Pro, Arduino Pro Mini and Arduino Lilypad. The cable connector typically has a triangle marking pin 1 (black wire).
 
-![FTDI](pages/legacy-boards/minnowboard-max/serial-console.png)
+![FTDI](pages/minnowboard-max/serial-console.png)
 
 **NOTE:** CTS,VCC, and RTS are not used on the debug UART header. The pinouts and connections are listed to facilitate locating and connecting a compatible adapter.
 **NOTE:** On Rev A1 boards and beyond, FTDI serial pin 1 is nearest the SATA connector, but on A0 boards pin 1 is furthest. (A0 boards are rare, and are only being documented for completeness.)
@@ -89,7 +89,7 @@ Configure your terminal emulation software with the same settings listed above.
 
 The serial console port (UART0) can also be used with a 3.3v FTDI serial cable with a 4-pin connector. This is a reasonably common cable, also used on the Arduino Pro, Arduino Pro Mini and Arduino Lilypad. If you are using one of the 4-wire adapters, here are the connections: 
 
-![FTDI](pages/legacy-boards/minnowboard-max/serial-cable-pinout.png)
+![FTDI](pages/minnowboard-max/serial-cable-pinout.png)
 	
 Pins and signal names are referenced from the cable:
 
@@ -167,7 +167,7 @@ The low speed expansion connector uses 0.1" (2.54 mm) male header pins in a 2 x 
 
 The Linux GPIO base address changed (by adding 256) from Linux kernel versions 3.17 to 3.18, so you'll need to know which kernel version you're using to select the correct GPIO numbers. This table lists the GPIO number for both the 3.17 and earlier kernels, and 3.18 and later kernels, for each pin on the connector:
 
-![MinnowBoard MAX LSE Layout](pages/legacy-boards/minnowboard-max/lse-layout.png)
+![MinnowBoard MAX LSE Layout](pages/minnowboard-max/lse-layout.png)
 
 #### High Speed Expansion Connector (Bottom)
 
@@ -190,7 +190,7 @@ Mating connectors are listed at the bottom but include:
 
 ##### HSE Layout
 
-![MinnowBoard MAX HSE Layout](pages/legacy-boards/minnowboard-max/hse-layout.png)
+![MinnowBoard MAX HSE Layout](pages/minnowboard-max/hse-layout.png)
 
 #### Low Speed Signal Mapping
 
@@ -200,7 +200,7 @@ Interfacing to the various low speed I/O pins is in some cases a little non-obvi
 
 The Linux GPIO base address changed (by adding 256) from Linux kernel versions 3.17 to 3.18, so you'll need to know which kernel version you're using to select the correct GPIO numbers. This table lists the GPIO number for both the 3.17 and earlier kernels, and 3.18 and later kernels, for each pin on the connector:
 
-![MinnowBoard MAX GPIO Mapping](pages/legacy-boards/minnowboard-max/gpio-layout.PNG)
+![MinnowBoard MAX GPIO Mapping](pages/minnowboard-max/gpio-layout.PNG)
 
 ##### I2C Mapping
 
@@ -249,7 +249,7 @@ This is a pinned out port for external flashing of the boot SPI. Dediprog and Fl
 
 ##### J1 Layout
 
-![MinnowBoard MAX J1 Layout](pages/legacy-boards/minnowboard-max/J1-layout.PNG)
+![MinnowBoard MAX J1 Layout](pages/minnowboard-max/J1-layout.PNG)
 
 #### Power Connection J2 (SIP2_FAN)
 
@@ -261,7 +261,7 @@ The pins have a 2.54mm pitch and Screw Terminals 2.54mm Pitch are an example of 
 
 ##### J2 Layout
 
-![MinnowBoard MAX J2 Layout](pages/legacy-boards/minnowboard-max/J2-layout.PNG)
+![MinnowBoard MAX J2 Layout](pages/minnowboard-max/J2-layout.PNG)
 
 **NOTE:** If you are using an A0 board, the pinout is reversed. Always verify pin output, preferably with a multimeter, before using J2.
 
@@ -273,7 +273,7 @@ These pins are intended for power toggling via a remote switch or relay, fundame
 
 ##### J5 Layout
 
-![MinnowBoard MAX J5 Layout](pages/legacy-boards/minnowboard-max/J5-layout.PNG)
+![MinnowBoard MAX J5 Layout](pages/minnowboard-max/J5-layout.PNG)
 
 #### SATA LED J6
 
@@ -283,7 +283,7 @@ J6 header allows an external LED to be connected to the SATA interface's activit
 
 ##### J6 Layout
 
-![MinnowBoard MAX J6 Layout](pages/legacy-boards/minnowboard-max/J6-layout.PNG)
+![MinnowBoard MAX J6 Layout](pages/minnowboard-max/J6-layout.PNG)
 
 #### SD Card Write Protect J7
 
@@ -302,7 +302,7 @@ Purchase from [Digikey](http://www.digikey.com/product-detail/en/BS-1225-PC/BS-1
 
 **NOTE:** The silkscreen on the MinnowBoard MAX is wrong for the polarity of the RTC battery; it should be:
 
-![RTC Silkscreen](pages/legacy-boards/minnowboard-max/MinnowBoardMAX-board-layout4-rtc-silkscreen.png)
+![RTC Silkscreen](pages/minnowboard-max/MinnowBoardMAX-board-layout4-rtc-silkscreen.png)
 
 #### GPIO for 1GB vs 2GB
 
@@ -400,11 +400,11 @@ There is an issue for some boards manufactured in early 2015: a protective metal
 
 Here's the HSE connector with the manufacturing cover that should be removed:
 
-![HSE Connector with cover](pages/legacy-boards/minnowboard-max/HSE-Connector-wCover.png)
+![HSE Connector with cover](pages/minnowboard-max/HSE-Connector-wCover.png)
 
 And here's what the connector should look like without the manufacturing connector:
 
-![HSE Connector without cover](pages/legacy-boards/minnowboard-max/HSE-Connector-woCover.png)
+![HSE Connector without cover](pages/minnowboard-max/HSE-Connector-woCover.png)
 
 #### Firmware
 

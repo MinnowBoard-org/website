@@ -343,15 +343,15 @@ The MinnowBoard MAX is intended to comply with all requirements and guidelines s
 
 ##### Half cases
 
-- https://github.com/warthog9/minnowboardmax-case
-- http://www.thingiverse.com/thing:389100
-- http://www.shapeways.com/model/2205839/minnowboard-max-half-case.html?li=search-results&materialId=99
-- https://www.youtube.com/watch?v=WKLuHodiSfc
+- __https://github.com/warthog9/minnowboardmax-case
+- __http://www.thingiverse.com/thing:389100
+- __http://www.shapeways.com/model/2205839/minnowboard-max-half-case.html?li=search-results&materialId=99
+- __https://www.youtube.com/watch?v=WKLuHodiSfc
 
 ##### Full cases
 
-- http://www.thingiverse.com/thing:877434
-- http://www.thingiverse.com/thing:1102506
+- __http://www.thingiverse.com/thing:877434
+- __http://www.thingiverse.com/thing:1102506
 
 ### Accessories (Lures)
 
@@ -431,8 +431,8 @@ There is a potential issue when using a powered USB hub that (erroneously) provi
 Hubs known to cause this:
 
 - iXCC 7 Port USB 3.0 Hub
-- [Amazon Link](http://www.amazon.com/iXCC-Firmware-backwards-compatibility-External/dp/B00GLJIPK6/ref=sr_1_2?ie=UTF8&qid=1403830109&sr=8-2&keywords=ixcc+usb3+powered+hub)
-- [iXCC Website](http://ixcc.com/)
+- __[Amazon Link](http://www.amazon.com/iXCC-Firmware-backwards-compatibility-External/dp/B00GLJIPK6/ref=sr_1_2?ie=UTF8&qid=1403830109&sr=8-2&keywords=ixcc+usb3+powered+hub)
+- __[iXCC Website](http://ixcc.com/)
 
 We recommend you check your powered USB hub to confirm that it does not provide power back to the board, as described. If you have a hub that is doing this, please report it here and either stop using it, or use it with its external power turned off.
 

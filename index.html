@@ -472,6 +472,12 @@
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
           </template>
+          <template is="dom-if" id="minnowboard-max" if="[[showPage('minnowboard-max', tab)]]">
+            <generic-page id='super-fancy' edit="{{edit}}"
+              on-page-has-menu-changed='onPageHasMenuChanged'
+              layout="[[layoutClass]]"
+              route="{{subRoute}}"></generic-page>
+          </template>
           <template is="dom-if" id="markdown-style-guide-template" if="[[showPage('markdown-style-guide', tab)]]">
             <generic-page id='markdown-style-guide' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'

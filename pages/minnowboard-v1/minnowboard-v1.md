@@ -12,11 +12,11 @@ Visit [Intel's Embedded Design Center](http://www.intel.com/content/www/us/en/in
 
 ![MinnowBoard V1 Block Diagram](pages/minnowboard-v1/Minnow-v1-Block-Diagram-03202013.jpg)
 
-### MinnowBoard V1 design files
+### Design files
 
 You can find the MinnowBoard V1 design files on [GitHub - MinnowBoard design files](https://github.com/MinnowBoard-org/design-files/tree/master/minnowboard-v1/rev-a). All design files are released under [Creative Commons CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Read about what this license allows for on the Creative Commons website.
 
-### MinnowBoard Getting Started Resources
+### Getting Started Resources
 
 **NOTE:** The following guides are for the MinnowBoard v1 NOT for the MinnowBoard Max.
 

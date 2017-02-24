@@ -67,7 +67,7 @@ On your host computer, configure your terminal emulation software with these set
 
 The serial console port (UART0), located near the SATA connector at the top of the board, uses a 3.3v FTDI serial cable with a 6-pin connector. This is a reasonably common cable, also used on the Arduino Pro, Arduino Pro Mini and Arduino Lilypad. The cable connector typically has a triangle marking pin 1 (black wire).
 
-![FTDI](pages/minnowboard-max/serial-console.png)
+![FTDI](pages/minnowboard-max/serial-console.PNG)
 
 **NOTE:** CTS,VCC, and RTS are not used on the debug UART header. The pinouts and connections are listed to facilitate locating and connecting a compatible adapter.
 **NOTE:** On Rev A1 boards and beyond, FTDI serial pin 1 is nearest the SATA connector, but on A0 boards pin 1 is furthest. (A0 boards are rare, and are only being documented for completeness.)
@@ -89,7 +89,7 @@ Configure your terminal emulation software with the same settings listed above.
 
 The serial console port (UART0) can also be used with a 3.3v FTDI serial cable with a 4-pin connector. This is a reasonably common cable, also used on the Arduino Pro, Arduino Pro Mini and Arduino Lilypad. If you are using one of the 4-wire adapters, here are the connections: 
 
-![FTDI](pages/minnowboard-max/serial-cable-pinout.png)
+![FTDI](pages/minnowboard-max/serial-cable-pinout.PNG)
 	
 Pins and signal names are referenced from the cable:
 
@@ -167,7 +167,7 @@ The low speed expansion connector uses 0.1" (2.54 mm) male header pins in a 2 x 
 
 The Linux GPIO base address changed (by adding 256) from Linux kernel versions 3.17 to 3.18, so you'll need to know which kernel version you're using to select the correct GPIO numbers. This table lists the GPIO number for both the 3.17 and earlier kernels, and 3.18 and later kernels, for each pin on the connector:
 
-![MinnowBoard MAX LSE Layout](pages/minnowboard-max/lse-layout.png)
+![MinnowBoard MAX LSE Layout](pages/minnowboard-max/lse-layout.PNG)
 
 #### High Speed Expansion Connector (Bottom)
 
@@ -190,7 +190,7 @@ Mating connectors are listed at the bottom but include:
 
 ##### HSE Layout
 
-![MinnowBoard MAX HSE Layout](pages/minnowboard-max/hse-layout.png)
+![MinnowBoard MAX HSE Layout](pages/minnowboard-max/hse-layout.PNG)
 
 #### Low Speed Signal Mapping
 

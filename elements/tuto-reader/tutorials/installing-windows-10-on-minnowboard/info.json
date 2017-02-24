@@ -3,6 +3,7 @@
   "content": "elements/tuto-reader/tutorials/installing-windows-10-on-minnowboard/docs/installing-windows-10-on-minnowboard.md",
   "meta": {
       "info": [
+          {"label": "Difficulty", "value": "Low"},
           {"label": "Last updated", "value": "Jan 2017"},
           {"label": "Board", "value": "MinnowBoard Turbot"}
   ],

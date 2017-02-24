@@ -3,6 +3,7 @@
   "content": "elements/tuto-reader/tutorials/updating_your_firmware/docs/updating-your-firmware.md",
   "meta": {
       "info": [
+          {"label": "Difficulty", "value": "Low"},
           {"label": "Last updated", "value": "November 2016"},
           {"label": "Board", "value": "MinnowBoard Turbot"}
   ],

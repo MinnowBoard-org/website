@@ -115,7 +115,7 @@ The serial console port (UART0) can be used with a 3.3v FTDI serial cable with a
 - Pin 4:RED - TXD
 - Pin 5:GREEN - RXD
 
-![Debugging MinnowBoard MAX with Olimex USB-Serial-Cable-F](pages/legacy-boards/minnowboard-max/Minnowboard-max-debug-olimex-usb-serial-cable-f.PNG)
+![Debugging MinnowBoard MAX with Olimex USB-Serial-Cable-F](pages/minnowboard-max/Minnowboard-max-debug-olimex-usb-serial-cable-f.PNG)
 
 **NOTE:** CTS,VCC, and RTS are not used on the debug UART header. The pinouts and connections are listed to facilitate locating and connecting a compatible adapter.
 

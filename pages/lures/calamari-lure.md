@@ -50,58 +50,44 @@ ADC input using a variable 10K resistor slider potentiometer (via a SPI based AD
 
 
 2 TTL UART headers
+|**Signal** | **Function** | **PadConf** |
+|----|----|----|
+| SIO_UART1_TX  | UART1 TX  | UART   |
+| SIO_UART1_RX  | UART1 RX  | UART   |
+| SIO_UART2_TX  | UART2 TX  | UART   |
+| SIO_UART2_RX  | UART2 RX  | UART   |
 
 
-{| class="wikitable"
-|-
-! Signal !! Function || PadConf
-|-
-| SIO_UART1_TX || UART1 TX || UART
-|-
-| SIO_UART1_RX || UART1 RX || UART
-|-
-| SIO_UART2_TX || UART2 TX || UART
-|-
-| SIO_UART2_RX || UART2 RX || UART
-|}
-
-* RGB GPIO controlled LED
-{| class="wikitable"
-|-
-! Signal !! Function || PadConf || Linux GPIO#<br />(&le;3.17) || Linux GPIO#<br />(&ge;3.18)
-|-
-| GPIO_S5_0 || RED || GPIO Output || 82 || 338
-|-
-| GPIO_S5_1 || GREEN || GPIO Output || 83 || 339
-|-
-| ILB_8254_SPKR || BLUE || GPIO Output || 208 || 464
-|}
-
-* I2C EEPROM at 0x50
-{| class="wikitable"
-|-
-! Signal !! Function || PadConf
-|-
-| SIO_I2C5_DATA || I2C Data || I2C
-|-
-| SIO_I2C5_CLK || I2C Clock || I2C
-|}
-
-== Reference Material ==
-* [http://www.protostack.com/blog/2011/06/atmega168a-pulse-width-modulation-pwm/ PWM Tutorial]
-* [http://conductiveresistance.com/interactive-595-shift-register-simulator/ 595 Tutorial]
-* [http://en.wikipedia.org/wiki/Seven-segment_display_character_representations 7 Segment Display Character Mapping]
-* [https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/tree/drivers/iio/adc/mcp320x.c?id=v3.14 MCP320x Linux Kernel Device Driver]
-* [https://www.kernel.org/doc/Documentation/spi/spidev SPIDEV - userspace SPI character device driver interface documentation]
-* [https://www.kernel.org/doc/Documentation/i2c/dev-interface I2CDEV - userspace I2C character device driver interface documentation]
+RGB GPIO controlled LED
+|**Signal** | **Function** | **PadConf** | **Linux GPIO#(≤3.17)** | **Linux GPIO#(≥3.18)** |
+|----|----|----|----|----|
+|  GPIO_S5_0  |  RED  | GPIO Output   | 82   |  338  |
+|  GPIO_S5_1   | GREEN   |  GPIO Output  | 83   | 339   |
+|  ILB_8254_SPKR  |  BLUE  |  GPIO Output  | 208   | 464   |
 
 
-= Components =
-* Single tricolored surface mount RGB LED ([[media:rgb-led-smd.pdf|datasheet]])
-* 74HC595 Serial Shift Register ([[media:74hc595.pdf|datasheet]])
-* 7 Segment Display ([[media:7seg-display.pdf|datasheet]])
-* 10k Slider Potentiometer ([[media:10k-slider.pdf|datasheet]])
-* NPN Transistor MMBT2222A ([[media:mmbt2222a.pdf|datasheet]])
-* Microchip MCP3004 SPI Based Analog-to-Digital converter ([[media:MCP3004.pdf|datasheet]])
-* CAT24C256W I2C based EEPROM ([[media:CAT24C256W.pdf|datasheet]])
+I2C EEPROM at 0x50
+|**Signal** | **Function** | **PadConf** |
+|----|----|----|
+| SIO_I2C5_DATA  | I2C Data  | I2C   |
+| SIO_I2C5_CLK  | I2C Clock  | I2C   |
+
+
+### Reference Material
+- [PWM Tutorial](http://www.protostack.com/blog/2011/06/atmega168a-pulse-width-modulation-pwm/)
+- [595 Tutorial](http://conductiveresistance.com/interactive-595-shift-register-simulator/)
+- [7 Segment Display Character Mappin](http://en.wikipedia.org/wiki/Seven-segment_display_character_representations)
+- [MCP320x Linux Kernel Device Driver](https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/tree/drivers/iio/adc/mcp320x.c?id=v3.14)
+- [SPIDEV - userspace SPI character device driver interface documentation](https://www.kernel.org/doc/Documentation/spi/spidev)
+- [I2CDEV - userspace I2C character device driver interface documentation](https://www.kernel.org/doc/Documentation/i2c/dev-interface)
+
+
+### Components 
+- Single tricolored surface mount RGB LED [datasheet]
+- 74HC595 Serial Shift Register [datasheet]
+- 7 Segment Display [datasheet]
+- 10k Slider Potentiometer [datasheet]
+- NPN Transistor MMBT2222A [datasheet]
+- Microchip MCP3004 SPI Based Analog-to-Digital converter [datasheet]
+- CAT24C256W I2C based EEPROM [datasheet]
 

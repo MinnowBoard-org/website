@@ -83,11 +83,17 @@ I2C EEPROM at 0x50
 
 
 ### Components 
-- Single tricolored surface mount RGB LED [datasheet]
-- 74HC595 Serial Shift Register [datasheet]
-- 7 Segment Display [datasheet]
-- 10k Slider Potentiometer [datasheet]
-- NPN Transistor MMBT2222A [datasheet]
-- Microchip MCP3004 SPI Based Analog-to-Digital converter [datasheet]
-- CAT24C256W I2C based EEPROM [datasheet]
+- Single tricolored surface mount RGB LED [datasheet](Rgb-led-smd.pdf)
+- 74HC595 Serial Shift Register [datasheet](74hc595.pdf)
+- 7 Segment Display [datasheet](7seg-display.pdf)
+- 10k Slider Potentiometer [datasheet](10k-slider.pdf)
+- NPN Transistor MMBT2222A [datasheet](Mmbt2222a.pdf)
+- Microchip MCP3004 SPI Based Analog-to-Digital converter [datasheet](MCP3004.pdf)
+- CAT24C256W I2C based EEPROM [datasheet](CAT24C256W.pdf)
+
+### Design files
+Find the design files in github.
+
+### Test Files
+- https://github.com/MinnowBoard/minnow-max-extras
 

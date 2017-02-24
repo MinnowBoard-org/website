@@ -6,7 +6,7 @@ The original MinnowBoard is no longer sold and was replaced by the MinnowBoard M
 
 ### Technical specifications
 
-![MinnowBoard V1 Technical Specs](pages/minnowboard-v1/V1 Technical Specs.PNG)
+![MinnowBoard V1 Technical Specs](pages/minnowboard-v1/V1-Technical-Specs.PNG)
 
 Visit [Intel's Embedded Design Center](http://www.intel.com/content/www/us/en/intelligent-systems/queens-bay/embedded-intel-atom-e6xx-series-with-intel-platform-controller-hub-eg20t.html) for more specifications and documents on the Intel® Atom™ Processor E6xx Series with Intel® Platform Controller Hub EG20T.
 

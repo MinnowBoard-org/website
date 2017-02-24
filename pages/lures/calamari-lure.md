@@ -34,34 +34,24 @@ GPIO Output controlled 7 Segment LED display (with 595 shift register)
 |  LPE_I2S2_FRM  | Clear   | GPIO Output   | 217   | 473   |
 
 ADC input using a variable 10K resistor slider potentiometer (via a SPI based ADC)
+|**Signal** | **Function** | **PadConf** |
+|----|----|----|
+| SIO_SPI_CS   |  Chip Select  | SPI   |
+| SIO_SPI_DO   | Data Out   |  SPI  |
+| SIO_SPI_DI  | Data In   | SPI   |
+| SIO_SPI_CLK  | Clock   |  SPI  |
+
+3 GPIO inputs via three buttons
+|**Signal** | **Function** | **PadConf** | **Linux GPIO#(≤3.17)** | **Linux GPIO#(≥3.18)** |
+|----|----|----|----|----|
+|  LPE_I2S2_CLK  | S1   | GPIO Input   | 216   | 472   |
+|  SIO_UART1_CTS  | S2   | GPIO Input   |  227  |  483  |
+|  SIO_UART1_RTS  | S3   | GPIO Input   | 226   | 484   |
 
 
-{| class="wikitable"
-|-
-! Signal !! Function || PadConf
-|-
-| SIO_SPI_CS || Chip Select || SPI
-|-
-| SIO_SPI_DO || Data Out || SPI
-|-
-| SIO_SPI_DI || Data In || SPI
-|-
-| SIO_SPI_CLK || Clock || SPI
-|}
+2 TTL UART headers
 
-* 3 GPIO inputs via three buttons
-{| class="wikitable"
-|-
-! Signal !! Function || PadConf || Linux GPIO#<br />(&le;3.17) || Linux GPIO#<br />(&ge;3.18)
-|-
-| LPE_I2S2_CLK || S1 || GPIO Input || 216 || 472
-|-
-| SIO_UART1_CTS || S2 || GPIO Input || 227 || 483
-|-
-| SIO_UART1_RTS || S3 || GPIO Input || 226 || 484
-|}
 
-* 2 TTL UART headers
 {| class="wikitable"
 |-
 ! Signal !! Function || PadConf

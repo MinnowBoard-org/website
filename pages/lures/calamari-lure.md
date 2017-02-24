@@ -93,6 +93,7 @@ I2C EEPROM at 0x50
 
 ### Design files
 Find the design files in github.
+[Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/)
 
 ### Test Files
 - https://github.com/MinnowBoard/minnow-max-extras

@@ -2,15 +2,15 @@
 
 The original MinnowBoard is no longer sold and was replaced by the MinnowBoard MAX in July 2014. The following information is for the original MinnowBoard V1 exclusively, and does not reflect any technical features of the MinnowBoard MAX.
 
-![MinnowBoard V1](pages/legacy-boards/V1/MinnowBoard-RevA-Angled2.jpg)
+![MinnowBoard V1](pages/minnowboard-v1/MinnowBoard-RevA-Angled2.jpg)
 
 ### Technical specifications
 
-![MinnowBoard V1 Technical Specs](pages/legacy-boards/V1/V1 Technical Specs.PNG)
+![MinnowBoard V1 Technical Specs](pages/minnowboard-v1/V1 Technical Specs.PNG)
 
 Visit [Intel's Embedded Design Center](http://www.intel.com/content/www/us/en/intelligent-systems/queens-bay/embedded-intel-atom-e6xx-series-with-intel-platform-controller-hub-eg20t.html) for more specifications and documents on the Intel® Atom™ Processor E6xx Series with Intel® Platform Controller Hub EG20T.
 
-![MinnowBoard V1 Block Diagram](pages/legacy-boards/V1/Minnow-v1-Block-Diagram-03202013.jpg)
+![MinnowBoard V1 Block Diagram](pages/minnowboard-v1/Minnow-v1-Block-Diagram-03202013.jpg)
 
 ### MinnowBoard V1 design files
 

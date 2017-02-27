@@ -343,15 +343,15 @@ The MinnowBoard MAX is intended to comply with all requirements and guidelines s
 
 ##### Half cases
 
-- https://github.com/warthog9/minnowboardmax-case
-- http://www.thingiverse.com/thing:389100
-- http://www.shapeways.com/model/2205839/minnowboard-max-half-case.html?li=search-results&materialId=99
-- https://www.youtube.com/watch?v=WKLuHodiSfc
+- [https://github.com/warthog9/minnowboardmax-case](https://github.com/warthog9/minnowboardmax-case)
+- [http://www.thingiverse.com/thing:389100](http://www.thingiverse.com/thing:389100)
+- [http://www.shapeways.com/model/2205839/minnowboard-max-half-case.html?li=search-results&materialId=99](http://www.shapeways.com/model/2205839/minnowboard-max-half-case.html?li=search-results&materialId=99)
+- [https://www.youtube.com/watch?v=WKLuHodiSfc](https://www.youtube.com/watch?v=WKLuHodiSfc)
 
 ##### Full cases
 
-- http://www.thingiverse.com/thing:877434
-- http://www.thingiverse.com/thing:1102506
+- [http://www.thingiverse.com/thing:877434](http://www.thingiverse.com/thing:877434)
+- [http://www.thingiverse.com/thing:1102506](http://www.thingiverse.com/thing:1102506)
 
 ### Accessories (Lures)
 

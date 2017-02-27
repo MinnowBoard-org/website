@@ -1,5 +1,7 @@
 ## Jetsam Lure
 
+**Note: This board may not be available, however the board files are available below**
+
 The Jetsam Lure is a break-out board providing a single mPCIe 
 slot via the MinnowBoard MAX HSE connector. This lure is produced by 
 CircuitCo and is currently unavailable for purchase. (Note: 

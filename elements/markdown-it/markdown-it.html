@@ -282,7 +282,9 @@
           var aIndex = token.attrIndex('src');
           switch (token.content.toLowerCase()) {
             case '@youtube':
-              var src = '//www.youtube.com/embed/' + token.attrs[aIndex][1] + '?enablejsapi=1&version=3&playerapiid=ytplayer';
+              var par = token.attrs[aIndex][1].split('?');
+              var par = par[1] ? '&' : '?';
+              var src = '//www.youtube.com/embed/' + token.attrs[aIndex][1] + par + 'enablejsapi=1&version=3&playerapiid=ytplayer';
               return '<iframe src="'+ src +'" class="youtube-player" allowfullscreen="true" allowfullscreen="true" allowscriptaccess="always" frameborder="0"></iframe>';
             break;
           }

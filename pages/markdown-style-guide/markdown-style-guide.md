@@ -361,6 +361,21 @@ To add a video hosted in youtube is quite simple, you only need to take in consi
 
 ![@Youtube](qkwBk4eZAPI)
 
+
+#### Adding params
+
+```markdown
+![@Youtube](qkwBk4eZAPI?autoplay=1&end=10)
+```
+
+![@Youtube](qkwBk4eZAPI?autoplay=1&end=10)
+
+
+For more information related with valid parameters read next link -> https://developers.google.com/youtube/player_parameters
+
+NOTE: do not add ```enablejsapi``` param, this param is always added by default and adding it twice can cause functionality not expected.
+
+
 #### Adding classes to the player
 
 ```markdown

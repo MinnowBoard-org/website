@@ -1,5 +1,7 @@
 ## Calamari Lure
 
+**Note: This board may not be available, however the board files are available below**
+
 The Calamari Lure is designed as a demonstration board for working with the GPIO and low-speed interface. It attaches to the low-speed interface on the MinnowBoard MAX, and provides a compact and easy way to experiment with a variety of devices--without the hassle of gathering your own discrete components and doing your own breadboarding.
 
 The Calamari Lure is produced by [CircuitCo](http://www.circuitco.com/), and is available to purchase from [Mouser](http://www.mouser.com/ProductDetail/MinnowBoard-by-CircuitCo/999-0004990). (Note: Lures are owned and supported by their respective owners and manufacturers. The community can only offer best-effort help; issues should be taken to the respective manufacturers and designers.) 

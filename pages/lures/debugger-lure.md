@@ -1,16 +1,16 @@
 ## Debugger Lure
 
-**Note: This board may not be available, however the board files are available below**
+The Debugger Lure provides an adapter interface for Intel IDP 
+JTAG hardware testing and programming tools. JTAG is used to aid 
+device, board, and system testing and diagnosis, as well as an alternative 
+for updating firmware on the MinnowBoard MAX / Turbot.
+This Lure is produced by [Tin Can Tools](http://www.tincantools.com/Debugger-Lure.html). 
+(Note: Lures are owned and 
+supported by their respective owners and manufactures. The community 
+can only give you best effort support; issues should be taken to the 
+respective manufacturers and designers.)
 
-The Flotsam Lure is a break-out board providing a single 
-mSATA slot via the MinnowBoard MAX HSE connector.
-This lure is produced by [CircuitCo](http://www.circuitco.com/) and is currently unavailable 
-for purchase. (Note: Lures are owned and supported by their 
-respective owners and manufactures. The community can only give 
-you best effort support; issues should be taken to the respective 
-manufacturers and designers.) 
-
-![Flotsam Lure](pages/lures/1055px-Flotsam-lure-a.jpg)
+![Debugger Lure](pages/lures/Debugger_lure.png)
 
 ### Design files
 

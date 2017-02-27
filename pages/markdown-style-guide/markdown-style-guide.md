@@ -89,6 +89,34 @@ _This is italic text_
 2. Consectetur adipiscing elit
 3. Integer molestie lorem at massa
 
+
+### More Ordered Lists
+
+1. Lorem ipsum dolor sit amet
+1. Consectetur adipiscing elit
+1. Integer molestie lorem at massa
+{upper-roman}
+
+### Mixed list's type
+
+1. Lorem ipsum dolor sit amet{armenian}
+1. Consectetur adipiscing elit{cjk-ideographic}
+1. Integer molestie lorem at massa{decimal}
+1. Lorem ipsum dolor sit amet{georgian}
+1. Consectetur adipiscing elit{hebrew}
+1. Integer molestie lorem at massa{hiragana}
+1. Lorem ipsum dolor sit amet{katakana}
+1. Consectetur adipiscing elit{lower-alpha}
+1. Integer molestie lorem at massa{lower-greek}
+1. Lorem ipsum dolor sit amet{lower-latin}
+1. Consectetur adipiscing elit{lower-roman}
+1. Integer molestie lorem at massa{upper-alpha}
+1. Lorem ipsum dolor sit amet{upper-latin}
+1. Consectetur adipiscing elit{lower-roman}
+1. Integer molestie lorem at massa{upper-roman}
+
+
+
 ### Steps List
 
 1.   **Find out which firmware version your MinnowBoard Turbot is running**

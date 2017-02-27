@@ -92,8 +92,7 @@ I2C EEPROM at 0x50
 - CAT24C256W I2C based EEPROM [datasheet](CAT24C256W.pdf)
 
 ### Design files
-Find the design files in github.
-[Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/)
+You can find the design files on [GitHub](). All design files are released under [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). Read about what this license allows for on the Creative Commons website.
 
 ### Test Files
 - https://github.com/MinnowBoard/minnow-max-extras

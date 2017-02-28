@@ -3,6 +3,7 @@
   "content": "elements/tuto-reader/tutorials/getting-started/docs/getting-started.md",
   "meta": {
       "info": [
+          {"label": "Difficulty", "value": "Low"},
           {"label": "Last updated", "value": "December 2016"},
           {"label": "Board", "value": "MinnowBoard Turbot dual- and quad-core"}
 ],

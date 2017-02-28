@@ -3,6 +3,7 @@
   "content": "elements/tuto-reader/tutorials/installing-windows-iot-on-minnowboard-turbot/docs/installing-windows-iot-on-minnowboard-turbot.md",
   "meta": {
       "info": [
+          {"label": "Difficulty", "value": "Low"},
           {"label": "Last updated", "value": "November 2016"},
           {"label": "Board", "value": "MinnowBoard Turbot"}
   ],

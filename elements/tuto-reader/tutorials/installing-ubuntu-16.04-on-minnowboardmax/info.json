@@ -3,6 +3,7 @@
   "content": "elements/tuto-reader/tutorials/installing-ubuntu-16.04-on-minnowboardmax/docs/installing-ubuntu.md",
   "meta": {
       "info": [
+          {"label": "Difficulty", "value": "Low"},
           {"label": "Last updated", "value": "November 2016"},
           {"label": "Board", "value": "MinnowBoard Turbot"}
 ],

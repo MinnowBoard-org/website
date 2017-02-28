@@ -89,28 +89,56 @@ _This is italic text_
 2. Consectetur adipiscing elit
 3. Integer molestie lorem at massa
 
+
+### More Ordered Lists
+
+1. Lorem ipsum dolor sit amet
+1. Consectetur adipiscing elit
+1. Integer molestie lorem at massa
+{upper-roman}
+
+### Mixed list's type
+
+1. Lorem ipsum dolor sit amet{armenian}
+1. Consectetur adipiscing elit{cjk-ideographic}
+1. Integer molestie lorem at massa{decimal}
+1. Lorem ipsum dolor sit amet{georgian}
+1. Consectetur adipiscing elit{hebrew}
+1. Integer molestie lorem at massa{hiragana}
+1. Lorem ipsum dolor sit amet{katakana}
+1. Consectetur adipiscing elit{lower-alpha}
+1. Integer molestie lorem at massa{lower-greek}
+1. Lorem ipsum dolor sit amet{lower-latin}
+1. Consectetur adipiscing elit{lower-roman}
+1. Integer molestie lorem at massa{upper-alpha}
+1. Lorem ipsum dolor sit amet{upper-latin}
+1. Consectetur adipiscing elit{lower-roman}
+1. Integer molestie lorem at massa{upper-roman}
+
+
+
 ### Steps List
 
-1.   **Find out which firmware version your MinnowBoard Turbot is running**  
+1.   **Find out which firmware version your MinnowBoard Turbot is running**
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-2.   **Find the latest version of the firmware available**  
+2.   **Find the latest version of the firmware available**
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-3.   **Update the firmware if needed**  
+3.   **Update the firmware if needed**
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
 {steps-list}
 
 Here's another list:
 
-1.   **Find out which firmware version your MinnowBoard Turbot is running**  
-     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+1.   **Find out which firmware version your MinnowBoard Turbot is running**
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
 
-2.   **Find the latest version of the firmware available**  
-     Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+2.   **Find the latest version of the firmware available**
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
 
-3.   **Update the firmware if needed**  
-     Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+3.   **Update the firmware if needed**
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
 {steps-list}
 
@@ -182,7 +210,7 @@ $ dmesg | grep FTDI
 [10170.991219] ftdi_sio: v1.6.0:USB FTDI Serial Converters Driver
 ```
 
-Bash syntax highlight should look different than console 
+Bash syntax highlight should look different than console
 
 ``` bash
 $ dmesg | grep FTDI
@@ -342,6 +370,71 @@ And you can combine the classes too by separating them with a space.  See?  {tex
 
 Inline classes aren't supported though so the **danger text** {text-danger}
 isn't noted here.
+
+### Youtube video embedding
+
+#### Current syntax allowed:
+
+```
+![@Youtube](id|?param-1=value-1|&param-2=value-2|&...|&param-n=value-n){class1- | class-2 | ... | class-n}
+```
+
+To add a video hosted in youtube is quite simple, you only need to take in consideration the url of your video and get the video id, following the next url (https://www.youtube.com/watch?v=qkwBk4eZAPI), we going to explain how to add the video using md files:
+
+#### Default player
+
+```markdown
+![@Youtube](qkwBk4eZAPI)
+```
+
+![@Youtube](qkwBk4eZAPI)
+
+
+#### Adding params
+
+```markdown
+![@Youtube](qkwBk4eZAPI?autoplay=1&end=10)
+```
+
+![@Youtube](qkwBk4eZAPI?autoplay=1&end=10)
+
+
+For more information related with valid parameters read next link -> https://developers.google.com/youtube/player_parameters
+
+NOTE: do not add ```enablejsapi``` param, this param is always added by default and adding it twice can cause functionality not expected.
+
+
+#### Adding classes to the player
+
+```markdown
+![@Youtube](qkwBk4eZAPI){player-xs}
+```
+
+![@Youtube](qkwBk4eZAPI){player-xs}
+
+```markdown
+![@Youtube](qkwBk4eZAPI){player-sm}
+```
+
+![@Youtube](qkwBk4eZAPI){player-sm}
+
+```markdown
+![@Youtube](qkwBk4eZAPI){player-md}
+```
+
+![@Youtube](qkwBk4eZAPI){player-md}
+
+```markdown
+![@Youtube](qkwBk4eZAPI){player-lg}
+```
+
+![@Youtube](qkwBk4eZAPI){player-lg}
+
+```markdown
+![@Youtube](qkwBk4eZAPI){player-xl}
+```
+
+![@Youtube](qkwBk4eZAPI){player-xl}
 
 
 ### Contextual backgrounds

@@ -417,21 +417,7 @@
             <default-page id="default" edit="{{edit}}" route="{{route}}"></default-page>
           </template>
           <error-page id="not-found" edit="{{edit}}" route="{{subRoute}}" page></error-page>
-          <!-- The list here needs to be kept in sync with the "tabs" property
-               (mainly the id used needs to match the appropriate item)
-
-               Each item is wrapped in a dom-if to keep the site from having to recursively
-               load the entire web-site when the main landing page loads.
-
-               We had explored using:
-
-              <template is="dom-repeat" items="{{tabs}}">
-                <div is="{{items.tag}}" route={{route}} id="{{items.id}}"></div>
-              </template>
-
-               However in Polymer 1.2 there is no dynamic type injection for
-               DOM stamping... oh well.
-              -->
+          <!-- pages are listed here -->
           <template is="dom-if" id="learn-more-template" if="[[showPage('learn-more', tab)]]">
             <generic-page id='learn-more' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
@@ -482,6 +468,18 @@
           </template>
           <template is="dom-if" id="max-hse-template" if="[[showPage('max-hse', tab)]]">
             <generic-page id='max-hse' edit="{{edit}}"
+              on-page-has-menu-changed='onPageHasMenuChanged'
+              layout="[[layoutClass]]"
+              route="{{subRoute}}"></generic-page>
+          </template>
+          <template is="dom-if" id="minnowboard-max-template" if="[[showPage('minnowboard-max', tab)]]">
+            <generic-page id='minnowboard-max' edit="{{edit}}"
+              on-page-has-menu-changed='onPageHasMenuChanged'
+              layout="[[layoutClass]]"
+              route="{{subRoute}}"></generic-page>
+          </template>
+          <template is="dom-if" id="minnowboard-v1-template" if="[[showPage('minnowboard-v1', tab)]]">
+            <generic-page id='minnowboard-v1' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
@@ -697,9 +695,12 @@
 
       onRouteTabChanged: function(tab) {
         tab = tab ? tab : 'default';
-        if (this.tab!= 'default' && this.tab != tab) {
-          var error = Polymer.dom(this.$.pages).querySelector('#not-found');
-          error.page = this.tab;
+        /* If `tab` does not exist as a page, set the error-page's page and
+         * missingPage property */
+        if (tab != "not-found" &&
+          !Polymer.dom(this.$.pages).querySelector('#' + tab + "-template")) {
+          Polymer.dom(this.$.pages).querySelector('#not-found').page = tab;
+          this.missingPage = tab;
         }
         console.log('Route changing tab from ' + this.tab + ' to ' + tab);
         this.set('tab', tab);
@@ -715,11 +716,24 @@
           cached = path;
           console.log('GA: ' + path);
           ga('set', 'page', path);
-          ga('send', 'pageview');
+
+          /* If this.missingPage is set, pass it to GA using a custom
+           * dimension */
+          if (this.missingPage) {
+            ga('send', 'pageview', { 'dimension1': this.missingPage });
+            /* Clear `missingPage` so it isn't sent with each page change */
+            delete this.missingPage;
+          } else {
+            ga('send', 'pageview');
+          }
         };
       })(),
 
       resetTab: function(event) {
+        var players = document.querySelectorAll('.youtube-player');
+        Array.prototype.forEach.call(players, function(player){
+          player.contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+        });
         this.set('route.path', '/' + event.model.item.id);
       },
 

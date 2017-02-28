@@ -261,6 +261,10 @@
           return self.renderToken(tokens, idx, options);
         };
 
+        var old_image = this.md.renderer.rules.image || function(tokens, idx, options, env, self) {
+          return self.renderToken(tokens, idx, options);
+        };
+
         this.md.renderer.rules.heading_open = function(tokens, idx, options, env, self) {
           if (this.startLevel != 1) {
             var heading = /^h([0-9]*)$/.exec(tokens[idx].tag);
@@ -271,6 +275,20 @@
             }
           }
           return old_open(tokens, idx, options, env, self);
+        }.bind(this);
+
+        this.md.renderer.rules.image = function(tokens, idx, options, env, self) {
+          var token = tokens[idx];
+          var aIndex = token.attrIndex('src');
+          switch (token.content.toLowerCase()) {
+            case '@youtube':
+              var par = token.attrs[aIndex][1].split('?');
+              var par = par[1] ? '&' : '?';
+              var src = '//www.youtube.com/embed/' + token.attrs[aIndex][1] + par + 'enablejsapi=1&version=3&playerapiid=ytplayer';
+              return '<iframe src="'+ src +'" class="youtube-player" allowfullscreen="true" allowfullscreen="true" allowscriptaccess="always" frameborder="0"></iframe>';
+            break;
+          }
+          return old_image(tokens, idx, options, env, self);
         }.bind(this);
 
         // Plugins load.

@@ -4,7 +4,7 @@ Below are the legacy MinnowBoards which have been released.
 
 | [MinnowBoard MAX](minnowboard-max)  | 2014  |
 |---|---|
-| ![MAX](mb-max-sm.jpg)  | MinnowBoard MAX is the second generation MinnowBoard (released in July 2014). The MinnowBoard MAX board has an upgraded 64-bit Intel® Atom™; E3800 (Bay Trail-I) processor with better graphics, revised I/O and a smaller footprint. |
+| ![MAX](pages/legacy-boards/mb-max-sm.jpg)  | MinnowBoard MAX is the second generation MinnowBoard (released in July 2014). The MinnowBoard MAX board has an upgraded 64-bit Intel® Atom™; E3800 (Bay Trail-I) processor with better graphics, revised I/O and a smaller footprint. |
 
 ___
 

@@ -472,6 +472,12 @@
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
           </template>
+          <template is="dom-if" id="legacy-boards-template" if="[[showPage('legacy-boards', tab)]]">
+            <generic-page id='legacy-boards' edit="{{edit}}"
+              on-page-has-menu-changed='onPageHasMenuChanged'
+              layout="[[layoutClass]]"
+              route="{{subRoute}}"></generic-page>
+          </template>
           <template is="dom-if" id="minnowboard-max-template" if="[[showPage('minnowboard-max', tab)]]">
             <generic-page id='minnowboard-max' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'

@@ -6,7 +6,7 @@ are owned and supported by their respective owners and manufacturers. The
 community can give you best effort support; issues should be taken to the 
 respective manufacturers and designers.
 
-Lures are owned and supported by their respective owners and manufacturers. 
+**Note:**Lures are owned and supported by their respective owners and manufacturers. 
 If you have issues the community can only give you best effort support, but 
 issues should be taken to the respective manufacturers and designers.
 

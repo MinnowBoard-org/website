@@ -10,7 +10,7 @@ Lures are owned and supported by their respective owners and manufacturers.
 If you have issues the community can only give you best effort support, but 
 issues should be taken to the respective manufacturers and designers.
 
-### Lures In production (currently available)
+### Lures In Production (currently available)
 
 These are lures that are currently available, and obtainable in a pre-built state.
 
@@ -20,7 +20,7 @@ These are lures that are currently available, and obtainable in a pre-built stat
 - [Debugger Lure](debugger-lure)
 - [Moray Lure (XBee)](moray-lure)
 
-### Ready to Build
+### Ready to Build Lures
 
 These are lures that are functionally complete, but are not being (or not 
 currently) in production and/or available to buy. To be in this state the 
@@ -34,7 +34,7 @@ fully build these on their own.
 - [Ethernet and USB switcher Lure](ethernet-usb-switcher-lure)
 - [Relay Lure](relay-lure)
 
-### Retired
+### Retired Lures
 
 These are boards that were in production, but are no longer available 
 for sale.
@@ -45,7 +45,7 @@ for sale.
 - [Calamari Lure](calamari-lure)
 - [Prototype Lure](prototype-lure)
 
-### Cancelled
+### Cancelled Lures
 
 These are lures that do not have build files available, but information 
 pertaining to them is still pertinent.

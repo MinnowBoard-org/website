@@ -14,11 +14,11 @@ issues should be taken to the respective manufacturers and designers.
 
 These are lures that are currently available, and obtainable in a pre-built state.
 
-- [Desert Lure](lures/desert-lure)
-- [Silverjaw Lure](lures/silverjaw-lure)
-- [Mikrobus Lure](lures/mikrobus-lure)
-- [Debugger Lure](/debugger-lure)
-- [Moray Lure (XBee)](/moray-lure)
+- [Desert Lure](desert-lure)
+- [Silverjaw Lure](silverjaw-lure)
+- [Mikrobus Lure](mikrobus-lure)
+- [Debugger Lure](debugger-lure)
+- [Moray Lure (XBee)](moray-lure)
 
 ### Ready to Build
 
@@ -27,27 +27,27 @@ currently) in production and/or available to buy. To be in this state the
 lures need to be in a state where an individual has enough information to 
 fully build these on their own.
 
-- [Fish Food Lure](/fish-food-lure)
-- [Cuttle(bone) Lure](/cuttlebone-lure)
-- [Tadpole Lure](/tadpole-lure)
-- [Drone Lure](/drone-lure)
-- [Ethernet and USB switcher Lure](/ethernet-usb-switcher-lure)
-- [Relay Lure](/relay-lure)
+- [Fish Food Lure](fish-food-lure)
+- [Cuttle(bone) Lure](cuttlebone-lure)
+- [Tadpole Lure](tadpole-lure)
+- [Drone Lure](drone-lure)
+- [Ethernet and USB switcher Lure](ethernet-usb-switcher-lure)
+- [Relay Lure](relay-lure)
 
 ### Retired
 
 These are boards that were in production, but are no longer available 
 for sale.
 
-- [IDP JTAG Lure](/idp-jtag-lure)
-- [Jetsam Lure](/jetsam-lure)
-- [Flotsam Lure](/flotsam-lure)
-- [Calamari Lure](/calamari-lure)
-- [Prototype Lure](/prototype-lure)
+- [IDP JTAG Lure](idp-jtag-lure)
+- [Jetsam Lure](jetsam-lure)
+- [Flotsam Lure](flotsam-lure)
+- [Calamari Lure](calamari-lure)
+- [Prototype Lure](prototype-lure)
 
 ### Cancelled
 
 These are lures that do not have build files available, but information 
 pertaining to them is still pertinent.
 
-- [Ika Lure](/ika-lure)
+- [Ika Lure](ika-lure)

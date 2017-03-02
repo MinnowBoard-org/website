@@ -1,10 +1,11 @@
 ## Silverjaw Lure
 
 The Silverjaw Lure is dual break-out board providing both an mPCIe and mSATA
-slot via the MinnowBoard MAX HSE connector. This lure is produced and sold by [Tin Can Tools](http://www.tincantools.com/MinowBoard_Max_Add-ons/Silverjaw_Lure.html) (Note:
-Lures are owned and supported by their respective owners and manufactures.
+slot via the MinnowBoard MAX HSE connector. This lure is produced and sold by [Tin Can Tools](http://www.tincantools.com/MinowBoard_Max_Add-ons/Silverjaw_Lure.html) 
+
+**Note:** Lures are owned and supported by their respective owners and manufactures.
 The community can only give you best effort support; issues should be taken
-to the respective manufacturers and designers.)
+to the respective manufacturers and designers.
 
 The Silverjaw Lure is an expansion board for the MinnowBoard Max that plugs
 into the High Speed Expansion (HSE) connector on the bottom of the MinnowBoard
@@ -25,6 +26,7 @@ The mPCIe socket interfaces to the MinnowBoard Max's PCI express bus which provi
 a high bandwidth interface for mPCIe cards. The mPCIe socket accepts the following
 type of mPCIe cards: wifi, SATA drive interfaces, SD memory card, USB 2.0, USB 3.0,
 RS-232 serial cards, etc.
+
 **Note:** Tin Can Tools recommends using a +5VDC@3A power supply when using the
 Silverjaw Lure with the MinnowBoard Max.
 

@@ -2,7 +2,7 @@
 
 Ethernet and USB port switcher Lure for the Low Speed Expansion (LSE) header.
 
-![Ethernet and USB Switcher Lure](pages/lures/Eth_usb_switcher.jpg)
+![Ethernet and USB Switcher Lure](pages/ethernet-usb-switcher-lure/Eth_usb_switcher.jpg)
 
 ### Features
 

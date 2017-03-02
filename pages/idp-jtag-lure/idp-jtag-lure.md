@@ -7,7 +7,7 @@ The IDP JTAG Lure provides an adapter interface for Intel IDP JTAG hardware test
 
 This Lure is produced by CircuitCo and is currently unavailable to purchase. (Note: Lures are owned and supported by their respective owners and manufactures. The community can only give you best effort support; issues should be taken to the respective manufacturers and designers.)
 
-![IDP JTAG Lure](pages/lures/828px-Jtaglure-slanted.jpg)
+![IDP JTAG Lure](pages/idp-jtag-lure/828px-Jtaglure-slanted.jpg)
 
 
 ### Features

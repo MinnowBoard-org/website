@@ -4,7 +4,7 @@ These are lures that do not have build files available, but information pertaini
 
 The Ika lure is a lure that extends the existing low-speed connection by breaking it out and adding the pieces to make allow the MinnowBoard MAX to interface with an Arduino compatible shield.
 
-![Ika Lure](pages/lures/Ika_Lure.png)
+![Ika Lure](pages/ika-lure/Ika_Lure.png)
 
 ### Features
 
@@ -23,4 +23,4 @@ This details the translation of the pinout from the existing low-speed connector
 **Note:** There are two Ti TXS0108E voltage translators attached to pins 2-13, RX and TX
 - [Datasheet](http://www.ti.com/lit/ds/symlink/txs0108e.pdf)
 
-![Ika Layout](pages/lures/Ika-layout.PNG)
+![Ika Layout](pages/ika-lure/Ika-layout.PNG)

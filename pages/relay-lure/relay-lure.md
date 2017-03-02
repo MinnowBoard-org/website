@@ -2,7 +2,7 @@
 
 Relay Lure for MinnowBoard MAX / Turbot compatible boards Low Speed Expansion (LSE) header.
 
-![Relay Lure](pages/lures/Relay_lure.png)
+![Relay Lure](pages/relay-lure/Relay_lure.png)
 
 ### Features
 

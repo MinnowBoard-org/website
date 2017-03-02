@@ -2,7 +2,7 @@
 
 Adapter from Low Speed Connector I/O (I2C,I2S,UARTs,SPI,GPIO) to BeagleBone* Capes. Works with a variety of Capes but not all.
 
-![Cuttle(bone) Lure](pages/lures/675px-Cuttle_lure.png)
+![Cuttle(bone) Lure](pages/cuttlebone-lure/675px-Cuttle_lure.png)
 
 ### Features
 

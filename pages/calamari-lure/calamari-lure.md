@@ -4,11 +4,11 @@
 
 The Calamari Lure is designed as a demonstration board for working with the GPIO and low-speed interface. It attaches to the low-speed interface on the MinnowBoard MAX, and provides a compact and easy way to experiment with a variety of devices--without the hassle of gathering your own discrete components and doing your own breadboarding.
 
-The Calamari Lure is produced by [CircuitCo](http://www.circuitco.com/), and is available to purchase from [Mouser](http://www.mouser.com/ProductDetail/MinnowBoard-by-CircuitCo/999-0004990). (Note: Lures are owned and supported by their respective owners and manufacturers. The community can only offer best-effort help; issues should be taken to the respective manufacturers and designers.) 
+The Calamari Lure is produced by [CircuitCo](http://www.circuitco.com/), and is available to purchase from [Mouser](http://www.mouser.com/ProductDetail/MinnowBoard-by-CircuitCo/999-0004990). (Note: Lures are owned and supported by their respective owners and manufacturers. The community can only offer best-effort help; issues should be taken to the respective manufacturers and designers.)
 
-![Calamari Lure](pages/lures/Lure-Calamari-angled.png)
+![Calamari Lure](pages/calamari-lure/Lure-Calamari-angled.png)
 
-![Calamari Lure](pages/lures/Lure-Calamari-top.png)
+![Calamari Lure](pages/calamari-lure/Lure-Calamari-top.png)
 
 ### Features:
 - SPI Based ADC
@@ -84,7 +84,7 @@ I2C EEPROM at 0x50
 - [I2CDEV - userspace I2C character device driver interface documentation](https://www.kernel.org/doc/Documentation/i2c/dev-interface)
 
 
-### Components 
+### Components
 - Single tricolored surface mount RGB LED [datasheet](Rgb-led-smd.pdf)
 - 74HC595 Serial Shift Register [datasheet](74hc595.pdf)
 - 7 Segment Display [datasheet](7seg-display.pdf)
@@ -98,4 +98,3 @@ You can find the design files on [GitHub](). All design files are released under
 
 ### Test Files
 - https://github.com/MinnowBoard/minnow-max-extras
-

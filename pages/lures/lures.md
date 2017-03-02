@@ -1,4 +1,4 @@
-## Lures Overview
+## Expansion Boards (Lures) Overview
 
 Breakout boards called "Lures" expand functionality of the MinnowBoard MAX 
 by connecting to either the low- or high-speed expansion connectors. Lures 

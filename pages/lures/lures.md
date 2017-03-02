@@ -14,9 +14,9 @@ issues should be taken to the respective manufacturers and designers.
 
 These are lures that are currently available, and obtainable in a pre-built state.
 
-- [Desert Lure](/desert-lure)
-- [Silverjaw Lure](/silverjaw-lure)
-- [Mikrobus Lure](/mikrobus-lure)
+- [Desert Lure](lures/desert-lure)
+- [Silverjaw Lure](lures/silverjaw-lure)
+- [Mikrobus Lure](lures/mikrobus-lure)
 - [Debugger Lure](/debugger-lure)
 - [Moray Lure (XBee)](/moray-lure)
 

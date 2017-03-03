@@ -11,3 +11,5 @@ Adapter from Low Speed Connector I/O (I2C,I2S,UARTs,SPI,GPIO) to BeagleBone* Cap
 - Licensed: [TAPR Open Hardware License v1.0](https://www.tapr.org/ohl.html)
 
 ### Design files
+
+You can find the design files on [GitHub - design files]().

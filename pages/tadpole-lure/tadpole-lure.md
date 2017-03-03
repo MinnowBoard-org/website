@@ -16,7 +16,7 @@ The Tadpole Lure is a low cost "Mini-Lure" kit, providing a single GPIO-controll
 
 ### Design files
 
-The Tadpole Lure is an "Open Source Hardware" compatible device, licensed under Creative Commons Attribution-ShareAlike 3.0 United States (CC BY-SA 3.0)
+The Tadpole Lure is an "Open Source Hardware" compatible device. You can find the design files on [GitHub - design files](). All design files are released under [Creative Commons CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Read about what this license allows for on the Creative Commons website.
 
 ### Assembly
 

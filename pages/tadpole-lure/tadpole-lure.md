@@ -46,7 +46,7 @@ There are three resistors with the color code YELLOW-VIOLET-RED. These are used 
 The single RGB LED in the kit is mounted with the longest lead as the second hole from the side with a flat edge. The LED package has a flat side that gets matched up with the white line marking on the PCB.
 
 ![RGB LED Alignment](pages/tadpole-lure/220px-Tadpole-led-aligned.jpg)
-![RGB LED](pages/lures/220px-Tadpole-led.jpg)
+![RGB LED](pages/tadpole-lure/220px-Tadpole-led.jpg)
 
 #### Transistors
 

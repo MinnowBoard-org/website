@@ -1,6 +1,6 @@
 ## Legacy MinnowBoards
 
-Below are the legacy MinnowBoards which have been released.
+Below are the legacy MinnowBoard boards which have been released along with all technical specifications and open source design files. 
 
 | [MinnowBoard MAX](minnowboard-max) | 2014  |
 |---|---|

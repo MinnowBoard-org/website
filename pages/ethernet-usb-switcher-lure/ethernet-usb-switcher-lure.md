@@ -12,4 +12,4 @@ Ethernet and USB port switcher Lure for the Low Speed Expansion (LSE) header.
 
 ### Design files
 
-The lure is an "Open Source Hardware" compatible device. You can find the design files on [GitHub - design files](). All design files are released under [Creative Commons CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Read about what this license allows for on the Creative Commons website.
+The lure is an "Open Source Hardware" compatible device. You can find the design files on [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures). All Ethernet and USB Switcher Lure design files are released under [Creative Commons CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Read about what this license allows for on the Creative Commons website.

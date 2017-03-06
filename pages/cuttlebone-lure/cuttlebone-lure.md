@@ -12,4 +12,4 @@ Adapter from Low Speed Connector I/O (I2C,I2S,UARTs,SPI,GPIO) to BeagleBone* Cap
 
 ### Design files
 
-You can find the design files on [GitHub - design files]().
+You can find the Cuttle(bone) Lure design files on [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures).

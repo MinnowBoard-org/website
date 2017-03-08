@@ -5,7 +5,7 @@ The MinnowBoard Turbot, manufactured by [ADI](http://www.adiengineering.com/prod
 |**Board** | **Suppliers** |
 |----|----|
 |MinnowBoard Turbot B41 Quad Core       | [Mouser Electronics](http://www.mouser.com/ProductDetail/ADI-Engineering/MBT-4220/?qs=%2fha2pyFadui64n%252b8IleJOqyIjBvJMFFBzDnmapi7xYeg1DoHKlPITEK43C3ScpiSDR5eKSHt9n0%3d) \ [Netgate](http://store.netgate.com/Turbot4.aspx)  |
-|MinnowBoard Turbot Dual Core          | [Amazon](https://www.amazon.com/MinnowBoard-Turbot-Dual-Core-Board/dp/B01A04QAW2/ref=sr_1_1?ie=UTF8&qid=1479165174&sr=8-1&keywords=minnowboard) \ [Arrow](https://www.arrow.com/en/products/mbt-2210/adi-engineering) \ [Mouser Electronics](http://www.mouser.com/ProductDetail/ADI-Engineering/MBT-2210/?qs=kWQV1gtkNnfue4gk0ao8Xg%3d%3d) \ [Netgate](http://www.netgate.com/products/turbot.html) |
+|MinnowBoard Turbot Dual Core          | [Amazon](https://www.amazon.com/MinnowBoard-Turbot-Dual-Core-Board/dp/B01A04QAW2/ref=sr_1_1?ie=UTF8&qid=1479165174&sr=8-1&keywords=minnowboard) \ [Arrow](https://www.arrow.com/en/products/mbt-2210/adi-engineering) \ [Mouser Electronics](http://www.mouser.com/ProductDetail/ADI-Engineering/MBT-2210/?qs=kWQV1gtkNnfue4gk0ao8Xg%3d%3d) \ [Netgate](https://store.netgate.com/Turbot2.aspx) |
 
 ### Get Accessories
 Before getting started with your board, you will need these recommended components. 
@@ -25,16 +25,24 @@ follow the listed requirements when buying the parts.
 #### Optional
 |**Part** | **Suppliers** | **Requirements/Description** |
 |----|----|----|
-| Brillo accessory kit | [Netgate](http://store.netgate.com/BrilloKit.aspx) | Kit includes 802.11n USB Wifi Adapter (Realtek rtl8192); FTDI USB RS232 to 6P female breakout cable; Transcend 8GB microSD Class-10 storage card (or equivalent); 7.1 Channel Stereo Card USB Audio Adapter. |
 | Desktop/Laptop computer | - | Can run Windows, Linux, or OS X. Used to download the OS image and write to the USB flash drive. |
 | Ethernet cable | - | Used to perform software updates and download the additional packages not provided with the base operating system. |
-| Expansion board - Desert Lure | [Netgate](http://store.netgate.com/Lures/Desert.aspx) | Prototype expansion board that plugs into the Low Speed Expansion (LSE) connector on the top of the board. |
-| Expansion board - Debugger Lure | [Tin Can Tools](http://www.tincantools.com/Debugger-Lure.html) | Expansion board for the Turbot that adds a JTAG debugging interface for the Intel XDP. |
-| Expansion board - Moray Lure (XBee) | [Netgate](http://store.netgate.com/Lures/Moray.aspx) | Prototype expansion board that plugs into the Low Speed Expansion (LSE) connector on the top of the board. |
-| Expansion board - Silverjaw Lure | [Netgate](http://store.netgate.com/Silverjaw-Lure-for-MinnowBoard-Max-with-mSATA-and-mPCIe-P2433.aspx) | Prototype expansion board that plugs into the High Speed Expansion (HSE) connector on the bottom. |
 | FTDI serial to USB cable | [Amazon](https://www.amazon.com/FTDI-TTL-232R-3V3-SERIAL-CONVERTER-CABLE/dp/B00DDF8TV6/ref=sr_1_10?ie=UTF8&qid=1478709033&sr=8-10&keywords=ftdi+usb+to+ttl ) | 3.3v FTDI serial to USB cable. Connects MinnowBoard Turbot to USB on your host computer to run Turbot in a headless configuration (without keyboard and monitor). |
 | Internet connected router/switch/hub | - | In order to download packages or update an OS, you will need to be able to connect to the internet. |
 | RTC battery | - | 3V lithium coin battery (CR1225 or equivalent) for maintaining the Real-time clock (RTC) date and time when the board is powered off. | 
 | Turbot case | [Netgate](http://store.netgate.com/MBX/Case.aspx) | For protecting your Turbot when it's not in use. |
 | USB hub | - | For connecting more than two devices. |
 | USB mouse | - | If you install an OS with a graphical user interface, a USB mouse is handy to have. |
+| Standoffs | [McMaster-Carr](https://www.mcmaster.com/#female-threaded-round-standoffs/=16lgm1q) | Female aluminum Standoffs at McMaster-Carr. Aluminum is ideal for securing expansion cards to the top-side Low Speed Expansion (LSEv1) or secondary side High Speed Expansion (HSEv1), if applicable. Aluminum is also a good choice for sturdy feet to keep your board off the desk surface, helping to prevent shorts and other damage. **Recommended** : Thread = 6-32, Material = Aluminum, Outside Diamater (OD) = 1/4", Shape = Round. Then select desired length: [1" Length](https://www.mcmaster.com/#93330A449). Some people prefer a taller standoff for desktop feet. Often paired with rubber feet.[5/8" Length](https://www.mcmaster.com/#93330A446). This is the right length for mounting top-side LSEv1 expansion cards (Lures). For most people 5/8" is also the preferred length for desktop feet, often paired with rubber feet. As you can see by inspecting the height of bottom side components, other standoffs may work. **Female threaded standoffs** at [Mouser](http://www.mouser.com/Electromechanical/Hardware/Standoffs-Spacers/_/N-aictf/). Many choices available from Mouser too. Apply the same filters. [5/8" length, Alum](http://www.mouser.com/ProductDetail/RAF-Electronic-Hardware/1686-632-AL/?qs=sGAEpiMZZMtrde5aJd3qw0AN1sweODAOXwba0jzYDXA%3d). [1" length, Alum](http://www.mouser.com/ProductDetail/RAF-Electronic-Hardware/1692-632-AL/?qs=sGAEpiMZZMtrde5aJd3qw4906qPZKIlyLaZZgp%2ffwe4%3d) |
+| Rubber Feet | [McMaster-Carr](https://www.mcmaster.com/#9540k693/=16a7i3d) | We like to attach to the bottom of standoffs that will sit on the desktop surface, to prevent sliding around. Entirely optional, but it gives a good feel. Many options available. Look for a "counterbore" of 1/4" to match the standoffs and screws. |
+| Standoff/Nut Kits| [Amazon Nylon Kit v1](https://www.amazon.com/dp/B01EPLH08Y/ref=psdc_16409981_t3_B01I0SORIE?th=1) [Amazon Nylon Kit v2](https://www.amazon.com/180Pcs-M3-Hex-Spacers-Screw-Nut-Standoffs-Quadcopter-Drone-Raspberry/dp/B01I0SORIE/ref=sr_1_1?ie=UTF8&qid=1486673441&sr=8-1&keywords=board+standoffs) | These are a cheap way to get the standard lengths in Nylon material. |
+| Screws| [McMaster-Carr screws](https://www.mcmaster.com/#91735a144/=16a7htg) [Mouser screws](http://www.mouser.com/ProductDetail/Keystone-Electronics/9903/?qs=sGAEpiMZZMtFmYSM%2fWUJwjMM2jkmYE8TU%252b6NUFYxuNE%3d) | For attaching stand-offs to the board. |
+
+#### Expansion boards / Lures
+|**Part** | **Suppliers** | **Requirements/Description** |
+|----|----|----|
+| Brillo accessory kit | [Netgate](http://store.netgate.com/BrilloKit.aspx) | Kit includes 802.11n USB Wifi Adapter (Realtek rtl8192); FTDI USB RS232 to 6P female breakout cable; Transcend 8GB microSD Class-10 storage card (or equivalent); 7.1 Channel Stereo Card USB Audio Adapter. |
+| Expansion board - Desert Lure | [Netgate](http://store.netgate.com/Lures/Desert.aspx) | Prototype expansion board that plugs into the Low Speed Expansion (LSE) connector on the top of the board. |
+| Expansion board - Debugger Lure | [Tin Can Tools](http://www.tincantools.com/Debugger-Lure.html) | Expansion board for the Turbot that adds a JTAG debugging interface for the Intel XDP. |
+| Expansion board - Moray Lure (XBee) | [Netgate](http://store.netgate.com/Lures/Moray.aspx) | Prototype expansion board that plugs into the Low Speed Expansion (LSE) connector on the top of the board. |
+| Expansion board - Silverjaw Lure | [Netgate](http://store.netgate.com/Silverjaw-Lure-for-MinnowBoard-Max-with-mSATA-and-mPCIe-P2433.aspx) | Prototype expansion board that plugs into the High Speed Expansion (HSE) connector on the bottom. |

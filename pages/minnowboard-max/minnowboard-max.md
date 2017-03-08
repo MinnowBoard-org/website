@@ -6,29 +6,29 @@ MinnowBoard MAX is the second generation MinnowBoard (released in July 2014), up
 
 | |  |
 |----|----|
-|Category    | Feature |
-| Core Logic  | 64-bit Intel®Atom™ E38xx Series SoC; $139 MSRP: E3825 (dual-core, 1.33 GHz); Integrated Intel HD Graphics with Open Source hardware-accelerated drivers for Linux OS |
-| Memory  | DDR3 RAM System Memory; $139 MSRP: 2 GB; 8 MB SPI Flash System Firmware Memory  |
-| Video  | Intel HD Graphics (1920x1080 max resolution); HDMI 1.4a (micro HDMI connector)  |
-| Audio | Digital via HDMI; Analog available separately via MinnowBoard MAX Lure (sold separately)  |
-| I/O  | Micro SDSDIO; SATA2 3Gb/sec (Port multipliers not supported via on-board SATA); USB 3.0 (host); USB 2.0 (host); Serial debug via FTDI cable (sold separately); 10/100/1000 Ethernet RJ-45 connector  |
-| Experimenter Features  | 8 x Buffered GPIO pins (2 pins support PWM); I2C &amp; SPI bus; 2 x 16550 HS UARTs, one with CTS/RTS; System Firmware Flash Programming Header (compatible with Dedi-Prog programmer)  |
-| Board Dimensions  | 99 x 74mm (2.9 x 3.9in)  |
-| Temperature Range  | 0 – 40 deg C (Contact CircuitCo for industrial temp range needs)  |
-| Power | 5V (min 2.5A) DC (Sold separately)  |
-| Operating Systems  | Supported: Debian GNU, Ubuntu, Fedora, Linux Mint; Yocto Project Compatible; Android 4.4 (Kitkat) and 5.0 (Lollipop) System; Microsoft Windows 8.1 and 10  |
-| System Boot Firmware  | UEFI Firmware; Coreboot; SageBIOS |
+|**Category**    | **Feature** |
+| **Core Logic**  | 64-bit Intel®Atom™ E38xx Series SoC; $139 MSRP: E3825 (dual-core, 1.33 GHz); Integrated Intel HD Graphics with Open Source hardware-accelerated drivers for Linux OS |
+| **Memory**  | DDR3 RAM System Memory; $139 MSRP: 2 GB; 8 MB SPI Flash System Firmware Memory  |
+| **Video**  | Intel HD Graphics (1920x1080 max resolution); HDMI 1.4a (micro HDMI connector)  |
+| **Audio** | Digital via HDMI; Analog available separately via MinnowBoard MAX Lure (sold separately)  |
+| **I/O**  | Micro SDSDIO; SATA2 3Gb/sec (Port multipliers not supported via on-board SATA); USB 3.0 (host); USB 2.0 (host); Serial debug via FTDI cable (sold separately); 10/100/1000 Ethernet RJ-45 connector  |
+| **Experimenter Features**  | 8 x Buffered GPIO pins (2 pins support PWM); I2C &amp; SPI bus; 2 x 16550 HS UARTs, one with CTS/RTS; System Firmware Flash Programming Header (compatible with Dedi-Prog programmer)  |
+| **Board Dimensions**  | 99 x 74mm (2.9 x 3.9in)  |
+| **Temperature Range**  | 0 – 40 deg C (Contact CircuitCo for industrial temp range needs)  |
+| **Power** | 5V (min 2.5A) DC (Sold separately)  |
+| **Operating Systems**  | Supported: Debian GNU, Ubuntu, Fedora, Linux Mint; Yocto Project Compatible; Android 4.4 (Kitkat) and 5.0 (Lollipop) System; Microsoft Windows 8.1 and 10  |
+| **System Boot Firmware**  | UEFI Firmware; Coreboot; SageBIOS |
 
 ### Board layout
 Here are photos showing the MinnowBoard MAX board layout identifying key hardware items; items are described later in this section.
 
 ![MinnowBoard MAX Board Layout 1](pages/minnowboard-max/MinnowBoardMAX-board-layout1.png)
 
-NOTE: On Rev A1 boards and beyond, FTDI serial pin 1 is nearest the SATA connector, but on A0 boards pin 1 is furthest away. (A0 boards are rare, and are only being documented for completeness.)
+**NOTE:** On Rev A1 boards and beyond, FTDI serial pin 1 is nearest the SATA connector, but on A0 boards pin 1 is furthest away. (A0 boards are rare, and are only being documented for completeness.)
 
 ![MinnowBoard MAX Board Layout 1](pages/minnowboard-max/MinnowBoardMAX-board-layout2.png)
 
-NOTE: Some items, such as the Real Time Clock battery pad are not populated when the boards are manufactured.
+**NOTE:** Some items, such as the Real Time Clock battery pad are not populated when the boards are manufactured.
 
 ![MinnowBoard MAX Board Layout 1](pages/minnowboard-max/MinnowBoardMAX-board-layout3.png)
 
@@ -98,7 +98,7 @@ Pins and signal names are referenced from the cable:
 - Pin 4: GREEN TXD
 - Pin 5: WHITE RXD
 
-**Note:** The RED wire is for power and is not internally connected on the MinnowBoard MAX. CTS,VCC, and RTS are not used on the debug UART header. The pinouts and connections are listed to facilitate locating and connecting a compatible adapter.
+**NOTE:** The RED wire is for power and is not internally connected on the MinnowBoard MAX. CTS,VCC, and RTS are not used on the debug UART header. The pinouts and connections are listed to facilitate locating and connecting a compatible adapter.
 
 Places that carry 4-pin FTDI connector cables include:
 
@@ -137,7 +137,7 @@ D1 is the power indicator LED; when lit, power is being provided to the board.
 #### D2 (LED)
 
 D2 is the On/Off status indicator LED; when lit the CPU itself has come up and is working, the system is running.
-**Note:** On later revisions of the board (A4+), this LED defaults to being on, but is controllable via a GPIO.
+**NOTE:** On later revisions of the board (A4+), this LED defaults to being on, but is controllable via a GPIO.
 
 #### HDMI
 
@@ -322,7 +322,7 @@ Here's how firmware should initialize the board's memory given the above:
 - If GPIO_S5_5 is 0 - use a hard coded 1GB configuration 
 - If GPIO_S5_5 is 1 - use a hard coded 2GB configuration (even if the board has 4GB of memory)
 
-### MinnowBoard MAX design files
+### Design files
 
 You can find the MinnowBoard MAX design files on [GitHub - MinnowBoard design files](https://github.com/MinnowBoard-org/design-files/tree/master/minnowboard-max). All design files are released under [Creative Commons CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Read about what this license allows for on the Creative Commons website.
 

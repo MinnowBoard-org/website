@@ -8,8 +8,9 @@ Adapter from Low Speed Connector I/O (I2C,I2S,UARTs,SPI,GPIO) to BeagleBone* Cap
 
 - Low speed adapter for MAX to BeagleBone capes
 - Produced by Tom King
-- Licensed: [TAPR Open Hardware License v1.0](https://www.tapr.org/ohl.html)
+
 
 ### Design files
 
-You can find the Cuttle(bone) Lure design files on [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures).
+- View the Cuttle(bone) Lure design files on [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures).
+- Licensed: [TAPR Open Hardware License v1.0](https://www.tapr.org/ohl.html)

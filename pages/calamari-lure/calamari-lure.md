@@ -98,7 +98,7 @@ I2C EEPROM at 0x50
 
 ### Design files
 
-- You can find the design files on [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures). 
+- View the design files on [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures). 
 - All Calamari Lure design files are released under Creative Commons Attribution-ShareAlike 4.0 International License. 
 - Read about what this license allows for on the [Creative Commons website](http://creativecommons.org/licenses/by-sa/4.0/).
 

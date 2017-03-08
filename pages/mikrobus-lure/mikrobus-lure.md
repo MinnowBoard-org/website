@@ -9,4 +9,6 @@ A list of available Mikrobus can be found on the [MikroElektronika site](http://
 
 ### Design files
 
-You can find the design files on [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures). All Mikrobus Lure design files are released under [Creative Commons CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). Read about what this license allows for on the Creative Commons website.
+- View the design files on [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures). 
+- All Mikrobus Lure design files are released under Creative Commons CC BY-SA 3.0. 
+- Read about what this license allows for on the [Creative Commons website](https://creativecommons.org/licenses/by-sa/3.0/).

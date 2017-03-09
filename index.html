@@ -73,11 +73,14 @@
           left: 0;
           top: 63px !important;
         };
-        height: calc(100% - 114px) !important;
+        /* By default, all pages have the thin footer affxied in the panel
+         * itself; the exception is `default`, which is handled in
+         * [data-section="default'] by setting `height` back to auto. */
+        height: calc(100% - 40px) !important;
       }
 
-      paper-drawer-panel#layout {
-
+      paper-header-panel[data-section="default"] {
+        height: 100% !important;
       }
 
       .paper-dialog-0 {
@@ -125,12 +128,63 @@
         transition: 0.15s all ease;
       }
 
-      footer {
-        margin-top: 0 !important;
+      #small-footer {
+        margin: 0 !important;
         font-size: var(--small-font-size);
-        position: fixed;
+        right: 0;
         left: 0;
         bottom: 0;
+        position: fixed;
+        padding: 0 1em;
+        height: 40px;
+        box-sizing: border-box;
+        color: white;
+      }
+
+      @media (max-width: 825px) {
+        #small-footer .container > div:last-child {
+          display: none;
+        }
+      }
+      @media (max-width: 680px) {
+        #small-footer .container > div:not(:first-child) {
+          display: none;
+        }
+        #small-footer {
+          font-size: 10px;
+        }
+      }
+
+      #small-footer .container {
+        height: 40px;
+      }
+
+      #small-footer a:hover,
+      #small-footer a:focus,
+      #small-footer a:active {
+        color: #23ccfc;
+        text-decoration: underline;
+      }
+
+      #small-footer a:visited {
+        text-decoration: underline;
+      }
+
+      #small-footer a {
+        text-decoration: none;
+        color: white;
+      }
+
+      #small-footer .container div {
+        margin-right: 0.5em;
+      }
+
+      #small-footer .container div:first-child {
+        margin-left: 0.5em;
+      }
+
+      #small-footer[data-section="default"] {
+        display: none;
       }
 
       paper-item#default {
@@ -378,7 +432,7 @@
         </template>
       </paper-menu>
 
-      <paper-header-panel id="main-panel" main class$="[[layoutClass]]">
+      <paper-header-panel data-section$="[[tab]]" id="main-panel" main class$="[[layoutClass]]">
         <paper-toolbar>
           <template is="dom-if" if="[[!desktopLayout]]">
             <!-- hamburger main mobile icon
@@ -650,33 +704,22 @@
           </template>
         </iron-pages>
       </paper-header-panel>
-
-
     </paper-drawer-panel>
 
-    <!--footer-->
-        <footer class="iron-selected">
-          <div class="container">
-            <div class="col-lg-12 footer-copyright">
-              <span class="bottom-line">Copyright (C) 2011-2016 MinnowBoard.org Foundation</span>
-              <div class="menu-inline">
-                <ul>
-                  <li><a href="../../terms-of-service" title="Terms of service">Terms of service</a></li>
-                  <li><a href="../../privacy-policy" title="Privacy">Privacy</a></li>
-                  <li><a href="../../cookies-notice" title="Cookies">Cookies</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-12 menu-inline right">
-              <ul>
-                <li><a href="../../about" title="About">About</a></li>
-                <li><a href="http://wiki.minnowboard.org" on-click="wikiHandler" title="MinnowBoard Wiki" target="_blank">MinnowBoard Wiki</a></li>
-                <li><a href="../../help/ask-a-question" title="Feedback">Feedback</a></li>
-                <li><a href="../../about/contacts" title="Contact">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </footer>
+    <footer id="small-footer" data-section$="[[tab]]">
+      <div class="container layout horizontal justified center" style="white-space: nowrap">
+        <div>Copyright (C) 2011-2016 MinnowBoard.org Foundation</div>
+        <div class="layout horizontal justified">
+          <div><a href="../../terms-of-service" title="Terms of service">Terms of service</a></div>
+          <div><a href="../../privacy-policy" title="Privacy">Privacy</a></div>
+          <div><a href="../../cookies-notice" title="Cookies">Cookies</a></div>
+        </div>
+        <div class="layout horizontal justified">
+          <div><a href="../../help/ask-a-question" title="Feedback">Feedback</a></div>
+          <div><a href="../../about/contacts" title="Contact">Contact</a></div>
+        </div>
+      </div>
+    </footer>
 
     <paper-dialog with-backdrop entry-animation="scale-up-animation" exit-animation="fade-out-animation" id="img_dialog">
       <div class="dialog-header">

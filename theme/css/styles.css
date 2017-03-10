@@ -6,7 +6,7 @@ dark_cyan = #00ccff;
 charcoal = #3b404c;
 beige = #e7e7d1;
 */
-/* line 5, ../../../../../../../Users/nbnunezl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Users/nbnunezl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -28,45 +28,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 25, ../../../../../../../Users/nbnunezl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 25, ../../../../../../Users/nbnunezl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 29, ../../../../../../../Users/nbnunezl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 29, ../../../../../../Users/nbnunezl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 33, ../../../../../../../Users/nbnunezl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 33, ../../../../../../Users/nbnunezl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 37, ../../../../../../../Users/nbnunezl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 37, ../../../../../../Users/nbnunezl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 41, ../../../../../../../Users/nbnunezl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 41, ../../../../../../Users/nbnunezl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 138, ../../../../../../../Users/nbnunezl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 138, ../../../../../../Users/nbnunezl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 45, ../../../../../../../Users/nbnunezl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 45, ../../../../../../Users/nbnunezl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 154, ../../../../../../../Users/nbnunezl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 154, ../../../../../../Users/nbnunezl/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -2008,10 +2008,9 @@ footer {
   text-align: center;
   position: relative;
   display: inline-block;
-  margin-top: 2rem;
   width: 100%;
 }
-/* line 10, ../sass/partials/_footer.scss */
+/* line 9, ../sass/partials/_footer.scss */
 footer .menu-inline {
   text-align: center;
 }
@@ -2020,53 +2019,53 @@ footer .menu-inline {
   footer {
     text-align: left;
   }
-  /* line 17, ../sass/partials/_footer.scss */
+  /* line 16, ../sass/partials/_footer.scss */
   footer .menu-inline {
     text-align: left;
   }
-  /* line 21, ../sass/partials/_footer.scss */
+  /* line 20, ../sass/partials/_footer.scss */
   footer .menu-inline.right ul {
     float: right;
   }
-  /* line 25, ../sass/partials/_footer.scss */
+  /* line 24, ../sass/partials/_footer.scss */
   footer .menu-inline li:first-child {
     margin-left: 0;
     padding-left: 0;
   }
 }
-/* line 31, ../sass/partials/_footer.scss */
+/* line 30, ../sass/partials/_footer.scss */
 footer li {
   line-height: 32px;
 }
-/* line 34, ../sass/partials/_footer.scss */
+/* line 33, ../sass/partials/_footer.scss */
 footer li a {
   color: #fff;
 }
-/* line 37, ../sass/partials/_footer.scss */
+/* line 36, ../sass/partials/_footer.scss */
 footer li a:visited {
   color: #fff;
 }
-/* line 41, ../sass/partials/_footer.scss */
+/* line 40, ../sass/partials/_footer.scss */
 footer li a:hover, footer li a:focus, footer li a:active, footer li a.active {
   color: #23ccfc;
 }
-/* line 49, ../sass/partials/_footer.scss */
+/* line 48, ../sass/partials/_footer.scss */
 footer li span {
   color: #fff;
   margin-left: 5px;
 }
-/* line 53, ../sass/partials/_footer.scss */
+/* line 52, ../sass/partials/_footer.scss */
 footer li span:hover {
   color: #23ccfc !important;
 }
-/* line 59, ../sass/partials/_footer.scss */
+/* line 58, ../sass/partials/_footer.scss */
 footer .list-title {
   display: block;
   margin-bottom: 25px;
   font-weight: 700;
 }
 @media (min-width: 1025px) {
-  /* line 66, ../sass/partials/_footer.scss */
+  /* line 65, ../sass/partials/_footer.scss */
   footer .menu-social {
     position: absolute;
     width: 100%;
@@ -2074,13 +2073,13 @@ footer .list-title {
     right: 0;
     text-align: right;
   }
-  /* line 74, ../sass/partials/_footer.scss */
+  /* line 73, ../sass/partials/_footer.scss */
   footer .menu-inline ul {
     margin-bottom: 0;
   }
 }
 @media (min-width: 1025px) {
-  /* line 80, ../sass/partials/_footer.scss */
+  /* line 79, ../sass/partials/_footer.scss */
   footer .menu-social {
     position: relative;
     width: 14.58333%;
@@ -2088,21 +2087,21 @@ footer .list-title {
   }
 }
 
-/* line 88, ../sass/partials/_footer.scss */
+/* line 87, ../sass/partials/_footer.scss */
 .footer-copyright span {
   color: #fff;
   display: inline-block;
   line-height: 32px;
 }
 
-/* line 94, ../sass/partials/_footer.scss */
+/* line 93, ../sass/partials/_footer.scss */
 .footer-logo {
   position: absolute;
   bottom: 25px;
   left: 10px;
 }
 @media (min-width: 767px) {
-  /* line 94, ../sass/partials/_footer.scss */
+  /* line 93, ../sass/partials/_footer.scss */
   .footer-logo {
     position: static;
   }

@@ -45,6 +45,8 @@
   <link rel="import" href="pages/editor-page/editor-page.html">
   <link rel="import" href="pages/tutorials-page/tutorials-page.html">
 
+  <link rel="import" href="elements/custom-footer/custom-footer.html">
+
   <link href="theme/images/favicon.ico" rel="icon" type="image/x-icon">
 
   <link rel="stylesheet" href="theme/vendor/font-awesome/css/font-awesome.min.css">
@@ -73,6 +75,10 @@
           left: 0;
           top: 63px !important;
         };
+        height: calc(100% - 68px) !important;
+      }
+
+      [data-section=default] paper-header-panel {
         height: calc(100% - 114px) !important;
       }
 
@@ -178,6 +184,10 @@
 
       paper-item#default span:last-of-type {
         color: var(--primary-color-1);
+      }
+
+      iron-pages .iron-selected + custom-footer {
+        display: block !important;
       }
 
       .top-navigation.tablet-layout,
@@ -416,6 +426,7 @@
         <iron-pages id="pages" selected="[[tab]]" attr-for-selected='id'>
           <template is="dom-if" id="default-template" if="[[showPage('default', tab)]]">
             <default-page id="default" edit="{{edit}}" route="{{route}}"></default-page>
+            <custom-footer></custom-footer>
           </template>
           <error-page id="not-found" edit="{{edit}}" route="{{subRoute}}" page></error-page>
           <!-- pages are listed here -->
@@ -424,72 +435,84 @@
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
           <template is="dom-if" id="faq-template" if="[[showPage('faq', tab)]]">
             <generic-page id='faq' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
           <template is="dom-if" id="get-a-board-template" if="[[showPage('get-a-board', tab)]]">
             <generic-page id='get-a-board' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
           <template is="dom-if" id="tutorials-template" if="[[showPage('tutorials', tab)]]">
             <tutorials-page id='tutorials' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></tutorials-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
           <template is="dom-if" id="board-viewer-template" if="[[showPage('board-viewer', tab)]]">
             <board-viewer-page id='board-viewer' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></board-viewer-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
           <template is="dom-if" id="about-template" if="[[showPage('about', tab)]]">
             <generic-page id='about' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
           <template is="dom-if" id="community-template" if="[[showPage('community', tab)]]">
             <generic-page id='community' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
           <template is="dom-if" id="help-template" if="[[showPage('help', tab)]]">
             <help-page id='help' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></help-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
           <template is="dom-if" id="max-hse-template" if="[[showPage('max-hse', tab)]]">
             <generic-page id='max-hse' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
           <template is="dom-if" id="legacy-boards-template" if="[[showPage('legacy-boards', tab)]]">
             <generic-page id='legacy-boards' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
           <template is="dom-if" id="minnowboard-max-template" if="[[showPage('minnowboard-max', tab)]]">
             <generic-page id='minnowboard-max' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
           <template is="dom-if" id="minnowboard-v1-template" if="[[showPage('minnowboard-v1', tab)]]">
             <generic-page id='minnowboard-v1' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
           <!-- LURES    ============================================   -->
            <template is="dom-if" id="lures-template" if="[[showPage('lures', tab)]]">
@@ -497,108 +520,126 @@
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
            <template is="dom-if" id="desert-lure-template" if="[[showPage('desert-lure', tab)]]">
             <generic-page id='desert-lure' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
            <template is="dom-if" id="silverjaw-lure-template" if="[[showPage('silverjaw-lure', tab)]]">
             <generic-page id='silverjaw-lure' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
            <template is="dom-if" id="mikrobus-lure-template" if="[[showPage('mikrobus-lure', tab)]]">
             <generic-page id='mikrobus-lure' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
            <template is="dom-if" id="debugger-lure-template" if="[[showPage('debugger-lure', tab)]]">
             <generic-page id='debugger-lure' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
             <template is="dom-if" id="moray-lure-template" if="[[showPage('moray-lure', tab)]]">
             <generic-page id='moray-lure' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
             <template is="dom-if" id="fish-food-lure-template" if="[[showPage('fish-food-lure', tab)]]">
             <generic-page id='fish-food-lure' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
             <template is="dom-if" id="cuttlebone-lure-template" if="[[showPage('cuttlebone-lure', tab)]]">
             <generic-page id='cuttlebone-lure' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
             <template is="dom-if" id="tadpole-lure-template" if="[[showPage('tadpole-lure', tab)]]">
             <generic-page id='tadpole-lure' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
              <template is="dom-if" id="drone-lure-template" if="[[showPage('drone-lure', tab)]]">
             <generic-page id='drone-lure' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
              <template is="dom-if" id="ethernet-usb-switcher-lure-template" if="[[showPage('ethernet-usb-switcher-lure', tab)]]">
             <generic-page id='ethernet-usb-switcher-lure' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
              <template is="dom-if" id="relay-lure-template" if="[[showPage('relay-lure', tab)]]">
             <generic-page id='relay-lure' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
              <template is="dom-if" id="idp-jtag-lure-template" if="[[showPage('idp-jtag-lure', tab)]]">
             <generic-page id='idp-jtag-lure' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
              <template is="dom-if" id="jetsam-lure-template" if="[[showPage('jetsam-lure', tab)]]">
             <generic-page id='jetsam-lure' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
               <template is="dom-if" id="flotsam-lure-template" if="[[showPage('flotsam-lure', tab)]]">
             <generic-page id='flotsam-lure' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
              <template is="dom-if" id="calamari-lure-template" if="[[showPage('calamari-lure', tab)]]">
             <generic-page id='calamari-lure' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
               <template is="dom-if" id="prototype-lure-template" if="[[showPage('prototype-lure', tab)]]">
             <generic-page id='prototype-lure' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
                <template is="dom-if" id="ika-lure-template" if="[[showPage('ika-lure', tab)]]">
             <generic-page id='ika-lure' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
           <template is="dom-if" id="markdown-style-guide-template" if="[[showPage('markdown-style-guide', tab)]]">
             <generic-page id='markdown-style-guide' edit="{{edit}}"
@@ -611,24 +652,28 @@
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
            <template is="dom-if" id="privacy-policy-template" if="[[showPage('privacy-policy', tab)]]">
             <generic-page id='privacy-policy' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
           <template is="dom-if" id="terms-of-service-template" if="[[showPage('terms-of-service', tab)]]">
             <generic-page id='terms-of-service' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
           <template is="dom-if" id="attributions-template" if="[[showPage('attributions', tab)]]">
             <generic-page id='attributions' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'
               layout="[[layoutClass]]"
               route="{{subRoute}}"></generic-page>
+            <custom-footer class="small-footer"></custom-footer>
           </template>
           <template is="dom-if" id="editor-template" if="[[showPage('editor', tab)]]">
             <editor-page id='editor'
@@ -637,30 +682,6 @@
               route="{{subRoute}}"></editor-page>
           </template>
         </iron-pages>
-
-        <!--footer-->
-    <footer class="iron-selected" style="position: fixed; bottom: 0; left: 0;">
-      <div class="container">
-        <div class="col-lg-12 footer-copyright">
-          <span class="bottom-line">Copyright (C) 2011-2016 MinnowBoard.org Foundation</span>
-          <div class="menu-inline">
-            <ul>
-              <li><a href="../../terms-of-service" title="Terms of service">Terms of service</a></li>
-              <li><a href="../../privacy-policy" title="Privacy">Privacy</a></li>
-              <li><a href="../../cookies-notice" title="Cookies">Cookies</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-12 menu-inline right">
-          <ul>
-            <li><a href="../../about" title="About">About</a></li>
-            <li><a href="http://wiki.minnowboard.org" on-click="wikiHandler" title="MinnowBoard Wiki" target="_blank">MinnowBoard Wiki</a></li>
-            <li><a href="../../help/ask-a-question" title="Feedback">Feedback</a></li>
-            <li><a href="../../about/contacts" title="Contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
       </paper-header-panel>
     </paper-drawer-panel>
 

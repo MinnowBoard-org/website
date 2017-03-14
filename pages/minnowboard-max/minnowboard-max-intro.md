@@ -1,2 +1,3 @@
-#### [< Go back to: Legacy Board Page](legacy-boards)
+#### [< Go back to: Legacy Boards Page](legacy-boards)
+ 
 ---

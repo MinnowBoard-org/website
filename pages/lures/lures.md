@@ -12,16 +12,16 @@ issues should be taken to the respective manufacturers and designers.
 
 ### Lures in Production (currently available)
 
-These are lures that are currently available, and obtainable in a pre-built state.
+These are lures that are currently available and obtainable in a pre-built state.
 
-| |  |
-|----|----|
+| |  |  |  |
+|----|----|----|----|
 |**Lure**    | **Connects to** | **Design files / License** | **Supplier** | 
 | [Desert Lure](desert-lure) |  LSE  |  [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/desert-lure) / CC BY-SA 4.0  |  [Netgate](https://store.netgate.com/Lures/Desert.aspx)  |
-| [Silverjaw Lure](silverjaw-lure) |  HSE  |  [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/desert-lure)  |  [Netgate](https://store.netgate.com/Lures/Desert.aspx)  |
-| [GPS Lure](gps-lure) |  LSE  |  [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/desert-lure)  |  [Netgate](https://store.netgate.com/Lures/Desert.aspx)  |
-| [Debugger Lure](debugger-lure) |  HSE  |  [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/desert-lure)  |  [Netgate](https://store.netgate.com/Lures/Desert.aspx)  |
-| [Moray Lure (XBee)](moray-lure) |  LSE  |  [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/desert-lure)  |  [Netgate](https://store.netgate.com/Lures/Desert.aspx)  |
+| [Silverjaw Lure](silverjaw-lure) |  HSE  |  [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/silverjaw-lure) / CC BY-SA 4.0 |  [Tin Can Tools]http://www.tincantools.com/MinowBoard_Max_Add-ons/Silverjaw_Lure.html)  |
+| [GPS Lure](gps-lure) |  LSE  |  GitHub  |  [Netgate](https://store.netgate.com/Lures/GPS.aspx)  |
+| [Debugger Lure](debugger-lure) |  HSE  |  Not available / CC BY-SA 4.0 |  [Tin Can Tools](http://www.tincantools.com/Debugger-Lure.html)  |
+| [Moray Lure (XBee)](moray-lure) |  LSE  |  Not available  |  [Netgate](https://store.netgate.com/Lures/Moray.aspx)  |
 
 
 ### Ready to Build Lures

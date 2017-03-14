@@ -1,4 +1,5 @@
 
 #### Legacy MinnowBoard Boards
 
-Click on the board title to view more information on legacy MinnowBoard boards. 
+View details on legacy MinnowBoard boards, 
+including technical specifications and design files. 

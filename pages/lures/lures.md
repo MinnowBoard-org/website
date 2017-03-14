@@ -10,15 +10,19 @@ respective manufacturers and designers.
 If you have issues the community can only give you best effort support, but 
 issues should be taken to the respective manufacturers and designers.
 
-### Lures In Production (currently available)
+### Lures in Production (currently available)
 
 These are lures that are currently available, and obtainable in a pre-built state.
 
-- [Desert Lure](desert-lure)
-- [Silverjaw Lure](silverjaw-lure)
-- [Mikrobus Lure](mikrobus-lure)
-- [Debugger Lure](debugger-lure)
-- [Moray Lure (XBee)](moray-lure)
+| |  |
+|----|----|
+|**Lure**    | **Connects to** | **Design files / License** | **Supplier** | 
+| [Desert Lure](desert-lure) |  LSE  |  [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/desert-lure) / CC BY-SA 4.0  |  [Netgate](https://store.netgate.com/Lures/Desert.aspx)  |
+| [Silverjaw Lure](silverjaw-lure) |  HSE  |  [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/desert-lure)  |  [Netgate](https://store.netgate.com/Lures/Desert.aspx)  |
+| [GPS Lure](gps-lure) |  LSE  |  [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/desert-lure)  |  [Netgate](https://store.netgate.com/Lures/Desert.aspx)  |
+| [Debugger Lure](debugger-lure) |  HSE  |  [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/desert-lure)  |  [Netgate](https://store.netgate.com/Lures/Desert.aspx)  |
+| [Moray Lure (XBee)](moray-lure) |  LSE  |  [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/desert-lure)  |  [Netgate](https://store.netgate.com/Lures/Desert.aspx)  |
+
 
 ### Ready to Build Lures
 
@@ -33,21 +37,9 @@ fully build these on their own.
 - [Drone Lure](drone-lure)
 - [Ethernet and USB switcher Lure](ethernet-usb-switcher-lure)
 - [Relay Lure](relay-lure)
-
-### Retired Lures
-
-These are boards that were in production, but are no longer available 
-for sale.
-
 - [IDP JTAG Lure](idp-jtag-lure)
 - [Jetsam Lure](jetsam-lure)
 - [Flotsam Lure](flotsam-lure)
 - [Calamari Lure](calamari-lure)
 - [Prototype Lure](prototype-lure)
-
-### Cancelled Lures
-
-These are lures that do not have build files available, but information 
-pertaining to them is still pertinent.
-
-- [Ika Lure](ika-lure)
+- [Mikrobus Lure](mikrobus-lure)

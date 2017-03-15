@@ -10,7 +10,7 @@ and is available to purchase from [Netgate](https://store.netgate.com/Lures/GPS.
 and manufactures. The community can only give you best effort support; 
 issues should be taken to the respective manufacturers and designers.
 
-![GPS Lure](pages/desert-lure/SmallWorks_Minnowboard_GPSlure_Top.jpg)
+![GPS Lure](pages/gps-lure/Minnowboard_GPSlure_Top.png)
 
 ### Features
 - GPS mdodule: -165 dBm sensitivity, 10 Hz updates, 66 channels

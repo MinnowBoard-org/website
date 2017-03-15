@@ -563,6 +563,12 @@
               route="{{subRoute}}"></generic-page>
           </template>
           <!-- LURES    ============================================   -->
+          <template is="dom-if" id="gps-lure-template" if="[[showPage('gps-lure', tab)]]">
+            <generic-page id='gps-lure' edit="{{edit}}"
+              on-page-has-menu-changed='onPageHasMenuChanged'
+              layout="[[layoutClass]]"
+              route="{{subRoute}}"></generic-page>
+          </template>
            <template is="dom-if" id="lures-template" if="[[showPage('lures', tab)]]">
             <generic-page id='lures' edit="{{edit}}"
               on-page-has-menu-changed='onPageHasMenuChanged'

@@ -11,9 +11,9 @@ issues should be taken to the respective manufacturers and designers.
 
 These are lures that are currently available and obtainable in a pre-built state.
 
-| |  |  |  |
-|----|----|----|----|
-|**Lure**    | **Connects to header** | **Design files** | **Supplier** | 
+| |  |  |  |  |
+|----|----|----|----|----|
+|**Lure**    | **Header** | **Design files** | **Supplier** | **Used for** |
 | [Debugger Lure](debugger-lure) |  HSE  |  Not available |  [Tin Can Tools](http://www.tincantools.com/Debugger-Lure.html)  |
 | [Desert Lure](desert-lure) |  LSE  |  [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/desert-lure)  |  [Netgate](https://store.netgate.com/Lures/Desert.aspx)  |
 | [GPS Lure](gps-lure) |  LSE  |  Not available  |  [Netgate](https://store.netgate.com/Lures/GPS.aspx)  |
@@ -27,9 +27,9 @@ These are lures that are functionally complete, but are not being (or not
 currently) in production and/or available to buy. To be in this state, individuals 
 need to have enough information to fully build the lure on their own.
 
-| |  |  |  |
-|----|----|----|----|
-|**Lure**    | **Connects to header** | **Design files** |  
+| |  |  |  |  |
+|----|----|----|----|----|
+|**Lure**    | **Header** | **Design files** |  **Used for** |
 | [Calamari Lure](calamari-lure) |  LSE  | [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/calamari-lure)   |
 | [Cuttle(bone) Lure](cuttlebone-lure) |  LSE  |  [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/cuttle-bone-lure) | 
 | [Drone Lure](drone-lure) |  LSE  |[GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/drone-lure)  |

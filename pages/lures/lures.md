@@ -34,12 +34,12 @@ need to have enough information to fully build the lure on their own.
 | [Calamari Lure](calamari-lure) |  LSEv1  | [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/calamari-lure)   | Working with GPIO |
 | [Cuttle(bone) Lure](cuttlebone-lure) |  LSEv1  |  [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/cuttle-bone-lure) | Adapter to BeagleBone Capes |
 | [Drone Lure](drone-lure) |  LSEv1  |[GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/drone-lure)  | Flying drones |
-| [Ethernet and USB switcher Lure](ethernet-usb-switcher-lure) |  LSE  |   [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/ethernet-usb-switcher-lure) |
+| [Ethernet and USB switcher Lure](ethernet-usb-switcher-lure) |  LSE  |   [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/ethernet-usb-switcher-lure) | Adding Ethernet and USB |
 | [Fish Food Lure](fish-food-lure) |  LSEv1  |  [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/fish-food-lure)  |  Prototyping |
 | [Flotsam Lure](flotsam-lure) |  LSEv1  | [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/flotsam-lure)  |  Adding mSATA |
 | [IDP JTAG Lure](idp-jtag-lure) |  LSEv1  |  [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/idp-jtag-lure) | Adding IDP JTAG |
 | [Jetsam Lure](jetsam-lure)  |  LSEv1  |  [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/jetsam-lure)  | Adding mPCIe |
 | [Mikrobus Lure](mikrobus-lure) |  LSEv1  | [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/mikrobus-lure)   |  Adapter to Mikrobus Models |
 | [Prototype Lure](prototype-lure) |  LSEv1  | [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/prototype-lure)  |  Protyping |
-| [Relay Lure](relay-lure) |  LSEv1  |  [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/relay-lure)  | 
+| [Relay Lure](relay-lure) |  LSEv1  |  [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/relay-lure)  | Adding 4-channels (can handle ~6A, 110VAC / ~4A, 30VDC per channel) |
 | [Tadpole Lure](tadpole-lure)  |  LSEv1  |  [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/tadpole-lure)  | Adding single GPIO-controlled RGB LED and breakout/prototype area |

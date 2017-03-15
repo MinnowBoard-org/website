@@ -1,7 +1,7 @@
 ## Drone Lure
 
-This is a relatively narrow board, originally, intended to allow the 
-MinnowBoard MAX / Turbot to be used as the primary controller for flying 
+This is a relatively narrow board, originally, intended to allow 
+MinnowBoard boards to be used as the primary controller for flying 
 drones (UAVs, quadcopters, etc). It has on built 15 PWMs (accessible 
 via an I2C PCA9685 chip), status led (RGB), 6-axis accelerometer / gyroscope / 
 compass, etc. Outside of drones, it's also been used for various non-flying robotics as well.

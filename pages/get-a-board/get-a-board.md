@@ -44,5 +44,6 @@ follow the listed requirements when buying the parts.
 | Brillo accessory kit | [Netgate](http://store.netgate.com/BrilloKit.aspx) | Kit includes 802.11n USB Wifi Adapter (Realtek rtl8192); FTDI USB RS232 to 6P female breakout cable; Transcend 8GB microSD Class-10 storage card (or equivalent); 7.1 Channel Stereo Card USB Audio Adapter. |
 | Expansion board - Desert Lure | [Netgate](http://store.netgate.com/Lures/Desert.aspx) | Prototype expansion board that plugs into the Low Speed Expansion (LSE) connector on the top of the board. |
 | Expansion board - Debugger Lure | [Tin Can Tools](http://www.tincantools.com/Debugger-Lure.html) | Expansion board for the Turbot that adds a JTAG debugging interface for the Intel XDP. |
+| Expansion board - GPS Lure | [Netgate](https://store.netgate.com/Lures/GPS.aspx) | Prototype expansion board that plugs into the Low Speed Expansion (LSE) connector on the top of the board. |
 | Expansion board - Moray Lure (XBee) | [Netgate](http://store.netgate.com/Lures/Moray.aspx) | Prototype expansion board that plugs into the Low Speed Expansion (LSE) connector on the top of the board. |
 | Expansion board - Silverjaw Lure | [Netgate](http://store.netgate.com/Silverjaw-Lure-for-MinnowBoard-Max-with-mSATA-and-mPCIe-P2433.aspx) | Prototype expansion board that plugs into the High Speed Expansion (HSE) connector on the bottom. |

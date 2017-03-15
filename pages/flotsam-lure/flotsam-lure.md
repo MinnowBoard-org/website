@@ -3,7 +3,7 @@
 **This board may not be available, however the board files are available below**
 
 The Flotsam Lure is a break-out board providing a single
-mSATA slot via the MinnowBoard MAX HSE connector.
+mSATA slot via MinnowBoard development boards' HSE connector.
 This lure is produced by [CircuitCo](http://www.circuitco.com/) and is currently unavailable
 for purchase. 
 

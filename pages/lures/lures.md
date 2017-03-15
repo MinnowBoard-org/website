@@ -1,7 +1,8 @@
 ## Expansion Boards (Lures) Overview
 
 Breakout boards called "Lures" expand functionality of MinnowBoard development boards 
-by connecting to either the low- or high-speed expansion connectors. 
+by connecting to either the low- or high-speed expansion connectors (LSEv1 or HSEv1), found on
+MinnowBoards v1, MAX, and Turbot. 
 
 **Note:** Lures are owned and supported by their respective owners and manufacturers. 
 If you have issues the community can only give you best effort support, but 

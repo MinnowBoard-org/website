@@ -3,7 +3,7 @@
 The Debugger Lure provides an adapter interface for Intel IDP
 JTAG hardware testing and programming tools. JTAG is used to aid
 device, board, and system testing and diagnosis, as well as an alternative
-for updating firmware on the MinnowBoard MAX / Turbot.
+for updating firmware on MinnowBoard boards.
 This Lure is produced by [Tin Can Tools](http://www.tincantools.com/Debugger-Lure.html).
 
 **Note:** Lures are owned and

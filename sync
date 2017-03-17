@@ -44,7 +44,21 @@ sed -i -e "s,<script>'base href=\"/\"';</script>,<base href=\"/\">,g" build/bund
 branch=$(basename ${branch})
 short=${SHA:0:8}
 mv build "${branch}-${short}"
+# Make sure the `current` live directory is freshened so it is not deleted during
+# cleanup
+touch live/..
+
+# Link the live path to the new site
 ln -sfT "${branch}-${short}/bundled" live
+
+echo "Cleaning out snapshots older than 10 days..."
+# Sort all backup dirs, and pass all but the 5 most recent to `find` which
+# make sure the file is older than 10 days. If so, it is deleted.
+ls -rt1d ${branch}-* |
+  head -n -5 |
+  while read file; do
+    find . -maxdepth 1 -mtime +10 -name "$file" -exec rm -rf {} \;
+  done
 
 echo "Success: $(date)" >> update.log
 touch trigger-restart

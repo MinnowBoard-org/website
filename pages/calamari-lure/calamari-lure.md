@@ -2,11 +2,15 @@
 
 **This board may not be available, however the board files are available below**
 
-The Calamari Lure is designed as a demonstration board for working with the GPIO and low-speed interface. It attaches to the low-speed interface on the MinnowBoard MAX, and provides a compact and easy way to experiment with a variety of devices--without the hassle of gathering your own discrete components and doing your own breadboarding.
+The Calamari Lure is designed as a demonstration board for working with the GPIO 
+and low-speed interface. It attaches to the low-speed interface on MinnowBoard 
+development boards, and provides a compact and easy way to experiment with a 
+variety of devices--without the hassle of gathering your own discrete components 
+and doing your own breadboarding.
 
-The Calamari Lure is produced by [CircuitCo](http://www.circuitco.com/), and is available to purchase from [Mouser](http://www.mouser.com/ProductDetail/MinnowBoard-by-CircuitCo/999-0004990). 
-
-**Note:** Lures are owned and supported by their respective owners and manufacturers. The community can only offer best-effort help; issues should be taken to the respective manufacturers and designers.
+**Note:** Lures are owned and supported by their respective owners and manufacturers. 
+The community can only offer best-effort help; issues should be taken to the respective 
+manufacturers and designers.
 
 ![Calamari Lure](pages/calamari-lure/Lure-Calamari-angled.png)
 
@@ -97,7 +101,10 @@ I2C EEPROM at 0x50
 - CAT24C256W I2C based EEPROM [datasheet](CAT24C256W.pdf)
 
 ### Design files
-You can find the design files on [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures). All Calamari Lure design files are released under [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). Read about what this license allows for on the Creative Commons website.
+
+- View the design files on [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures). 
+- All Calamari Lure design files are released under Creative Commons Attribution-ShareAlike 4.0 International License. 
+- Read about what this license allows for on the [Creative Commons website](http://creativecommons.org/licenses/by-sa/4.0/).
 
 ### Test files
 - [GitHub](https://github.com/MinnowBoard/minnow-max-extras)

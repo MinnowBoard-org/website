@@ -4,7 +4,7 @@ This board was in production, but is no longer available for sale.
 
 **NOTE:** This is replaced with Debugger Lure
 
-The IDP JTAG Lure provides an adapter interface for Intel IDP JTAG hardware testing and programming tools. JTAG is used to aid device, board, and system testing and diagnosis, as well as an alternative for updating firmware on the MinnowBoard MAX.
+The IDP JTAG Lure provides an adapter interface for Intel IDP JTAG hardware testing and programming tools. JTAG is used to aid device, board, and system testing and diagnosis, as well as an alternative for updating firmware on MinnowBoard boards.
 
 This Lure is produced by CircuitCo and is currently unavailable to purchase. 
 
@@ -19,4 +19,7 @@ This Lure is produced by CircuitCo and is currently unavailable to purchase.
 - Produced by CircuitCo
 
 ### Design files
-You can find the design files on [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures). All IDP JTAG Lure design files are released under [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). Read about what this license allows for on the Creative Commons website.
+
+- View the design files on [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures). 
+- All IDP JTAG Lure design files are released under Creative Commons Attribution-ShareAlike 4.0 International License.
+- Read about what this license allows for on the [Creative Commons website](http://creativecommons.org/licenses/by-sa/4.0/).

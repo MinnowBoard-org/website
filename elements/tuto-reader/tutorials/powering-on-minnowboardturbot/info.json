@@ -5,7 +5,7 @@
       "info": [
           {"label": "Difficulty", "value": "Low"},
           {"label": "Last updated", "value": "November 2016"},
-          {"label": "Board", "value": "MinnowBoard Turbot"}
+          {"label": "Boards", "value": "MAX and Turbot"}
       ],
     "links": {
         "label": "Other Tutorials",

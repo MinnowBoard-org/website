@@ -1,7 +1,7 @@
 ## Drone Lure
 
-This is a relatively narrow board, originally, intended to allow the 
-MinnowBoard MAX / Turbot to be used as the primary controller for flying 
+This is a relatively narrow board, originally, intended to allow 
+MinnowBoard boards to be used as the primary controller for flying 
 drones (UAVs, quadcopters, etc). It has on built 15 PWMs (accessible 
 via an I2C PCA9685 chip), status led (RGB), 6-axis accelerometer / gyroscope / 
 compass, etc. Outside of drones, it's also been used for various non-flying robotics as well.
@@ -13,7 +13,9 @@ the respective manufacturers and designers.
 
 ### Design files
 
-You can find the design files on [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures). All Drone Lure design files are released under [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). Read about what this license allows for on the Creative Commons website.
+- View the design files on [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures). 
+- All Drone Lure design files are released under Creative Commons Attribution-ShareAlike 4.0 International License. 
+- Read about what this license allows for on the [Creative Commons website](http://creativecommons.org/licenses/by-sa/4.0/).
 
 ### Device addresses
 

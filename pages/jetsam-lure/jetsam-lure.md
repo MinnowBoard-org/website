@@ -3,7 +3,7 @@
 **This board may not be available, however the board files are available below**
 
 The Jetsam Lure is a break-out board providing a single mPCIe
-slot via the MinnowBoard MAX HSE connector. This lure is produced by
+slot via MinnowBoard development boards' HSE connector. This lure is produced by
 CircuitCo and is currently unavailable for purchase. 
 
 **Note:** Lures are owned and supported by their respective owners and
@@ -14,8 +14,9 @@ issues should be taken to the respective manufacturers and designers.)
 
 ### Design files
 
-You can find the design files on [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures). All Jetsam Lure design files are
-released under [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). Read about what this license allows for on the Creative Commons website.
+- View the design files on [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures). 
+- All Jetsam Lure design files are released under Creative Commons Attribution-ShareAlike 4.0 International License. 
+- Read about what this license allows for on the [Creative Commons website](http://creativecommons.org/licenses/by-sa/4.0/).
 
 **Note:** PCIe expansion cards can be added via the Jetsam lure:
 By itself, Jetsam allows both half and full-height mPCIe cards

@@ -1,53 +1,45 @@
 ## Expansion Boards (Lures) Overview
 
-Breakout boards called "Lures" expand functionality of the MinnowBoard MAX 
-by connecting to either the low- or high-speed expansion connectors. Lures 
-are owned and supported by their respective owners and manufacturers. The 
-community can give you best effort support; issues should be taken to the 
-respective manufacturers and designers.
+Breakout boards called "Lures" expand functionality of MinnowBoard development boards 
+by connecting to either the low- or high-speed expansion connectors (LSEv1 or HSEv1), found on
+MinnowBoards v1, MAX, and Turbot. 
 
 **Note:** Lures are owned and supported by their respective owners and manufacturers. 
 If you have issues the community can only give you best effort support, but 
 issues should be taken to the respective manufacturers and designers.
 
-### Lures In Production (currently available)
+### Lures in production (currently available)
 
-These are lures that are currently available, and obtainable in a pre-built state.
+These are lures that are currently available and obtainable in a pre-built state.
 
-- [Desert Lure](desert-lure)
-- [Silverjaw Lure](silverjaw-lure)
-- [Mikrobus Lure](mikrobus-lure)
-- [Debugger Lure](debugger-lure)
-- [Moray Lure (XBee)](moray-lure)
+| |  |  |  |  |
+|----|----|----|----|----|
+|**Lure**    | **Header** | **Design files** | **Supplier** | **Used for** | 
+| [Debugger Lure](debugger-lure) |  HSEv1 |  Not available |  [Tin Can Tools](http://www.tincantools.com/Debugger-Lure.html)  | Adding IDP JTAG |
+| [Desert Lure](desert-lure) |  LSEv1  |  [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/desert-lure)  |  [Netgate](https://store.netgate.com/Lures/Desert.aspx)  | Prototyping |
+| [GPS Lure](gps-lure) |  LSEv1  |  Not available  |  [Netgate](https://store.netgate.com/Lures/GPS.aspx)  | Adding GPS |
+| [Moray Lure (XBee)](moray-lure) |  LSEv1  |  Not available  |  [Netgate](https://store.netgate.com/Lures/Moray.aspx)  | 802.15.4 ZigBee |
+| [Silverjaw Lure](silverjaw-lure) |  HSEv1  |  [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/silverjaw-lure) |  [Tin Can Tools](http://www.tincantools.com/MinowBoard_Max_Add-ons/Silverjaw_Lure.html)  | Adding mPCIe & mSATA |
 
-### Ready to Build Lures
+
+### Ready to build lures
 
 These are lures that are functionally complete, but are not being (or not 
-currently) in production and/or available to buy. To be in this state the 
-lures need to be in a state where an individual has enough information to 
-fully build these on their own.
+currently) in production and/or available to buy. To be in this state, individuals 
+need to have enough information to fully build the lure on their own.
 
-- [Fish Food Lure](fish-food-lure)
-- [Cuttle(bone) Lure](cuttlebone-lure)
-- [Tadpole Lure](tadpole-lure)
-- [Drone Lure](drone-lure)
-- [Ethernet and USB switcher Lure](ethernet-usb-switcher-lure)
-- [Relay Lure](relay-lure)
-
-### Retired Lures
-
-These are boards that were in production, but are no longer available 
-for sale.
-
-- [IDP JTAG Lure](idp-jtag-lure)
-- [Jetsam Lure](jetsam-lure)
-- [Flotsam Lure](flotsam-lure)
-- [Calamari Lure](calamari-lure)
-- [Prototype Lure](prototype-lure)
-
-### Cancelled Lures
-
-These are lures that do not have build files available, but information 
-pertaining to them is still pertinent.
-
-- [Ika Lure](ika-lure)
+| |  |  |  |  |
+|----|----|----|----|----|
+|**Lure**    | **Header** | **Design files** |  **Used for** |
+| [Calamari Lure](calamari-lure) |  LSEv1  | [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/calamari-lure)   | Working with GPIO |
+| [Cuttle(bone) Lure](cuttlebone-lure) |  LSEv1  |  [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/cuttle-bone-lure) | Adapter to BeagleBone Capes |
+| [Drone Lure](drone-lure) |  LSEv1  |[GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/drone-lure)  | Flying drones |
+| [Ethernet and USB switcher Lure](ethernet-usb-switcher-lure) |  LSE  |   [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/ethernet-usb-switcher-lure) | Adding Ethernet and USB |
+| [Fish Food Lure](fish-food-lure) |  LSEv1  |  [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/fish-food-lure)  |  Prototyping |
+| [Flotsam Lure](flotsam-lure) |  LSEv1  | [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/flotsam-lure)  |  Adding mSATA |
+| [IDP JTAG Lure](idp-jtag-lure) |  LSEv1  |  [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/idp-jtag-lure) | Adding IDP JTAG |
+| [Jetsam Lure](jetsam-lure)  |  LSEv1  |  [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/jetsam-lure)  | Adding mPCIe |
+| [Mikrobus Lure](mikrobus-lure) |  LSEv1  | [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/mikrobus-lure)   |  Adapter to Mikrobus Models |
+| [Prototype Lure](prototype-lure) |  LSEv1  | [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/prototype-lure)  |  Protyping |
+| [Relay Lure](relay-lure) |  LSEv1  |  [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/relay-lure)  | Adding 4-channels (can handle ~6A, 110VAC / ~4A, 30VDC per channel) |
+| [Tadpole Lure](tadpole-lure)  |  LSEv1  |  [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/tadpole-lure)  | Adding single GPIO-controlled RGB LED and breakout/prototype area |

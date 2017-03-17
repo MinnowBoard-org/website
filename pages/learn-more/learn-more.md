@@ -2,42 +2,42 @@
 
 ![MinnowBoard Turbot Front](pages/learn-more/MinnowBoard-Turbot-front-0009-160629-450x300.png){align-right container-40}
 
-The MinnowBoard Turbot delivers to a sweet spot in the embedded and IoT 
+The MinnowBoard Turbot delivers to a sweet spot in the embedded and IoT
 development paradigm with:  
 - a 64-bit Intel® Atom™ E38xx Series System on a Chip (SoC)
 - a low cost, small form factor
-- high performance (dual and quad core versions) 
-- regulatory compliance* for immediate productization 
+- high performance (dual and quad core versions)
+- regulatory compliance* for immediate productization
 - open source hardware files - build your own custom version
 - fast POC and prototyping through versatile extensibility (LURES)
 - adaptors for industry standard
 - open source firmware that is accessible for HW bring up
 - it's Intel, so OS's "just run" and your software will too
 - Windows, Linux, Android, Wind River Linux, Yocto Project supported
-  
+
 ### MinnowBoard MAX compatible with upgrades
-The MinnowBoard Turbot has the same form factor, user connections, connector 
-locations, mounting holes, and High-Speed and Low-Speed Expansion connectors as 
-the [MinnowBoard MAX](http://wiki.minnowboard.org/MinnowBoard_MAX), and runs the same MinnowBoard MAX software. MinnowBoard 
-Turbot boards are home to the Intel® Atom™ E3826 processor, which offers low 
-energy consumption and 10% higher CPU code speed and 25% higher graphics speed 
-than the original E3825 SoC. The board also provides an enhanced design including 
-integrated Intel HD graphics with open source hardware-accelerated drivers for 
-Linux. The Turbot has amped up its performance with the addition of a dedicated 
-I2C shifter, a D2 LED now under GPIO control, a Low-Speed Expansion connector 
-which can now supply power, and an I2S MCLK routed to LSE connector (audio 
-interface). You can also connect to nearly unlimited devices with UARTs and USB 
+The MinnowBoard Turbot has the same form factor, user connections, connector
+locations, mounting holes, and High-Speed and Low-Speed Expansion connectors as
+the [MinnowBoard MAX](legacy-boards), and runs the same MinnowBoard MAX software. MinnowBoard
+Turbot boards are home to the Intel® Atom™ E3826 processor, which offers low
+energy consumption and 10% higher CPU code speed and 25% higher graphics speed
+than the original E3825 SoC. The board also provides an enhanced design including
+integrated Intel HD graphics with open source hardware-accelerated drivers for
+Linux. The Turbot has amped up its performance with the addition of a dedicated
+I2C shifter, a D2 LED now under GPIO control, a Low-Speed Expansion connector
+which can now supply power, and an I2S MCLK routed to LSE connector (audio
+interface). You can also connect to nearly unlimited devices with UARTs and USB
 3.0, SATA, and PCI Express.
 
 ### Where are they used?
-MinnowBoard Turbot boards bridge the gap between makers, developers and OEMs. You can use 
-MinnowBoard Turbots for anything from creating fun hobby or professional maker projects, 
-to developing high performance embedded IoT applications and products as significant 
-as in-vehicle infotainment and video-based motion detection with Intel® 
-RealSense™ cameras. The Intel® 
-Data Plane Development Kit (DPDK) in a box development kit includes a MinnowBoard 
-Turbot. You’ll see the MinnowBoard Turbot being used in demos in almost every 
-embedded and IoT focused event in the US and Europe because it is a versatile, 
+MinnowBoard Turbot boards bridge the gap between makers, developers and OEMs. You can use
+MinnowBoard Turbots for anything from creating fun hobby or professional maker projects,
+to developing high performance embedded IoT applications and products as significant
+as in-vehicle infotainment and video-based motion detection with Intel®
+RealSense™ cameras. The Intel®
+Data Plane Development Kit (DPDK) in a box development kit includes a MinnowBoard
+Turbot. You’ll see the MinnowBoard Turbot being used in demos in almost every
+embedded and IoT focused event in the US and Europe because it is a versatile,
 low-cost, PC-like capable embedded board.
 
 ### MinnowBoard Turbot variations
@@ -79,24 +79,24 @@ MinnowBoard Turbot boards combine variations of Dual Core and Quad Core.
 |Certifications   | FCC Part 15 Class A, CE Class A, IEC-60950, RoHS/WEEE  |
 
 
-### Breakout board extensibility (LURES) 
+### Breakout board extensibility (LURES)
 For truly fast prototyping you can explore expanding the base capability of
-your MinnowBoard Turbot by connecting breakout boards to either the Low Speed 
+your MinnowBoard Turbot by connecting breakout boards to either the Low Speed
 Expansion header (LSE -top side 26 pin connector) or High Speed Expansion header
-(HSE - a 60 pin high density connector on the reverse side of the board). To do 
-this you'll need to purchase or design breakout boards, called Lures. 
+(HSE - a 60 pin high density connector on the reverse side of the board). To do
+this you'll need to purchase or design breakout boards, called Lures.
 
 Some lures have specific independent functionality such
 as adding connections for mPCIe WiFi cards and internal mSATA SSD drives, or for
 prototyping and experimenting with GPIOs and sensors. Others are adapters intended
-to allow you to immediately incorporate boards from other industry standards 
-or ecosystems that you may already have, such as MikroElektronika's Mikrobus 
+to allow you to immediately incorporate boards from other industry standards
+or ecosystems that you may already have, such as MikroElektronika's Mikrobus
 and Seeeds's Grove standard. Plug them in and you're ready to develop.
 
 Lures are owned and supported
 by their respective owners and manufacturers. Some lures are available for purchase
 while others have their schematics and project files freely available for you to use.
-Read more on the [Community wiki](http://wiki.minnowboard.org/Lures).
+Read more on the [Lures page](lures).
 
 ### Create a custom derivative board   
 MinnowBoard.org supports the [Open Source Hardware Association](http://oshwa.org/) principles and makes
@@ -108,17 +108,17 @@ computing, on Intel Architecture. [Read more](about)
 about the MinnowBoard.org Foundation and the Open Source Hardware Association.
 
 ### Who is the manufacturer?
-The MinnowBoard Turbot is manufactured by [ADI Engineering](http://www.adiengineering.com), a division of 
-Silicom Ltd. 
+The MinnowBoard Turbot is manufactured by [ADI Engineering](http://www.adiengineering.com), a division of
+Silicom Ltd.
 
 ### MinnowBoard Turbot design files
 
 ![OSHA](pages/learn-more/oshw-logo-100-px.png){align-right container-30}  
 
-You can find the MinnowBoard Turbot design files on 
-**[GitHub - MinnowBoard design files](https://github.com/MinnowBoard-org/design-files)**. 
-All design files are released under [Creative Commons CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). 
-Read about what this license allows for on the Creative Commons website. 
+You can find the MinnowBoard Turbot design files on
+**[GitHub - MinnowBoard design files](https://github.com/MinnowBoard-org/design-files)**.
+All design files are released under [Creative Commons CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
+Read about what this license allows for on the Creative Commons website.
 
 The MinnowBoard Turbot is intended
 to comply with all requirements and guidelines set forth by the [Open Source

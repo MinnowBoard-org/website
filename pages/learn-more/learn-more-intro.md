@@ -4,8 +4,8 @@
 
 Meet the MinnowBoard Turbot{small}
 
-#### MinnowBoard Wiki
+#### MinnowBoard Help
 
-For more information, visit the MinnowBoard.org **[community wiki](http://wiki.minnowboard.org/MinnowBoard_Wiki_Home)**, 
-which provides a forum for developers to keep up with the latest news and 
+For more information, visit the MinnowBoard.org **[Help Page](help)**,
+which provides ways for developers to keep up with the latest news and
 discussions related to MinnowBoard Turbot.{small}

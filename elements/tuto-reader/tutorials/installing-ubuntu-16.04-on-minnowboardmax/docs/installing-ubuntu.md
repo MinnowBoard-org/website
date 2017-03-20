@@ -28,7 +28,7 @@ first steps.
 
 ### Download Ubuntu 16.04.1 (LTS) Desktop image
 
-Download an ISO image of [Ubuntu 16.04.1 LTS desktop](http://releases.ubuntu.com/16.04.1/ubuntu-16.04.1-desktop-amd64.iso)
+Download an ISO image of [Ubuntu 16.04.1 LTS desktop](http://old-releases.ubuntu.com/releases/xenial/ubuntu-16.04-desktop-amd64.iso)
 from the Ubuntu website.  This ISO image is in a special format used to create
 a bootable image on the thumb drive (in the next step).  This is a large 
 download (~ 1.5GB) and may take a while to download depending on your internet speed.

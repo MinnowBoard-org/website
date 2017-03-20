@@ -1,1 +1,1 @@
-Need information about ***MinnowBoard MAX*** or Expansion Board (Lures)? Find full documentation at the ***[MinnowBoard Legacy Boards page](legacy-boards)***{large}
+Need information about **MinnowBoard MAX** or Expansion Board (Lures)? Find full documentation on the ***[Legacy Boards page.](legacy-boards)***{large}

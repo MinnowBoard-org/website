@@ -12,6 +12,8 @@ Before getting started with your board, you will need these recommended componen
 Purchase them from the below retailers or from one of your choice. Make sure to 
 follow the listed requirements when buying the parts.
 
+For information on expansion boards (lures) available for purchase, see the [Lures page](lures).
+
 #### Required
 |**Part** | **Suppliers** | **Requirements/Description** |
 |----|----|----|
@@ -37,13 +39,7 @@ follow the listed requirements when buying the parts.
 | Rubber Feet | [McMaster-Carr](https://www.mcmaster.com/#9540k693/=16a7i3d) | We like to attach to the bottom of standoffs that will sit on the desktop surface, to prevent sliding around. Entirely optional, but it gives a good feel. Many options available. Look for a "counterbore" of 1/4" to match the standoffs and screws. |
 | Standoff/Nut Kits| [Amazon Nylon Kit v1](https://www.amazon.com/dp/B01EPLH08Y/ref=psdc_16409981_t3_B01I0SORIE?th=1) [Amazon Nylon Kit v2](https://www.amazon.com/180Pcs-M3-Hex-Spacers-Screw-Nut-Standoffs-Quadcopter-Drone-Raspberry/dp/B01I0SORIE/ref=sr_1_1?ie=UTF8&qid=1486673441&sr=8-1&keywords=board+standoffs) | These are a cheap way to get the standard lengths in Nylon material. |
 | Screws| [McMaster-Carr screws](https://www.mcmaster.com/#91735a144/=16a7htg) [Mouser screws](http://www.mouser.com/ProductDetail/Keystone-Electronics/9903/?qs=sGAEpiMZZMtFmYSM%2fWUJwjMM2jkmYE8TU%252b6NUFYxuNE%3d) | For attaching stand-offs to the board. |
-
-#### Expansion boards / Lures
-|**Part** | **Suppliers** | **Requirements/Description** |
-|----|----|----|
 | Brillo accessory kit | [Netgate](http://store.netgate.com/BrilloKit.aspx) | Kit includes 802.11n USB Wifi Adapter (Realtek rtl8192); FTDI USB RS232 to 6P female breakout cable; Transcend 8GB microSD Class-10 storage card (or equivalent); 7.1 Channel Stereo Card USB Audio Adapter. |
-| Expansion board - Desert Lure | [Netgate](http://store.netgate.com/Lures/Desert.aspx) | Prototype expansion board that plugs into the Low Speed Expansion (LSE) connector on the top of the board. |
-| Expansion board - Debugger Lure | [Tin Can Tools](http://www.tincantools.com/Debugger-Lure.html) | Expansion board for the Turbot that adds a JTAG debugging interface for the Intel XDP. |
-| Expansion board - GPS Lure | [Netgate](https://store.netgate.com/Lures/GPS.aspx) | Prototype expansion board that plugs into the Low Speed Expansion (LSE) connector on the top of the board. |
-| Expansion board - Moray Lure (XBee) | [Netgate](http://store.netgate.com/Lures/Moray.aspx) | Prototype expansion board that plugs into the Low Speed Expansion (LSE) connector on the top of the board. |
-| Expansion board - Silverjaw Lure | [Netgate](http://store.netgate.com/Silverjaw-Lure-for-MinnowBoard-Max-with-mSATA-and-mPCIe-P2433.aspx) | Prototype expansion board that plugs into the High Speed Expansion (HSE) connector on the bottom. |
+
+
+

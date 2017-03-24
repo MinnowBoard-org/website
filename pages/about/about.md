@@ -16,13 +16,17 @@ embedded applications or products.
 ### Contacts
 
 -   Media: Nicole Gray - ngray@vtmgroup.com
--   General Information:  info@minnowboard.org
+-   General Information:  support@minnowboard.org
 
 ### MinnowBoard.org Foundation Address
 
 **MinnowBoard.org Foundation**
+
 c/o VTM, Inc. 3885 
+
 SW 153rd Drive 
+
 Beaverton, OR 97006 
+
 
 Fax 503-644-6708

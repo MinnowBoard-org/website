@@ -167,7 +167,7 @@ onto the MinnowBoard Turbot.
     "Returning from blank screen")
 
 At this point, you can use the MinnowBoard Turbot as you would a desktop PC.  
-Expose the Ubuntu interface, check out the installed programs and file system, 
+Explore the Ubuntu interface, check out the installed programs and file system, 
 open a shell prompt (terminal) and play with the linux command-line shell, and more.
 
 ### Update the installed Ubuntu software

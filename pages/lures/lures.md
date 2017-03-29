@@ -18,7 +18,7 @@ These are lures that are currently available and obtainable in a pre-built state
 | [Debugger Lure](debugger-lure) |  HSEv1 |  Not available |  [Tin Can Tools](http://www.tincantools.com/Debugger-Lure.html)  | Adding IDP JTAG |
 | [Desert Lure](desert-lure) |  LSEv1  |  [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/desert-lure)  |  [Netgate](https://store.netgate.com/Lures/Desert.aspx)  | Prototyping |
 | [Fish Food Lure](fish-food-lure) |  LSEv1  |  [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/fish-food-lure)  |  [Netgate](https://store.netgate.com/Lures/FishFood.aspx)  | Breadboard prototyping |
-| [GPS Lure](gps-lure) |  LSEv1  |  Not available  |  [Netgate](https://store.netgate.com/Lures/GPS.aspx)  | Adding GPS |
+| [GPS Lure](gps-lure) |  LSEv1  |  [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/gps-lure)  |  [Netgate](https://store.netgate.com/Lures/GPS.aspx)  | Adding GPS |
 | [Moray Lure (XBee)](moray-lure) |  LSEv1  |  Not available  |  [Netgate](https://store.netgate.com/Lures/Moray.aspx)  | 802.15.4 ZigBee |
 | [Silverjaw Lure](silverjaw-lure) |  HSEv1  |  [GitHub](https://github.com/MinnowBoard-org/design-files/tree/master/expansion-boards-lures/silverjaw-lure) |  [Tin Can Tools](http://www.tincantools.com/MinowBoard_Max_Add-ons/Silverjaw_Lure.html)  | Adding mPCIe & mSATA |
 

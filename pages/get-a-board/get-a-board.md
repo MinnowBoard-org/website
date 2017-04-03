@@ -7,12 +7,14 @@ The MinnowBoard Turbot, manufactured by [ADI](http://www.adiengineering.com/prod
 |MinnowBoard Turbot B41 Quad Core       | [Mouser Electronics](http://www.mouser.com/ProductDetail/ADI-Engineering/MBT-4220/?qs=%2fha2pyFadui64n%252b8IleJOqyIjBvJMFFBzDnmapi7xYeg1DoHKlPITEK43C3ScpiSDR5eKSHt9n0%3d) \ [Netgate](http://store.netgate.com/Turbot4.aspx)  |
 |MinnowBoard Turbot Dual Core          | [Amazon](https://www.amazon.com/MinnowBoard-Turbot-Dual-Core-Board/dp/B01A04QAW2/ref=sr_1_1?ie=UTF8&qid=1479165174&sr=8-1&keywords=minnowboard) \ [Arrow](https://www.arrow.com/en/products/mbt-2210/adi-engineering) \ [Mouser Electronics](http://www.mouser.com/ProductDetail/ADI-Engineering/MBT-2210/?qs=kWQV1gtkNnfue4gk0ao8Xg%3d%3d) \ [Netgate](https://store.netgate.com/Turbot2.aspx) |
 
-### Get Accessories
+### Get expansion boards
+
+For information on expansion boards (lures) available for purchase, see the [Lures page](lures).
+
+### Get accessories
 Before getting started with your board, you will need these recommended components. 
 Purchase them from the below retailers or from one of your choice. Make sure to 
 follow the listed requirements when buying the parts.
-
-For information on expansion boards (lures) available for purchase, see the [Lures page](lures).
 
 #### Required
 |**Part** | **Suppliers** | **Requirements/Description** |

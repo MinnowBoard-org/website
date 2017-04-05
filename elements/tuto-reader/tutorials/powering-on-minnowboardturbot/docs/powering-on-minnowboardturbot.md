@@ -102,7 +102,7 @@ these necessary hardware components (see [Get a board](get-a-board) for recommen
 At this point you've got the MinnowBoard Turbot powered up and you can explore 
 the board using the UEFI shell.  The `help -b` command will display all the
 UEFI shell commands.  You can learn more about the UEFI shell and its commands 
-on the [MinnowBoard Wiki](http://wiki.minnowboard.org/UEFI) and at 
+on the [Firmware Tutorial](tutorials/updating_your_firmware) and at 
 [https://software.intel.com/en-us/articles/uefi-shell](https://software.intel.com/en-us/articles/uefi-shell).  
 
 If you enter `exit` to the UEFI shell, you'll be taken to the UEFI boot menu where

@@ -43,7 +43,7 @@ Enter the MinnowBoard Turbot UEFI boot option screen by following these steps:
 3. If your firmware version number is lower than the newest version, 
     we recommend that you update the board's firmware.  
 
-Or testing indicates that firmware version 0.83 has no critical issues for common 
+Our testing indicates that firmware version 0.95 has no critical issues for common 
 uses for the MinnowBoard Turbot; additional firmware releases address issues 
 found in the field and further testing.
    

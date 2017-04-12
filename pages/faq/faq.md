@@ -44,3 +44,5 @@ such as USB devices other than a keyboard or memory stick and try powering on
 again. If the D2 light does not come on at all, this can mean the board has 
 been damaged by using a powersupply greater than 5V.
  
+### 7. MinnowBoard Turbot 2 Quad power supply discoveries
+This [deep explanation GIST](https://gist.github.com/Mark-van-der-Pol/475c7a722f749ad4446993d53c26287b) may help some people troubleshoot and clarify how the power works.

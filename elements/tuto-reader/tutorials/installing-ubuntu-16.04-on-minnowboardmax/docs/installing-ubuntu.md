@@ -15,8 +15,8 @@ To perform these steps you'll need:
 
 - MinnowBoard Turbot board
 - 5V 2.5A Power Supply
-- USB thumb drive (2GB or larger)
-- microSD card (8GB or larger)
+- USB thumb drive (GB or larger)
+- microSD card (16GB Class 10 or larger)
 - microHDMI to HDMI cable and HDMI-capable monitor
 - USB keyboard
 - Ethernet cable and internet connection

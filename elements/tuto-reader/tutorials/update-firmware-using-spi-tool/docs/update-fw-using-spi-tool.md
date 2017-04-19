@@ -26,9 +26,9 @@ To complete these steps you will need the following:
 
 ### Flashing steps using DediProg SF100
 
-1. Download the firmware update zip file package to your host computer from the [MinnowBoard MAX firmware website](https://firmware.intel.com/projects/minnowboard-max). Refer to previous [Update the firmware tutorial](/updating_your_firmware) for details.
+1. Download the firmware update zip file package to your host computer from the [MinnowBoard MAX firmware website](https://firmware.intel.com/projects/minnowboard-max). Refer to previous [Update the firmware tutorial](updating_your_firmware) for details.
 2. Unzip the archive on your host computer. 
-3. Download DediProg software and USB Driver (see image below) on [the Dediprog site](http://www.dediprog.com/download?u=42&l=SF100+ISP+IC+Programmer) and Install DediProg software and USB Driver. **Note:** At the time of writing this tutorial, the latest version of DediProg software is 6.0.5.17.
+3. Download DediProg software and USB Driver (see image below) on [the Dediprog site](http://www.dediprog.com/download?u=42&l=SF100+ISP+IC+Programmer) and Install DediProg software and USB Driver. **Note:** When we wrote this tutorial, the latest version of DediProg software was 6.0.5.17.
 
 ![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image02.png)
 
@@ -60,7 +60,8 @@ To complete these steps you will need the following:
 11. Now it’s time to start flashing firmware binary on the board. Press the black Start button on the SF100 ISP IC Programmer tool. **Note:** During flash, the orange Busy LED will light up on the SF100 ISP IC Programmer tool.
 
 ![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image15.png)
+![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image17.png)
 
 12. Once flashing is completed, the green Pass LED will light up. Unplug the SPI cable from the board and replace it with the next hardware you need to flash the firmware binary on. Repeat step 11 above for each hardware.
 
-![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image17.png)
+

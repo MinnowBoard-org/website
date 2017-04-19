@@ -51,20 +51,16 @@ To complete these steps you will need the following:
 
 9. The firmware binary file to be flashed is 8MB. Make sure the flashing option is configured to flash the full size onto your board. Verify that ‘Download a whole file to chip option’ is selected.
 
-![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image03.png)
+![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image10.png)
 
 10. Press File button on the top of the screen to load binary file to flash on the board.
 
-![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/adv-settings.png)
+![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image13.png)
 
 11. Now it’s time to start flashing firmware binary on the board. Press the black Start button on the SF100 ISP IC Programmer tool. **Note:** During flash, the orange Busy LED will light up on the SF100 ISP IC Programmer tool.
 
-![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image13.png)
-![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image14.png)
 ![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image15.png)
-![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image16.png)
-![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image17.png)
-![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image18.png)
 
 12. Once flashing is completed, the green Pass LED will light up. Unplug the SPI cable from the board and replace it with the next hardware you need to flash the firmware binary on. Repeat step 11 above for each hardware.
 
+![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image17.png)

@@ -26,7 +26,7 @@ To complete these steps you will need the following:
 
 ### Flashing steps using DediProg SF100
 
-1. Download the firmware update zip file package to your host computer from the [MinnowBoard MAX firmware website](https://firmware.intel.com/projects/minnowboard-max). Refer to previous [Update the firmware tutorial](updating_your_firmware) for details.
+1. Download the firmware update zip file package to your host computer from the [MinnowBoard MAX firmware website](https://firmware.intel.com/projects/minnowboard-max). Refer to previous [Update the firmware tutorial](tutorials/updating_your_firmware) for details.
 2. Unzip the archive on your host computer. 
 3. Download DediProg software and USB Driver (see image below) on [the Dediprog site](http://www.dediprog.com/download?u=42&l=SF100+ISP+IC+Programmer) and Install DediProg software and USB Driver. **Note:** When we wrote this tutorial, the latest version of DediProg software was 6.0.5.17.
 

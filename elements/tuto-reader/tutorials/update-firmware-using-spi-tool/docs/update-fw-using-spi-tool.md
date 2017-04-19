@@ -30,41 +30,42 @@ To complete these steps you will need the following:
 2. Unzip the archive on your host computer. 
 3. Download DediProg software and USB Driver (see image below) on [the Dediprog site](http://www.dediprog.com/download?u=42&l=SF100+ISP+IC+Programmer) and Install DediProg software and USB Driver. **Note:** At the time of writing this tutorial, the latest version of DediProg software is 6.0.5.17.
 
-![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/IMAGE 2)
+![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image04.png)
 
 4. Connect SF100 ISP IC Programmer tool to your host computer.
 5. Install the USB Driver that you downloaded from DediProg site. You should see the green LED light up on the SF100 tool.
 
-![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/IMAGE 3)
+![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image00.png)
 
 6. Connect SPI cable to J1 connector on MinnowBoard as shown below. **Note:** The red line on the cable is aligned with white dot marked on the board designating pin1.
 
-![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/IMAGE 4)
-![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/IMAGE 5)
-![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/IMAGE 6)
+![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image00.png)
+![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image07.jpg)
 
 7. Start DediProg software application. You will see a "Memory Type Ambiguity" popup. Select W25Q64 and press OK.
 
-![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/IMAGE 7)
+![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image08.jpg)
 
 8. Open up the Advanced Settings dialog box by pressing Config button on the top of screen. 
 
-![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/IMAGE 8)
+![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image08.png)
 
 9. The firmware binary file to be flashed is 8MB. Make sure the flashing option is configured to flash the full size onto your board. Verify that ‘Download a whole file to chip option’ is selected.
 
-![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/IMAGE 9)
+![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image03.png)
 
 10. Press File button on the top of the screen to load binary file to flash on the board.
 
-![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/IMAGE 10)
-![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/IMAGE 11)
+![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/adv-settings.png)
 
 11. Now it’s time to start flashing firmware binary on the board. Press the black Start button on the SF100 ISP IC Programmer tool. **Note:** During flash, the orange Busy LED will light up on the SF100 ISP IC Programmer tool.
 
-![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/IMAGE 12)
-![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/IMAGE 13)
-![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/IMAGE 14)
+![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image13.png)
+![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image14.png)
+![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image15.png)
+![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image16.png)
+![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image17.png)
+![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image18.png)
 
 12. Once flashing is completed, the green Pass LED will light up. Unplug the SPI cable from the board and replace it with the next hardware you need to flash the firmware binary on. Repeat step 11 above for each hardware.
 

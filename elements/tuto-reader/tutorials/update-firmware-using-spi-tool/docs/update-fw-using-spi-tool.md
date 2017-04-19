@@ -47,7 +47,7 @@ To complete these steps you will need the following:
 
 8. Open up the Advanced Settings dialog box by pressing Config button on the top of screen. 
 
-![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image10.png)
+![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image12.png)
 
 9. The firmware binary file to be flashed is 8MB. Make sure the flashing option is configured to flash the full size onto your board. Verify that ‘Download a whole file to chip option’ is selected.
 

@@ -18,7 +18,7 @@ To complete these steps you will need the following:
 
 - [DediProg SF100 ISP IC Programmer](http://www.dediprog.com/pd/spi-flash-solution/sf100)
 
-   ![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/IMAGE 1)
+   ![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image04.png)
    
 - [DediProg software](http://www.dediprog.com/download?u=42&l=SF100+ISP+IC+Programmer)
 - USB Type A Male to Type A Female cable for your programmer (optional)
@@ -30,25 +30,24 @@ To complete these steps you will need the following:
 2. Unzip the archive on your host computer. 
 3. Download DediProg software and USB Driver (see image below) on [the Dediprog site](http://www.dediprog.com/download?u=42&l=SF100+ISP+IC+Programmer) and Install DediProg software and USB Driver. **Note:** At the time of writing this tutorial, the latest version of DediProg software is 6.0.5.17.
 
-![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image04.png)
+![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image02.png)
 
 4. Connect SF100 ISP IC Programmer tool to your host computer.
 5. Install the USB Driver that you downloaded from DediProg site. You should see the green LED light up on the SF100 tool.
 
-![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image00.png)
+![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image07.png)
 
 6. Connect SPI cable to J1 connector on MinnowBoard as shown below. **Note:** The red line on the cable is aligned with white dot marked on the board designating pin1.
 
-![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image00.png)
 ![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image07.jpg)
 
 7. Start DediProg software application. You will see a "Memory Type Ambiguity" popup. Select W25Q64 and press OK.
 
-![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image08.jpg)
+![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image03.jpg)
 
 8. Open up the Advanced Settings dialog box by pressing Config button on the top of screen. 
 
-![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image08.png)
+![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image10.png)
 
 9. The firmware binary file to be flashed is 8MB. Make sure the flashing option is configured to flash the full size onto your board. Verify that ‘Download a whole file to chip option’ is selected.
 

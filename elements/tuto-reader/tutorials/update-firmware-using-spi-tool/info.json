@@ -1,6 +1,6 @@
 {
-  "img": "elements/tuto-reader/tutorials/getting-started/image.jpg",
-  "content": "elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/update-firmware-using-spi-tool.md",
+  "img": "elements/tuto-reader/tutorials/update-firmware-using-spi-tool/image.jpg",
+  "content": "elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/update-fw-using-spi-tool.md",
   "meta": {
       "info": [
           {"label": "Difficulty", "value": "Med"},

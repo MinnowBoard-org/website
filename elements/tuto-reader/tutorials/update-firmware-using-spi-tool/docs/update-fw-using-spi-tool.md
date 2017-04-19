@@ -1,6 +1,6 @@
 ## Update Turbot Firmware via SPI Flash Programmer
 
-Update the firmware using SPI Flash Tool (DediProg SF100) for multiple HW. (This tutorial is based on Windows 8.1.) You can use SPI Flash Tool, SF100, to flash Firmware on multiple hardware, which this method is especially useful for.
+The tutorial will update the firmware using SPI Flash Tool (DediProg SF100). You can use the tool to flash firmware on multiple hardware, which this method is especially useful for. (This tutorial is based on Windows 8.1.) 
 
 ### General process
 
@@ -26,7 +26,7 @@ To complete these steps you will need the following:
 
 ### Flashing steps using DediProg SF100
 
-1. Download the firmware update zip file package to your host computer from the [MinnowBoard MAX firmware website](https://firmware.intel.com/projects/minnowboard-max). Refer to previous [Update the firmware tutorial](/update-firmware-using-spi-tool) for details.
+1. Download the firmware update zip file package to your host computer from the [MinnowBoard MAX firmware website](https://firmware.intel.com/projects/minnowboard-max). Refer to previous [Update the firmware tutorial](/updating_your_firmware) for details.
 2. Unzip the archive on your host computer. 
 3. Download DediProg software and USB Driver (see image below) on [the Dediprog site](http://www.dediprog.com/download?u=42&l=SF100+ISP+IC+Programmer) and Install DediProg software and USB Driver. **Note:** At the time of writing this tutorial, the latest version of DediProg software is 6.0.5.17.
 
@@ -59,4 +59,12 @@ To complete these steps you will need the following:
 
 ![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/IMAGE 10)
 ![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/IMAGE 11)
+
+11. Now it’s time to start flashing firmware binary on the board. Press the black Start button on the SF100 ISP IC Programmer tool. **Note:** During flash, the orange Busy LED will light up on the SF100 ISP IC Programmer tool.
+
+![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/IMAGE 12)
+![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/IMAGE 13)
+![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/IMAGE 14)
+
+12. Once flashing is completed, the green Pass LED will light up. Unplug the SPI cable from the board and replace it with the next hardware you need to flash the firmware binary on. Repeat step 11 above for each hardware.
 

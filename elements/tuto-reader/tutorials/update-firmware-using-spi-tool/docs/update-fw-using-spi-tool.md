@@ -14,8 +14,17 @@ You can use SPI Flash Tool, SF100, to flash Firmware on multiple hardware, which
     1. Memory type: W25Q64{n}
     1. Programmer connect to [J1](https://www.minnowboard.org/board-viewer){n}
     
-    
-## Flashing steps using DediProg SF100
+### Components
+
+To complete these steps you will need the following:
+
+- [DediProg SF100 ISP IC Programmer](http://www.dediprog.com/pd/spi-flash-solution/sf100)
+
+   ![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/IMAGE 1)
+   
+- [DediProg software](http://www.dediprog.com/download?u=42&l=SF100+ISP+IC+Programmer)
+- USB Type A Male to Type A Female cable for your programmer (optional)
 
 
+### Flashing steps using DediProg SF100
 

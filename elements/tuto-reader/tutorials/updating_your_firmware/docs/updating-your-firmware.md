@@ -4,6 +4,13 @@ The MinnowBoard Turbot firmware is updated occasionally to make improvements or
 fix issues.  This tutorial explains how to check and update your board's firmware
 to the latest release.
 
+MinnowBoard Turbot boards enable two methods to update the firmware. The simple 
+method for most people appears in the UEFI bootloader update tool detailed below.
+The other option is direct firmware flashing via SPI Flash tool, detailed [here](tutorials/update-firmware-using-spi-tool), 
+which allows you to complete a full flash in 60 seconds, updating firmware on many 
+boards quickly. This is also the method to recover a bricked device after failed 
+UEFI firmware update tool. 
+
 ### The general process
 
 1.  Find out which firmware version your MinnowBoard Turbot is running
@@ -209,6 +216,9 @@ change the default boot option to booting into Ubuntu off the microSD card:
     times until you're back at the initial UEFI boot menu.
 13. Press enter to `Continue` and Ubuntu will now boot (and will be set as the
     default boot configuration on future reboots of the board).  
+
+**NOTE:** If this process fails for some reason like power interruption, and you are unable to 
+flash using this process, your remedy is to use the spi flash tool linked [here](tutorials/update-firmware-using-spi-tool).
 
 
 ##### Try this tutorial next: 

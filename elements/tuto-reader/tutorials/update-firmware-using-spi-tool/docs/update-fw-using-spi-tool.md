@@ -35,15 +35,15 @@ To complete these steps you will need the following:
 4. Connect SF100 ISP IC Programmer tool to your host computer.
 5. Install the USB Driver that you downloaded from DediProg site. You should see the green LED light up on the SF100 tool.
 
-![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image07.png)
+![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image07.jpg)
 
 6. Connect SPI cable to J1 connector on MinnowBoard as shown below. **Note:** The red line on the cable is aligned with white dot marked on the board designating pin1.
 
-![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image07.jpg)
+![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image08.jpg)
 
 7. Start DediProg software application. You will see a "Memory Type Ambiguity" popup. Select W25Q64 and press OK.
 
-![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image03.jpg)
+![image](elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/image03.png)
 
 8. Open up the Advanced Settings dialog box by pressing Config button on the top of screen. 
 

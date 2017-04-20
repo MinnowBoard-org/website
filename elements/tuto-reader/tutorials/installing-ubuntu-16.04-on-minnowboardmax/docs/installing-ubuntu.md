@@ -14,7 +14,7 @@ thumb drive, and install that image on a microSD card on the MinnowBoard Turbot.
 
 To complete these steps you will need the following:
 
-- MinnowBoard MAX or Turbot
+- MinnowBoard board
 - 5V 2.5A Power Supply
 - USB thumb drive (GB or larger)
 - microSD card (16GB Class 10 or larger)

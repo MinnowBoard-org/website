@@ -11,7 +11,7 @@ on your MinnowBoard Turbot.
 
 To complete these steps you will need the following:
 
-- MinnowBoard MAX or Turbot
+- MinnowBoard board
 - 5V 2.5A Power Supply
 - microSD card (8GB or larger, Class 10)
 - USB SD card Adapter (needed to mount it on your Windows computer)

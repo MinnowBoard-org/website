@@ -8,7 +8,7 @@ This tutorial shows you how to install Windows 10 full desktop version on your M
 
 To complete these steps you will need the following:
 
-- MinnowBoard MAX or Turbot
+- MinnowBoard board
 - [Silverjaw expansion SATA lure](get-a-board) with M-SATA hard drive or external SATA hard drive. **Note:** This tutorial shows a path using the Silverjaw expansion board (lure) with an m-SATA drive on it for installation. It can also be installed using the SATA expansion port with an external powered hard drive.
 - 4GB+ USB Flash drive (Used to create bootable WIN installer; USB3 recommended for speed)
 - USB Keyboard and mouse

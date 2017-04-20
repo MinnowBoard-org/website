@@ -66,4 +66,4 @@ To complete these steps you will need the following:
 
 12. Once flashing is completed, the green Pass LED will light up. Unplug the SPI cable from the board and replace it with the next hardware you need to flash the firmware binary on. Repeat step 11 above for each hardware.
 
-
+*Page content shared under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode), per MinnowBoard.org [Terms of Service](terms-of-service/intellectual-property-rights).

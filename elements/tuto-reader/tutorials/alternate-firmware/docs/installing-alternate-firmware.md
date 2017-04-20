@@ -3,6 +3,12 @@
 This tutorial provides instructions for installing alternate firmware 
 on your MinnowBoard MAX or Turbot: Coreboot, WinZent, and U-Boot. 
 
+### Components
+
+To complete these steps you will need the following:
+
+- MinnowBoard MAX or Turbot
+
 ### Coreboot
 Coreboot (formerly known as LinuxBIOS) is a free and open source extended firmware 
 platform that delivers a fast and secure boot experience for embedded systems as an 

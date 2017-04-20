@@ -8,7 +8,7 @@ power up your new MinnowBoard Turbot.
 To get started, you will need 
 these necessary hardware components (see [Get a board](get-a-board) for recommendations):
 
-- MinnowBoard Turbot Board
+- MinnowBoard Turbot board
 - 5V 2.5A Power Supply
 - HDMI cable (HDMI micro male to HDMI male, or whatever your monitor requires)
 - 1920x1080 or larger monitor with an HDMI port (or HDMI adapter)

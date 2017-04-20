@@ -3,7 +3,7 @@
   "content": "elements/tuto-reader/tutorials/update-firmware-using-spi-tool/docs/update-fw-using-spi-tool.md",
   "meta": {
       "info": [
-          {"label": "Difficulty", "value": "Med"},
+          {"label": "Difficulty", "value": "Medium"},
           {"label": "Last updated", "value": "April 2017"},
           {"label": "Boards", "value": "MAX and Turbot dual- and quad-core"}
 ],

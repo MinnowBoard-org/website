@@ -4,6 +4,12 @@ For IoT devices, blinking an LED is a common "Hello World" example used to show
 a short example running.  Here's a quick tutorial to blink the MinnowBoard Turbot
 D2 LED.
 
+### Components
+
+To complete these steps you will need the following:
+
+- MinnowBoard board
+
 ### Blinking the LED with a bash script
 
 On the MinnowBoard Turbot there are two LEDs indicating the power status of the

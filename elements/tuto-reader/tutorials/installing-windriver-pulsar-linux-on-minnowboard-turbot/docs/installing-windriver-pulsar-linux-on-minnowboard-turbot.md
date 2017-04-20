@@ -4,10 +4,11 @@ Wind River Pulsar Linux* is the industry's leading commercial open source
 software platform for building embedded devices.  This tutorial will get you up 
 and running on your MinnowBoard Turbot.
 
-### What You’ll Need
-To perform these steps you’ll need:
+### Components
 
-- MinnowBoard Turbot board
+To complete these steps you will need the following:
+
+- MinnowBoard board
 - 5V 2.5A Power Supply
 - microSD card (8GB or larger, Class 10) 
 or USB thumb drive (2GB or larger, USB3 preferred)

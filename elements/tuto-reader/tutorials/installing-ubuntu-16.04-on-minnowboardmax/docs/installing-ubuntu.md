@@ -10,13 +10,14 @@ The Turbot does not come with an OS pre-installed. It only takes a
 few steps to use your own computer to download an OS image, create a bootable USB 
 thumb drive, and install that image on a microSD card on the MinnowBoard Turbot.
 
-### What you'll need
-To perform these steps you'll need:
+### Components
 
-- MinnowBoard Turbot board
+To complete these steps you will need the following:
+
+- MinnowBoard board
 - 5V 2.5A Power Supply
-- USB thumb drive (2GB or larger)
-- microSD card (8GB or larger)
+- USB thumb drive (GB or larger)
+- microSD card (16GB Class 10 or larger)
 - microHDMI to HDMI cable and HDMI-capable monitor
 - USB keyboard
 - Ethernet cable and internet connection

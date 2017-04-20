@@ -7,7 +7,7 @@ from one computer reliably gets to its destination in an orderly way.
 
 Learn more:
 
-* https://en.wikipedia.org/wiki/Ethernet
-* https://searchnetworking.techtarget.com/definition/Ethernet
-* http://www.wisegeek.com/what-is-ethernet.htm
-* http://compnetworking.about.com/cs/ethernet1/g/bldef_ethernet.htm
+* [https://en.wikipedia.org/wiki/Ethernet](https://en.wikipedia.org/wiki/Ethernet)
+* [https://searchnetworking.techtarget.com/definition/Ethernet](https://searchnetworking.techtarget.com/definition/Ethernet)
+* [http://www.wisegeek.com/what-is-ethernet.htm](http://www.wisegeek.com/what-is-ethernet.htm)
+* [http://compnetworking.about.com/cs/ethernet1/g/bldef_ethernet.htm](http://compnetworking.about.com/cs/ethernet1/g/bldef_ethernet.htm)

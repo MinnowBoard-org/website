@@ -2,7 +2,10 @@
 Congratulations on purchasing your new MinnowBoard Turbot! This is the landing page for developers who are taking their boards out of the box. We provide guidance on getting started, navigating the website content, and how to get help along the way. The MinnowBoard.org goal is for developers to prototype AND productize! Let's get started... 
 
 ### Components
-- **MinnowBoard Turbot**
+
+To complete these steps you will need the following:
+
+- MinnowBoard board
 
 ### Get a board
 Visit [Get a board](get-a-board) to find the right board and accessories to support your project.

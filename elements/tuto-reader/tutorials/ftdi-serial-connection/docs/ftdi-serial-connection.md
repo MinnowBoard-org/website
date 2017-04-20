@@ -3,19 +3,20 @@
 You can interact with a MinnowBoard Turbot through a serial connection to your
 host computer.  This tutorial shows you how.
 
-### Overview
-A serial 
-connection to your MinnowBoard Turbot can be used to work with a headless board 
+A serial connection to your MinnowBoard Turbot can be used to work with a headless board 
 configuration (without a keyboard and monitor) or as a debugging aid even if 
 your board has a keyboard and monitor. Note that a serial port connection only 
 works with text-based input and output and cannot support graphical user 
 interface capabilities such as a mouse. 
 
-### What You'll Need
+### Components
 
-* 3.3v FTDI serial to USB cable (with 6-pin or 4-pin connector) - only pins
+To complete these steps you will need the following:
+
+- MinnowBoard board
+- 3.3v FTDI serial to USB cable (with 6-pin or 4-pin connector) - only pins
   1, 4, and 5 are used
-* Terminal emulation software on your host computer
+- Terminal emulation software on your host computer
 
 ### Connecting the FTDI serial cable
 

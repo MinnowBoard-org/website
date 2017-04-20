@@ -6,7 +6,7 @@ to the latest release.
 
 MinnowBoard Turbot boards enable two methods to update the firmware. The simple 
 method for most people appears in the UEFI bootloader update tool detailed below.
-The other option is direct firmware flashing via SPI Flash tool, detailed [here](tutorials/update-firmware-using-spi-tool), 
+The other option is direct firmware flashing via SPI Flash tool, detailed in this [tutorial](tutorials/update-firmware-using-spi-tool), 
 which allows you to complete a full flash in 60 seconds, updating firmware on many 
 boards quickly. This is also the method to recover a bricked device after failed 
 UEFI firmware update tool. 
@@ -20,7 +20,9 @@ UEFI firmware update tool.
 ###  Components
 
 To complete these steps you will need the following:
--  USB thumb drive (2GB or larger), FAT32-formatted
+
+- MinnowBoard board
+- USB thumb drive (2GB or larger), FAT32-formatted
 
 
 ###   Find out which firmware version your MinnowBoard Turbot is running

@@ -4,7 +4,7 @@ For IoT devices, blinking an LED is a common "Hello World" example used to show
 a short example running.  Here's a quick tutorial to blink the MinnowBoard Turbot
 D2 LED.
 
-## Components
+### Components
 
 To complete these steps you will need the following:
 

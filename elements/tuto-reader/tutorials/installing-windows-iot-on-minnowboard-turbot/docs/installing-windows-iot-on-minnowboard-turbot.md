@@ -7,7 +7,7 @@ These installation instructions were customized from [Windows IoT Dev site](http
 You can follow either set of instructions to get Windows IoT Core up and running
 on your MinnowBoard Turbot.
 
-### What you’ll need
+### Components
 To perform these steps you’ll need:
 
 - MinnowBoard Turbot board

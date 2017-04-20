@@ -5,7 +5,7 @@ Congratulations on purchasing your new MinnowBoard Turbot! This is the landing p
 
 To complete these steps you will need the following:
 
-- MinnowBoard Turbot
+- MinnowBoard board
 
 ### Get a board
 Visit [Get a board](get-a-board) to find the right board and accessories to support your project.

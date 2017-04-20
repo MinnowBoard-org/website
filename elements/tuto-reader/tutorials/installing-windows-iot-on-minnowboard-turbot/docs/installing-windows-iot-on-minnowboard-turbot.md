@@ -8,9 +8,10 @@ You can follow either set of instructions to get Windows IoT Core up and running
 on your MinnowBoard Turbot.
 
 ### Components
-To perform these steps you’ll need:
 
-- MinnowBoard Turbot board
+To complete these steps you will need the following:
+
+- MinnowBoard MAX or Turbot
 - 5V 2.5A Power Supply
 - microSD card (8GB or larger, Class 10)
 - USB SD card Adapter (needed to mount it on your Windows computer)

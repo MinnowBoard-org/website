@@ -13,7 +13,7 @@ interface capabilities such as a mouse.
 
 To complete these steps you will need the following:
 
-- MinnowBoard MAX or Turbot
+- MinnowBoard board
 - 3.3v FTDI serial to USB cable (with 6-pin or 4-pin connector) - only pins
   1, 4, and 5 are used
 - Terminal emulation software on your host computer

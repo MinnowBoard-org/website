@@ -11,9 +11,10 @@ few steps to use your own computer to download an OS image, create a bootable US
 thumb drive, and install that image on a microSD card on the MinnowBoard Turbot.
 
 ### Components
-To perform these steps you'll need:
 
-- MinnowBoard Turbot board
+To complete these steps you will need the following:
+
+- MinnowBoard MAX or Turbot
 - 5V 2.5A Power Supply
 - USB thumb drive (GB or larger)
 - microSD card (16GB Class 10 or larger)

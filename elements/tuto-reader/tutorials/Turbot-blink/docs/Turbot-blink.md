@@ -8,7 +8,7 @@ D2 LED.
 
 To complete these steps you will need the following:
 
-- MinnowBoard MAX or Turbot
+- MinnowBoard board
 
 ### Blinking the LED with a bash script
 

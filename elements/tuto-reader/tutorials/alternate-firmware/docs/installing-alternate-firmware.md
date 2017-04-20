@@ -7,7 +7,7 @@ on your MinnowBoard MAX or Turbot: Coreboot, WinZent, and U-Boot.
 
 To complete these steps you will need the following:
 
-- MinnowBoard MAX or Turbot
+- MinnowBoard board
 
 ### Coreboot
 Coreboot (formerly known as LinuxBIOS) is a free and open source extended firmware 

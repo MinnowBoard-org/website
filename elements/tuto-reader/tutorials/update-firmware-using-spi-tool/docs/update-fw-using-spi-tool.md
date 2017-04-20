@@ -12,9 +12,11 @@ The tutorial will update the firmware using SPI Flash Tool (DediProg SF100). You
     1. Memory type: W25Q64{n}
     1. Programmer connect to [J1](https://www.minnowboard.org/board-viewer){n}
     
-### Components
+###  Components
 
-To perform these steps you’ll need:
+To complete these steps you will need the following:
+
+- MinnowBoard board
 
 - [DediProg SF100 ISP IC Programmer](http://www.dediprog.com/pd/spi-flash-solution/sf100)
 

@@ -4,7 +4,7 @@ Wind River Pulsar Linux* is the industry's leading commercial open source
 software platform for building embedded devices.  This tutorial will get you up 
 and running on your MinnowBoard Turbot.
 
-### What You’ll Need
+### Components
 To perform these steps you’ll need:
 
 - MinnowBoard Turbot board

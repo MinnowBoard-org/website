@@ -14,7 +14,7 @@ The tutorial will update the firmware using SPI Flash Tool (DediProg SF100). You
     
 ### Components
 
-To complete these steps you will need the following:
+To perform these steps you’ll need:
 
 - [DediProg SF100 ISP IC Programmer](http://www.dediprog.com/pd/spi-flash-solution/sf100)
 

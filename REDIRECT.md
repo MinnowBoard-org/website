@@ -11,15 +11,16 @@ paths and pages to redirect to. The format is:
 
 ```json
 {
-  "/MinnowBoard_Turbot": "/",
-  "/Where_to_buy": "/get-a-board",
-  "/About_Us": "/about",
-  "/Get_Involved": "/community"
+  "/MinnowBoard_Turbot": "https://minnowboard.org/",
+  "/Where_to_buy": "https://minnowboard.org/get-a-board",
+  "/About_Us": "https://minnowboard.org/about",
+  "/Get_Involved": "https://minnowboard.org/community"
 }
 ```
 
-The path to match against should be the absolute path, and should **not**
-include the domain name. It is not case sensitive.
+The path to match against should be the absolute path, and **should not**
+include the domain name. It is not case sensitive. The target path **should** include the FQDN so 
+that pages loading from wiki.minnowboard.org will redirect to minnowboard.org.
 
 Make sure you adhere to the JSON syntax. You can use the [online JSON linter](http://jsonlint.com/)
 to verify the JSON is valid; if it isn't, no redirects will be supported.

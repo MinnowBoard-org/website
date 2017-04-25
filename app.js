@@ -92,6 +92,15 @@ function handleIndex(req, res, next) {
   }
 }
 
+/* List of filename extensions we know are "potential" file extensions for
+ * assets we don't want to return "index.html" for */
+ const extensions = [
+   "html", "js", "css", "eot", "gif", "ico", "jpeg", "jpg", "mp4", "md", "ttf",
+   "txt", "woff", "woff2", "yml", "svg" ];
+
+/* Build the extension match RegExp from the list of extensions */
+const extensionMatch = new RegExp("^.*?(" + extensions.join('|') + ")$", "i");
+
 /* To handle dynamic routes, we return index.html to every 404.
 * However, that introduces site development problems when assets are
 * referenced which don't yet exist (due to bugs, or sequence of adds) --
@@ -101,18 +110,35 @@ function handleIndex(req, res, next) {
 * file extension.
 *
 * If so, 404 because the asset isn't there. otherwise assume it is a
-* dynamic client side route and *then* return index.html. */
+* dynamic client side route and *then* return index.html.
+*
+* This is also where the application will provide 301 redirects (see issue #60)
+* Theory of operation:
+* 1. On app load, parse "redirect.json" which is a key/value pairing of "inbound
+* page URI" to "redirect target".
+* 2. For any resource not directly read from the file system or handled by
+*  another route, walk the array of entries.
+* 3. If a match is found on the inbound request against the page URI, issue
+* a 301 (Moved Permanently) redirect to the new page
+*/
+let redirects = {};
+try {
+  redirects = JSON.parse(fs.readFileSync("redirects.json"));
+} catch(___) {
+  console.error("Unable to read and parse 'redirects.json': " + ___.message);
+}
+
 app.use(function(req, res, next) {
-  /* List of filename extensions we know are "potential" file extensions for
-   * assets we don't want to return "index.html" for */
-  const extensions = [
-    "html", "js", "css", "eot", "gif", "ico", "jpeg", "jpg", "mp4", "md", "ttf",
-    "txt", "woff", "woff2", "yml", "svg" ];
+  const parts = url.parse(req.url),
+    lowerCasePath = parts.pathname.toLowerCase();
 
-  /* Build the extension match RegExp from the list of extensions */
-  const extensionMatch = new RegExp("^.*?(" + extensions.join('|') + ")$", "i");
+  for (var key in redirects) {
+    if (key.toLowerCase() == lowerCasePath) {
+      console.log("Redirecting: " + key + " => " + redirects[key]);
+      return res.redirect(301, redirects[key]);
+    }
+  }
 
-  const parts = url.parse(req.url);
   if (!extensionMatch.exec(parts.pathname)) {
     handleIndex(req, res, next);
     return;

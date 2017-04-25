@@ -1,6 +1,6 @@
 {
-  "/MinnowBoard_Turbot": "/",
-  "/Where_to_buy": "/get-a-board",
-  "/About_Us": "/about",
-  "/Get_Involved": "/community"
+  "/MinnowBoard_Turbot": "https://minnowboard.org/",
+  "/Where_to_buy": "https://minnowboard.org/get-a-board",
+  "/About_Us": "https://minnowboard.org/about",
+  "/Get_Involved": "https://minnowboard.org/community"
 }

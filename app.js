@@ -139,6 +139,13 @@ app.use(function(req, res, next) {
     }
   }
 
+  /* If the page is targeting wiki.minnowboard.org, redirect it to
+   * minnowboard.org/ */
+  if (req.hostname == "wiki.minnowboard.org") {
+    console.log("Redirecting: " + req.hostname + "/" + req.url + " => http://minnowboard.org");
+    return res.redirect(301, "https://minnowboard.org/");
+  }
+
   if (!extensionMatch.exec(parts.pathname)) {
     handleIndex(req, res, next);
     return;

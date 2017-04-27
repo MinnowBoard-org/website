@@ -18,9 +18,14 @@ paths and pages to redirect to. The format is:
 }
 ```
 
-The path to match against should be the absolute path, and **should not**
-include the domain name. It is not case sensitive. The target path **should** include the FQDN so 
-that pages loading from wiki.minnowboard.org will redirect to minnowboard.org.
+The path to match against should be the absolute path, and **should not** 
+include the domain name. The target path **should** include the FQDN so that 
+pages loading from wiki.minnowboard.org will redirect to minnowboard.org.
 
-Make sure you adhere to the JSON syntax. You can use the [online JSON linter](http://jsonlint.com/)
-to verify the JSON is valid; if it isn't, no redirects will be supported.
+After all paths have been checked, if the target hostname is 
+wiki.minnowboard.org, it is redirected to https://minnowboard.org/.
+
+Make sure you adhere to the JSON syntax. You can use the [online JSON 
+linter](http://jsonlint.com/) to verify the JSON is valid; if it isn't, no 
+redirects will be supported (the redirects file will fail to load, so none 
+of them will be active.)

@@ -83,6 +83,13 @@ app.use(docRoot, express.static('.', {
 
 
 function handleIndex(req, res, next) {
+  /* If the page is targeting wiki.minnowboard.org, redirect it to
+   * minnowboard.org/ */
+  if (req.hostname == "wiki.minnowboard.org") {
+    console.log("Redirecting: " + req.hostname + req.url + " => http://minnowboard.org");
+    return res.redirect(301, "https://minnowboard.org/");
+  }
+
   var metaTags = meta.match(req.url),
     content = fs.readFileSync(path.join(req.app.locals.basePath, 'index.html'), 'utf8');
   if (metaTags) {
@@ -136,13 +143,6 @@ app.use(function(req, res, next) {
       console.log("Redirecting: " + req.hostname + key + " => " + redirects[key]);
       return res.redirect(301, redirects[key]);
     }
-  }
-
-  /* If the page is targeting wiki.minnowboard.org, redirect it to
-   * minnowboard.org/ */
-  if (req.hostname == "wiki.minnowboard.org") {
-    console.log("Redirecting: " + req.hostname + req.url + " => http://minnowboard.org");
-    return res.redirect(301, "https://minnowboard.org/");
   }
 
   if (!extensionMatch.exec(parts.pathname)) {

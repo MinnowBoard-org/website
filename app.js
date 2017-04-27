@@ -129,12 +129,11 @@ try {
 }
 
 app.use(function(req, res, next) {
-  const parts = url.parse(req.url),
-    lowerCasePath = parts.pathname.toLowerCase();
+  const parts = url.parse(req.url);
 
   for (var key in redirects) {
-    if (key.toLowerCase() == lowerCasePath) {
-      console.log("Redirecting: " + key + " => " + redirects[key]);
+    if (key == parts.pathname) {
+      console.log("Redirecting: " + req.hostname + key + " => " + redirects[key]);
       return res.redirect(301, redirects[key]);
     }
   }
@@ -142,7 +141,7 @@ app.use(function(req, res, next) {
   /* If the page is targeting wiki.minnowboard.org, redirect it to
    * minnowboard.org/ */
   if (req.hostname == "wiki.minnowboard.org") {
-    console.log("Redirecting: " + req.hostname + "/" + req.url + " => http://minnowboard.org");
+    console.log("Redirecting: " + req.hostname + req.url + " => http://minnowboard.org");
     return res.redirect(301, "https://minnowboard.org/");
   }
 

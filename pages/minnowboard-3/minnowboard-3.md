@@ -12,7 +12,7 @@ developers and OEMs interested in prototyping and bringing to market
 high-performance IoT and embedded applications and products. {large}  
 
 ### Key Specs
-| ### Key Specs |
+|  |
 |----|
 | Intel Atom x5 (E3940), 4C 1.6/1.8Ghz (Apollo Lake-I) |
 | 4GB LPDDR4/ 8GB eMMC, on board |
@@ -27,12 +27,26 @@ high-performance IoT and embedded applications and products. {large}
 | Open Source Firmware |
 
 ### I/O
-| ### I/O |
+|  |
 |----|
-| more more |
-| more more |
-| more more |
-| more more |
-| more more |
-| more more |
+| Wifi/BT (& M.2-A) |
+| HDMI & mini-DP |
+| MicroSD Slot |
+| 2x USB 3.0 (1 OTG) |
+| 1x USB-C (OTG) |
+| MIPI-CSI (RPICam) |
+| MIPI-DSI (4-lane RPI) |
+| Stereo/mic |
+| Gb Ethernet |
+| Lauterbach footprint |
+| USB serial debug |
 
+### Headers
+|  |   |
+|----|---|
+| LSEv1 Header  | SPI
+2x I2C 
+2x UART 
+3x GPIO 
+I2S |
+|   |   |

@@ -1,4 +1,6 @@
-![MinnowBoard 3 - Top](pages/default-page/Mb-Turbot-ADI-0008-150807_top.png){align-left} 
+## Meet MinnowBoard 3
+
+![MinnowBoard 3 - Top](pages/minnowboard-3/board-coming-soon.png){align-left} 
 
 The MinnowBoard 3 is a compact and affordable open source hardware platform 
 that puts the power of a 64-bit Intel® Atom™ E38xx Series System on a Chip (SoC) 

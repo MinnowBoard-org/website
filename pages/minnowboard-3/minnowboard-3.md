@@ -11,6 +11,8 @@ an enormous range of capabilities that appeal to intermediate and professional
 developers and OEMs interested in prototyping and bringing to market 
 high-performance IoT and embedded applications and products. {large}  
 
+** Now with built-in Wifi and Bluetooth! **
+
 ### Key Specs
 |  |
 |----|

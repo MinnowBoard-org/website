@@ -47,9 +47,9 @@ high-performance IoT and embedded applications and products. {large}
 |  |   |
 |----|----|
 | **LSEv1 Header**  | SPI, 2x I2C, 2x UART, 3x GPIO, I2S |
-| ** M.2 Key M **  | 4x PCIe2 (NVMe SSD)  |
-| ** M.2 Key B **  | SATA (SSD) |
-| ** M.2 Key A **  | PCIe/USB (wifi) |
+| **M.2 Key M**  | 4x PCIe2 (NVMe SSD)  |
+| **M.2 Key B**  | SATA (SSD) |
+| **M.2 Key A**  | PCIe/USB (wifi) |
 
 ### Daughter Cards
 |  |

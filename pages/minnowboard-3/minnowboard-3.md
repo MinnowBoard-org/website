@@ -30,7 +30,7 @@ high-performance IoT and embedded applications and products. {large}
 ### I/O
 |  |
 |----|
-| Wifi/BLE (& M.2-A) |
+| Wifi/BT (& M.2-A) |
 | HDMI & mini-DP |
 | MicroSD Slot |
 | 2x USB 3.0 (1 OTG) |

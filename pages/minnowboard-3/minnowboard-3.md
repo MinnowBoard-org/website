@@ -1,5 +1,5 @@
 # Meet MinnowBoard 3
-**Now with built-in Wifi and Bluetooth! **
+** Now with built-in Wifi and Bluetooth! **
 
 ![MinnowBoard 3 - Top](pages/minnowboard-3/board-coming-soon.png){align-left} 
 

@@ -1,4 +1,5 @@
 # Meet MinnowBoard 3
+**Now with built-in Wifi and Bluetooth! **
 
 ![MinnowBoard 3 - Top](pages/minnowboard-3/board-coming-soon.png){align-left} 
 
@@ -10,8 +11,6 @@ accelerate product creation with regulatory assuredness. This embedded board has
 an enormous range of capabilities that appeal to intermediate and professional 
 developers and OEMs interested in prototyping and bringing to market 
 high-performance IoT and embedded applications and products. {large}  
-
-** Now with built-in Wifi and Bluetooth! **
 
 ### Key Specs
 |  |
@@ -31,7 +30,7 @@ high-performance IoT and embedded applications and products. {large}
 ### I/O
 |  |
 |----|
-| Wifi/BT (& M.2-A) |
+| Wifi/BLE (& M.2-A) |
 | HDMI & mini-DP |
 | MicroSD Slot |
 | 2x USB 3.0 (1 OTG) |
@@ -58,3 +57,13 @@ high-performance IoT and embedded applications and products. {large}
 | RPI Adapter |
 | MikroBus Adapter |
 | Legacy LSEv1 Lures |
+
+### OS Support
+|  |
+|----|
+| Linux Distributions (4.4+) |
+| Windows 10/IoT Core |
+| Android Things |
+| Yocto Project |
+| Android (pending resource commit) |
+| Production Boot Flows|

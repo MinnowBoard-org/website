@@ -1,4 +1,4 @@
-## Meet MinnowBoard 3
+# Meet MinnowBoard 3
 
 ![MinnowBoard 3 - Top](pages/minnowboard-3/board-coming-soon.png){align-left} 
 
@@ -10,11 +10,21 @@ accelerate product creation with regulatory assuredness. This embedded board has
 an enormous range of capabilities that appeal to intermediate and professional 
 developers and OEMs interested in prototyping and bringing to market 
 high-performance IoT and embedded applications and products. {large}  
- 
-|  |  |
-|----|----|
-|CPU    | [Dual Core Intel® Atom™ E3826](http://ark.intel.com/products/78477/Intel-Atom-Processor-E3826-1M-Cache-1_46-GHz) (2 x 1.46 GHz, 1MB cache) |
-    | [Quad Core Intel® Atom™ E3845](http://ark.intel.com/products/78475/Intel-Atom-Processor-E3845-2M-Cache-1_91-GHz?q=3845) (4 x 1.91 GHz, 2MB cache) |
-|DRAM   |  2GB DDR3L 1067MT/s, on board |
-|Storage    | 1x SATA2, 1x MicroSD |
-|I/O Connectors   |  1x USB 2.0 host, 1x USB 3.0 host, 8x buffered GPIO, I2C, SPI, 1Gb Ethernet |
+
+### Key Specs
+|  |
+|----|
+| Intel Atom x5 (E3940), 4C 1.6/1.8Ghz (Apollo Lake-I) |
+| 4GB LPDDR4/ 8GB eMMC, on board |
+| US/CA/EU EMC compliance |
+| TBD Oper. Temp* |
+| Expansion M.2 & LSEv1 |
+| 5V Power Supply |
+| Efficient 6L Layout |
+| Platform Cost optimized |
+| Accessible Parts |
+| Open Source Hardware|
+| Open Source Firmware |
+
+
+* Actual range pending Environmental Testing.{small}

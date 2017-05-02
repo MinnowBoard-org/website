@@ -12,12 +12,12 @@ developers and OEMs interested in prototyping and bringing to market
 high-performance IoT and embedded applications and products. {large}  
 
 ### Key Specs
-|  |
+| ### Key Specs |
 |----|
 | Intel Atom x5 (E3940), 4C 1.6/1.8Ghz (Apollo Lake-I) |
 | 4GB LPDDR4/ 8GB eMMC, on board |
 | US/CA/EU EMC compliance |
-| TBD Oper. Temp* |
+| TBD Oper. Temp (Actual range pending Environmental Testing) |
 | Expansion M.2 & LSEv1 |
 | 5V Power Supply |
 | Efficient 6L Layout |
@@ -26,5 +26,13 @@ high-performance IoT and embedded applications and products. {large}
 | Open Source Hardware|
 | Open Source Firmware |
 
+### I/O
+| ### I/O |
+|----|
+| more more |
+| more more |
+| more more |
+| more more |
+| more more |
+| more more |
 
-* Actual range pending Environmental Testing.{small}

@@ -410,7 +410,7 @@
           type: RegExp,
           readOnly: true,
           value: function() {
-            return new RegExp(/#+.*\n+((.|\s)*?(?=#))/);
+            return new RegExp(/#+.*\n+((.|\s)*?(?=#|\n$))/);
           }
         },
         trimLength: {

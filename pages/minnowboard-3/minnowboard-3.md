@@ -1,6 +1,6 @@
 # Meet MinnowBoard 3
 
-![MinnowBoard 3 - Top](pages/minnowboard-3/board-coming-soon.png){align-left} 
+![MinnowBoard 3 - Top](pages/minnowboard-3/board-coming-soon.png)
 The MinnowBoard 3 is a powerful, expandable developer board with integrated
 wifi and bluetooth. This fully open source board with committed firmware 
 and an easily modified 6-layer design gets you from prototype to production 

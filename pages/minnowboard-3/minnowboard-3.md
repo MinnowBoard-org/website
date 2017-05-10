@@ -7,14 +7,26 @@ This device has not been authorized as required by the rules of the Federal
 Communications Commission. This device is not, and may not be, offered for 
 sale or lease, or sold or leased, until authorization is obtained.{align-left}  
 
-The MinnowBoard 3 is a compact and affordable open source hardware platform 
-that puts the power of a 64-bit Intel® Atom™ E39xx Series System on a Chip (SoC) 
-in a small but versatile form factor, with dual- and quad-core versions. 
-Software is compatible with earlier versions and upgrades now allow you to 
-accelerate product creation with regulatory assuredness. This embedded board has 
-an enormous range of capabilities that appeal to intermediate and professional 
-developers and OEMs interested in prototyping and bringing to market 
-high-performance IoT and embedded applications and products. {large}  
+The MinnowBoard 3 is a powerful, expandable developer board with integrated
+wifi and bluetooth. This fully open source board with committed firmware 
+and an easily modified 6-layer design gets you from prototype to production 
+quickly. Its enormous range of capabilities appeal to innovators, professional 
+developers, and OEMs interested in prototyping and bringing to market 
+high-performance IoT and embedded applications and products.
+
+This first board of the MinnowBoard 3 series opens up the power and features 
+of the Intel(r) Atom x5-E3940, four cores at 1.6/1.8Ghz, with 4GB LPDDR4 in a 
+form factor and price targeted for broad market verticals, yet allows easy design 
+modification to meet specific product applications. EMI/EMC is targeted for FCC 
+Class B compliance, so you can easily achieve regulatory thresholds for your 
+product. See the below product detail for more information.
+
+Initial product launch is targeted for North America and Europe at Amazon, 
+Mouser, and Netgate. Reach out to us with feedback, comments, and/or distributor 
+recommendations on our [Get help page](https://minnowboard.org/help) or 
+by [email](mailto:support@minnowboard.org) (subject = MinnowBoard3).
+
+More release information coming soon! {large}  
 
 ### Key Specs
 |  |

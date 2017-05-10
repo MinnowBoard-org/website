@@ -1,6 +1,9 @@
 # Meet MinnowBoard 3
 
-![MinnowBoard 3 - Top](pages/minnowboard-3/board-coming-soon.png)
+![MinnowBoard 3 - Top](pages/minnowboard-3/board-coming-soon.png)*This device has not been authorized as required by the rules of the Federal
+Communications Commission. This device is not, and may not be, offered for 
+sale or lease, or sold or leased, until authorization is obtained.  
+
 The MinnowBoard 3 is a powerful, expandable developer board with integrated
 wifi and bluetooth. This fully open source board with committed firmware 
 and an easily modified 6-layer design gets you from prototype to production 
@@ -22,9 +25,7 @@ by [email](mailto:support@minnowboard.org) (subject = MinnowBoard3).{large}
 
 More release information will be coming soon!{large} 
 
-This device has not been authorized as required by the rules of the Federal
-Communications Commission. This device is not, and may not be, offered for 
-sale or lease, or sold or leased, until authorization is obtained.{large}  
+
 
 ### Key Specs
 |  |

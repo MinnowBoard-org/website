@@ -5,7 +5,7 @@
 
 This device has not been authorized as required by the rules of the Federal
 Communications Commission. This device is not, and may not be, offered for 
-sale or lease, or sold or leased, until authorization is obtained. {text-warning}  
+sale or lease, or sold or leased, until authorization is obtained. {bg-warning}  
 
 The MinnowBoard 3 is a powerful, expandable developer board with integrated
 wifi and bluetooth. This fully open source board with committed firmware 
@@ -23,8 +23,7 @@ product. See the product details below for more information.{large}
 
 Initial product launch is targeted for North America and Europe at Amazon, 
 Mouser, and Netgate. Reach out to us with feedback, comments, and/or distributor 
-recommendations on our [Get help page](https://minnowboard.org/help) or 
-by <a href="mailto:support@minnowboard.org?subject=MinnowBoard 3 Info">Email</a>.{large}
+recommendations on our [Get help page](https://minnowboard.org/help).{large}
 
 **More release information coming soon!**{large} 
 

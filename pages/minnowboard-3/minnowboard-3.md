@@ -1,7 +1,6 @@
 # Meet MinnowBoard 3
-Now with built-in Wifi and Bluetooth
 
-![MinnowBoard 3 - Top](pages/minnowboard-3/board-coming-soon.png){align-left} 
+![MinnowBoard 3 - Top](pages/minnowboard-3/board-coming-soon.png){align-center} 
 This device has not been authorized as required by the rules of the Federal
 Communications Commission. This device is not, and may not be, offered for 
 sale or lease, or sold or leased, until authorization is obtained.{align-left}  

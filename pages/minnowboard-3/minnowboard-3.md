@@ -63,7 +63,8 @@ high-performance IoT and embedded applications and products. {large}
 |----|
 | Linux Distributions (4.4+) |
 | Windows 10/IoT Core |
-| Android Things |
+| Android Things (Target) |
 | Yocto Project |
-| Android (pending resource commit) |
+| Automotive Grade Linux (AGL) |
+| Android (Target) |
 | Production Boot Flows|

@@ -24,7 +24,7 @@ product. See the product details below for more information.{large}
 Initial product launch is targeted for North America and Europe at Amazon, 
 Mouser, and Netgate. Reach out to us with feedback, comments, and/or distributor 
 recommendations on our [Get help page](https://minnowboard.org/help) or 
-by [email](mailto:support@minnowboard.org?subject=MinnowBoard 3 info).{large}
+by [email](mailto:support@minnowboard.org).{large}
 
 **More release information coming soon!**{large} 
 

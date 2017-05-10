@@ -1,6 +1,8 @@
-# Meet MinnowBoard 3
+## Meet MinnowBoard 3
 
 ![MinnowBoard 3 - Top](pages/minnowboard-3/board-coming-soon.png)
+
+
 *This device has not been authorized as required by the rules of the Federal
 Communications Commission. This device is not, and may not be, offered for 
 sale or lease, or sold or leased, until authorization is obtained.*  
@@ -17,18 +19,19 @@ of the Intel(r) Atom x5-E3940, four cores at 1.6/1.8Ghz, with 4GB LPDDR4 in a
 form factor and price targeted for broad market verticals, yet allows easy design 
 modification to meet specific product applications. EMI/EMC is targeted for FCC 
 Class B compliance, so you can easily achieve regulatory thresholds for your 
-product. See the below product detail for more information.{large}
+product. See the product details below for more information.{large}
 
 Initial product launch is targeted for North America and Europe at Amazon, 
 Mouser, and Netgate. Reach out to us with feedback, comments, and/or distributor 
 recommendations on our [Get help page](https://minnowboard.org/help) or 
-by [email](mailto:support@minnowboard.org) with subject line "MinnowBoard3".{large}
+by [email](mailto:support@minnowboard.org) 
+with subject line "MinnowBoard3."{large}
 
-More release information will be coming soon!{large} 
+**More release information coming soon!**{large} 
 
 
 
-### Key Specs
+### Key specs
 |  |
 |----|
 | Intel Atom x5 (E3940), 4C 1.6/1.8Ghz (Apollo Lake-I) |
@@ -66,7 +69,7 @@ More release information will be coming soon!{large}
 | **M.2 Key B**  | SATA (SSD) |
 | **M.2 Key A**  | PCIe/USB (wifi) |
 
-### Daughter Cards
+### Daughter cards
 |  |
 |----|
 | LSEv1 Breadboard |
@@ -74,7 +77,7 @@ More release information will be coming soon!{large}
 | MikroBus Adapter |
 | Legacy LSEv1 Lures |
 
-### OS Support
+### OS support
 |  |
 |----|
 | Linux Distributions (4.4+) |

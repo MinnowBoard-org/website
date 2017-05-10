@@ -2,6 +2,9 @@
 Now with built-in Wifi and Bluetooth
 
 ![MinnowBoard 3 - Top](pages/minnowboard-3/board-coming-soon.png){align-left} 
+This device has not been authorized as required by the rules of the Federal
+Communications Commission. This device is not, and may not be, offered for 
+sale or lease, or sold or leased, until authorization is obtained.{align-left}  
 
 The MinnowBoard 3 is a compact and affordable open source hardware platform 
 that puts the power of a 64-bit Intel® Atom™ E39xx Series System on a Chip (SoC) 

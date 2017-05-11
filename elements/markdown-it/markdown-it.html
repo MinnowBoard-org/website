@@ -233,7 +233,7 @@
       },
 
       getTarget: function(href) {
-        var hrefRegExp = new RegExp('^(http|https)://' + window.location.hostname + '.*')
+        var hrefRegExp = new RegExp('^((http|https)://' + window.location.hostname + '.*)|(mailto:).*')
         return hrefRegExp.test(href) ? "_self" : "_blank";
       },
 

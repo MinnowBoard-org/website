@@ -4,11 +4,14 @@ Allows for the LSE to be easily connected to a bread board for rapid prototyping
 
 ![Fish Food Lure](pages/fish-food-lure/1200px-Fish_food_lure.png)
 
+![Fish Food Lure](pages/fish-food-lure/FFLure2.jpg)
+
 ### Features
 
 - Low speed adapter for LSE to bread boards
-- Produced by Jose Navarro
-- OSHPark [Shared Project](https://oshpark.com/shared_projects/UQFwVnyr) (PCB Ordering)
+- Originally open sourced by Jose Navarro
+- Assembly available for sale by [Netgate](https://store.netgate.com/Lures/FishFood.aspx)
+- Bare PCB orders by OSHPark [Shared Project](https://oshpark.com/shared_projects/UQFwVnyr) (PCB Ordering)
 
 
 ### Design files

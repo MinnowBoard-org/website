@@ -4,6 +4,8 @@ Allows for the LSE to be easily connected to a bread board for rapid prototyping
 
 ![Fish Food Lure](pages/fish-food-lure/1200px-Fish_food_lure.png)
 
+![Fish Food Lure](pages/fish-food-lure/FFLure2.jpg)
+
 ### Features
 
 - Low speed adapter for LSE to bread boards

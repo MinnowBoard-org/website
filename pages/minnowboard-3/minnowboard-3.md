@@ -79,10 +79,10 @@ recommendations directly through [Email](mailto:support@minnowboard.org) or on o
 |  |   |
 |----|----|
 |  | MB3 Beta Tutorials |
-| Linux Distributions (4.4+) | [Installing Alternate Linux](/installing-alternate-linux-on-minnowboard-3) |
-| Windows 10/IoT Core | [Installing Windows 10](/installing-windows-iot-on-minnowboard-3) / [Windows IOT](/installing-windows-10-on-minnowboard-3) |
-| Android Things (Target) | [Installing Android Things](/installing-android-things-on-minnowboard-3) |
-| Yocto Project | [Installing Yocto Project](/installing-yocto-project-on-minnowboard-3) |
-| Automotive Grade Linux (AGL) | [Installing Alternate Linux](/installing-alternate-linux-on-minnowboard-3) |
+| Linux Distributions (4.4+) | [Installing Alternate Linux](installing-alternate-linux-on-minnowboard-3) |
+| Windows 10/IoT Core | [Installing Windows 10](installing-windows-iot-on-minnowboard-3) / [Windows IOT](installing-windows-10-on-minnowboard-3) |
+| Android Things (Target) | [Installing Android Things](installing-android-things-on-minnowboard-3) |
+| Yocto Project | [Installing Yocto Project](installing-yocto-project-on-minnowboard-3) |
+| Automotive Grade Linux (AGL) | [Installing Alternate Linux](installing-alternate-linux-on-minnowboard-3) |
 | Android (Target) | |
 | Production Boot Flows| |

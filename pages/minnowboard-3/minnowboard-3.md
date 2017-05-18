@@ -22,7 +22,7 @@ Class B compliance, so you can easily achieve regulatory thresholds for your
 product. See the product details below for more information.{large}
 
 Initial product launch is targeted for North America and Europe at Amazon, 
-Mouser, and Netgate. Reach out to us with feedback, comments, and/or distributor 
+Mouser, and Netgate. Additional regulatory certifications and distribution geographies are targeted (TBD) for: China, India, Japan and Taiwan. Reach out to us with feedback, comments, and/or distributor 
 recommendations directly through [Email](mailto:support@minnowboard.org) or on our [Get help page](https://minnowboard.org/help).{large}
 
 **More release information coming soon!**{large} 
@@ -33,12 +33,13 @@ recommendations directly through [Email](mailto:support@minnowboard.org) or on o
 |  |
 |----|
 | Intel Atom x5 (E3940), 4C 1.6/1.8Ghz (Apollo Lake-I) |
-| 4GB LPDDR4/ 8GB eMMC, on board |
-| US/CA/EU EMC compliance |
+| 4GB LPDDR4, soldered down |
+| 8GB or 16GB eMMC, soldered down |
+| US/CA/EU EMC compliance (In planning: China, India, Japan, Taiwan) |
 | TBD Oper. Temp (Actual range pending Environmental Testing) |
 | Expansion M.2 & LSEv1 |
 | 5V Power Supply |
-| Efficient 6L Layout |
+| Easily Modified 6L Layout |
 | Platform Cost optimized |
 | Accessible Parts |
 | Open Source Hardware|
@@ -55,7 +56,7 @@ recommendations directly through [Email](mailto:support@minnowboard.org) or on o
 | MIPI-CSI (RPICam) |
 | MIPI-DSI (4-lane RPI) |
 | Stereo/mic |
-| Gb Ethernet |
+| Gb Ethernet, precision timing |
 | Lauterbach footprint |
 | USB serial debug |
 

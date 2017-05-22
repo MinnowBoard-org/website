@@ -41,7 +41,7 @@ embedded and IoT focused event in the US and Europe because it is a versatile,
 low-cost, PC-like capable embedded board.
 
 ### MinnowBoard Turbot variations
-MinnowBoard Turbot boards combine variations of Dual Core and Quad Core.
+MinnowBoard Turbot boards combine variations of dual core and quad core.
 
 #### Operating system support
 -   Debian GNU/Linux

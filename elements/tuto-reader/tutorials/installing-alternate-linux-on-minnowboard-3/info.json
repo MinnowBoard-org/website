@@ -5,7 +5,7 @@
       "info": [
           {"label": "Difficulty", "value": "Medium"},
           {"label": "Last updated", "value": "May 2017"},
-          {"label": "Boards", "value": "MinowBoard 3"}
+          {"label": "Boards", "value": "MinnowBoard 3"}
 ],
     "links": {
         "label": "Other Tutorials",

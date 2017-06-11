@@ -30,7 +30,7 @@ router.post('/', bodyParser.json(), function(req, res, next) {
   }
 
   let options = {
-    from: 'MinnowBoard.org Foundation Support <support@minnowboard.org>',
+    from: 'MinnowBoard.org Foundation Support <do-not-reply@minnowboard.org>',
     to: 'support@minnowboard.org',
     subject: '[minnowboard.org] Web submission',
     text: 'From: ' + (req.body.email || 'anonymous') + "\n"

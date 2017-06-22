@@ -1,6 +1,6 @@
 ## Meet MinnowBoard 3
 
-*Disclaimer:The information provided on this page is intended for informational purposes only and is subject to change without notice. The MinnowBoard.org Foundation may also make improvements and/or changes in the products, pricing and/or the programs described in this information at any time without notice.*
+*Disclaimer: The information provided on this page is intended for informational purposes only and is subject to change without notice. The MinnowBoard.org Foundation may also make improvements and/or changes in the products, pricing and/or the programs described in this information at any time without notice.*
 
 ![MinnowBoard 3 - Top](pages/minnowboard-3/board-coming-soon.png)
 

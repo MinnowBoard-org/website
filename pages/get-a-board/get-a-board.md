@@ -6,8 +6,8 @@ The MinnowBoard Turbot, manufactured by [ADI](http://www.adiengineering.com/prod
 |----|----|
 |MinnowBoard Turbot Quad-Core       | [Netgate](http://store.netgate.com/Turbot4.aspx) \ Mouser Electronics TBD |
 |MinnowBoard Turbot Dual-Core          | [Amazon](https://www.amazon.com/MinnowBoard-Turbot-Dual-Core-Board/dp/B01A04QAW2/ref=sr_1_1?ie=UTF8&qid=1479165174&sr=8-1&keywords=minnowboard) \ [Arrow](https://www.arrow.com/en/products/mbt-2210/adi-engineering) \ [Mouser Electronics](http://www.mouser.com/ProductDetail/ADI-Engineering/MBT-2210/?qs=kWQV1gtkNnfue4gk0ao8Xg%3d%3d) \ [Netgate](https://store.netgate.com/Turbot2.aspx) |
-|MinnowBoard Turbot Dual-Core, Dual Ethernet| [Mouser Electronics](http://www.mouser.com/ProductDetail/ADI-Engineering/MBT-2220/?qs=%2fha2pyFadujpGyCG3%252bynkwkgvF8xl1YIT%2flKuQZTRLC%252baF1GKJb02g%3d%3d) |
-|MinnowBoard Turbot Quad-Core, Dual Ethernet | [Mouser Electronics](http://www.mouser.com/ProductDetail/ADI-Engineering/MBT-4220/?qs=%2fha2pyFadujpGyCG3%252bynk7YS9zzkeQJbLbVJOrw5a6A%252bc8UYtzb2pA%3d%3d) |
+|MinnowBoard Turbot Dual-Core, Dual Ethernet| [Mouser Electronics](http://www.mouser.com/ProductDetail/ADI-Engineering/MBT-2220/?qs=%2fha2pyFadujpGyCG3%252bynkwkgvF8xl1YIT%2flKuQZTRLC%252baF1GKJb02g%3d%3d) \ Netgate: [Board](https://store.netgate.com/MinnowBoard-Turbot-Dual-Ethernet-Dual-Core-Board-P2779.aspx) or [System](https://store.netgate.com/MBT-2220-system.aspx)|
+|MinnowBoard Turbot Quad-Core, Dual Ethernet | [Mouser Electronics](http://www.mouser.com/ProductDetail/ADI-Engineering/MBT-4220/?qs=%2fha2pyFadujpGyCG3%252bynk7YS9zzkeQJbLbVJOrw5a6A%252bc8UYtzb2pA%3d%3d) \ Netgate: [Board](https://store.netgate.com/MinnowBoard-Turbot-Dual-Ethernet-Quad-Core-Board-P2780.aspx) or [System](https://store.netgate.com/MBT-4220-system.aspx) |
 
 ### Get expansion boards
 
